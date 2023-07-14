@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      .node circle {
+        fill: #c9c9c9;
+        stroke: #c9c9c9;
+        stroke-width: 1.5px;
+      }
+      .node {
+        font: 15px sans-serif;
+      }
+      link {
+        fill: none;
+        stroke: #ccc;
+        stroke-width: 1.5px;
+      }
+      line {
+        stroke: rgb(79, 79, 79);
+      }
+      .lines {
+        stroke: rgb(98, 98, 98);
+        fill: none;
+      }
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+      rect.axis_rect {
+        background-color: white;
+      }
+      text.label {
+        transform-box: fill-box;
+        transform-origin: bottom;
+        font: 15px sans-serif;
+        fill: rgb(98, 98, 98);
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+    <script type="text/javascript" src="package/dist/d3.min.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      //set size
+      let width = 1000;
+      let height = 500;
+      let cluster = d3.cluster().size([height, width - 200]);
+
+      //define color palette
+      const colors = [
+        "#006400",
+        "#00008b",
+        "#b03060",
+        "#ff0000",
+        "#ffff00",
+        "#00ff00",
+        "#00ffff",
+        "#ff00ff",
+        "#6495ed",
+        "#ffdead",
+      ];
+      //set zoom function
+      function handleZoom(e) {
+        d3.select("g.zoom_group").attr("transform", e.transform);
+        d3.select("g.axis_group").attr(
+          "transform",
+          `translate(${100 + e.transform.x},40) scale(${e.transform.k})`
+        );
+        d3.selectAll("text").attr(
+          "transform",
+          `scale(${Math.max(0.7, Math.min(2, 1 / e.transform.k))})`
+        );
+      }
+      let zoom = d3.zoom().on("zoom", handleZoom);
+      //set up links between nodes
+      const link = d3
+        .linkVertical()
+        .x(function (d) {
+          return x(d.y);
+        })
+        .y(function (d) {
+          return y(d.x);
+        });
+
+      let svg = d3
+        .select("body")
+        .append("svg")
+        .call(zoom)
+        .attr("width", width)
+        .attr("height", height)
+        .append("g")
+        .attr("transform", "translate(100,0)");
+      xs = [];
+
+      ys = [];
+      //Function: Get x & y from JSON file
+      function getXYfromJSONTree(node) {
+        xs.push(node.x);
+        ys.push(node.y);
+        if (typeof node.children != "undefined") {
+          for (j in node.children) {
+            getXYfromJSONTree(node.children[j]);
+          }
+        }
+      }
+
+      let ymax = -Number.MAX_VALUE;
+      let ymin = Number.MAX_VALUE;
+      let xmax = -Number.MAX_VALUE;
+      let xmin = Number.MAX_VALUE;
+      //read JSON file
+      d3.json("tree_JSON.json").then(function (json) {
+        //get x & y values from JSON file
+        getXYfromJSONTree(json);
+        //get hierarchy from JSON file
+        const treeRoot = d3.hierarchy(json);
+        //define nodes (descendants of root node)
+        const nodes = treeRoot.descendants();
+        //define links between nodes
+        const links = treeRoot.links();
+        //reverse the dendrogram  (so it goes from left to right)
+        nodes.forEach(function (d, i) {
+          /*debugger;
+              if (typeof xs[i] != "undefined") {
+                d.x = xs[i];
+              }
+              if (typeof ys[i] != "undefined") {
+                d.y = ys[i];
+              }*/
+          d.y = d.data.height[0];
+        });
+        //get list of prefixes from text names for color coding
+        let list_prefix = [];
+        i = 0;
+        treeRoot.descendants().forEach(function (d) {
+          let prefix = d.data.name?.[0].match(/.*?(?=[\_][A-Za-z0-9])/);
+          if (prefix === undefined) {
+          } else if (list_prefix.includes(prefix[0])) {
+          } else {
+            list_prefix.push(prefix[0]);
+          }
+        });
+
+        let counter = 0;
+        treeRoot.eachAfter(function (d) {
+          if (d.children) {
+            d.x = (d.children[0].x + d.children[1].x) / 2;
+          } else {
+            d.x = 100 * counter++;
+          }
+        });
+
+        nodes.forEach(function (d) {
+          if (d.y > ymax) ymax = d.y;
+          if (d.y < ymin) ymin = d.y;
+          if (d.x > xmax) xmax = d.x;
+          if (d.x < xmin) xmin = d.x;
+        });
+        ymin = ymin - 0.2;
+
+        //Create Box for zooming
+
+        let zoom_group = svg.append("g").attr("class", "zoom_group");
+
+        const x = d3
+          .scaleLinear()
+          .domain([ymax, ymin])
+          .range([0, width - 250]);
+        const xinv = d3
+          .scaleLinear()
+          .domain([ymax, ymin])
+          .range([0, width - 250]);
+        const y = d3
+          .scaleLinear()
+          .domain([xmin, xmax])
+          .range([100, height - 20]);
+        let linking = zoom_group
+          .selectAll(".link")
+          .data(links)
+          .enter()
+          .append("path")
+          //.attr("d", link)
+          .attr("d", function (d) {
+            return (
+              "M" +
+              x(d.source.y) +
+              "," +
+              y(d.source.x) +
+              "v" +
+              (y(d.target.x) - y(d.source.x)) +
+              "h" +
+              (x(d.target.y) - x(d.source.y))
+            );
+          })
+          .attr("class", "lines");
+        let node = zoom_group
+          .selectAll(".node")
+          .data(nodes)
+          .enter()
+          .append("g")
+          .attr("class", "node")
+          .attr("transform", function (d) {
+            return "translate(" + x(d.y) + "," + y(d.x) + ")";
+          });
+        //create nodes
+        node.append("circle").attr("r", 4.5);
+
+        //add text
+        node
+          .append("text")
+          .attr("dx", function (d) {
+            return d.children ? -8 : 8;
+          })
+          .attr("dy", 3)
+          .style("text-anchor", function (d) {
+            return d.children ? "end" : "start";
+          })
+          .text(function (d) {
+            return d.data.name;
+          })
+          //color the text according to the prefix
+          .style("fill", function (d) {
+            for (var i = 0; i < list_prefix.length; i++) {
+              let name = d.data.name?.[0].match(/.*?(?=[\_][A-Za-z0-9])/);
+              if (name === undefined) {
+              } else if (list_prefix[i] === name[0]) {
+                return colors[i];
+              } else {
+              }
+            }
+          });
+        //add xaxis
+        var g = d3
+          .select("svg")
+          .append("g")
+          .attr("class", "axis_group")
+          .attr("transform", "translate(100,40)");
+        g.append("rect")
+          .attr("class", "axis_rect")
+          .attr("x", 10)
+          .attr("y", -60)
+          .attr("width", x(ymin) - x(ymax))
+          .attr("height", 100)
+          .attr("stroke", "white")
+          .attr("fill", "white");
+        g.append("line")
+          .attr("x1", x(ymin))
+          .attr("y1", 0)
+          .attr("x2", x(ymax))
+          .attr("y2", 0);
+        //set ticks
+        g.selectAll(".xticks")
+          .data(x.ticks(10))
+          .enter()
+          .append("line")
+          .attr("class", "ticks")
+          .attr("x1", function (d) {
+            return x(d);
+          })
+          .attr("y1", -3)
+          .attr("x2", function (d) {
+            return x(d);
+          })
+          .attr("y2", 5);
+        g.selectAll(".xlabel")
+          .data(x.ticks(10))
+          .enter()
+          .append("text")
+          .attr("class", "label")
+          .text(String)
+          .attr("x", function (d) {
+            return x(d);
+          })
+          .attr("y", -6)
+          .attr("text-anchor", "middle");
+      });
+    </script>
+  </body>
+</html>

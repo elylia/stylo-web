@@ -1,0 +1,83 @@
+import React from "react";
+import Table from "@mui/material/Table";
+import TableBody from "@mui/material/TableBody";
+import TableCell from "@mui/material/TableCell";
+import TableContainer from "@mui/material/TableContainer";
+import TableHead from "@mui/material/TableHead";
+import TableRow from "@mui/material/TableRow";
+import Paper from "@mui/material/Paper";
+function Step4({ settings }) {
+  function createData(parameter, value) {
+    return { parameter, value };
+  }
+
+  const rows = [
+    createData("Analysis Type", settings.analysisTypeLabel),
+    createData("Consensus Strength", settings.consensusStrength),
+    createData("Distance Measure", settings.distanceMeasureLabel),
+    createData("Upload Format", settings.formatLabel),
+    createData("Language", settings.languageLabel),
+    createData("Features", settings.analyzedFeatures),
+    createData("n-Gram Size", settings.nGram),
+    createData("MFW Minimum", settings.mfwMin),
+    createData("MFW Maximum", settings.mfwMax),
+    createData("MFW Increment", settings.mfwIncr),
+    createData("Start at freq. rank", settings.startAt),
+    createData("Culling Minimum", settings.cullMin),
+    createData("Culling Maximum", settings.cullMax),
+    createData("Culling Increment", settings.cullIncr),
+    createData("Delete Pronouns", settings.pronouns),
+    createData("Preserve Case", settings.pronouns),
+    createData("Sampling", settings.pronouns),
+    createData("Random Sampling: Sample Number", settings.randomSample),
+    createData("Normal Sampling: Sample Size", settings.sampleSize),
+  ];
+
+  return (
+    <React.Fragment>
+      <h1>Parameters</h1>
+      <TableContainer
+        component={Paper}
+        sx={{
+          height: 400,
+        }}
+      >
+        <Table
+          sx={{
+            height: "max-content",
+          }}
+          size="small"
+          stickyHeader
+        >
+          <TableHead>
+            <TableRow>
+              <TableCell>
+                <h1>Overview</h1>
+              </TableCell>
+              <TableCell align="left">
+                <h1>Value</h1>
+              </TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {rows.map((row) => (
+              <TableRow
+                key={row.name}
+                sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+                hover
+              >
+                <TableCell component="th" scope="row">
+                  {row.parameter}
+                </TableCell>
+
+                <TableCell align="left">{row.value}</TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
+    </React.Fragment>
+  );
+}
+
+export default Step4;
