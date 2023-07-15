@@ -41,7 +41,7 @@ data <- stylo(gui = FALSE,
     sampling = "{{sampling}}",
     sample.size = {{sampleSize}},
     number.of.samples = {{randomSample}},
-    corpus.dir = "corpus",
+    corpus.dir = "../data/corpus",
     write.pdf.file = "false")
     mds.results = cmdscale(data$distance.table, eig = TRUE)
     xy.coord = mds.results$points[,1:2]

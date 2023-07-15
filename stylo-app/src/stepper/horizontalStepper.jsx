@@ -27,6 +27,7 @@ export default function HorizontalLinearStepper(props) {
   const [activeStep, setActiveStep] = useState(0);
   const [settings, setSettings] = useState({
     analysisType: "CA",
+    analysisTypeLabel: "Cluster Analysis",
     consensusStrength: 0.5,
     nGram: 1,
     startAt: 1,

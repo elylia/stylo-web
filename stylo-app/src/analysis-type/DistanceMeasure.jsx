@@ -5,6 +5,7 @@ import TextField from "@mui/material/TextField";
 import { Autocomplete, Fab, FormControl, MenuItem } from "@mui/material";
 
 const distance = [
+  { label: "Argamon", value: "argamon" },
   { label: "Canberra", value: "canberra" },
   { label: "Classic Delta", value: "delta" },
   { label: "Cosine", value: "cosine" },

@@ -91,7 +91,7 @@ data <- stylo(gui = FALSE,
     sampling = "{{sampling}}",
     sample.size = {{sampleSize}},
     number.of.samples = {{randomSample}},
-    corpus.dir = "corpus",
+    corpus.dir = "../data/corpus",
     write.pdf.file = "false")
 
 table <- as.table(data$distance.table)
