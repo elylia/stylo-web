@@ -78,7 +78,7 @@ hclustToTree <- function(hclust) {
 data <- stylo(gui = FALSE, 
   distance.measure = "{{distanceMeasure}}",
   analysis.type  = "{{analysisType}}", 
-  analyzed.features = "{{analyzedFeatures}}",
+  analyzed.features = "w",
   ngram.size = "{{nGramSize}}",
     mfw.min= {{mfwMin}}, 
     mfw.max = {{mfwMax}}, 

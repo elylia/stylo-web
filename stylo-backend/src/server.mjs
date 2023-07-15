@@ -14,15 +14,7 @@ app.use(bodyParser.json());
 const port = 5000;
 app.use(cors());
 
-app.post("/upload", upload.single("file"), (req, res) => {
-  // Access the uploaded file via req.file
-  // Process the file and store it on the server as needed
-
-  // Send a response back to the client
-  res.send("File uploaded successfully");
-});
-
-app.post("/execute-r", (req, res) => {
+app.get("/execute-r", (req, res) => {
   const settings = req.body;
   const getCode = () => {
     try {
@@ -45,8 +37,6 @@ app.post("/execute-r", (req, res) => {
   };
 
   const code = getCode();
-
-  console.log(code);
 
   // Execute the R code using the child_process module
   exec(code, (error, stdout, stderr) => {
