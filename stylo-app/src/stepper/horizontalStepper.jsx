@@ -12,14 +12,7 @@ import Step2 from "./step2Settings";
 import Step3 from "./step3Sample";
 import Step4 from "./step4Summary";
 import Step5 from "./step5OutputOptions";
-import { useEffect } from "react";
-import CACode from "../rscripts/template_R_CA.js";
-import BctCode from "../rscripts/template_R_BCT";
-import MdsCode from "../rscripts/template_R_MDS";
-import PcrCode from "../rscripts/template_R_PCR";
-import TsneCode from "../rscripts/template_R_TSNE";
-import PcvCode from "../rscripts/template_R_PCV";
-import executeR from "../rscripts/execute_R";
+import executeR from "../executeR/execute_R";
 
 const steps = [
   "Select Analysis Type",
@@ -55,24 +48,7 @@ export default function HorizontalLinearStepper(props) {
 
   const handleGetResults = async () => {
     try {
-      if (settings.analysisType === "CA") {
-        const code = CACode(settings);
-        await executeR(code);
-      } else if (settings.analysisType === "BCT") {
-        const code = BctCode(settings);
-        await executeR(code);
-      } else if (settings.analysisType === "MDS") {
-        const code = MdsCode(settings);
-        await executeR(code);
-      } else if (settings.analysisType === "PCR") {
-        const code = PcrCode(settings);
-        await executeR(code);
-      } else if (settings.analysisType === "PCV") {
-        const code = PcvCode(settings);
-        await executeR(code);
-      } else {
-        TsneCode(settings);
-      }
+      await executeR(settings);
     } catch (error) {
       console.error("Error executing R code:", error);
     }
