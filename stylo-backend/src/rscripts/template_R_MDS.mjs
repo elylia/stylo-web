@@ -4,7 +4,7 @@ const MdsCode = (settings) => {
   const values = {
     distanceMeasure: settings.distanceMeasure,
     analysisType: settings.analysisType,
-    analyzedFeatures: "w",
+    analyzedFeatures: settings.features,
     nGramSize: settings.nGram,
     mfwMin: settings.mfwMin,
     mfwMax: settings.mfwMax,
@@ -13,7 +13,7 @@ const MdsCode = (settings) => {
     cullMax: settings.cullMax,
     cullIncr: settings.cullIncr,
     deletePronouns: settings.pronouns,
-    preserveCase: "FALSE",
+    preserveCase: settings.case,
     sampling: settings.sampling,
     sampleSize: settings.sampleSize,
     randomSample: settings.randomSample,
@@ -36,12 +36,12 @@ data <- stylo(gui = FALSE,
     culling.min = {{cullMin}},
     culling.max = {{cullMax}},
     culling.incr = {{cullIncr}},
-    delete.pronouncs = {{deletePronouns}},
+    delete.pronouns = {{deletePronouns}},
     preserve.case = {{preserveCase}},
     sampling = "{{sampling}}",
     sample.size = {{sampleSize}},
     number.of.samples = {{randomSample}},
-    corpus.dir = "../data/corpus",
+    corpus.dir = "corpus",
     write.pdf.file = "false")
     mds.results = cmdscale(data$distance.table, eig = TRUE)
     xy.coord = mds.results$points[,1:2]

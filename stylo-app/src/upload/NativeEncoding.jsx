@@ -4,11 +4,23 @@ import "../App.css";
 import * as React from "react";
 import { FormControlLabel, FormGroup, Switch } from "@mui/material";
 
-function NativeEncoding() {
+function NativeEncoding({ settings, setSettings }) {
+  const handleChangeEncoding = (event) => {
+    const newValue = event.target.checked;
+    setSettings({ ...settings, encoding: newValue });
+  };
   return (
     <>
       <FormGroup>
-        <FormControlLabel control={<Switch />} label="Native Encoding" />
+        <FormControlLabel
+          control={
+            <Switch
+              checked={settings.encoding}
+              onChange={handleChangeEncoding}
+            />
+          }
+          label="Delete Pronouns"
+        />
       </FormGroup>
     </>
   );

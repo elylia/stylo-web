@@ -13,11 +13,17 @@ function Step4({ settings }) {
 
   const rows = [
     createData("Analysis Type", settings.analysisTypeLabel),
-    createData("Consensus Strength", settings.consensusStrength),
+    createData(
+      "Consensus Strength",
+      settings.analysisType == "BCT"
+        ? settings.consensusStrength
+        : "Not applicable"
+    ),
     createData("Distance Measure", settings.distanceMeasureLabel),
     createData("Upload Format", settings.formatLabel),
     createData("Language", settings.languageLabel),
-    createData("Features", settings.analyzedFeatures),
+    createData("Native Encoding", settings.encoding ? "On" : "Off"),
+    createData("Features", settings.featuresLabel),
     createData("n-Gram Size", settings.nGram),
     createData("MFW Minimum", settings.mfwMin),
     createData("MFW Maximum", settings.mfwMax),
@@ -26,11 +32,21 @@ function Step4({ settings }) {
     createData("Culling Minimum", settings.cullMin),
     createData("Culling Maximum", settings.cullMax),
     createData("Culling Increment", settings.cullIncr),
-    createData("Delete Pronouns", settings.pronouns),
-    createData("Preserve Case", settings.pronouns),
-    createData("Sampling", settings.pronouns),
-    createData("Random Sampling: Sample Number", settings.randomSample),
-    createData("Normal Sampling: Sample Size", settings.sampleSize),
+    createData("Delete Pronouns", settings.pronouns ? "On" : "Off"),
+    createData("Preserve Case", settings.case ? "On" : "Off"),
+    createData("Sampling", settings.samplingLabel),
+    createData(
+      "Random Sampling: Sample Number",
+      settings.sampling == "random.sampling"
+        ? settings.randomSample
+        : "Not applicable"
+    ),
+    createData(
+      "Normal Sampling: Sample Size",
+      settings.sampling == "normal.sampling"
+        ? settings.sampleSize
+        : "Not applicable"
+    ),
   ];
 
   return (

@@ -11,14 +11,28 @@ import {
 {
   /*To-DO: Wert übergeben*/
 }
-function Features() {
+function Features({ settings, setSettings }) {
+  const handleChangeFeatures = (event) => {
+    const newValue = event.target.value;
+    setSettings({
+      ...settings,
+      features: newValue,
+      featuresLabel: newValue == "w" ? "Words" : "Character",
+    });
+  };
   return (
     <>
       {/*Choose MFW or nGram*/}
       <FormControl>
-        <RadioGroup row defaultValue="w">
-          <FormControlLabel value="w" control={<Radio />} label="Words" />
-          <FormControlLabel value="c" control={<Radio />} label="Characters" />
+        <RadioGroup
+          row
+          defaultValue="w"
+          value={settings.features}
+          label={settings.featuresLabel}
+          onChange={handleChangeFeatures}
+        >
+          <FormControlLabel control={<Radio value="w" />} label="Words" />
+          <FormControlLabel control={<Radio value="c" />} label="Characters" />
         </RadioGroup>
       </FormControl>
     </>

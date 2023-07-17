@@ -28,6 +28,8 @@ export default function HorizontalLinearStepper(props) {
   const [settings, setSettings] = useState({
     analysisType: "CA",
     analysisTypeLabel: "Cluster Analysis",
+    features: "w",
+    featuresLabel: "Words",
     consensusStrength: 0.5,
     nGram: 1,
     startAt: 1,
@@ -35,6 +37,8 @@ export default function HorizontalLinearStepper(props) {
     cullMax: 0,
     cullIncr: 0,
     mfwIncr: 100,
+    samplingLabel: "No Sampling",
+    sampling: "no.sampling",
     randomSample: 1,
     sampleSize: 10000,
   });

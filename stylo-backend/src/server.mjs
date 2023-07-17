@@ -8,13 +8,19 @@ import MdsCode from "./rscripts/template_R_MDS.mjs";
 import PcrCode from "./rscripts/template_R_PCR.mjs";
 import PcvCode from "./rscripts/template_R_PCV.mjs";
 import TsneCode from "./rscripts/template_R_TSNE.mjs";
+import { cp, mkdtemp, writeFile } from "fs/promises";
+import { write } from "fs";
+import { join } from "path";
+import { tmpdir } from "os";
+import { fileURLToPath } from "url";
+import { dirname } from "path";
 
 const app = express();
 app.use(bodyParser.json());
 const port = 5000;
 app.use(cors());
 
-app.get("/execute-r", (req, res) => {
+app.post("/execute-r", async (req, res) => {
   const settings = req.body;
   const getCode = () => {
     try {
@@ -37,18 +43,34 @@ app.get("/execute-r", (req, res) => {
   };
 
   const code = getCode();
+  try {
+    const __filename = fileURLToPath(import.meta.url);
+    const __dirname = dirname(__filename);
+    const folder = await mkdtemp(join(tmpdir(), "stylo-web-app-"));
+    await writeFile(folder + "/getData.R", code);
+    const dataSource = join(__dirname, "../data/corpus");
+    const dataTarget = join(folder, "corpus");
+    cp(dataSource, dataTarget, { recursive: true });
+    console.log(folder);
+    exec(`cd ${folder} && RScript getData.R`, (error, stdout, stderr) => {
+      try {
+        if (error) {
+          console.error("Error executing R code:", error);
+          res.status(500).json({ error: "Failed to execute R code." });
+          return;
+        }
 
+        // Send the response with the result
+        res.json({ result: stdout });
+      } catch (error) {
+        console.error("Error processing response:", error);
+        res.status(500).json({ error: "An error occurred." });
+      }
+    });
+  } catch (err) {
+    console.error(err);
+  }
   // Execute the R code using the child_process module
-  exec(code, (error, stdout, stderr) => {
-    if (error) {
-      console.error("Error executing R code:", error);
-      res.status(500).json({ error: "Failed to execute R code." });
-      return;
-    }
-
-    // Send the response with the result
-    res.json({ result: stdout });
-  });
 });
 
 // Start the server

@@ -7,7 +7,23 @@ import {
   RadioGroup,
 } from "@mui/material";
 
-function Sampling({ samplingValue, setSamplingValue }) {
+function Sampling({ settings, setSettings }) {
+  const handleChangeSampling = (event) => {
+    const newValue = event.target.value;
+    let label;
+    if (newValue == "no.sampling") {
+      label = "No Sampling";
+    } else if (newValue == "normal.sampling") {
+      label = "Normal Sampling";
+    } else {
+      label = "Random Sampling";
+    }
+    setSettings({
+      ...settings,
+      sampling: newValue,
+      samplingLabel: label,
+    });
+  };
   return (
     <>
       {/*Choose Sampling Method*/}
@@ -15,22 +31,20 @@ function Sampling({ samplingValue, setSamplingValue }) {
         <RadioGroup
           row
           defaultValue="no.sampling"
-          value={samplingValue}
-          onChange={(event) => setSamplingValue(event.target.value)}
+          value={settings.sampling}
+          label={settings.samplingLabel}
+          onChange={handleChangeSampling}
         >
           <FormControlLabel
-            value="no.sampling"
-            control={<Radio />}
+            control={<Radio value="no.sampling" />}
             label="No Sampling"
           />
           <FormControlLabel
-            value="normal.sampling"
-            control={<Radio />}
+            control={<Radio value="normal.sampling" />}
             label="Normal Sampling"
           />
           <FormControlLabel
-            value="random.sampling"
-            control={<Radio />}
+            control={<Radio value="random.sampling" />}
             label="Random Sampling"
           />
         </RadioGroup>

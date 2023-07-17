@@ -15,7 +15,7 @@ function Step1({ settings, setSettings }) {
         <Language setSettings={setSettings} settings={settings} />
       </div>
       <div className="upload">
-        <NativeEncoding />
+        <NativeEncoding setSettings={setSettings} settings={settings} />
       </div>
       <div className="upload">
         <UploadButton />
