@@ -3,7 +3,7 @@ import * as d3 from "d3";
 import getColor from "./getColor";
 import getXYfromJSONTree from "./getXY";
 
-const CaPlot = () => {
+const CaPlot = ({ folder }) => {
   let width = 1000;
   let height = 500;
   const [data, setData] = useState({
@@ -14,7 +14,7 @@ const CaPlot = () => {
   const [currentZoom, setCurrentZoom] = useState();
   const ref = useRef();
   const fetchJson = () => {
-    fetch("tree_JSON.json")
+    fetch(folder + "/tree_JSON.json")
       .then((response) => {
         return response.json();
       })

@@ -13,7 +13,7 @@ import Step3 from "./step3Sample";
 import Step4 from "./step4Summary";
 import Step5 from "./step5OutputOptions";
 import executeR from "../executeR/execute_R";
-
+import CaPlot from "../plots/CA/ca_plot";
 const steps = [
   "Select Analysis Type",
   "Upload Data",
@@ -44,7 +44,9 @@ export default function HorizontalLinearStepper(props) {
   });
 
   const [skipped, setSkipped] = useState(new Set());
-
+  const [isDataReady, setIsDataReady] = useState(false);
+  const [folder, setFolder] = useState("");
+  const [results, setResults] = useState("");
   const isStepOptional = (step) => {};
 
   const isStepSkipped = (step) => {
@@ -53,11 +55,16 @@ export default function HorizontalLinearStepper(props) {
 
   const handleGetResults = async () => {
     try {
-      await executeR(settings);
+      const response = await executeR(settings);
+      const { result, folder } = response; // Access the data property of the response
+      setIsDataReady(true);
+      setFolder(folder); // Set the folder in the state
+      setResults(result); // Set the results in the state (if needed)
     } catch (error) {
       console.error("Error executing R code:", error);
     }
   };
+
   const handleNext = () => {
     let newSkipped = skipped;
     if (isStepSkipped(activeStep)) {
@@ -299,6 +306,7 @@ export default function HorizontalLinearStepper(props) {
         </React.Fragment>
       ) : (
         <React.Fragment>
+          {isDataReady && folder && results && <CaPlot folder={folder} />}
           <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
             <Button
               color="inherit"

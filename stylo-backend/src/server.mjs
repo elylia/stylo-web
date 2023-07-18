@@ -9,7 +9,6 @@ import PcrCode from "./rscripts/template_R_PCR.mjs";
 import PcvCode from "./rscripts/template_R_PCV.mjs";
 import TsneCode from "./rscripts/template_R_TSNE.mjs";
 import { cp, mkdtemp, writeFile } from "fs/promises";
-import { write } from "fs";
 import { join } from "path";
 import { tmpdir } from "os";
 import { fileURLToPath } from "url";
@@ -51,7 +50,7 @@ app.post("/execute-r", async (req, res) => {
     const dataSource = join(__dirname, "../data/corpus");
     const dataTarget = join(folder, "corpus");
     cp(dataSource, dataTarget, { recursive: true });
-    console.log(folder);
+    // Send the response with the result and folder path
     exec(`cd ${folder} && RScript getData.R`, (error, stdout, stderr) => {
       try {
         if (error) {
@@ -60,8 +59,8 @@ app.post("/execute-r", async (req, res) => {
           return;
         }
 
-        // Send the response with the result
-        res.json({ result: stdout });
+        // Send the response with the result and folder path
+        res.json({ result: stdout.toString(), folder });
       } catch (error) {
         console.error("Error processing response:", error);
         res.status(500).json({ error: "An error occurred." });
