@@ -3,18 +3,18 @@ import * as d3 from "d3";
 import getColor from "./getColor";
 import getXYfromJSONTree from "./getXY";
 
-const CaPlot = ({ folder }) => {
+const CaPlot = ({ url }) => {
   let width = 1000;
   let height = 500;
   const [data, setData] = useState({
-    name: ["dummy_dummy"],
-    height: [0],
-    order: [0],
+    name: "dummy_dummy",
+    height: 0,
+    order: 0,
   });
   const [currentZoom, setCurrentZoom] = useState();
   const ref = useRef();
   const fetchJson = () => {
-    fetch(folder + "/tree_JSON.json")
+    fetch("http://localhost:5000/" + url)
       .then((response) => {
         return response.json();
       })
@@ -66,13 +66,13 @@ const CaPlot = ({ folder }) => {
          if (typeof ys[i] != "undefined") {
            d.y = ys[i];
          }*/
-    d.y = d.data.height[0];
+    d.y = d.data.height;
   });
   //get list of prefixes from text names for color coding
   let list_prefix = [];
   let i = 0;
   treeRoot.descendants().forEach(function (d) {
-    let prefix = d.data.name?.[0].match(/.*?(?=[\_][A-Za-z0-9])/);
+    let prefix = d.data.name?.match(/.*?(?=[\_][A-Za-z0-9])/);
     if (prefix === undefined) {
     } else if (list_prefix.includes(prefix[0])) {
     } else {

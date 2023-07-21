@@ -1,8 +1,8 @@
 import Mustache from "mustache";
-const TsneCode = (settings) => {
+
+const MdsCode = (settings) => {
   const values = {
     distanceMeasure: settings.distanceMeasure,
-    consensusStrength: settings.consensusStrength,
     analysisType: settings.analysisType,
     analyzedFeatures: settings.features,
     nGramSize: settings.nGram,
@@ -23,7 +23,7 @@ const TsneCode = (settings) => {
 library(stats)
 library(jsonlite)
 library(stringr)
-library(tsne)
+library(tibble)
 
 data <- stylo(gui = FALSE, 
   distance.measure = "{{distanceMeasure}}",
@@ -43,33 +43,19 @@ data <- stylo(gui = FALSE,
     number.of.samples = {{randomSample}},
     corpus.dir = "corpus",
     write.pdf.file = "false")
-    for(i in seq(100,100,round(100)) ) {
-      mfw = i
-      
-      
-      if(mfw > length(colnames(data$table.with.all.freqs)) ) {
-        mfw = length(colnames(data$table.with.all.freqs))
-      }}
+    mds.results = cmdscale(data$distance.table, eig = TRUE)
+    xy.coord = mds.results$points[,1:2]
+
+    xy.coord <- data.frame(xy.coord)
+    xy.coord <- tibble::rownames_to_column(xy.coord, "name")
     
-    ecb = function(x,y){
-      plot(x, t='n', main = "", xlab = "", ylab = "", yaxt = "n", xaxt = "n")
-      text(x, rownames(data$table.with.all.freqs[,1:mfw]), cex = 0.3)
-      
-    }
     
-    tsneData <- tsne(X = data$table.with.all.freqs[,1:mfw], initial_dims = 50, epoch_callback = ecb, perplexity = 50, max_iter = 2000)
-    tsneData <- data.frame(tsneData)
-    name <- rownames(data$table.with.all.freqs)
-    tsneData <- cbind(tsneData, name)
-    colnames(tsneData) <- c("V1","V2","name")
-    
-    jsonTree <- toJSON(tsneData, pretty = TRUE)
-    write(jsonTree, file="result.json")`;
+    jsonTree <- toJSON(xy.coord, pretty = TRUE)
+    write(jsonTree, file="result.json")
+    `;
 
   const output = Mustache.render(template, values);
 
-  console.log(output);
-
   return output;
 };
-export default TsneCode;
+export default MdsCode;

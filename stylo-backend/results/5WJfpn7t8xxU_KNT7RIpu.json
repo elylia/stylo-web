@@ -1,0 +1,98 @@
+[
+  {
+    "V1": -3.6303,
+    "V2": -0.2044,
+    "name": "jp_daily_newsletter_mary_ann_parsons_1_1850",
+    "_row": "jp_daily_newsletter_mary_ann_parsons_1_1850"
+  },
+  {
+    "V1": 0.989,
+    "V2": -0.3513,
+    "name": "jp_morning_chronicle_anne_bird_1850",
+    "_row": "jp_morning_chronicle_anne_bird_1850"
+  },
+  {
+    "V1": 1.6722,
+    "V2": -3.828,
+    "name": "jp_morning_chronicle_dr_ellis_1846",
+    "_row": "jp_morning_chronicle_dr_ellis_1846"
+  },
+  {
+    "V1": -3.113,
+    "V2": -0.3125,
+    "name": "jp_morning_chronicle_mary_ann_parsons_2_1850",
+    "_row": "jp_morning_chronicle_mary_ann_parsons_2_1850"
+  },
+  {
+    "V1": -0.5474,
+    "V2": 0.139,
+    "name": "jp_morning_chronicle_sarah_brown_1846",
+    "_row": "jp_morning_chronicle_sarah_brown_1846"
+  },
+  {
+    "V1": -2.3617,
+    "V2": -0.7092,
+    "name": "jp_morning_chronicle_susan_moir_1850",
+    "_row": "jp_morning_chronicle_susan_moir_1850"
+  },
+  {
+    "V1": -1.6467,
+    "V2": -0.0117,
+    "name": "jp_morning_chronicle_wife_murder_1851",
+    "_row": "jp_morning_chronicle_wife_murder_1851"
+  },
+  {
+    "V1": 5.5278,
+    "V2": 3.5643,
+    "name": "jp_sunday_times_questionable_charity_1850",
+    "_row": "jp_sunday_times_questionable_charity_1850"
+  },
+  {
+    "V1": 3.0554,
+    "V2": -1.8831,
+    "name": "vl_daily_newsletter_corporal_punishment_1849",
+    "_row": "vl_daily_newsletter_corporal_punishment_1849"
+  },
+  {
+    "V1": -1.5097,
+    "V2": 4.3114,
+    "name": "vl_morning_chronicle_captain_johnstone_1846",
+    "_row": "vl_morning_chronicle_captain_johnstone_1846"
+  },
+  {
+    "V1": 0.5984,
+    "V2": 0,
+    "name": "vl_morning_chronicle_law_of_assault_1850",
+    "_row": "vl_morning_chronicle_law_of_assault_1850"
+  },
+  {
+    "V1": -1.2751,
+    "V2": 2.9028,
+    "name": "vl_morning_chronicle_matthewson_1846",
+    "_row": "vl_morning_chronicle_matthewson_1846"
+  },
+  {
+    "V1": -3.0521,
+    "V2": -2.221,
+    "name": "vl_morning_chronicle_north_family_1846",
+    "_row": "vl_morning_chronicle_north_family_1846"
+  },
+  {
+    "V1": 0.1371,
+    "V2": 1.654,
+    "name": "vl_morning_chronicle_william_burn_1846",
+    "_row": "vl_morning_chronicle_william_burn_1846"
+  },
+  {
+    "V1": 3.2717,
+    "V2": -1.1395,
+    "name": "vl_remarks_on_mr_fitzroys_bill_1853",
+    "_row": "vl_remarks_on_mr_fitzroys_bill_1853"
+  },
+  {
+    "V1": 1.8841,
+    "V2": -1.9109,
+    "name": "vl_sunday_times_punishment_of_children_1850",
+    "_row": "vl_sunday_times_punishment_of_children_1850"
+  }
+]

@@ -5,13 +5,11 @@ import TextField from "@mui/material/TextField";
 function CullingMinMax({ settings, setSettings }) {
   const handleChangeCullMin = (event) => {
     const newValue = event.target.value;
-    setSettings({ ...settings, cullMin: newValue });
-    onValueChange(Number(newValue));
+    setSettings({ ...settings, cullMin: Number(newValue) });
   };
   const handleChangeCullMax = (event) => {
     const newValue = event.target.value;
-    setSettings({ ...settings, cullMax: newValue });
-    onValueChange(Number(newValue));
+    setSettings({ ...settings, cullMax: Number(newValue) });
   };
   return (
     <>

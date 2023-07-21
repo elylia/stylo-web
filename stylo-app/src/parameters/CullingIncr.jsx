@@ -4,8 +4,7 @@ import TextField from "@mui/material/TextField";
 function CullingIncr({ settings, setSettings }) {
   const handleChangeCullIncr = (event) => {
     const newValue = event.target.value;
-    setSettings({ ...settings, cullIncr: newValue });
-    onValueChange(Number(newValue));
+    setSettings({ ...settings, cullIncr: Number(newValue) });
   };
 
   return (

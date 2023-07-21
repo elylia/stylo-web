@@ -7,13 +7,11 @@ import TextField from "@mui/material/TextField";
 function MfwMinMax({ settings, setSettings }) {
   const handleChangeMfwMin = (event) => {
     const newValue = event.target.value;
-    setSettings({ ...settings, mfwMin: newValue });
-    onValueChange(Number(newValue));
+    setSettings({ ...settings, mfwMin: Number(newValue) });
   };
   const handleChangeMfwMax = (event) => {
     const newValue = event.target.value;
-    setSettings({ ...settings, mfwMax: newValue });
-    onValueChange(Number(newValue));
+    setSettings({ ...settings, mfwMax: Number(newValue) });
   };
   return (
     <>

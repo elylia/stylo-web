@@ -70,7 +70,7 @@ plot(clustered.data)
 halfway <- hclustToTree(clustered.data)
 jsonTree <- toJSON(halfway, pretty = TRUE, auto_unbox = TRUE)
 
-write(jsonTree, file="tree_JSON.json")`;
+write(jsonTree, file="result.json")`;
 
 const output = Mustache.render(template, settings);
 

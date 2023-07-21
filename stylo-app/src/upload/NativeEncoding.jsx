@@ -19,7 +19,7 @@ function NativeEncoding({ settings, setSettings }) {
               onChange={handleChangeEncoding}
             />
           }
-          label="Delete Pronouns"
+          label="Native Encoding"
         />
       </FormGroup>
     </>

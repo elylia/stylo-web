@@ -1,4 +1,4 @@
-import * as child from "child_process";
+import exec from "child_process";
 const executeR = async (settings) => {
   try {
     const response = await fetch("http://localhost:5000/execute-r", {
@@ -10,21 +10,9 @@ const executeR = async (settings) => {
     });
 
     if (response.ok) {
-      // R code executed successfully, handle the response
       const result = await response.json();
-      console.log("Execution result:", result);
-
-      // Execute the R code using RScript
-      child.exec(`RScript -e '${result}'`, (error, stdout, stderr) => {
-        if (error) {
-          console.error("Error executing R code:", error);
-        } else {
-          console.log("R code executed successfully.");
-          console.log("Output:", stdout);
-        }
-      });
+      return result;
     } else {
-      // Handle error response
       console.error("Error executing R code:", response.statusText);
     }
   } catch (error) {

@@ -1,5 +1,4 @@
 let xs = [];
-
 let ys = [];
 export default function getXYfromJSONTree(node) {
   xs.push(node.x);

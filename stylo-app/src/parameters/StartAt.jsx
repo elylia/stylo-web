@@ -7,8 +7,7 @@ import TextField from "@mui/material/TextField";
 function StartAt({ settings, setSettings }) {
   const handleChangeStartAt = (event) => {
     const newValue = event.target.value;
-    setSettings({ ...settings, startAt: newValue });
-    onValueChange(Number(newValue));
+    setSettings({ ...settings, startAt: Number(newValue) });
   };
   return (
     <>

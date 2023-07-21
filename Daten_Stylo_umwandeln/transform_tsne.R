@@ -29,5 +29,5 @@ tsneData <- cbind(tsneData, name)
 colnames(tsneData) <- c("V1","V2","name")
 
 jsonTree <- toJSON(tsneData, pretty = TRUE)
-write(jsonTree, file="tsne_JSON.json")
+write(jsonTree, file="result.json")
 

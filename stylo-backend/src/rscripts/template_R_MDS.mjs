@@ -12,8 +12,8 @@ const MdsCode = (settings) => {
     cullMin: settings.cullMin,
     cullMax: settings.cullMax,
     cullIncr: settings.cullIncr,
-    deletePronouns: settings.pronouns,
-    preserveCase: settings.case,
+    deletePronouns: settings.pronouns == false ? "FALSE" : "TRUE",
+    preserveCase: settings.case == false ? "FALSE" : "TRUE",
     sampling: settings.sampling,
     sampleSize: settings.sampleSize,
     randomSample: settings.randomSample,
@@ -51,7 +51,7 @@ data <- stylo(gui = FALSE,
     
     
     jsonTree <- toJSON(xy.coord, pretty = TRUE)
-    write(jsonTree, file="mds_JSON.json")
+    write(jsonTree, file="result.json")
     `;
 
   const output = Mustache.render(template, values);

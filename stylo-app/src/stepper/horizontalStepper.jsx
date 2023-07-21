@@ -14,6 +14,7 @@ import Step4 from "./step4Summary";
 import Step5 from "./step5OutputOptions";
 import executeR from "../executeR/execute_R";
 import CaPlot from "../plots/CA/ca_plot";
+import Results from "./results";
 const steps = [
   "Select Analysis Type",
   "Upload Data",
@@ -37,6 +38,8 @@ export default function HorizontalLinearStepper(props) {
     cullMax: 0,
     cullIncr: 0,
     mfwIncr: 100,
+    pronouns: false,
+    case: false,
     samplingLabel: "No Sampling",
     sampling: "no.sampling",
     randomSample: 1,
@@ -45,7 +48,6 @@ export default function HorizontalLinearStepper(props) {
 
   const [skipped, setSkipped] = useState(new Set());
   const [isDataReady, setIsDataReady] = useState(false);
-  const [folder, setFolder] = useState("");
   const [results, setResults] = useState("");
   const isStepOptional = (step) => {};
 
@@ -56,10 +58,14 @@ export default function HorizontalLinearStepper(props) {
   const handleGetResults = async () => {
     try {
       const response = await executeR(settings);
-      const { result, folder } = response; // Access the data property of the response
-      setIsDataReady(true);
-      setFolder(folder); // Set the folder in the state
-      setResults(result); // Set the results in the state (if needed)
+      if (response.result) {
+        const result = response.result;
+        setIsDataReady(true);
+        setResults(result);
+        setActiveStep((prevActiveStep) => prevActiveStep + 1);
+      } else {
+        console.error("Invalid response format:", response);
+      }
     } catch (error) {
       console.error("Error executing R code:", error);
     }
@@ -102,7 +108,16 @@ export default function HorizontalLinearStepper(props) {
   };
 
   return (
-    <Box sx={{ width: "100%" }}>
+    <Box
+      sx={{
+        width: "70%",
+        position: "fixed",
+        top: "100px",
+        left: "50%",
+        transform: "translateX(-50%)",
+        backgroundColor: "#fff",
+      }}
+    >
       <Stepper activeStep={activeStep}>
         {steps.map((label, index) => {
           const stepProps = {};
@@ -123,11 +138,15 @@ export default function HorizontalLinearStepper(props) {
           );
         })}
       </Stepper>
+
       {activeStep === steps.length ? (
         <React.Fragment>
-          <Typography sx={{ mt: 2, mb: 1 }}>
-            All steps completed - you&apos;re finished
-          </Typography>
+          <Results
+            url={results}
+            setSettings={setSettings}
+            settings={settings}
+          />
+
           <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
             <Box sx={{ flex: "1 1 auto" }} />
             <Button onClick={handleReset}>Reset</Button>
@@ -306,7 +325,6 @@ export default function HorizontalLinearStepper(props) {
         </React.Fragment>
       ) : (
         <React.Fragment>
-          {isDataReady && folder && results && <CaPlot folder={folder} />}
           <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
             <Button
               color="inherit"

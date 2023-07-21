@@ -7,8 +7,7 @@ import TextField from "@mui/material/TextField";
 function NGramSize({ settings, setSettings }) {
   const handleChangeNGram = (event) => {
     const newValue = event.target.value;
-    setSettings({ ...settings, nGram: newValue });
-    onValueChange(Number(newValue));
+    setSettings({ ...settings, nGram: Number(newValue) });
   };
   return (
     <>

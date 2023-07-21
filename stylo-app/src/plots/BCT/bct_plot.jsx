@@ -3,7 +3,7 @@ import * as d3 from "d3";
 import getColor from "./getColor";
 import computePosition from "./computePosition";
 //To-Do: Auf neue Daten anpassen.
-const BctPlot = () => {
+const BctPlot = ({ url }) => {
   let width = 2000;
   let height = 1500;
   const ref = useRef();
@@ -15,7 +15,7 @@ const BctPlot = () => {
   });
 
   const fetchJson = () => {
-    fetch("bct_JSON.json")
+    fetch("http://localhost:5000/" + url)
       .then((response) => {
         return response.json();
       })

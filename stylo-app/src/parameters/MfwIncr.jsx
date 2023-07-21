@@ -7,8 +7,7 @@ import TextField from "@mui/material/TextField";
 function MfwIncr({ settings, setSettings }) {
   const handleChangeMfwIncr = (event) => {
     const newValue = event.target.value;
-    setSettings({ ...settings, mfwIncr: newValue });
-    onValueChange(Number(newValue));
+    setSettings({ ...settings, mfwIncr: Number(newValue) });
   };
   return (
     <>

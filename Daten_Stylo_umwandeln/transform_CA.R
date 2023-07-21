@@ -53,7 +53,7 @@ hclustToTree <- function(hclust) {
   return(merges[nrow(hclust$merge)])
 }
 
-data <- stylo(gui = TRUE, frequencies = NULL, parsed.corpus = NULL,
+data <- stylo(gui = FALSE, frequencies = NULL, parsed.corpus = NULL,
               features = NULL, path = NULL, metadata = NULL,
               corpus.dir = "corpus")
 
@@ -70,7 +70,6 @@ write(edges_JSON, file="edges_JSON")
 clustered.data = hclust(as.dist(data$distance.table), method = "ward.D")
 plot(clustered.data)
 halfway <- hclustToTree(clustered.data)
-jsonTree <- toJSON(halfway, pretty = TRUE)
-
+jsonTree <- toJSON(halfway[[1]], pretty = TRUE, auto_unbox = TRUE)
 
 write(jsonTree, file="tree_JSON.json")
