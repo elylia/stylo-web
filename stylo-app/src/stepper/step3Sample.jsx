@@ -4,7 +4,9 @@ import Sampling from "../sampling/sampling";
 import SampleSize from "../sampling/sampleSize";
 import RandomSample from "../sampling/randomSample";
 import InfoSample from "../infoText/infoSample";
-function Step3({ settings, setSettings }) {
+import { Box, Button } from "@mui/material";
+
+function Step3({ settings, setSettings, handleNext, handleBack }) {
   return (
     <React.Fragment>
       <h1>Choose Sampling</h1>
@@ -22,6 +24,16 @@ function Step3({ settings, setSettings }) {
           <RandomSample setSettings={setSettings} settings={settings} />
         </div>
       )}
+      <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
+        <Button onClick={handleBack} variant="contained" color="primary">
+          Back
+        </Button>
+        <Box sx={{ flex: "1 1 auto" }} />
+
+        <Button onClick={handleNext} variant="contained" color="primary">
+          Next
+        </Button>
+      </Box>
     </React.Fragment>
   );
 }

@@ -62,7 +62,7 @@ function InfoUpload() {
         compound words are not split).
       </li>
       <li>
-        <b>French:</b> Plain Grench (contractions and compound words are split).
+        <b>French:</b> Plain French (contractions and compound words are split).
       </li>
       <li>
         <b>German:</b> Plain German (contractions and compound words are split).

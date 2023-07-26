@@ -13,8 +13,9 @@ import InfoFeatures from "../infoText/infoFeatures";
 import InfoMFW from "../infoText/infoMFW";
 import InfoCulling from "../infoText/infoCulling";
 import InfoMisc from "../infoText/infoMisc";
+import { Box, Button } from "@mui/material";
 
-function Step2({ settings, setSettings }) {
+function Step2({ settings, setSettings, handleNext, handleBack }) {
   return (
     <React.Fragment>
       <h1>Choose Features</h1>
@@ -45,6 +46,16 @@ function Step2({ settings, setSettings }) {
         <DeletePronouns setSettings={setSettings} settings={settings} />
         <PreserveCase setSettings={setSettings} settings={settings} />
       </div>
+      <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
+        <Button onClick={handleBack} variant="contained" color="primary">
+          Back
+        </Button>
+        <Box sx={{ flex: "1 1 auto" }} />
+
+        <Button onClick={handleNext} variant="contained" color="primary">
+          Next
+        </Button>
+      </Box>
     </React.Fragment>
   );
 }

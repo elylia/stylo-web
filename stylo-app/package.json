@@ -19,6 +19,7 @@
     "d3-array": "^3.2.4",
     "d3-scale": "^4.0.2",
     "express": "^4.18.2",
+    "file-loader": "^6.2.0",
     "lodash": "^4.17.21",
     "newick-js": "^1.2.1",
     "react": "^18.2.0",

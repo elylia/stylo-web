@@ -1,9 +1,9 @@
-library("stylo")
-library("jsonlite")
-library("tidyr")
-library("dplyr")
-library("stats")
-library("globals")
+library(stylo)
+library(jsonlite)
+library(tidyr)
+library(dplyr)
+library(stats)
+library(globals)
 
 createLeafNode <- function(hclust, i) {
   newheight <- c("0",hclust$height)
@@ -25,7 +25,7 @@ hclustToTree <- function(hclust) {
     if (left < 0){
       left <- createLeafNode(hclust, -left)
       left$height <- hclust$height[index] - 0.1
-   } else
+    } else
       left <- merges[[left]]
     if (right < 0){
       right <- createLeafNode(hclust, -right)
@@ -34,11 +34,11 @@ hclustToTree <- function(hclust) {
       right <- merges[[right]]
     
     #if (left$order < right$order) {
-     # tmp <- left
-      #left <- right
-      #right <- tmp
+    # tmp <- left
+    #left <- right
+    #right <- tmp
     #}
-
+    
     
     merges[[index]] <- list(
       children = list(
@@ -52,24 +52,50 @@ hclustToTree <- function(hclust) {
   
   return(merges[nrow(hclust$merge)])
 }
+mfw <- c()
+culling <- c()
+dataset <- list()
 
-data <- stylo(gui = FALSE, frequencies = NULL, parsed.corpus = NULL,
-              features = NULL, path = NULL, metadata = NULL,
-              corpus.dir = "corpus")
+for (i in seq({{mfwMin}}, {{mfwMax}}, by={{mfwIncr}})){
+  for(j in seq({{cullMin}}, {{cullMax}}, by={{cullIncr}})){
+      data <- stylo(gui = FALSE, 
+                    distance.measure = "{{distanceMeasure}}",
+                    analysis.type  = "{{analysisType}}", 
+                    analyzed.features = "w",
+                    ngram.size = "{{nGramSize}}",
+                    mfw.min= i, 
+                    mfw.max = i, 
+                    mfw.incr = {{mfwIncr}},
+                    culling.min = j,
+                    culling.max = j,
+                    culling.incr = {{cullIncr}},
+                    delete.pronouns = {{deletePronouns}},
+                    preserve.case = {{preserveCase}},
+                    sampling = "{{sampling}}",
+                    sample.size = {{sampleSize}},
+                    number.of.samples = {{randomSample}},
+                    corpus.dir = "corpus",
+                    write.pdf.file = "false")
+      table <- as.table(data$distance.table)
+      
+      edges_JSON <- toJSON(data$list.of.edges, pretty = TRUE)
+      
+      distance_JSON <- toJSON(setNames(as.data.frame(table),c("var1","var2","freq")), pretty = TRUE)
+      
+      
+      write(distance_JSON, file="distance_JSON")
+      write(edges_JSON, file="edges_JSON")
+      
+      clustered.data = hclust(as.dist(data$distance.table), method = "ward.D")
+      plot(clustered.data)
+      data <- hclustToTree(clustered.data)
+      mfw <- append(mfw, i)
+      culling <- append(culling, j)
+      dataset <- append(dataset, data)
 
-table <- as.table(data$distance.table)
+  } }
+jsonData <- data.frame(mfw = mfw, culling = culling, data= dataset)
 
-edges_JSON <- toJSON(data$list.of.edges, pretty = TRUE)
-
-distance_JSON <- toJSON(setNames(as.data.frame(table),c("var1","var2","freq")), pretty = TRUE)
-
-
-write(distance_JSON, file="distance_JSON")
-write(edges_JSON, file="edges_JSON")
-
-clustered.data = hclust(as.dist(data$distance.table), method = "ward.D")
-plot(clustered.data)
-halfway <- hclustToTree(clustered.data)
-jsonTree <- toJSON(halfway[[1]], pretty = TRUE, auto_unbox = TRUE)
-
-write(jsonTree, file="tree_JSON.json")
+  jsonTree <- toJSON(jsonData, pretty = TRUE, auto_unbox = TRUE)
+  
+  write(jsonTree, file="result.json")

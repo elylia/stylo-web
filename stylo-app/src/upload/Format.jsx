@@ -5,11 +5,11 @@ import TextField from "@mui/material/TextField";
 import { Autocomplete, Fab, FormControl, MenuItem } from "@mui/material";
 
 const formats = [
-  { label: "HTML", value: "English (contr.)" },
+  { label: "HTML", value: "html" },
   { label: "Plain / Txt", value: "plain" },
   { label: "XML", value: "xml" },
   { label: "XML (Drama)", value: "xml.drama" },
-  { label: "XML (No Titles)", value: "English (all)" },
+  { label: "XML (No Titles)", value: "xml.notitles" },
 ];
 export default function Format({ settings, setSettings }) {
   const handleChangeFormat = (event, newValue) => {

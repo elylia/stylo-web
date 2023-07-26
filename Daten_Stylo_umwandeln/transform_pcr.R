@@ -3,6 +3,9 @@ library(stats)
 library(jsonlite)
 library(stringr)
 
+mfw <- c()
+culling <- c()
+dataset <- c()
 data <- stylo(gui = FALSE, frequencies = NULL, parsed.corpus = NULL,
               features = NULL, path = NULL, metadata = NULL,
               corpus.dir = "corpus", analysis.type = "PCR")
@@ -22,6 +25,11 @@ colnames(xy.coord) <- c("V1","V2","name")
 
 xy.coord <- transform(xy.coord, V1 = as.numeric(V1))
 xy.coord <- transform(xy.coord, V2 = as.numeric(V2))
+mfw <- rbind(mfw, i)
+culling <- rbind(culling, j)
+dataset <- rbind(dataset, xy.coord)
 
-jsonTree <- toJSON(xy.coord, pretty = TRUE)
+jsonData <- data.frame(mfw = mfw, culling = culling)
+jsonData$data <- dataset
+jsonTree <- toJSON(jsonData, pretty = TRUE, auto_unbox = TRUE)
 write(jsonTree, file="pcr_JSON.json")

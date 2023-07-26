@@ -4,8 +4,9 @@ import AnalysisType from "../analysis-type/AnalysisType";
 import DistanceMeasure from "../analysis-type/DistanceMeasure";
 import InfoAnalysis from "../infoText/infoAnalysis";
 import ConsensusStrength from "../analysis-type/ConsensusStrength";
+import { Button } from "@mui/material";
 
-function Step0({ settings, setSettings }) {
+function Step0({ settings, setSettings, handleNext }) {
   return (
     <React.Fragment>
       <h1>Choose Analysis</h1>
@@ -19,6 +20,9 @@ function Step0({ settings, setSettings }) {
           <ConsensusStrength setSettings={setSettings} settings={settings} />
         )}
       </div>
+      <Button onClick={handleNext} variant="contained" color="primary">
+        Next
+      </Button>
     </React.Fragment>
   );
 }

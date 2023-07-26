@@ -7,252 +7,252 @@
   {
     "var1": "jp_morning_chronicle_anne_bird_1850",
     "var2": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-    "freq": 1.1823
+    "freq": 1.0425
   },
   {
     "var1": "jp_morning_chronicle_dr_ellis_1846",
     "var2": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-    "freq": 1.0956
+    "freq": 1.0494
   },
   {
     "var1": "jp_morning_chronicle_mary_ann_parsons_2_1850",
     "var2": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-    "freq": 1.2164
+    "freq": 0.9944
   },
   {
     "var1": "jp_morning_chronicle_sarah_brown_1846",
     "var2": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-    "freq": 1.1495
+    "freq": 1.0728
   },
   {
     "var1": "jp_morning_chronicle_susan_moir_1850",
     "var2": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-    "freq": 0.964
+    "freq": 0.9682
   },
   {
     "var1": "jp_morning_chronicle_wife_murder_1851",
     "var2": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-    "freq": 1.0877
+    "freq": 1.0026
   },
   {
     "var1": "jp_sunday_times_questionable_charity_1850",
     "var2": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-    "freq": 1.5773
+    "freq": 1.2432
   },
   {
     "var1": "vl_daily_newsletter_corporal_punishment_1849",
     "var2": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-    "freq": 1.2027
+    "freq": 1.0605
   },
   {
     "var1": "vl_morning_chronicle_captain_johnstone_1846",
     "var2": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-    "freq": 1.2143
+    "freq": 1.1003
   },
   {
     "var1": "vl_morning_chronicle_law_of_assault_1850",
     "var2": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-    "freq": 1.2463
-  },
-  {
-    "var1": "vl_morning_chronicle_matthewson_1846",
-    "var2": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-    "freq": 1.2038
-  },
-  {
-    "var1": "vl_morning_chronicle_north_family_1846",
-    "var2": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-    "freq": 1.2037
-  },
-  {
-    "var1": "vl_morning_chronicle_william_burn_1846",
-    "var2": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-    "freq": 1.1798
-  },
-  {
-    "var1": "vl_remarks_on_mr_fitzroys_bill_1853",
-    "var2": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-    "freq": 1.2616
-  },
-  {
-    "var1": "vl_sunday_times_punishment_of_children_1850",
-    "var2": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-    "freq": 1.2722
-  },
-  {
-    "var1": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-    "var2": "jp_morning_chronicle_anne_bird_1850",
-    "freq": 1.1823
-  },
-  {
-    "var1": "jp_morning_chronicle_anne_bird_1850",
-    "var2": "jp_morning_chronicle_anne_bird_1850",
-    "freq": 0
-  },
-  {
-    "var1": "jp_morning_chronicle_dr_ellis_1846",
-    "var2": "jp_morning_chronicle_anne_bird_1850",
-    "freq": 0.9904
-  },
-  {
-    "var1": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-    "var2": "jp_morning_chronicle_anne_bird_1850",
-    "freq": 1.1014
-  },
-  {
-    "var1": "jp_morning_chronicle_sarah_brown_1846",
-    "var2": "jp_morning_chronicle_anne_bird_1850",
-    "freq": 1.0138
-  },
-  {
-    "var1": "jp_morning_chronicle_susan_moir_1850",
-    "var2": "jp_morning_chronicle_anne_bird_1850",
-    "freq": 1.2533
-  },
-  {
-    "var1": "jp_morning_chronicle_wife_murder_1851",
-    "var2": "jp_morning_chronicle_anne_bird_1850",
-    "freq": 0.976
-  },
-  {
-    "var1": "jp_sunday_times_questionable_charity_1850",
-    "var2": "jp_morning_chronicle_anne_bird_1850",
-    "freq": 1.2499
-  },
-  {
-    "var1": "vl_daily_newsletter_corporal_punishment_1849",
-    "var2": "jp_morning_chronicle_anne_bird_1850",
-    "freq": 0.9243
-  },
-  {
-    "var1": "vl_morning_chronicle_captain_johnstone_1846",
-    "var2": "jp_morning_chronicle_anne_bird_1850",
-    "freq": 1.1743
-  },
-  {
-    "var1": "vl_morning_chronicle_law_of_assault_1850",
-    "var2": "jp_morning_chronicle_anne_bird_1850",
-    "freq": 0.8963
-  },
-  {
-    "var1": "vl_morning_chronicle_matthewson_1846",
-    "var2": "jp_morning_chronicle_anne_bird_1850",
-    "freq": 1.1501
-  },
-  {
-    "var1": "vl_morning_chronicle_north_family_1846",
-    "var2": "jp_morning_chronicle_anne_bird_1850",
-    "freq": 1.2006
-  },
-  {
-    "var1": "vl_morning_chronicle_william_burn_1846",
-    "var2": "jp_morning_chronicle_anne_bird_1850",
-    "freq": 1.1207
-  },
-  {
-    "var1": "vl_remarks_on_mr_fitzroys_bill_1853",
-    "var2": "jp_morning_chronicle_anne_bird_1850",
-    "freq": 0.8496
-  },
-  {
-    "var1": "vl_sunday_times_punishment_of_children_1850",
-    "var2": "jp_morning_chronicle_anne_bird_1850",
-    "freq": 1.2596
-  },
-  {
-    "var1": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-    "var2": "jp_morning_chronicle_dr_ellis_1846",
-    "freq": 1.0956
-  },
-  {
-    "var1": "jp_morning_chronicle_anne_bird_1850",
-    "var2": "jp_morning_chronicle_dr_ellis_1846",
-    "freq": 0.9904
-  },
-  {
-    "var1": "jp_morning_chronicle_dr_ellis_1846",
-    "var2": "jp_morning_chronicle_dr_ellis_1846",
-    "freq": 0
-  },
-  {
-    "var1": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-    "var2": "jp_morning_chronicle_dr_ellis_1846",
-    "freq": 1.0528
-  },
-  {
-    "var1": "jp_morning_chronicle_sarah_brown_1846",
-    "var2": "jp_morning_chronicle_dr_ellis_1846",
-    "freq": 0.9556
-  },
-  {
-    "var1": "jp_morning_chronicle_susan_moir_1850",
-    "var2": "jp_morning_chronicle_dr_ellis_1846",
-    "freq": 0.9907
-  },
-  {
-    "var1": "jp_morning_chronicle_wife_murder_1851",
-    "var2": "jp_morning_chronicle_dr_ellis_1846",
-    "freq": 0.9541
-  },
-  {
-    "var1": "jp_sunday_times_questionable_charity_1850",
-    "var2": "jp_morning_chronicle_dr_ellis_1846",
-    "freq": 1.2172
-  },
-  {
-    "var1": "vl_daily_newsletter_corporal_punishment_1849",
-    "var2": "jp_morning_chronicle_dr_ellis_1846",
-    "freq": 1.0021
-  },
-  {
-    "var1": "vl_morning_chronicle_captain_johnstone_1846",
-    "var2": "jp_morning_chronicle_dr_ellis_1846",
-    "freq": 1.0705
-  },
-  {
-    "var1": "vl_morning_chronicle_law_of_assault_1850",
-    "var2": "jp_morning_chronicle_dr_ellis_1846",
-    "freq": 1.0785
-  },
-  {
-    "var1": "vl_morning_chronicle_matthewson_1846",
-    "var2": "jp_morning_chronicle_dr_ellis_1846",
-    "freq": 0.9306
-  },
-  {
-    "var1": "vl_morning_chronicle_north_family_1846",
-    "var2": "jp_morning_chronicle_dr_ellis_1846",
-    "freq": 1.0646
-  },
-  {
-    "var1": "vl_morning_chronicle_william_burn_1846",
-    "var2": "jp_morning_chronicle_dr_ellis_1846",
-    "freq": 1.0208
-  },
-  {
-    "var1": "vl_remarks_on_mr_fitzroys_bill_1853",
-    "var2": "jp_morning_chronicle_dr_ellis_1846",
     "freq": 1.0708
   },
   {
+    "var1": "vl_morning_chronicle_matthewson_1846",
+    "var2": "jp_daily_newsletter_mary_ann_parsons_1_1850",
+    "freq": 1.0174
+  },
+  {
+    "var1": "vl_morning_chronicle_north_family_1846",
+    "var2": "jp_daily_newsletter_mary_ann_parsons_1_1850",
+    "freq": 1.1008
+  },
+  {
+    "var1": "vl_morning_chronicle_william_burn_1846",
+    "var2": "jp_daily_newsletter_mary_ann_parsons_1_1850",
+    "freq": 1.024
+  },
+  {
+    "var1": "vl_remarks_on_mr_fitzroys_bill_1853",
+    "var2": "jp_daily_newsletter_mary_ann_parsons_1_1850",
+    "freq": 1.075
+  },
+  {
+    "var1": "vl_sunday_times_punishment_of_children_1850",
+    "var2": "jp_daily_newsletter_mary_ann_parsons_1_1850",
+    "freq": 1.1176
+  },
+  {
+    "var1": "jp_daily_newsletter_mary_ann_parsons_1_1850",
+    "var2": "jp_morning_chronicle_anne_bird_1850",
+    "freq": 1.0425
+  },
+  {
+    "var1": "jp_morning_chronicle_anne_bird_1850",
+    "var2": "jp_morning_chronicle_anne_bird_1850",
+    "freq": 0
+  },
+  {
+    "var1": "jp_morning_chronicle_dr_ellis_1846",
+    "var2": "jp_morning_chronicle_anne_bird_1850",
+    "freq": 1.0582
+  },
+  {
+    "var1": "jp_morning_chronicle_mary_ann_parsons_2_1850",
+    "var2": "jp_morning_chronicle_anne_bird_1850",
+    "freq": 0.9971
+  },
+  {
+    "var1": "jp_morning_chronicle_sarah_brown_1846",
+    "var2": "jp_morning_chronicle_anne_bird_1850",
+    "freq": 1.0365
+  },
+  {
+    "var1": "jp_morning_chronicle_susan_moir_1850",
+    "var2": "jp_morning_chronicle_anne_bird_1850",
+    "freq": 1.1434
+  },
+  {
+    "var1": "jp_morning_chronicle_wife_murder_1851",
+    "var2": "jp_morning_chronicle_anne_bird_1850",
+    "freq": 0.9179
+  },
+  {
+    "var1": "jp_sunday_times_questionable_charity_1850",
+    "var2": "jp_morning_chronicle_anne_bird_1850",
+    "freq": 1.1732
+  },
+  {
+    "var1": "vl_daily_newsletter_corporal_punishment_1849",
+    "var2": "jp_morning_chronicle_anne_bird_1850",
+    "freq": 0.9152
+  },
+  {
+    "var1": "vl_morning_chronicle_captain_johnstone_1846",
+    "var2": "jp_morning_chronicle_anne_bird_1850",
+    "freq": 1.0955
+  },
+  {
+    "var1": "vl_morning_chronicle_law_of_assault_1850",
+    "var2": "jp_morning_chronicle_anne_bird_1850",
+    "freq": 0.8444
+  },
+  {
+    "var1": "vl_morning_chronicle_matthewson_1846",
+    "var2": "jp_morning_chronicle_anne_bird_1850",
+    "freq": 1.0003
+  },
+  {
+    "var1": "vl_morning_chronicle_north_family_1846",
+    "var2": "jp_morning_chronicle_anne_bird_1850",
+    "freq": 1.1154
+  },
+  {
+    "var1": "vl_morning_chronicle_william_burn_1846",
+    "var2": "jp_morning_chronicle_anne_bird_1850",
+    "freq": 1.0241
+  },
+  {
+    "var1": "vl_remarks_on_mr_fitzroys_bill_1853",
+    "var2": "jp_morning_chronicle_anne_bird_1850",
+    "freq": 0.8413
+  },
+  {
+    "var1": "vl_sunday_times_punishment_of_children_1850",
+    "var2": "jp_morning_chronicle_anne_bird_1850",
+    "freq": 1.1244
+  },
+  {
+    "var1": "jp_daily_newsletter_mary_ann_parsons_1_1850",
+    "var2": "jp_morning_chronicle_dr_ellis_1846",
+    "freq": 1.0494
+  },
+  {
+    "var1": "jp_morning_chronicle_anne_bird_1850",
+    "var2": "jp_morning_chronicle_dr_ellis_1846",
+    "freq": 1.0582
+  },
+  {
+    "var1": "jp_morning_chronicle_dr_ellis_1846",
+    "var2": "jp_morning_chronicle_dr_ellis_1846",
+    "freq": 0
+  },
+  {
+    "var1": "jp_morning_chronicle_mary_ann_parsons_2_1850",
+    "var2": "jp_morning_chronicle_dr_ellis_1846",
+    "freq": 1.019
+  },
+  {
+    "var1": "jp_morning_chronicle_sarah_brown_1846",
+    "var2": "jp_morning_chronicle_dr_ellis_1846",
+    "freq": 0.9562
+  },
+  {
+    "var1": "jp_morning_chronicle_susan_moir_1850",
+    "var2": "jp_morning_chronicle_dr_ellis_1846",
+    "freq": 0.9441
+  },
+  {
+    "var1": "jp_morning_chronicle_wife_murder_1851",
+    "var2": "jp_morning_chronicle_dr_ellis_1846",
+    "freq": 0.9647
+  },
+  {
+    "var1": "jp_sunday_times_questionable_charity_1850",
+    "var2": "jp_morning_chronicle_dr_ellis_1846",
+    "freq": 1.1176
+  },
+  {
+    "var1": "vl_daily_newsletter_corporal_punishment_1849",
+    "var2": "jp_morning_chronicle_dr_ellis_1846",
+    "freq": 1.0469
+  },
+  {
+    "var1": "vl_morning_chronicle_captain_johnstone_1846",
+    "var2": "jp_morning_chronicle_dr_ellis_1846",
+    "freq": 1.0852
+  },
+  {
+    "var1": "vl_morning_chronicle_law_of_assault_1850",
+    "var2": "jp_morning_chronicle_dr_ellis_1846",
+    "freq": 1.079
+  },
+  {
+    "var1": "vl_morning_chronicle_matthewson_1846",
+    "var2": "jp_morning_chronicle_dr_ellis_1846",
+    "freq": 0.9129
+  },
+  {
+    "var1": "vl_morning_chronicle_north_family_1846",
+    "var2": "jp_morning_chronicle_dr_ellis_1846",
+    "freq": 0.9848
+  },
+  {
+    "var1": "vl_morning_chronicle_william_burn_1846",
+    "var2": "jp_morning_chronicle_dr_ellis_1846",
+    "freq": 1.0522
+  },
+  {
+    "var1": "vl_remarks_on_mr_fitzroys_bill_1853",
+    "var2": "jp_morning_chronicle_dr_ellis_1846",
+    "freq": 1.0891
+  },
+  {
     "var1": "vl_sunday_times_punishment_of_children_1850",
     "var2": "jp_morning_chronicle_dr_ellis_1846",
-    "freq": 1.1017
+    "freq": 1.05
   },
   {
     "var1": "jp_daily_newsletter_mary_ann_parsons_1_1850",
     "var2": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-    "freq": 1.2164
+    "freq": 0.9944
   },
   {
     "var1": "jp_morning_chronicle_anne_bird_1850",
     "var2": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-    "freq": 1.1014
+    "freq": 0.9971
   },
   {
     "var1": "jp_morning_chronicle_dr_ellis_1846",
     "var2": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-    "freq": 1.0528
+    "freq": 1.019
   },
   {
     "var1": "jp_morning_chronicle_mary_ann_parsons_2_1850",
@@ -262,82 +262,82 @@
   {
     "var1": "jp_morning_chronicle_sarah_brown_1846",
     "var2": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-    "freq": 1.0964
+    "freq": 1.0977
   },
   {
     "var1": "jp_morning_chronicle_susan_moir_1850",
     "var2": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-    "freq": 1.2
+    "freq": 1.1018
   },
   {
     "var1": "jp_morning_chronicle_wife_murder_1851",
     "var2": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-    "freq": 0.9976
+    "freq": 0.9786
   },
   {
     "var1": "jp_sunday_times_questionable_charity_1850",
     "var2": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-    "freq": 1.3077
+    "freq": 1.2066
   },
   {
     "var1": "vl_daily_newsletter_corporal_punishment_1849",
     "var2": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-    "freq": 1.1335
+    "freq": 1.1276
   },
   {
     "var1": "vl_morning_chronicle_captain_johnstone_1846",
     "var2": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-    "freq": 1.2445
+    "freq": 1.118
   },
   {
     "var1": "vl_morning_chronicle_law_of_assault_1850",
     "var2": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-    "freq": 1.022
+    "freq": 0.9834
   },
   {
     "var1": "vl_morning_chronicle_matthewson_1846",
     "var2": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-    "freq": 1.1174
+    "freq": 1.0263
   },
   {
     "var1": "vl_morning_chronicle_north_family_1846",
     "var2": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-    "freq": 1.0739
+    "freq": 1.0033
   },
   {
     "var1": "vl_morning_chronicle_william_burn_1846",
     "var2": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-    "freq": 1.1205
+    "freq": 1.0414
   },
   {
     "var1": "vl_remarks_on_mr_fitzroys_bill_1853",
     "var2": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-    "freq": 0.9421
+    "freq": 1.02
   },
   {
     "var1": "vl_sunday_times_punishment_of_children_1850",
     "var2": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-    "freq": 1.1005
+    "freq": 1.0906
   },
   {
     "var1": "jp_daily_newsletter_mary_ann_parsons_1_1850",
     "var2": "jp_morning_chronicle_sarah_brown_1846",
-    "freq": 1.1495
+    "freq": 1.0728
   },
   {
     "var1": "jp_morning_chronicle_anne_bird_1850",
     "var2": "jp_morning_chronicle_sarah_brown_1846",
-    "freq": 1.0138
+    "freq": 1.0365
   },
   {
     "var1": "jp_morning_chronicle_dr_ellis_1846",
     "var2": "jp_morning_chronicle_sarah_brown_1846",
-    "freq": 0.9556
+    "freq": 0.9562
   },
   {
     "var1": "jp_morning_chronicle_mary_ann_parsons_2_1850",
     "var2": "jp_morning_chronicle_sarah_brown_1846",
-    "freq": 1.0964
+    "freq": 1.0977
   },
   {
     "var1": "jp_morning_chronicle_sarah_brown_1846",
@@ -347,82 +347,82 @@
   {
     "var1": "jp_morning_chronicle_susan_moir_1850",
     "var2": "jp_morning_chronicle_sarah_brown_1846",
-    "freq": 1.1247
+    "freq": 1.0658
   },
   {
     "var1": "jp_morning_chronicle_wife_murder_1851",
     "var2": "jp_morning_chronicle_sarah_brown_1846",
-    "freq": 1.0215
+    "freq": 0.9497
   },
   {
     "var1": "jp_sunday_times_questionable_charity_1850",
     "var2": "jp_morning_chronicle_sarah_brown_1846",
-    "freq": 1.2888
+    "freq": 1.0858
   },
   {
     "var1": "vl_daily_newsletter_corporal_punishment_1849",
     "var2": "jp_morning_chronicle_sarah_brown_1846",
-    "freq": 1.0634
+    "freq": 1.0499
   },
   {
     "var1": "vl_morning_chronicle_captain_johnstone_1846",
     "var2": "jp_morning_chronicle_sarah_brown_1846",
-    "freq": 1.0923
+    "freq": 1.0602
   },
   {
     "var1": "vl_morning_chronicle_law_of_assault_1850",
     "var2": "jp_morning_chronicle_sarah_brown_1846",
-    "freq": 1.0216
+    "freq": 0.9271
   },
   {
     "var1": "vl_morning_chronicle_matthewson_1846",
     "var2": "jp_morning_chronicle_sarah_brown_1846",
-    "freq": 1.0703
+    "freq": 0.9057
   },
   {
     "var1": "vl_morning_chronicle_north_family_1846",
     "var2": "jp_morning_chronicle_sarah_brown_1846",
-    "freq": 1.049
+    "freq": 0.9023
   },
   {
     "var1": "vl_morning_chronicle_william_burn_1846",
     "var2": "jp_morning_chronicle_sarah_brown_1846",
-    "freq": 1.0648
+    "freq": 0.9842
   },
   {
     "var1": "vl_remarks_on_mr_fitzroys_bill_1853",
     "var2": "jp_morning_chronicle_sarah_brown_1846",
-    "freq": 1.0105
+    "freq": 0.99
   },
   {
     "var1": "vl_sunday_times_punishment_of_children_1850",
     "var2": "jp_morning_chronicle_sarah_brown_1846",
-    "freq": 1.0895
+    "freq": 1.0529
   },
   {
     "var1": "jp_daily_newsletter_mary_ann_parsons_1_1850",
     "var2": "jp_morning_chronicle_susan_moir_1850",
-    "freq": 0.964
+    "freq": 0.9682
   },
   {
     "var1": "jp_morning_chronicle_anne_bird_1850",
     "var2": "jp_morning_chronicle_susan_moir_1850",
-    "freq": 1.2533
+    "freq": 1.1434
   },
   {
     "var1": "jp_morning_chronicle_dr_ellis_1846",
     "var2": "jp_morning_chronicle_susan_moir_1850",
-    "freq": 0.9907
+    "freq": 0.9441
   },
   {
     "var1": "jp_morning_chronicle_mary_ann_parsons_2_1850",
     "var2": "jp_morning_chronicle_susan_moir_1850",
-    "freq": 1.2
+    "freq": 1.1018
   },
   {
     "var1": "jp_morning_chronicle_sarah_brown_1846",
     "var2": "jp_morning_chronicle_susan_moir_1850",
-    "freq": 1.1247
+    "freq": 1.0658
   },
   {
     "var1": "jp_morning_chronicle_susan_moir_1850",
@@ -432,847 +432,847 @@
   {
     "var1": "jp_morning_chronicle_wife_murder_1851",
     "var2": "jp_morning_chronicle_susan_moir_1850",
-    "freq": 1.0311
+    "freq": 0.9664
   },
   {
     "var1": "jp_sunday_times_questionable_charity_1850",
     "var2": "jp_morning_chronicle_susan_moir_1850",
-    "freq": 1.4545
+    "freq": 1.2737
   },
   {
     "var1": "vl_daily_newsletter_corporal_punishment_1849",
     "var2": "jp_morning_chronicle_susan_moir_1850",
-    "freq": 1.1405
+    "freq": 1.1528
   },
   {
     "var1": "vl_morning_chronicle_captain_johnstone_1846",
     "var2": "jp_morning_chronicle_susan_moir_1850",
-    "freq": 1.1466
+    "freq": 1.0767
   },
   {
     "var1": "vl_morning_chronicle_law_of_assault_1850",
     "var2": "jp_morning_chronicle_susan_moir_1850",
-    "freq": 1.3043
+    "freq": 1.1178
   },
   {
     "var1": "vl_morning_chronicle_matthewson_1846",
     "var2": "jp_morning_chronicle_susan_moir_1850",
-    "freq": 1.1351
+    "freq": 1.0089
   },
   {
     "var1": "vl_morning_chronicle_north_family_1846",
     "var2": "jp_morning_chronicle_susan_moir_1850",
-    "freq": 1.1534
-  },
-  {
-    "var1": "vl_morning_chronicle_william_burn_1846",
-    "var2": "jp_morning_chronicle_susan_moir_1850",
-    "freq": 1.1779
-  },
-  {
-    "var1": "vl_remarks_on_mr_fitzroys_bill_1853",
-    "var2": "jp_morning_chronicle_susan_moir_1850",
-    "freq": 1.3025
-  },
-  {
-    "var1": "vl_sunday_times_punishment_of_children_1850",
-    "var2": "jp_morning_chronicle_susan_moir_1850",
-    "freq": 1.0677
-  },
-  {
-    "var1": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-    "var2": "jp_morning_chronicle_wife_murder_1851",
-    "freq": 1.0877
-  },
-  {
-    "var1": "jp_morning_chronicle_anne_bird_1850",
-    "var2": "jp_morning_chronicle_wife_murder_1851",
-    "freq": 0.976
-  },
-  {
-    "var1": "jp_morning_chronicle_dr_ellis_1846",
-    "var2": "jp_morning_chronicle_wife_murder_1851",
-    "freq": 0.9541
-  },
-  {
-    "var1": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-    "var2": "jp_morning_chronicle_wife_murder_1851",
-    "freq": 0.9976
-  },
-  {
-    "var1": "jp_morning_chronicle_sarah_brown_1846",
-    "var2": "jp_morning_chronicle_wife_murder_1851",
-    "freq": 1.0215
-  },
-  {
-    "var1": "jp_morning_chronicle_susan_moir_1850",
-    "var2": "jp_morning_chronicle_wife_murder_1851",
-    "freq": 1.0311
-  },
-  {
-    "var1": "jp_morning_chronicle_wife_murder_1851",
-    "var2": "jp_morning_chronicle_wife_murder_1851",
-    "freq": 0
-  },
-  {
-    "var1": "jp_sunday_times_questionable_charity_1850",
-    "var2": "jp_morning_chronicle_wife_murder_1851",
-    "freq": 1.2263
-  },
-  {
-    "var1": "vl_daily_newsletter_corporal_punishment_1849",
-    "var2": "jp_morning_chronicle_wife_murder_1851",
-    "freq": 1.0224
-  },
-  {
-    "var1": "vl_morning_chronicle_captain_johnstone_1846",
-    "var2": "jp_morning_chronicle_wife_murder_1851",
-    "freq": 1.1419
-  },
-  {
-    "var1": "vl_morning_chronicle_law_of_assault_1850",
-    "var2": "jp_morning_chronicle_wife_murder_1851",
-    "freq": 1.0907
-  },
-  {
-    "var1": "vl_morning_chronicle_matthewson_1846",
-    "var2": "jp_morning_chronicle_wife_murder_1851",
-    "freq": 1.061
-  },
-  {
-    "var1": "vl_morning_chronicle_north_family_1846",
-    "var2": "jp_morning_chronicle_wife_murder_1851",
-    "freq": 1.0259
-  },
-  {
-    "var1": "vl_morning_chronicle_william_burn_1846",
-    "var2": "jp_morning_chronicle_wife_murder_1851",
-    "freq": 1.0653
-  },
-  {
-    "var1": "vl_remarks_on_mr_fitzroys_bill_1853",
-    "var2": "jp_morning_chronicle_wife_murder_1851",
-    "freq": 0.9061
-  },
-  {
-    "var1": "vl_sunday_times_punishment_of_children_1850",
-    "var2": "jp_morning_chronicle_wife_murder_1851",
-    "freq": 1.1562
-  },
-  {
-    "var1": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-    "var2": "jp_sunday_times_questionable_charity_1850",
-    "freq": 1.5773
-  },
-  {
-    "var1": "jp_morning_chronicle_anne_bird_1850",
-    "var2": "jp_sunday_times_questionable_charity_1850",
-    "freq": 1.2499
-  },
-  {
-    "var1": "jp_morning_chronicle_dr_ellis_1846",
-    "var2": "jp_sunday_times_questionable_charity_1850",
-    "freq": 1.2172
-  },
-  {
-    "var1": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-    "var2": "jp_sunday_times_questionable_charity_1850",
-    "freq": 1.3077
-  },
-  {
-    "var1": "jp_morning_chronicle_sarah_brown_1846",
-    "var2": "jp_sunday_times_questionable_charity_1850",
-    "freq": 1.2888
-  },
-  {
-    "var1": "jp_morning_chronicle_susan_moir_1850",
-    "var2": "jp_sunday_times_questionable_charity_1850",
-    "freq": 1.4545
-  },
-  {
-    "var1": "jp_morning_chronicle_wife_murder_1851",
-    "var2": "jp_sunday_times_questionable_charity_1850",
-    "freq": 1.2263
-  },
-  {
-    "var1": "jp_sunday_times_questionable_charity_1850",
-    "var2": "jp_sunday_times_questionable_charity_1850",
-    "freq": 0
-  },
-  {
-    "var1": "vl_daily_newsletter_corporal_punishment_1849",
-    "var2": "jp_sunday_times_questionable_charity_1850",
-    "freq": 1.3146
-  },
-  {
-    "var1": "vl_morning_chronicle_captain_johnstone_1846",
-    "var2": "jp_sunday_times_questionable_charity_1850",
-    "freq": 1.3339
-  },
-  {
-    "var1": "vl_morning_chronicle_law_of_assault_1850",
-    "var2": "jp_sunday_times_questionable_charity_1850",
-    "freq": 1.1727
-  },
-  {
-    "var1": "vl_morning_chronicle_matthewson_1846",
-    "var2": "jp_sunday_times_questionable_charity_1850",
-    "freq": 1.1795
-  },
-  {
-    "var1": "vl_morning_chronicle_north_family_1846",
-    "var2": "jp_sunday_times_questionable_charity_1850",
-    "freq": 1.1773
-  },
-  {
-    "var1": "vl_morning_chronicle_william_burn_1846",
-    "var2": "jp_sunday_times_questionable_charity_1850",
-    "freq": 1.3366
-  },
-  {
-    "var1": "vl_remarks_on_mr_fitzroys_bill_1853",
-    "var2": "jp_sunday_times_questionable_charity_1850",
-    "freq": 1.1865
-  },
-  {
-    "var1": "vl_sunday_times_punishment_of_children_1850",
-    "var2": "jp_sunday_times_questionable_charity_1850",
-    "freq": 1.3537
-  },
-  {
-    "var1": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-    "var2": "vl_daily_newsletter_corporal_punishment_1849",
-    "freq": 1.2027
-  },
-  {
-    "var1": "jp_morning_chronicle_anne_bird_1850",
-    "var2": "vl_daily_newsletter_corporal_punishment_1849",
-    "freq": 0.9243
-  },
-  {
-    "var1": "jp_morning_chronicle_dr_ellis_1846",
-    "var2": "vl_daily_newsletter_corporal_punishment_1849",
-    "freq": 1.0021
-  },
-  {
-    "var1": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-    "var2": "vl_daily_newsletter_corporal_punishment_1849",
-    "freq": 1.1335
-  },
-  {
-    "var1": "jp_morning_chronicle_sarah_brown_1846",
-    "var2": "vl_daily_newsletter_corporal_punishment_1849",
-    "freq": 1.0634
-  },
-  {
-    "var1": "jp_morning_chronicle_susan_moir_1850",
-    "var2": "vl_daily_newsletter_corporal_punishment_1849",
-    "freq": 1.1405
-  },
-  {
-    "var1": "jp_morning_chronicle_wife_murder_1851",
-    "var2": "vl_daily_newsletter_corporal_punishment_1849",
-    "freq": 1.0224
-  },
-  {
-    "var1": "jp_sunday_times_questionable_charity_1850",
-    "var2": "vl_daily_newsletter_corporal_punishment_1849",
-    "freq": 1.3146
-  },
-  {
-    "var1": "vl_daily_newsletter_corporal_punishment_1849",
-    "var2": "vl_daily_newsletter_corporal_punishment_1849",
-    "freq": 0
-  },
-  {
-    "var1": "vl_morning_chronicle_captain_johnstone_1846",
-    "var2": "vl_daily_newsletter_corporal_punishment_1849",
-    "freq": 1.0962
-  },
-  {
-    "var1": "vl_morning_chronicle_law_of_assault_1850",
-    "var2": "vl_daily_newsletter_corporal_punishment_1849",
-    "freq": 1.0962
-  },
-  {
-    "var1": "vl_morning_chronicle_matthewson_1846",
-    "var2": "vl_daily_newsletter_corporal_punishment_1849",
-    "freq": 1.0198
-  },
-  {
-    "var1": "vl_morning_chronicle_north_family_1846",
-    "var2": "vl_daily_newsletter_corporal_punishment_1849",
-    "freq": 1.1949
-  },
-  {
-    "var1": "vl_morning_chronicle_william_burn_1846",
-    "var2": "vl_daily_newsletter_corporal_punishment_1849",
-    "freq": 1.0186
-  },
-  {
-    "var1": "vl_remarks_on_mr_fitzroys_bill_1853",
-    "var2": "vl_daily_newsletter_corporal_punishment_1849",
-    "freq": 0.8016
-  },
-  {
-    "var1": "vl_sunday_times_punishment_of_children_1850",
-    "var2": "vl_daily_newsletter_corporal_punishment_1849",
-    "freq": 1.0635
-  },
-  {
-    "var1": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-    "var2": "vl_morning_chronicle_captain_johnstone_1846",
-    "freq": 1.2143
-  },
-  {
-    "var1": "jp_morning_chronicle_anne_bird_1850",
-    "var2": "vl_morning_chronicle_captain_johnstone_1846",
-    "freq": 1.1743
-  },
-  {
-    "var1": "jp_morning_chronicle_dr_ellis_1846",
-    "var2": "vl_morning_chronicle_captain_johnstone_1846",
     "freq": 1.0705
   },
   {
-    "var1": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-    "var2": "vl_morning_chronicle_captain_johnstone_1846",
-    "freq": 1.2445
-  },
-  {
-    "var1": "jp_morning_chronicle_sarah_brown_1846",
-    "var2": "vl_morning_chronicle_captain_johnstone_1846",
-    "freq": 1.0923
-  },
-  {
-    "var1": "jp_morning_chronicle_susan_moir_1850",
-    "var2": "vl_morning_chronicle_captain_johnstone_1846",
-    "freq": 1.1466
-  },
-  {
-    "var1": "jp_morning_chronicle_wife_murder_1851",
-    "var2": "vl_morning_chronicle_captain_johnstone_1846",
-    "freq": 1.1419
-  },
-  {
-    "var1": "jp_sunday_times_questionable_charity_1850",
-    "var2": "vl_morning_chronicle_captain_johnstone_1846",
-    "freq": 1.3339
-  },
-  {
-    "var1": "vl_daily_newsletter_corporal_punishment_1849",
-    "var2": "vl_morning_chronicle_captain_johnstone_1846",
-    "freq": 1.0962
-  },
-  {
-    "var1": "vl_morning_chronicle_captain_johnstone_1846",
-    "var2": "vl_morning_chronicle_captain_johnstone_1846",
-    "freq": 0
-  },
-  {
-    "var1": "vl_morning_chronicle_law_of_assault_1850",
-    "var2": "vl_morning_chronicle_captain_johnstone_1846",
-    "freq": 1.133
-  },
-  {
-    "var1": "vl_morning_chronicle_matthewson_1846",
-    "var2": "vl_morning_chronicle_captain_johnstone_1846",
-    "freq": 0.7697
-  },
-  {
-    "var1": "vl_morning_chronicle_north_family_1846",
-    "var2": "vl_morning_chronicle_captain_johnstone_1846",
-    "freq": 1.2545
-  },
-  {
     "var1": "vl_morning_chronicle_william_burn_1846",
-    "var2": "vl_morning_chronicle_captain_johnstone_1846",
-    "freq": 1.108
-  },
-  {
-    "var1": "vl_remarks_on_mr_fitzroys_bill_1853",
-    "var2": "vl_morning_chronicle_captain_johnstone_1846",
-    "freq": 1.0875
-  },
-  {
-    "var1": "vl_sunday_times_punishment_of_children_1850",
-    "var2": "vl_morning_chronicle_captain_johnstone_1846",
-    "freq": 1.1807
-  },
-  {
-    "var1": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-    "var2": "vl_morning_chronicle_law_of_assault_1850",
-    "freq": 1.2463
-  },
-  {
-    "var1": "jp_morning_chronicle_anne_bird_1850",
-    "var2": "vl_morning_chronicle_law_of_assault_1850",
-    "freq": 0.8963
-  },
-  {
-    "var1": "jp_morning_chronicle_dr_ellis_1846",
-    "var2": "vl_morning_chronicle_law_of_assault_1850",
-    "freq": 1.0785
-  },
-  {
-    "var1": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-    "var2": "vl_morning_chronicle_law_of_assault_1850",
-    "freq": 1.022
-  },
-  {
-    "var1": "jp_morning_chronicle_sarah_brown_1846",
-    "var2": "vl_morning_chronicle_law_of_assault_1850",
-    "freq": 1.0216
-  },
-  {
-    "var1": "jp_morning_chronicle_susan_moir_1850",
-    "var2": "vl_morning_chronicle_law_of_assault_1850",
-    "freq": 1.3043
-  },
-  {
-    "var1": "jp_morning_chronicle_wife_murder_1851",
-    "var2": "vl_morning_chronicle_law_of_assault_1850",
-    "freq": 1.0907
-  },
-  {
-    "var1": "jp_sunday_times_questionable_charity_1850",
-    "var2": "vl_morning_chronicle_law_of_assault_1850",
-    "freq": 1.1727
-  },
-  {
-    "var1": "vl_daily_newsletter_corporal_punishment_1849",
-    "var2": "vl_morning_chronicle_law_of_assault_1850",
-    "freq": 1.0962
-  },
-  {
-    "var1": "vl_morning_chronicle_captain_johnstone_1846",
-    "var2": "vl_morning_chronicle_law_of_assault_1850",
-    "freq": 1.133
-  },
-  {
-    "var1": "vl_morning_chronicle_law_of_assault_1850",
-    "var2": "vl_morning_chronicle_law_of_assault_1850",
-    "freq": 0
-  },
-  {
-    "var1": "vl_morning_chronicle_matthewson_1846",
-    "var2": "vl_morning_chronicle_law_of_assault_1850",
-    "freq": 1.0464
-  },
-  {
-    "var1": "vl_morning_chronicle_north_family_1846",
-    "var2": "vl_morning_chronicle_law_of_assault_1850",
-    "freq": 1.1498
-  },
-  {
-    "var1": "vl_morning_chronicle_william_burn_1846",
-    "var2": "vl_morning_chronicle_law_of_assault_1850",
-    "freq": 1.0338
-  },
-  {
-    "var1": "vl_remarks_on_mr_fitzroys_bill_1853",
-    "var2": "vl_morning_chronicle_law_of_assault_1850",
-    "freq": 0.8288
-  },
-  {
-    "var1": "vl_sunday_times_punishment_of_children_1850",
-    "var2": "vl_morning_chronicle_law_of_assault_1850",
-    "freq": 1.2409
-  },
-  {
-    "var1": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-    "var2": "vl_morning_chronicle_matthewson_1846",
-    "freq": 1.2038
-  },
-  {
-    "var1": "jp_morning_chronicle_anne_bird_1850",
-    "var2": "vl_morning_chronicle_matthewson_1846",
-    "freq": 1.1501
-  },
-  {
-    "var1": "jp_morning_chronicle_dr_ellis_1846",
-    "var2": "vl_morning_chronicle_matthewson_1846",
-    "freq": 0.9306
-  },
-  {
-    "var1": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-    "var2": "vl_morning_chronicle_matthewson_1846",
-    "freq": 1.1174
-  },
-  {
-    "var1": "jp_morning_chronicle_sarah_brown_1846",
-    "var2": "vl_morning_chronicle_matthewson_1846",
-    "freq": 1.0703
-  },
-  {
-    "var1": "jp_morning_chronicle_susan_moir_1850",
-    "var2": "vl_morning_chronicle_matthewson_1846",
-    "freq": 1.1351
-  },
-  {
-    "var1": "jp_morning_chronicle_wife_murder_1851",
-    "var2": "vl_morning_chronicle_matthewson_1846",
-    "freq": 1.061
-  },
-  {
-    "var1": "jp_sunday_times_questionable_charity_1850",
-    "var2": "vl_morning_chronicle_matthewson_1846",
-    "freq": 1.1795
-  },
-  {
-    "var1": "vl_daily_newsletter_corporal_punishment_1849",
-    "var2": "vl_morning_chronicle_matthewson_1846",
-    "freq": 1.0198
-  },
-  {
-    "var1": "vl_morning_chronicle_captain_johnstone_1846",
-    "var2": "vl_morning_chronicle_matthewson_1846",
-    "freq": 0.7697
-  },
-  {
-    "var1": "vl_morning_chronicle_law_of_assault_1850",
-    "var2": "vl_morning_chronicle_matthewson_1846",
-    "freq": 1.0464
-  },
-  {
-    "var1": "vl_morning_chronicle_matthewson_1846",
-    "var2": "vl_morning_chronicle_matthewson_1846",
-    "freq": 0
-  },
-  {
-    "var1": "vl_morning_chronicle_north_family_1846",
-    "var2": "vl_morning_chronicle_matthewson_1846",
-    "freq": 1.1009
-  },
-  {
-    "var1": "vl_morning_chronicle_william_burn_1846",
-    "var2": "vl_morning_chronicle_matthewson_1846",
-    "freq": 0.9334
-  },
-  {
-    "var1": "vl_remarks_on_mr_fitzroys_bill_1853",
-    "var2": "vl_morning_chronicle_matthewson_1846",
-    "freq": 1.084
-  },
-  {
-    "var1": "vl_sunday_times_punishment_of_children_1850",
-    "var2": "vl_morning_chronicle_matthewson_1846",
-    "freq": 1.1119
-  },
-  {
-    "var1": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-    "var2": "vl_morning_chronicle_north_family_1846",
-    "freq": 1.2037
-  },
-  {
-    "var1": "jp_morning_chronicle_anne_bird_1850",
-    "var2": "vl_morning_chronicle_north_family_1846",
-    "freq": 1.2006
-  },
-  {
-    "var1": "jp_morning_chronicle_dr_ellis_1846",
-    "var2": "vl_morning_chronicle_north_family_1846",
-    "freq": 1.0646
-  },
-  {
-    "var1": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-    "var2": "vl_morning_chronicle_north_family_1846",
-    "freq": 1.0739
-  },
-  {
-    "var1": "jp_morning_chronicle_sarah_brown_1846",
-    "var2": "vl_morning_chronicle_north_family_1846",
-    "freq": 1.049
-  },
-  {
-    "var1": "jp_morning_chronicle_susan_moir_1850",
-    "var2": "vl_morning_chronicle_north_family_1846",
-    "freq": 1.1534
-  },
-  {
-    "var1": "jp_morning_chronicle_wife_murder_1851",
-    "var2": "vl_morning_chronicle_north_family_1846",
-    "freq": 1.0259
-  },
-  {
-    "var1": "jp_sunday_times_questionable_charity_1850",
-    "var2": "vl_morning_chronicle_north_family_1846",
-    "freq": 1.1773
-  },
-  {
-    "var1": "vl_daily_newsletter_corporal_punishment_1849",
-    "var2": "vl_morning_chronicle_north_family_1846",
-    "freq": 1.1949
-  },
-  {
-    "var1": "vl_morning_chronicle_captain_johnstone_1846",
-    "var2": "vl_morning_chronicle_north_family_1846",
-    "freq": 1.2545
-  },
-  {
-    "var1": "vl_morning_chronicle_law_of_assault_1850",
-    "var2": "vl_morning_chronicle_north_family_1846",
-    "freq": 1.1498
-  },
-  {
-    "var1": "vl_morning_chronicle_matthewson_1846",
-    "var2": "vl_morning_chronicle_north_family_1846",
-    "freq": 1.1009
-  },
-  {
-    "var1": "vl_morning_chronicle_north_family_1846",
-    "var2": "vl_morning_chronicle_north_family_1846",
-    "freq": 0
-  },
-  {
-    "var1": "vl_morning_chronicle_william_burn_1846",
-    "var2": "vl_morning_chronicle_north_family_1846",
-    "freq": 1.1546
-  },
-  {
-    "var1": "vl_remarks_on_mr_fitzroys_bill_1853",
-    "var2": "vl_morning_chronicle_north_family_1846",
-    "freq": 1.1644
-  },
-  {
-    "var1": "vl_sunday_times_punishment_of_children_1850",
-    "var2": "vl_morning_chronicle_north_family_1846",
-    "freq": 1.2215
-  },
-  {
-    "var1": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-    "var2": "vl_morning_chronicle_william_burn_1846",
-    "freq": 1.1798
-  },
-  {
-    "var1": "jp_morning_chronicle_anne_bird_1850",
-    "var2": "vl_morning_chronicle_william_burn_1846",
-    "freq": 1.1207
-  },
-  {
-    "var1": "jp_morning_chronicle_dr_ellis_1846",
-    "var2": "vl_morning_chronicle_william_burn_1846",
-    "freq": 1.0208
-  },
-  {
-    "var1": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-    "var2": "vl_morning_chronicle_william_burn_1846",
-    "freq": 1.1205
-  },
-  {
-    "var1": "jp_morning_chronicle_sarah_brown_1846",
-    "var2": "vl_morning_chronicle_william_burn_1846",
-    "freq": 1.0648
-  },
-  {
-    "var1": "jp_morning_chronicle_susan_moir_1850",
-    "var2": "vl_morning_chronicle_william_burn_1846",
-    "freq": 1.1779
-  },
-  {
-    "var1": "jp_morning_chronicle_wife_murder_1851",
-    "var2": "vl_morning_chronicle_william_burn_1846",
-    "freq": 1.0653
-  },
-  {
-    "var1": "jp_sunday_times_questionable_charity_1850",
-    "var2": "vl_morning_chronicle_william_burn_1846",
-    "freq": 1.3366
-  },
-  {
-    "var1": "vl_daily_newsletter_corporal_punishment_1849",
-    "var2": "vl_morning_chronicle_william_burn_1846",
-    "freq": 1.0186
-  },
-  {
-    "var1": "vl_morning_chronicle_captain_johnstone_1846",
-    "var2": "vl_morning_chronicle_william_burn_1846",
-    "freq": 1.108
-  },
-  {
-    "var1": "vl_morning_chronicle_law_of_assault_1850",
-    "var2": "vl_morning_chronicle_william_burn_1846",
-    "freq": 1.0338
-  },
-  {
-    "var1": "vl_morning_chronicle_matthewson_1846",
-    "var2": "vl_morning_chronicle_william_burn_1846",
-    "freq": 0.9334
-  },
-  {
-    "var1": "vl_morning_chronicle_north_family_1846",
-    "var2": "vl_morning_chronicle_william_burn_1846",
-    "freq": 1.1546
-  },
-  {
-    "var1": "vl_morning_chronicle_william_burn_1846",
-    "var2": "vl_morning_chronicle_william_burn_1846",
-    "freq": 0
-  },
-  {
-    "var1": "vl_remarks_on_mr_fitzroys_bill_1853",
-    "var2": "vl_morning_chronicle_william_burn_1846",
-    "freq": 0.987
-  },
-  {
-    "var1": "vl_sunday_times_punishment_of_children_1850",
-    "var2": "vl_morning_chronicle_william_burn_1846",
-    "freq": 1.0664
-  },
-  {
-    "var1": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-    "var2": "vl_remarks_on_mr_fitzroys_bill_1853",
-    "freq": 1.2616
-  },
-  {
-    "var1": "jp_morning_chronicle_anne_bird_1850",
-    "var2": "vl_remarks_on_mr_fitzroys_bill_1853",
-    "freq": 0.8496
-  },
-  {
-    "var1": "jp_morning_chronicle_dr_ellis_1846",
-    "var2": "vl_remarks_on_mr_fitzroys_bill_1853",
-    "freq": 1.0708
-  },
-  {
-    "var1": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-    "var2": "vl_remarks_on_mr_fitzroys_bill_1853",
-    "freq": 0.9421
-  },
-  {
-    "var1": "jp_morning_chronicle_sarah_brown_1846",
-    "var2": "vl_remarks_on_mr_fitzroys_bill_1853",
-    "freq": 1.0105
-  },
-  {
-    "var1": "jp_morning_chronicle_susan_moir_1850",
-    "var2": "vl_remarks_on_mr_fitzroys_bill_1853",
-    "freq": 1.3025
-  },
-  {
-    "var1": "jp_morning_chronicle_wife_murder_1851",
-    "var2": "vl_remarks_on_mr_fitzroys_bill_1853",
-    "freq": 0.9061
-  },
-  {
-    "var1": "jp_sunday_times_questionable_charity_1850",
-    "var2": "vl_remarks_on_mr_fitzroys_bill_1853",
-    "freq": 1.1865
-  },
-  {
-    "var1": "vl_daily_newsletter_corporal_punishment_1849",
-    "var2": "vl_remarks_on_mr_fitzroys_bill_1853",
-    "freq": 0.8016
-  },
-  {
-    "var1": "vl_morning_chronicle_captain_johnstone_1846",
-    "var2": "vl_remarks_on_mr_fitzroys_bill_1853",
-    "freq": 1.0875
-  },
-  {
-    "var1": "vl_morning_chronicle_law_of_assault_1850",
-    "var2": "vl_remarks_on_mr_fitzroys_bill_1853",
-    "freq": 0.8288
-  },
-  {
-    "var1": "vl_morning_chronicle_matthewson_1846",
-    "var2": "vl_remarks_on_mr_fitzroys_bill_1853",
-    "freq": 1.084
-  },
-  {
-    "var1": "vl_morning_chronicle_north_family_1846",
-    "var2": "vl_remarks_on_mr_fitzroys_bill_1853",
-    "freq": 1.1644
-  },
-  {
-    "var1": "vl_morning_chronicle_william_burn_1846",
-    "var2": "vl_remarks_on_mr_fitzroys_bill_1853",
-    "freq": 0.987
-  },
-  {
-    "var1": "vl_remarks_on_mr_fitzroys_bill_1853",
-    "var2": "vl_remarks_on_mr_fitzroys_bill_1853",
-    "freq": 0
-  },
-  {
-    "var1": "vl_sunday_times_punishment_of_children_1850",
-    "var2": "vl_remarks_on_mr_fitzroys_bill_1853",
-    "freq": 1.1283
-  },
-  {
-    "var1": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-    "var2": "vl_sunday_times_punishment_of_children_1850",
-    "freq": 1.2722
-  },
-  {
-    "var1": "jp_morning_chronicle_anne_bird_1850",
-    "var2": "vl_sunday_times_punishment_of_children_1850",
-    "freq": 1.2596
-  },
-  {
-    "var1": "jp_morning_chronicle_dr_ellis_1846",
-    "var2": "vl_sunday_times_punishment_of_children_1850",
-    "freq": 1.1017
-  },
-  {
-    "var1": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-    "var2": "vl_sunday_times_punishment_of_children_1850",
+    "var2": "jp_morning_chronicle_susan_moir_1850",
     "freq": 1.1005
   },
   {
+    "var1": "vl_remarks_on_mr_fitzroys_bill_1853",
+    "var2": "jp_morning_chronicle_susan_moir_1850",
+    "freq": 1.1777
+  },
+  {
+    "var1": "vl_sunday_times_punishment_of_children_1850",
+    "var2": "jp_morning_chronicle_susan_moir_1850",
+    "freq": 1.0226
+  },
+  {
+    "var1": "jp_daily_newsletter_mary_ann_parsons_1_1850",
+    "var2": "jp_morning_chronicle_wife_murder_1851",
+    "freq": 1.0026
+  },
+  {
+    "var1": "jp_morning_chronicle_anne_bird_1850",
+    "var2": "jp_morning_chronicle_wife_murder_1851",
+    "freq": 0.9179
+  },
+  {
+    "var1": "jp_morning_chronicle_dr_ellis_1846",
+    "var2": "jp_morning_chronicle_wife_murder_1851",
+    "freq": 0.9647
+  },
+  {
+    "var1": "jp_morning_chronicle_mary_ann_parsons_2_1850",
+    "var2": "jp_morning_chronicle_wife_murder_1851",
+    "freq": 0.9786
+  },
+  {
+    "var1": "jp_morning_chronicle_sarah_brown_1846",
+    "var2": "jp_morning_chronicle_wife_murder_1851",
+    "freq": 0.9497
+  },
+  {
+    "var1": "jp_morning_chronicle_susan_moir_1850",
+    "var2": "jp_morning_chronicle_wife_murder_1851",
+    "freq": 0.9664
+  },
+  {
+    "var1": "jp_morning_chronicle_wife_murder_1851",
+    "var2": "jp_morning_chronicle_wife_murder_1851",
+    "freq": 0
+  },
+  {
+    "var1": "jp_sunday_times_questionable_charity_1850",
+    "var2": "jp_morning_chronicle_wife_murder_1851",
+    "freq": 1.1298
+  },
+  {
+    "var1": "vl_daily_newsletter_corporal_punishment_1849",
+    "var2": "jp_morning_chronicle_wife_murder_1851",
+    "freq": 0.9752
+  },
+  {
+    "var1": "vl_morning_chronicle_captain_johnstone_1846",
+    "var2": "jp_morning_chronicle_wife_murder_1851",
+    "freq": 1.0037
+  },
+  {
+    "var1": "vl_morning_chronicle_law_of_assault_1850",
+    "var2": "jp_morning_chronicle_wife_murder_1851",
+    "freq": 0.9798
+  },
+  {
+    "var1": "vl_morning_chronicle_matthewson_1846",
+    "var2": "jp_morning_chronicle_wife_murder_1851",
+    "freq": 0.8769
+  },
+  {
+    "var1": "vl_morning_chronicle_north_family_1846",
+    "var2": "jp_morning_chronicle_wife_murder_1851",
+    "freq": 0.9982
+  },
+  {
+    "var1": "vl_morning_chronicle_william_burn_1846",
+    "var2": "jp_morning_chronicle_wife_murder_1851",
+    "freq": 0.9798
+  },
+  {
+    "var1": "vl_remarks_on_mr_fitzroys_bill_1853",
+    "var2": "jp_morning_chronicle_wife_murder_1851",
+    "freq": 0.9169
+  },
+  {
+    "var1": "vl_sunday_times_punishment_of_children_1850",
+    "var2": "jp_morning_chronicle_wife_murder_1851",
+    "freq": 1.116
+  },
+  {
+    "var1": "jp_daily_newsletter_mary_ann_parsons_1_1850",
+    "var2": "jp_sunday_times_questionable_charity_1850",
+    "freq": 1.2432
+  },
+  {
+    "var1": "jp_morning_chronicle_anne_bird_1850",
+    "var2": "jp_sunday_times_questionable_charity_1850",
+    "freq": 1.1732
+  },
+  {
+    "var1": "jp_morning_chronicle_dr_ellis_1846",
+    "var2": "jp_sunday_times_questionable_charity_1850",
+    "freq": 1.1176
+  },
+  {
+    "var1": "jp_morning_chronicle_mary_ann_parsons_2_1850",
+    "var2": "jp_sunday_times_questionable_charity_1850",
+    "freq": 1.2066
+  },
+  {
+    "var1": "jp_morning_chronicle_sarah_brown_1846",
+    "var2": "jp_sunday_times_questionable_charity_1850",
+    "freq": 1.0858
+  },
+  {
+    "var1": "jp_morning_chronicle_susan_moir_1850",
+    "var2": "jp_sunday_times_questionable_charity_1850",
+    "freq": 1.2737
+  },
+  {
+    "var1": "jp_morning_chronicle_wife_murder_1851",
+    "var2": "jp_sunday_times_questionable_charity_1850",
+    "freq": 1.1298
+  },
+  {
+    "var1": "jp_sunday_times_questionable_charity_1850",
+    "var2": "jp_sunday_times_questionable_charity_1850",
+    "freq": 0
+  },
+  {
+    "var1": "vl_daily_newsletter_corporal_punishment_1849",
+    "var2": "jp_sunday_times_questionable_charity_1850",
+    "freq": 1.153
+  },
+  {
+    "var1": "vl_morning_chronicle_captain_johnstone_1846",
+    "var2": "jp_sunday_times_questionable_charity_1850",
+    "freq": 1.1893
+  },
+  {
+    "var1": "vl_morning_chronicle_law_of_assault_1850",
+    "var2": "jp_sunday_times_questionable_charity_1850",
+    "freq": 1.1608
+  },
+  {
+    "var1": "vl_morning_chronicle_matthewson_1846",
+    "var2": "jp_sunday_times_questionable_charity_1850",
+    "freq": 1.0575
+  },
+  {
+    "var1": "vl_morning_chronicle_north_family_1846",
+    "var2": "jp_sunday_times_questionable_charity_1850",
+    "freq": 1.01
+  },
+  {
+    "var1": "vl_morning_chronicle_william_burn_1846",
+    "var2": "jp_sunday_times_questionable_charity_1850",
+    "freq": 1.1504
+  },
+  {
+    "var1": "vl_remarks_on_mr_fitzroys_bill_1853",
+    "var2": "jp_sunday_times_questionable_charity_1850",
+    "freq": 1.1302
+  },
+  {
+    "var1": "vl_sunday_times_punishment_of_children_1850",
+    "var2": "jp_sunday_times_questionable_charity_1850",
+    "freq": 1.1548
+  },
+  {
+    "var1": "jp_daily_newsletter_mary_ann_parsons_1_1850",
+    "var2": "vl_daily_newsletter_corporal_punishment_1849",
+    "freq": 1.0605
+  },
+  {
+    "var1": "jp_morning_chronicle_anne_bird_1850",
+    "var2": "vl_daily_newsletter_corporal_punishment_1849",
+    "freq": 0.9152
+  },
+  {
+    "var1": "jp_morning_chronicle_dr_ellis_1846",
+    "var2": "vl_daily_newsletter_corporal_punishment_1849",
+    "freq": 1.0469
+  },
+  {
+    "var1": "jp_morning_chronicle_mary_ann_parsons_2_1850",
+    "var2": "vl_daily_newsletter_corporal_punishment_1849",
+    "freq": 1.1276
+  },
+  {
+    "var1": "jp_morning_chronicle_sarah_brown_1846",
+    "var2": "vl_daily_newsletter_corporal_punishment_1849",
+    "freq": 1.0499
+  },
+  {
+    "var1": "jp_morning_chronicle_susan_moir_1850",
+    "var2": "vl_daily_newsletter_corporal_punishment_1849",
+    "freq": 1.1528
+  },
+  {
+    "var1": "jp_morning_chronicle_wife_murder_1851",
+    "var2": "vl_daily_newsletter_corporal_punishment_1849",
+    "freq": 0.9752
+  },
+  {
+    "var1": "jp_sunday_times_questionable_charity_1850",
+    "var2": "vl_daily_newsletter_corporal_punishment_1849",
+    "freq": 1.153
+  },
+  {
+    "var1": "vl_daily_newsletter_corporal_punishment_1849",
+    "var2": "vl_daily_newsletter_corporal_punishment_1849",
+    "freq": 0
+  },
+  {
+    "var1": "vl_morning_chronicle_captain_johnstone_1846",
+    "var2": "vl_daily_newsletter_corporal_punishment_1849",
+    "freq": 1.0646
+  },
+  {
+    "var1": "vl_morning_chronicle_law_of_assault_1850",
+    "var2": "vl_daily_newsletter_corporal_punishment_1849",
+    "freq": 0.9933
+  },
+  {
+    "var1": "vl_morning_chronicle_matthewson_1846",
+    "var2": "vl_daily_newsletter_corporal_punishment_1849",
+    "freq": 0.9665
+  },
+  {
+    "var1": "vl_morning_chronicle_north_family_1846",
+    "var2": "vl_daily_newsletter_corporal_punishment_1849",
+    "freq": 1.0829
+  },
+  {
+    "var1": "vl_morning_chronicle_william_burn_1846",
+    "var2": "vl_daily_newsletter_corporal_punishment_1849",
+    "freq": 0.9591
+  },
+  {
+    "var1": "vl_remarks_on_mr_fitzroys_bill_1853",
+    "var2": "vl_daily_newsletter_corporal_punishment_1849",
+    "freq": 0.8063
+  },
+  {
+    "var1": "vl_sunday_times_punishment_of_children_1850",
+    "var2": "vl_daily_newsletter_corporal_punishment_1849",
+    "freq": 1.013
+  },
+  {
+    "var1": "jp_daily_newsletter_mary_ann_parsons_1_1850",
+    "var2": "vl_morning_chronicle_captain_johnstone_1846",
+    "freq": 1.1003
+  },
+  {
+    "var1": "jp_morning_chronicle_anne_bird_1850",
+    "var2": "vl_morning_chronicle_captain_johnstone_1846",
+    "freq": 1.0955
+  },
+  {
+    "var1": "jp_morning_chronicle_dr_ellis_1846",
+    "var2": "vl_morning_chronicle_captain_johnstone_1846",
+    "freq": 1.0852
+  },
+  {
+    "var1": "jp_morning_chronicle_mary_ann_parsons_2_1850",
+    "var2": "vl_morning_chronicle_captain_johnstone_1846",
+    "freq": 1.118
+  },
+  {
+    "var1": "jp_morning_chronicle_sarah_brown_1846",
+    "var2": "vl_morning_chronicle_captain_johnstone_1846",
+    "freq": 1.0602
+  },
+  {
+    "var1": "jp_morning_chronicle_susan_moir_1850",
+    "var2": "vl_morning_chronicle_captain_johnstone_1846",
+    "freq": 1.0767
+  },
+  {
+    "var1": "jp_morning_chronicle_wife_murder_1851",
+    "var2": "vl_morning_chronicle_captain_johnstone_1846",
+    "freq": 1.0037
+  },
+  {
+    "var1": "jp_sunday_times_questionable_charity_1850",
+    "var2": "vl_morning_chronicle_captain_johnstone_1846",
+    "freq": 1.1893
+  },
+  {
+    "var1": "vl_daily_newsletter_corporal_punishment_1849",
+    "var2": "vl_morning_chronicle_captain_johnstone_1846",
+    "freq": 1.0646
+  },
+  {
+    "var1": "vl_morning_chronicle_captain_johnstone_1846",
+    "var2": "vl_morning_chronicle_captain_johnstone_1846",
+    "freq": 0
+  },
+  {
+    "var1": "vl_morning_chronicle_law_of_assault_1850",
+    "var2": "vl_morning_chronicle_captain_johnstone_1846",
+    "freq": 1.0652
+  },
+  {
+    "var1": "vl_morning_chronicle_matthewson_1846",
+    "var2": "vl_morning_chronicle_captain_johnstone_1846",
+    "freq": 0.637
+  },
+  {
+    "var1": "vl_morning_chronicle_north_family_1846",
+    "var2": "vl_morning_chronicle_captain_johnstone_1846",
+    "freq": 1.15
+  },
+  {
+    "var1": "vl_morning_chronicle_william_burn_1846",
+    "var2": "vl_morning_chronicle_captain_johnstone_1846",
+    "freq": 1.0229
+  },
+  {
+    "var1": "vl_remarks_on_mr_fitzroys_bill_1853",
+    "var2": "vl_morning_chronicle_captain_johnstone_1846",
+    "freq": 1.0261
+  },
+  {
+    "var1": "vl_sunday_times_punishment_of_children_1850",
+    "var2": "vl_morning_chronicle_captain_johnstone_1846",
+    "freq": 1.0433
+  },
+  {
+    "var1": "jp_daily_newsletter_mary_ann_parsons_1_1850",
+    "var2": "vl_morning_chronicle_law_of_assault_1850",
+    "freq": 1.0708
+  },
+  {
+    "var1": "jp_morning_chronicle_anne_bird_1850",
+    "var2": "vl_morning_chronicle_law_of_assault_1850",
+    "freq": 0.8444
+  },
+  {
+    "var1": "jp_morning_chronicle_dr_ellis_1846",
+    "var2": "vl_morning_chronicle_law_of_assault_1850",
+    "freq": 1.079
+  },
+  {
+    "var1": "jp_morning_chronicle_mary_ann_parsons_2_1850",
+    "var2": "vl_morning_chronicle_law_of_assault_1850",
+    "freq": 0.9834
+  },
+  {
+    "var1": "jp_morning_chronicle_sarah_brown_1846",
+    "var2": "vl_morning_chronicle_law_of_assault_1850",
+    "freq": 0.9271
+  },
+  {
+    "var1": "jp_morning_chronicle_susan_moir_1850",
+    "var2": "vl_morning_chronicle_law_of_assault_1850",
+    "freq": 1.1178
+  },
+  {
+    "var1": "jp_morning_chronicle_wife_murder_1851",
+    "var2": "vl_morning_chronicle_law_of_assault_1850",
+    "freq": 0.9798
+  },
+  {
+    "var1": "jp_sunday_times_questionable_charity_1850",
+    "var2": "vl_morning_chronicle_law_of_assault_1850",
+    "freq": 1.1608
+  },
+  {
+    "var1": "vl_daily_newsletter_corporal_punishment_1849",
+    "var2": "vl_morning_chronicle_law_of_assault_1850",
+    "freq": 0.9933
+  },
+  {
+    "var1": "vl_morning_chronicle_captain_johnstone_1846",
+    "var2": "vl_morning_chronicle_law_of_assault_1850",
+    "freq": 1.0652
+  },
+  {
+    "var1": "vl_morning_chronicle_law_of_assault_1850",
+    "var2": "vl_morning_chronicle_law_of_assault_1850",
+    "freq": 0
+  },
+  {
+    "var1": "vl_morning_chronicle_matthewson_1846",
+    "var2": "vl_morning_chronicle_law_of_assault_1850",
+    "freq": 0.932
+  },
+  {
+    "var1": "vl_morning_chronicle_north_family_1846",
+    "var2": "vl_morning_chronicle_law_of_assault_1850",
+    "freq": 0.9888
+  },
+  {
+    "var1": "vl_morning_chronicle_william_burn_1846",
+    "var2": "vl_morning_chronicle_law_of_assault_1850",
+    "freq": 0.9953
+  },
+  {
+    "var1": "vl_remarks_on_mr_fitzroys_bill_1853",
+    "var2": "vl_morning_chronicle_law_of_assault_1850",
+    "freq": 0.8214
+  },
+  {
+    "var1": "vl_sunday_times_punishment_of_children_1850",
+    "var2": "vl_morning_chronicle_law_of_assault_1850",
+    "freq": 1.1379
+  },
+  {
+    "var1": "jp_daily_newsletter_mary_ann_parsons_1_1850",
+    "var2": "vl_morning_chronicle_matthewson_1846",
+    "freq": 1.0174
+  },
+  {
+    "var1": "jp_morning_chronicle_anne_bird_1850",
+    "var2": "vl_morning_chronicle_matthewson_1846",
+    "freq": 1.0003
+  },
+  {
+    "var1": "jp_morning_chronicle_dr_ellis_1846",
+    "var2": "vl_morning_chronicle_matthewson_1846",
+    "freq": 0.9129
+  },
+  {
+    "var1": "jp_morning_chronicle_mary_ann_parsons_2_1850",
+    "var2": "vl_morning_chronicle_matthewson_1846",
+    "freq": 1.0263
+  },
+  {
+    "var1": "jp_morning_chronicle_sarah_brown_1846",
+    "var2": "vl_morning_chronicle_matthewson_1846",
+    "freq": 0.9057
+  },
+  {
+    "var1": "jp_morning_chronicle_susan_moir_1850",
+    "var2": "vl_morning_chronicle_matthewson_1846",
+    "freq": 1.0089
+  },
+  {
+    "var1": "jp_morning_chronicle_wife_murder_1851",
+    "var2": "vl_morning_chronicle_matthewson_1846",
+    "freq": 0.8769
+  },
+  {
+    "var1": "jp_sunday_times_questionable_charity_1850",
+    "var2": "vl_morning_chronicle_matthewson_1846",
+    "freq": 1.0575
+  },
+  {
+    "var1": "vl_daily_newsletter_corporal_punishment_1849",
+    "var2": "vl_morning_chronicle_matthewson_1846",
+    "freq": 0.9665
+  },
+  {
+    "var1": "vl_morning_chronicle_captain_johnstone_1846",
+    "var2": "vl_morning_chronicle_matthewson_1846",
+    "freq": 0.637
+  },
+  {
+    "var1": "vl_morning_chronicle_law_of_assault_1850",
+    "var2": "vl_morning_chronicle_matthewson_1846",
+    "freq": 0.932
+  },
+  {
+    "var1": "vl_morning_chronicle_matthewson_1846",
+    "var2": "vl_morning_chronicle_matthewson_1846",
+    "freq": 0
+  },
+  {
+    "var1": "vl_morning_chronicle_north_family_1846",
+    "var2": "vl_morning_chronicle_matthewson_1846",
+    "freq": 0.9133
+  },
+  {
+    "var1": "vl_morning_chronicle_william_burn_1846",
+    "var2": "vl_morning_chronicle_matthewson_1846",
+    "freq": 0.8246
+  },
+  {
+    "var1": "vl_remarks_on_mr_fitzroys_bill_1853",
+    "var2": "vl_morning_chronicle_matthewson_1846",
+    "freq": 0.8996
+  },
+  {
+    "var1": "vl_sunday_times_punishment_of_children_1850",
+    "var2": "vl_morning_chronicle_matthewson_1846",
+    "freq": 0.986
+  },
+  {
+    "var1": "jp_daily_newsletter_mary_ann_parsons_1_1850",
+    "var2": "vl_morning_chronicle_north_family_1846",
+    "freq": 1.1008
+  },
+  {
+    "var1": "jp_morning_chronicle_anne_bird_1850",
+    "var2": "vl_morning_chronicle_north_family_1846",
+    "freq": 1.1154
+  },
+  {
+    "var1": "jp_morning_chronicle_dr_ellis_1846",
+    "var2": "vl_morning_chronicle_north_family_1846",
+    "freq": 0.9848
+  },
+  {
+    "var1": "jp_morning_chronicle_mary_ann_parsons_2_1850",
+    "var2": "vl_morning_chronicle_north_family_1846",
+    "freq": 1.0033
+  },
+  {
+    "var1": "jp_morning_chronicle_sarah_brown_1846",
+    "var2": "vl_morning_chronicle_north_family_1846",
+    "freq": 0.9023
+  },
+  {
+    "var1": "jp_morning_chronicle_susan_moir_1850",
+    "var2": "vl_morning_chronicle_north_family_1846",
+    "freq": 1.0705
+  },
+  {
+    "var1": "jp_morning_chronicle_wife_murder_1851",
+    "var2": "vl_morning_chronicle_north_family_1846",
+    "freq": 0.9982
+  },
+  {
+    "var1": "jp_sunday_times_questionable_charity_1850",
+    "var2": "vl_morning_chronicle_north_family_1846",
+    "freq": 1.01
+  },
+  {
+    "var1": "vl_daily_newsletter_corporal_punishment_1849",
+    "var2": "vl_morning_chronicle_north_family_1846",
+    "freq": 1.0829
+  },
+  {
+    "var1": "vl_morning_chronicle_captain_johnstone_1846",
+    "var2": "vl_morning_chronicle_north_family_1846",
+    "freq": 1.15
+  },
+  {
+    "var1": "vl_morning_chronicle_law_of_assault_1850",
+    "var2": "vl_morning_chronicle_north_family_1846",
+    "freq": 0.9888
+  },
+  {
+    "var1": "vl_morning_chronicle_matthewson_1846",
+    "var2": "vl_morning_chronicle_north_family_1846",
+    "freq": 0.9133
+  },
+  {
+    "var1": "vl_morning_chronicle_north_family_1846",
+    "var2": "vl_morning_chronicle_north_family_1846",
+    "freq": 0
+  },
+  {
+    "var1": "vl_morning_chronicle_william_burn_1846",
+    "var2": "vl_morning_chronicle_north_family_1846",
+    "freq": 1.0296
+  },
+  {
+    "var1": "vl_remarks_on_mr_fitzroys_bill_1853",
+    "var2": "vl_morning_chronicle_north_family_1846",
+    "freq": 1.0271
+  },
+  {
+    "var1": "vl_sunday_times_punishment_of_children_1850",
+    "var2": "vl_morning_chronicle_north_family_1846",
+    "freq": 1.0973
+  },
+  {
+    "var1": "jp_daily_newsletter_mary_ann_parsons_1_1850",
+    "var2": "vl_morning_chronicle_william_burn_1846",
+    "freq": 1.024
+  },
+  {
+    "var1": "jp_morning_chronicle_anne_bird_1850",
+    "var2": "vl_morning_chronicle_william_burn_1846",
+    "freq": 1.0241
+  },
+  {
+    "var1": "jp_morning_chronicle_dr_ellis_1846",
+    "var2": "vl_morning_chronicle_william_burn_1846",
+    "freq": 1.0522
+  },
+  {
+    "var1": "jp_morning_chronicle_mary_ann_parsons_2_1850",
+    "var2": "vl_morning_chronicle_william_burn_1846",
+    "freq": 1.0414
+  },
+  {
+    "var1": "jp_morning_chronicle_sarah_brown_1846",
+    "var2": "vl_morning_chronicle_william_burn_1846",
+    "freq": 0.9842
+  },
+  {
+    "var1": "jp_morning_chronicle_susan_moir_1850",
+    "var2": "vl_morning_chronicle_william_burn_1846",
+    "freq": 1.1005
+  },
+  {
+    "var1": "jp_morning_chronicle_wife_murder_1851",
+    "var2": "vl_morning_chronicle_william_burn_1846",
+    "freq": 0.9798
+  },
+  {
+    "var1": "jp_sunday_times_questionable_charity_1850",
+    "var2": "vl_morning_chronicle_william_burn_1846",
+    "freq": 1.1504
+  },
+  {
+    "var1": "vl_daily_newsletter_corporal_punishment_1849",
+    "var2": "vl_morning_chronicle_william_burn_1846",
+    "freq": 0.9591
+  },
+  {
+    "var1": "vl_morning_chronicle_captain_johnstone_1846",
+    "var2": "vl_morning_chronicle_william_burn_1846",
+    "freq": 1.0229
+  },
+  {
+    "var1": "vl_morning_chronicle_law_of_assault_1850",
+    "var2": "vl_morning_chronicle_william_burn_1846",
+    "freq": 0.9953
+  },
+  {
+    "var1": "vl_morning_chronicle_matthewson_1846",
+    "var2": "vl_morning_chronicle_william_burn_1846",
+    "freq": 0.8246
+  },
+  {
+    "var1": "vl_morning_chronicle_north_family_1846",
+    "var2": "vl_morning_chronicle_william_burn_1846",
+    "freq": 1.0296
+  },
+  {
+    "var1": "vl_morning_chronicle_william_burn_1846",
+    "var2": "vl_morning_chronicle_william_burn_1846",
+    "freq": 0
+  },
+  {
+    "var1": "vl_remarks_on_mr_fitzroys_bill_1853",
+    "var2": "vl_morning_chronicle_william_burn_1846",
+    "freq": 0.9277
+  },
+  {
+    "var1": "vl_sunday_times_punishment_of_children_1850",
+    "var2": "vl_morning_chronicle_william_burn_1846",
+    "freq": 1.0177
+  },
+  {
+    "var1": "jp_daily_newsletter_mary_ann_parsons_1_1850",
+    "var2": "vl_remarks_on_mr_fitzroys_bill_1853",
+    "freq": 1.075
+  },
+  {
+    "var1": "jp_morning_chronicle_anne_bird_1850",
+    "var2": "vl_remarks_on_mr_fitzroys_bill_1853",
+    "freq": 0.8413
+  },
+  {
+    "var1": "jp_morning_chronicle_dr_ellis_1846",
+    "var2": "vl_remarks_on_mr_fitzroys_bill_1853",
+    "freq": 1.0891
+  },
+  {
+    "var1": "jp_morning_chronicle_mary_ann_parsons_2_1850",
+    "var2": "vl_remarks_on_mr_fitzroys_bill_1853",
+    "freq": 1.02
+  },
+  {
+    "var1": "jp_morning_chronicle_sarah_brown_1846",
+    "var2": "vl_remarks_on_mr_fitzroys_bill_1853",
+    "freq": 0.99
+  },
+  {
+    "var1": "jp_morning_chronicle_susan_moir_1850",
+    "var2": "vl_remarks_on_mr_fitzroys_bill_1853",
+    "freq": 1.1777
+  },
+  {
+    "var1": "jp_morning_chronicle_wife_murder_1851",
+    "var2": "vl_remarks_on_mr_fitzroys_bill_1853",
+    "freq": 0.9169
+  },
+  {
+    "var1": "jp_sunday_times_questionable_charity_1850",
+    "var2": "vl_remarks_on_mr_fitzroys_bill_1853",
+    "freq": 1.1302
+  },
+  {
+    "var1": "vl_daily_newsletter_corporal_punishment_1849",
+    "var2": "vl_remarks_on_mr_fitzroys_bill_1853",
+    "freq": 0.8063
+  },
+  {
+    "var1": "vl_morning_chronicle_captain_johnstone_1846",
+    "var2": "vl_remarks_on_mr_fitzroys_bill_1853",
+    "freq": 1.0261
+  },
+  {
+    "var1": "vl_morning_chronicle_law_of_assault_1850",
+    "var2": "vl_remarks_on_mr_fitzroys_bill_1853",
+    "freq": 0.8214
+  },
+  {
+    "var1": "vl_morning_chronicle_matthewson_1846",
+    "var2": "vl_remarks_on_mr_fitzroys_bill_1853",
+    "freq": 0.8996
+  },
+  {
+    "var1": "vl_morning_chronicle_north_family_1846",
+    "var2": "vl_remarks_on_mr_fitzroys_bill_1853",
+    "freq": 1.0271
+  },
+  {
+    "var1": "vl_morning_chronicle_william_burn_1846",
+    "var2": "vl_remarks_on_mr_fitzroys_bill_1853",
+    "freq": 0.9277
+  },
+  {
+    "var1": "vl_remarks_on_mr_fitzroys_bill_1853",
+    "var2": "vl_remarks_on_mr_fitzroys_bill_1853",
+    "freq": 0
+  },
+  {
+    "var1": "vl_sunday_times_punishment_of_children_1850",
+    "var2": "vl_remarks_on_mr_fitzroys_bill_1853",
+    "freq": 1.0589
+  },
+  {
+    "var1": "jp_daily_newsletter_mary_ann_parsons_1_1850",
+    "var2": "vl_sunday_times_punishment_of_children_1850",
+    "freq": 1.1176
+  },
+  {
+    "var1": "jp_morning_chronicle_anne_bird_1850",
+    "var2": "vl_sunday_times_punishment_of_children_1850",
+    "freq": 1.1244
+  },
+  {
+    "var1": "jp_morning_chronicle_dr_ellis_1846",
+    "var2": "vl_sunday_times_punishment_of_children_1850",
+    "freq": 1.05
+  },
+  {
+    "var1": "jp_morning_chronicle_mary_ann_parsons_2_1850",
+    "var2": "vl_sunday_times_punishment_of_children_1850",
+    "freq": 1.0906
+  },
+  {
     "var1": "jp_morning_chronicle_sarah_brown_1846",
     "var2": "vl_sunday_times_punishment_of_children_1850",
-    "freq": 1.0895
+    "freq": 1.0529
   },
   {
     "var1": "jp_morning_chronicle_susan_moir_1850",
     "var2": "vl_sunday_times_punishment_of_children_1850",
-    "freq": 1.0677
+    "freq": 1.0226
   },
   {
     "var1": "jp_morning_chronicle_wife_murder_1851",
     "var2": "vl_sunday_times_punishment_of_children_1850",
-    "freq": 1.1562
+    "freq": 1.116
   },
   {
     "var1": "jp_sunday_times_questionable_charity_1850",
     "var2": "vl_sunday_times_punishment_of_children_1850",
-    "freq": 1.3537
+    "freq": 1.1548
   },
   {
     "var1": "vl_daily_newsletter_corporal_punishment_1849",
     "var2": "vl_sunday_times_punishment_of_children_1850",
-    "freq": 1.0635
+    "freq": 1.013
   },
   {
     "var1": "vl_morning_chronicle_captain_johnstone_1846",
     "var2": "vl_sunday_times_punishment_of_children_1850",
-    "freq": 1.1807
+    "freq": 1.0433
   },
   {
     "var1": "vl_morning_chronicle_law_of_assault_1850",
     "var2": "vl_sunday_times_punishment_of_children_1850",
-    "freq": 1.2409
+    "freq": 1.1379
   },
   {
     "var1": "vl_morning_chronicle_matthewson_1846",
     "var2": "vl_sunday_times_punishment_of_children_1850",
-    "freq": 1.1119
+    "freq": 0.986
   },
   {
     "var1": "vl_morning_chronicle_north_family_1846",
     "var2": "vl_sunday_times_punishment_of_children_1850",
-    "freq": 1.2215
+    "freq": 1.0973
   },
   {
     "var1": "vl_morning_chronicle_william_burn_1846",
     "var2": "vl_sunday_times_punishment_of_children_1850",
-    "freq": 1.0664
+    "freq": 1.0177
   },
   {
     "var1": "vl_remarks_on_mr_fitzroys_bill_1853",
     "var2": "vl_sunday_times_punishment_of_children_1850",
-    "freq": 1.1283
+    "freq": 1.0589
   },
   {
     "var1": "vl_sunday_times_punishment_of_children_1850",

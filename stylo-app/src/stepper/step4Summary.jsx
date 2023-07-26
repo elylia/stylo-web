@@ -6,7 +6,9 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
-function Step4({ settings }) {
+import { Box, Button } from "@mui/material";
+
+function Step4({ settings, handleNext, handleBack }) {
   function createData(parameter, value) {
     return { parameter, value };
   }
@@ -52,12 +54,7 @@ function Step4({ settings }) {
   return (
     <React.Fragment>
       <h1>Parameters</h1>
-      <TableContainer
-        component={Paper}
-        sx={{
-          height: 400,
-        }}
-      >
+      <TableContainer component={Paper}>
         <Table
           sx={{
             height: "max-content",
@@ -92,6 +89,16 @@ function Step4({ settings }) {
           </TableBody>
         </Table>
       </TableContainer>
+      <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
+        <Button onClick={handleBack} variant="contained" color="primary">
+          Back
+        </Button>
+        <Box sx={{ flex: "1 1 auto" }} />
+
+        <Button onClick={handleNext} variant="contained" color="primary">
+          Next
+        </Button>
+      </Box>
     </React.Fragment>
   );
 }

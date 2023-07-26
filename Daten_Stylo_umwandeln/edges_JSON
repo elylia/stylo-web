@@ -1,25 +1,19 @@
 [
   {
     "Source": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-    "Target": "jp_morning_chronicle_dr_ellis_1846",
-    "Weight": "1",
+    "Target": "jp_morning_chronicle_mary_ann_parsons_2_1850",
+    "Weight": "3",
     "Type": "undirected"
   },
   {
     "Source": "jp_daily_newsletter_mary_ann_parsons_1_1850",
     "Target": "jp_morning_chronicle_susan_moir_1850",
-    "Weight": "6",
+    "Weight": "4",
     "Type": "undirected"
   },
   {
     "Source": "jp_daily_newsletter_mary_ann_parsons_1_1850",
     "Target": "jp_morning_chronicle_wife_murder_1851",
-    "Weight": "2",
-    "Type": "undirected"
-  },
-  {
-    "Source": "jp_morning_chronicle_anne_bird_1850",
-    "Target": "jp_morning_chronicle_sarah_brown_1846",
     "Weight": "1",
     "Type": "undirected"
   },
@@ -49,128 +43,98 @@
   },
   {
     "Source": "jp_morning_chronicle_dr_ellis_1846",
-    "Target": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-    "Weight": "1",
-    "Type": "undirected"
-  },
-  {
-    "Source": "jp_morning_chronicle_dr_ellis_1846",
     "Target": "jp_morning_chronicle_sarah_brown_1846",
-    "Weight": "4",
+    "Weight": "1",
     "Type": "undirected"
   },
   {
     "Source": "jp_morning_chronicle_dr_ellis_1846",
     "Target": "jp_morning_chronicle_susan_moir_1850",
-    "Weight": "2",
-    "Type": "undirected"
-  },
-  {
-    "Source": "jp_morning_chronicle_dr_ellis_1846",
-    "Target": "jp_morning_chronicle_wife_murder_1851",
-    "Weight": "4",
-    "Type": "undirected"
-  },
-  {
-    "Source": "jp_morning_chronicle_dr_ellis_1846",
-    "Target": "vl_daily_newsletter_corporal_punishment_1849",
-    "Weight": "1",
-    "Type": "undirected"
-  },
-  {
-    "Source": "jp_morning_chronicle_dr_ellis_1846",
-    "Target": "vl_morning_chronicle_captain_johnstone_1846",
-    "Weight": "2",
-    "Type": "undirected"
-  },
-  {
-    "Source": "jp_morning_chronicle_dr_ellis_1846",
-    "Target": "vl_morning_chronicle_matthewson_1846",
     "Weight": "5",
     "Type": "undirected"
   },
   {
     "Source": "jp_morning_chronicle_dr_ellis_1846",
+    "Target": "vl_morning_chronicle_matthewson_1846",
+    "Weight": "3",
+    "Type": "undirected"
+  },
+  {
+    "Source": "jp_morning_chronicle_dr_ellis_1846",
     "Target": "vl_morning_chronicle_north_family_1846",
     "Weight": "1",
+    "Type": "undirected"
+  },
+  {
+    "Source": "jp_morning_chronicle_mary_ann_parsons_2_1850",
+    "Target": "jp_daily_newsletter_mary_ann_parsons_1_1850",
+    "Weight": "3",
     "Type": "undirected"
   },
   {
     "Source": "jp_morning_chronicle_mary_ann_parsons_2_1850",
     "Target": "jp_morning_chronicle_wife_murder_1851",
-    "Weight": "2",
+    "Weight": "3",
     "Type": "undirected"
   },
   {
     "Source": "jp_morning_chronicle_mary_ann_parsons_2_1850",
     "Target": "vl_morning_chronicle_law_of_assault_1850",
-    "Weight": "1",
-    "Type": "undirected"
-  },
-  {
-    "Source": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-    "Target": "vl_remarks_on_mr_fitzroys_bill_1853",
-    "Weight": "3",
-    "Type": "undirected"
-  },
-  {
-    "Source": "jp_morning_chronicle_sarah_brown_1846",
-    "Target": "jp_morning_chronicle_anne_bird_1850",
-    "Weight": "1",
+    "Weight": "2",
     "Type": "undirected"
   },
   {
     "Source": "jp_morning_chronicle_sarah_brown_1846",
     "Target": "jp_morning_chronicle_dr_ellis_1846",
-    "Weight": "4",
-    "Type": "undirected"
-  },
-  {
-    "Source": "jp_morning_chronicle_sarah_brown_1846",
-    "Target": "vl_morning_chronicle_law_of_assault_1850",
     "Weight": "1",
     "Type": "undirected"
   },
   {
     "Source": "jp_morning_chronicle_sarah_brown_1846",
-    "Target": "vl_morning_chronicle_north_family_1846",
+    "Target": "jp_sunday_times_questionable_charity_1850",
+    "Weight": "1",
+    "Type": "undirected"
+  },
+  {
+    "Source": "jp_morning_chronicle_sarah_brown_1846",
+    "Target": "vl_morning_chronicle_law_of_assault_1850",
     "Weight": "2",
     "Type": "undirected"
   },
   {
     "Source": "jp_morning_chronicle_sarah_brown_1846",
-    "Target": "vl_remarks_on_mr_fitzroys_bill_1853",
+    "Target": "vl_morning_chronicle_matthewson_1846",
     "Weight": "2",
     "Type": "undirected"
   },
   {
-    "Source": "jp_morning_chronicle_susan_moir_1850",
-    "Target": "jp_daily_newsletter_mary_ann_parsons_1_1850",
+    "Source": "jp_morning_chronicle_sarah_brown_1846",
+    "Target": "vl_morning_chronicle_north_family_1846",
     "Weight": "6",
     "Type": "undirected"
   },
   {
     "Source": "jp_morning_chronicle_susan_moir_1850",
+    "Target": "jp_daily_newsletter_mary_ann_parsons_1_1850",
+    "Weight": "4",
+    "Type": "undirected"
+  },
+  {
+    "Source": "jp_morning_chronicle_susan_moir_1850",
     "Target": "jp_morning_chronicle_dr_ellis_1846",
-    "Weight": "2",
+    "Weight": "5",
     "Type": "undirected"
   },
   {
     "Source": "jp_morning_chronicle_susan_moir_1850",
     "Target": "jp_morning_chronicle_wife_murder_1851",
-    "Weight": "1",
-    "Type": "undirected"
-  },
-  {
-    "Source": "jp_morning_chronicle_susan_moir_1850",
-    "Target": "vl_sunday_times_punishment_of_children_1850",
-    "Weight": "1",
+    "Weight": "2",
     "Type": "undirected"
   },
   {
     "Source": "jp_morning_chronicle_wife_murder_1851",
     "Target": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-    "Weight": "2",
+    "Weight": "1",
     "Type": "undirected"
   },
   {
@@ -181,50 +145,50 @@
   },
   {
     "Source": "jp_morning_chronicle_wife_murder_1851",
-    "Target": "jp_morning_chronicle_dr_ellis_1846",
-    "Weight": "4",
-    "Type": "undirected"
-  },
-  {
-    "Source": "jp_morning_chronicle_wife_murder_1851",
     "Target": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-    "Weight": "2",
+    "Weight": "3",
     "Type": "undirected"
   },
   {
     "Source": "jp_morning_chronicle_wife_murder_1851",
     "Target": "jp_morning_chronicle_susan_moir_1850",
-    "Weight": "1",
+    "Weight": "2",
     "Type": "undirected"
   },
   {
     "Source": "jp_morning_chronicle_wife_murder_1851",
-    "Target": "vl_morning_chronicle_north_family_1846",
-    "Weight": "3",
+    "Target": "vl_morning_chronicle_captain_johnstone_1846",
+    "Weight": "2",
+    "Type": "undirected"
+  },
+  {
+    "Source": "jp_morning_chronicle_wife_murder_1851",
+    "Target": "vl_morning_chronicle_matthewson_1846",
+    "Weight": "4",
     "Type": "undirected"
   },
   {
     "Source": "jp_morning_chronicle_wife_murder_1851",
     "Target": "vl_remarks_on_mr_fitzroys_bill_1853",
-    "Weight": "3",
+    "Weight": "2",
     "Type": "undirected"
   },
   {
     "Source": "jp_sunday_times_questionable_charity_1850",
-    "Target": "vl_morning_chronicle_law_of_assault_1850",
-    "Weight": "3",
-    "Type": "undirected"
-  },
-  {
-    "Source": "jp_sunday_times_questionable_charity_1850",
-    "Target": "vl_morning_chronicle_matthewson_1846",
+    "Target": "jp_morning_chronicle_sarah_brown_1846",
     "Weight": "1",
     "Type": "undirected"
   },
   {
     "Source": "jp_sunday_times_questionable_charity_1850",
-    "Target": "vl_morning_chronicle_north_family_1846",
+    "Target": "vl_morning_chronicle_matthewson_1846",
     "Weight": "2",
+    "Type": "undirected"
+  },
+  {
+    "Source": "jp_sunday_times_questionable_charity_1850",
+    "Target": "vl_morning_chronicle_north_family_1846",
+    "Weight": "3",
     "Type": "undirected"
   },
   {
@@ -235,14 +199,8 @@
   },
   {
     "Source": "vl_daily_newsletter_corporal_punishment_1849",
-    "Target": "jp_morning_chronicle_dr_ellis_1846",
-    "Weight": "1",
-    "Type": "undirected"
-  },
-  {
-    "Source": "vl_daily_newsletter_corporal_punishment_1849",
     "Target": "vl_morning_chronicle_william_burn_1846",
-    "Weight": "1",
+    "Weight": "2",
     "Type": "undirected"
   },
   {
@@ -254,12 +212,12 @@
   {
     "Source": "vl_daily_newsletter_corporal_punishment_1849",
     "Target": "vl_sunday_times_punishment_of_children_1850",
-    "Weight": "3",
+    "Weight": "2",
     "Type": "undirected"
   },
   {
     "Source": "vl_morning_chronicle_captain_johnstone_1846",
-    "Target": "jp_morning_chronicle_dr_ellis_1846",
+    "Target": "jp_morning_chronicle_wife_murder_1851",
     "Weight": "2",
     "Type": "undirected"
   },
@@ -271,7 +229,7 @@
   },
   {
     "Source": "vl_morning_chronicle_captain_johnstone_1846",
-    "Target": "vl_remarks_on_mr_fitzroys_bill_1853",
+    "Target": "vl_morning_chronicle_william_burn_1846",
     "Weight": "1",
     "Type": "undirected"
   },
@@ -284,19 +242,13 @@
   {
     "Source": "vl_morning_chronicle_law_of_assault_1850",
     "Target": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-    "Weight": "1",
+    "Weight": "2",
     "Type": "undirected"
   },
   {
     "Source": "vl_morning_chronicle_law_of_assault_1850",
     "Target": "jp_morning_chronicle_sarah_brown_1846",
-    "Weight": "1",
-    "Type": "undirected"
-  },
-  {
-    "Source": "vl_morning_chronicle_law_of_assault_1850",
-    "Target": "jp_sunday_times_questionable_charity_1850",
-    "Weight": "3",
+    "Weight": "2",
     "Type": "undirected"
   },
   {
@@ -308,13 +260,25 @@
   {
     "Source": "vl_morning_chronicle_matthewson_1846",
     "Target": "jp_morning_chronicle_dr_ellis_1846",
-    "Weight": "5",
+    "Weight": "3",
+    "Type": "undirected"
+  },
+  {
+    "Source": "vl_morning_chronicle_matthewson_1846",
+    "Target": "jp_morning_chronicle_sarah_brown_1846",
+    "Weight": "2",
+    "Type": "undirected"
+  },
+  {
+    "Source": "vl_morning_chronicle_matthewson_1846",
+    "Target": "jp_morning_chronicle_wife_murder_1851",
+    "Weight": "4",
     "Type": "undirected"
   },
   {
     "Source": "vl_morning_chronicle_matthewson_1846",
     "Target": "jp_sunday_times_questionable_charity_1850",
-    "Weight": "1",
+    "Weight": "2",
     "Type": "undirected"
   },
   {
@@ -325,8 +289,20 @@
   },
   {
     "Source": "vl_morning_chronicle_matthewson_1846",
+    "Target": "vl_morning_chronicle_north_family_1846",
+    "Weight": "2",
+    "Type": "undirected"
+  },
+  {
+    "Source": "vl_morning_chronicle_matthewson_1846",
     "Target": "vl_morning_chronicle_william_burn_1846",
-    "Weight": "4",
+    "Weight": "5",
+    "Type": "undirected"
+  },
+  {
+    "Source": "vl_morning_chronicle_matthewson_1846",
+    "Target": "vl_sunday_times_punishment_of_children_1850",
+    "Weight": "3",
     "Type": "undirected"
   },
   {
@@ -338,31 +314,37 @@
   {
     "Source": "vl_morning_chronicle_north_family_1846",
     "Target": "jp_morning_chronicle_sarah_brown_1846",
-    "Weight": "2",
-    "Type": "undirected"
-  },
-  {
-    "Source": "vl_morning_chronicle_north_family_1846",
-    "Target": "jp_morning_chronicle_wife_murder_1851",
-    "Weight": "3",
+    "Weight": "6",
     "Type": "undirected"
   },
   {
     "Source": "vl_morning_chronicle_north_family_1846",
     "Target": "jp_sunday_times_questionable_charity_1850",
+    "Weight": "3",
+    "Type": "undirected"
+  },
+  {
+    "Source": "vl_morning_chronicle_north_family_1846",
+    "Target": "vl_morning_chronicle_matthewson_1846",
     "Weight": "2",
     "Type": "undirected"
   },
   {
     "Source": "vl_morning_chronicle_william_burn_1846",
     "Target": "vl_daily_newsletter_corporal_punishment_1849",
+    "Weight": "2",
+    "Type": "undirected"
+  },
+  {
+    "Source": "vl_morning_chronicle_william_burn_1846",
+    "Target": "vl_morning_chronicle_captain_johnstone_1846",
     "Weight": "1",
     "Type": "undirected"
   },
   {
     "Source": "vl_morning_chronicle_william_burn_1846",
     "Target": "vl_morning_chronicle_matthewson_1846",
-    "Weight": "4",
+    "Weight": "5",
     "Type": "undirected"
   },
   {
@@ -374,7 +356,7 @@
   {
     "Source": "vl_morning_chronicle_william_burn_1846",
     "Target": "vl_sunday_times_punishment_of_children_1850",
-    "Weight": "2",
+    "Weight": "1",
     "Type": "undirected"
   },
   {
@@ -385,32 +367,14 @@
   },
   {
     "Source": "vl_remarks_on_mr_fitzroys_bill_1853",
-    "Target": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-    "Weight": "3",
-    "Type": "undirected"
-  },
-  {
-    "Source": "vl_remarks_on_mr_fitzroys_bill_1853",
-    "Target": "jp_morning_chronicle_sarah_brown_1846",
-    "Weight": "2",
-    "Type": "undirected"
-  },
-  {
-    "Source": "vl_remarks_on_mr_fitzroys_bill_1853",
     "Target": "jp_morning_chronicle_wife_murder_1851",
-    "Weight": "3",
+    "Weight": "2",
     "Type": "undirected"
   },
   {
     "Source": "vl_remarks_on_mr_fitzroys_bill_1853",
     "Target": "vl_daily_newsletter_corporal_punishment_1849",
     "Weight": "6",
-    "Type": "undirected"
-  },
-  {
-    "Source": "vl_remarks_on_mr_fitzroys_bill_1853",
-    "Target": "vl_morning_chronicle_captain_johnstone_1846",
-    "Weight": "1",
     "Type": "undirected"
   },
   {
@@ -427,20 +391,20 @@
   },
   {
     "Source": "vl_sunday_times_punishment_of_children_1850",
-    "Target": "jp_morning_chronicle_susan_moir_1850",
-    "Weight": "1",
+    "Target": "vl_daily_newsletter_corporal_punishment_1849",
+    "Weight": "2",
     "Type": "undirected"
   },
   {
     "Source": "vl_sunday_times_punishment_of_children_1850",
-    "Target": "vl_daily_newsletter_corporal_punishment_1849",
+    "Target": "vl_morning_chronicle_matthewson_1846",
     "Weight": "3",
     "Type": "undirected"
   },
   {
     "Source": "vl_sunday_times_punishment_of_children_1850",
     "Target": "vl_morning_chronicle_william_burn_1846",
-    "Weight": "2",
+    "Weight": "1",
     "Type": "undirected"
   }
 ]

@@ -4,8 +4,9 @@ import Language from "../upload/Language";
 import NativeEncoding from "../upload/NativeEncoding";
 import UploadButton from "../upload/UploadButton";
 import InfoUpload from "../infoText/infoUpload";
+import { Box, Button } from "@mui/material";
 
-function Step1({ settings, setSettings }) {
+function Step1({ settings, setSettings, handleNext, handleBack }) {
   return (
     <React.Fragment>
       <h1>Upload Data</h1>
@@ -20,6 +21,16 @@ function Step1({ settings, setSettings }) {
       <div className="upload">
         <UploadButton />
       </div>
+      <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
+        <Button onClick={handleBack} variant="contained" color="primary">
+          Back
+        </Button>
+        <Box sx={{ flex: "1 1 auto" }} />
+
+        <Button onClick={handleNext} variant="contained" color="primary">
+          Next
+        </Button>
+      </Box>
     </React.Fragment>
   );
 }
