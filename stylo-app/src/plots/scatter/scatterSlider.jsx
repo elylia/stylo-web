@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Box, Slider } from "@mui/material";
 import ScatterPlot from "./scatterPlot";
+import InfoPlots from "../../infoText/infoPlots";
 
 const ScatterSlider = ({ url, settings }) => {
   const [data, setData] = useState([
@@ -53,7 +54,9 @@ const ScatterSlider = ({ url, settings }) => {
 
   return (
     <div className="caSlider">
-      <h1>{settings.analysisTypeLabel}</h1>
+      <h1>
+        {settings.analysisTypeLabel} <InfoPlots settings={settings} />
+      </h1>
       <ScatterPlot
         data={
           data.find(

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Box, Slider } from "@mui/material";
 import CaPlot from "./CAPlot";
+import InfoPlots from "../../infoText/infoPlots";
 
 const CaSlider = ({ url, settings }) => {
   const [data, setData] = useState([
@@ -52,7 +53,9 @@ const CaSlider = ({ url, settings }) => {
 
   return (
     <div className="caSlider">
-      <h1>{settings.analysisTypeLabel}</h1>
+      <h1>
+        {settings.analysisTypeLabel} <InfoPlots settings={settings} />
+      </h1>
       <CaPlot
         data={
           data.find(

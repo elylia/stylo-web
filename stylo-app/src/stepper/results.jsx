@@ -5,8 +5,9 @@ import TsnePlot from "../plots/tsne/tsne_plot";
 import { Box, Button } from "@mui/material";
 import CaSlider from "../plots/CA/CASlider";
 import ScatterSlider from "../plots/scatter/scatterSlider";
+import InfoPlots from "../infoText/infoPlots";
 
-function Results({ settings, url, handleReset }) {
+function Results({ settings, url }) {
   console.log("settings:", settings);
   console.log("analysisType:", settings && settings.analysisType);
 
