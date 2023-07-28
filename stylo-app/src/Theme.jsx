@@ -16,6 +16,9 @@ const theme = createTheme({
     },
   },
   shadows: ["none"],
+  typography: {
+    fontFamily: `"Nunito", "system-ui", "Avenir", "Helvetica", "Arial", "sans-serif"`,
+  },
 });
 
 export default theme;

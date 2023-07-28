@@ -1,5 +1,4 @@
 import * as React from "react";
-
 import AnalysisType from "../analysis-type/AnalysisType";
 import DistanceMeasure from "../analysis-type/DistanceMeasure";
 import InfoAnalysis from "../infoText/infoAnalysis";
@@ -20,9 +19,11 @@ function Step0({ settings, setSettings, handleNext }) {
           <ConsensusStrength setSettings={setSettings} settings={settings} />
         )}
       </div>
-      <Button onClick={handleNext} variant="contained" color="primary">
-        Next
-      </Button>
+      <div className="buttonRight">
+        <Button onClick={handleNext} variant="contained" color="primary">
+          Next
+        </Button>
+      </div>
     </React.Fragment>
   );
 }

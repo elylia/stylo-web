@@ -16,7 +16,6 @@ function RandomSample({ settings, setSettings }) {
           id="outlined-basic"
           label="Random Sample"
           variant="outlined"
-          required
           size="small"
           type="number"
           value={settings.randomSample}

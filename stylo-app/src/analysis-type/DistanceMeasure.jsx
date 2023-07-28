@@ -29,7 +29,6 @@ export default function DistanceMeasure({ settings, setSettings }) {
     <Autocomplete
       disablePortal
       id="ComboBoxType"
-      required
       options={distance}
       sx={{ width: 300 }}
       size="small"

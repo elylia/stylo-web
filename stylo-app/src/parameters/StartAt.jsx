@@ -17,7 +17,6 @@ function StartAt({ settings, setSettings }) {
           id="outlined-basic"
           label="Start at freq. rank"
           variant="outlined"
-          required
           size="small"
           type="number"
           value={settings.startAt}

@@ -39,7 +39,6 @@ export default function AnalysisType({ settings, setSettings }) {
       options={type}
       sx={{ width: 300 }}
       size="small"
-      required
       value={type.find((option) => option.value === settings.analysisType)}
       onChange={handleChangeAnalysisType}
       ListboxProps={{

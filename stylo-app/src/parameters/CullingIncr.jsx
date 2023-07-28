@@ -13,9 +13,9 @@ function CullingIncr({ settings, setSettings }) {
         id="outlined-basic"
         label="Culling Increment"
         variant="outlined"
-        required
         size="small"
         type="number"
+        inputProps={{ step: "10" }}
         value={settings.cullIncr}
         onChange={handleChangeCullIncr}
       />

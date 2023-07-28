@@ -17,7 +17,6 @@ function ConsensusStrength({ settings, setSettings }) {
           id="outlined-basic"
           label="Consensus Strength"
           variant="outlined"
-          required
           size="small"
           type="number"
           inputProps={{ step: "0.1" }}

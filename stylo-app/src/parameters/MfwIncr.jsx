@@ -17,7 +17,6 @@ function MfwIncr({ settings, setSettings }) {
           id="outlined-basic"
           label="MFW Increment"
           variant="outlined"
-          required
           size="small"
           type="number"
           value={settings.mfwIncr}

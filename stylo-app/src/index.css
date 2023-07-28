@@ -45,6 +45,7 @@ h1 {
   display: inline-block;
   margin-right: 5px;
   margin: 0;
+  color: #252525;
 }
 
 h1.title {
@@ -56,14 +57,16 @@ h1.title {
 }
 
 h2.title {
-  font-size: 12px;
+  font-size: 14px;
   margin: 0;
   padding-left: 80px;
   letter-spacing: 0.3em;
+  color: #4d4d4d;
 }
 
 h2 {
-  font-size: 12px;
+  font-size: 14px;
+  color: #4d4d4d;
 }
 button {
   border-radius: 8px;
@@ -98,6 +101,8 @@ button {
 .chooseAnalysis {
   display: flex;
   justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 .sampling {
   display: flex;
@@ -110,12 +115,15 @@ button {
 .upload {
   display: flex;
   justify-content: center;
+  margin-bottom: 10px;
+  gap: 10px;
 }
 
-.Parameter {
+.parameter {
   display: flex;
-  margin-bottom: 5%;
   justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
 ::-webkit-scrollbar {
@@ -237,7 +245,6 @@ body {
 .icon-container {
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 
 .content-box {
@@ -248,7 +255,11 @@ body {
   box-sizing: border-box;
   min-height: 400px;
   overflow: auto;
-  -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC); /* this fixes the overflow:hidden in Chrome/Opera */
+  -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+}
+
+.content-box h1 {
+  margin-bottom: 10px;
 }
 .result-box {
   width: 100%;
@@ -286,7 +297,18 @@ body {
   overflow: hidden;
 }
 
+.bctPlot {
+  overflow: hidden;
+}
+
 .settings {
   margin-left: auto;
   margin-right: 0;
+}
+
+.buttonRight {
+  margin-left: auto;
+}
+
+.buttonsBoth {
 }

@@ -17,16 +17,22 @@ function Step5({ settings, setSettings, handleGetResults, handleBack }) {
         <br />
         <SaveFeatureList setSettings={setSettings} settings={settings} />
       </div>
-      <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
-        <Button onClick={handleBack} variant="contained" color="primary">
-          Back
-        </Button>
-        <Box sx={{ flex: "1 1 auto" }} />
+      <div className="buttonsBoth">
+        <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
+          <Button onClick={handleBack} variant="contained" color="primary">
+            Back
+          </Button>
+          <Box sx={{ flex: "1 1 auto" }} />
 
-        <Button onClick={handleGetResults} variant="contained" color="primary">
-          Get Results
-        </Button>
-      </Box>
+          <Button
+            onClick={handleGetResults}
+            variant="contained"
+            color="primary"
+          >
+            Get Results
+          </Button>
+        </Box>
+      </div>
     </React.Fragment>
   );
 }

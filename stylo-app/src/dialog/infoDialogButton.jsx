@@ -24,7 +24,7 @@ function InfoDialogButton(title, content) {
           size="small"
         >
           <b>
-            (Settings{" "}
+            (Settings
             <InfoIcon
               sx={{ fontSize: 15, verticalAlign: "sub" }}
               color="action"

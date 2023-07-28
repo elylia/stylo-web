@@ -17,7 +17,6 @@ function NGramSize({ settings, setSettings }) {
           id="outlined-basic"
           label="nGram Size"
           variant="outlined"
-          required
           size="small"
           type="number"
           value={settings.nGram}

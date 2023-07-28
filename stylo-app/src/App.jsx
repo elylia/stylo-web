@@ -12,6 +12,9 @@ import executeR from "./executeR/execute_R";
 import theme from "./Theme.jsx";
 import { Box, Button, ThemeProvider } from "@mui/material";
 import "../src/assets/fonts/index.css";
+import CitationDialog from "./dialog/citationDialog";
+import AboutDialog from "./dialog/aboutDialog";
+import GithubLink from "./dialog/githubLink";
 
 function App() {
   const [activeStep, setActiveStep] = useState(0);
@@ -86,20 +89,10 @@ function App() {
             <div className="right-section">
               <h2 className="title">STYLOMETRIC ANALYSIS ONLINE</h2>
               <div className="icon-container">
-                <a href="https://github.com/user/repo1">
-                  <img
-                    src="../src/assets/Icon_Explanation_2.svg"
-                    alt="Explanation"
-                  />
-                </a>
+                <AboutDialog />
 
-                <a href="https://github.com/user/repo2">
-                  <img src="../src/assets/Icon_Github_2.svg" alt="Github" />
-                </a>
-
-                <a href="https://github.com/user/repo2">
-                  <img src="../src/assets/Icon_Citation_2.svg" alt="Citation" />
-                </a>
+                <CitationDialog />
+                <GithubLink />
               </div>
             </div>
           </div>

@@ -2,10 +2,11 @@ import React, { useEffect, useRef, useState } from "react";
 import * as d3 from "d3";
 import getColor from "./getColor";
 import computePosition from "./computePosition";
+import InfoPlots from "../../infoText/infoPlots";
 //To-Do: Auf neue Daten anpassen.
 const BctPlot = ({ url }) => {
-  let width = 2000;
-  let height = 1500;
+  let width = 1000;
+  let height = 1000;
   const ref = useRef();
   const [currentZoom, setCurrentZoom] = useState();
 
@@ -99,77 +100,82 @@ const BctPlot = ({ url }) => {
     .domain([xmin, xmax])
     .range([100, height - 20]);
   return (
-    <svg width={width} height={height} ref={ref}>
-      <g transform="translate(100,0)"></g>
-      <g className="zoom_group" transform={currentZoom?.transform}>
-        {links.map((d, i) => (
-          <path
-            key={
-              i +
-              "M" +
-              x(d.source.y) +
-              "," +
-              y(d.source.x) +
-              "v" +
-              (y(d.target.x) - y(d.source.x)) +
-              "h" +
-              (x(d.target.y) - x(d.source.y))
+    <div className="bctPlot">
+      <h1>
+        {settings.analysisTypeLabel} <InfoPlots settings={settings} />
+      </h1>
+      <svg width={width} height={height} ref={ref}>
+        <g transform="translate(100,0)"></g>
+        <g className="zoom_group" transform={currentZoom?.transform}>
+          {links.map((d, i) => (
+            <path
+              key={
+                i +
+                "M" +
+                x(d.source.y) +
+                "," +
+                y(d.source.x) +
+                "v" +
+                (y(d.target.x) - y(d.source.x)) +
+                "h" +
+                (x(d.target.y) - x(d.source.y))
+              }
+              d={
+                "M" +
+                x(d.source.y) +
+                "," +
+                y(d.source.x) +
+                "L" +
+                x(d.target.y) +
+                "," +
+                y(d.target.x)
+              }
+              className="lines"
+              strokeWidth="8"
+            />
+          ))}
+          {nodes.map((d, i) => {
+            let textrotation = 180 - d.data.angle * 180;
+            let anchor = "start";
+            let xvalue = 8;
+            if (Math.abs(textrotation) > 90) {
+              textrotation = -d.data.angle * 180;
+              anchor = "end";
+              xvalue = -8;
             }
-            d={
-              "M" +
-              x(d.source.y) +
-              "," +
-              y(d.source.x) +
-              "L" +
-              x(d.target.y) +
-              "," +
-              y(d.target.x)
-            }
-            className="lines"
-            strokeWidth="8"
-          />
-        ))}
-        {nodes.map((d, i) => {
-          let textrotation = 180 - d.data.angle * 180;
-          let anchor = "start";
-          let xvalue = 8;
-          if (Math.abs(textrotation) > 90) {
-            textrotation = -d.data.angle * 180;
-            anchor = "end";
-            xvalue = -8;
-          }
 
-          return (
-            <g
-              key={d.data.name || i}
-              className="node"
-              transform={"translate(" + x(d.y) + "," + y(d.x) + ")"}
-            >
-              <circle r="4.5" />
-              <text
-                transform={
-                  currentZoom
-                    ? `scale(${Math.max(
-                        0.7,
-                        Math.min(2, 1 / currentZoom.transform.k)
-                      )})` +
-                      `
-                    rotate(${textrotation})`
-                    : "" + `rotate(${textrotation})`
-                }
-                dx={xvalue}
-                dy={15}
-                textAnchor={anchor}
-                fill={getColor(d, list_prefix)}
-                fontSize="3em"
+            return (
+              <g
+                key={d.data.name || i}
+                className="node"
+                transform={"translate(" + x(d.y) + "," + y(d.x) + ")"}
               >
-                {d.data.name}
-              </text>
-            </g>
-          );
-        })}
-      </g>
-    </svg>
+                <circle r="4.5" />
+                <text
+                  transform={
+                    currentZoom
+                      ? `scale(${Math.max(
+                          0.7,
+                          Math.min(2, 1 / currentZoom.transform.k)
+                        )})` +
+                        `
+                    rotate(${textrotation})`
+                      : "" + `rotate(${textrotation})`
+                  }
+                  dx={xvalue}
+                  dy={15}
+                  textAnchor={anchor}
+                  fill={getColor(d, list_prefix)}
+                  fontSize="3em"
+                >
+                  {d.data.name}
+                </text>
+              </g>
+            );
+          })}
+        </g>
+      </svg>
+    </div>
   );
 };
 

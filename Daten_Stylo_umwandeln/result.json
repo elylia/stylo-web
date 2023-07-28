@@ -4,100 +4,84 @@
     "culling": 0,
     "data": [
       {
-        "V1": -2.5615,
-        "V2": -0.3995,
-        "name": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-        "_row": "jp_daily_newsletter_mary_ann_parsons_1_1850"
+        "V1": -143.2601,
+        "V2": -520.2834,
+        "name": "jp_daily_newsletter_mary_ann_parsons_1_1850"
       },
       {
-        "V1": 1.1172,
-        "V2": -1.77,
-        "name": "jp_morning_chronicle_anne_bird_1850",
-        "_row": "jp_morning_chronicle_anne_bird_1850"
+        "V1": 75.8483,
+        "V2": 958.3121,
+        "name": "jp_morning_chronicle_anne_bird_1850"
       },
       {
-        "V1": 0.4763,
-        "V2": 0.2545,
-        "name": "jp_morning_chronicle_dr_ellis_1846",
-        "_row": "jp_morning_chronicle_dr_ellis_1846"
+        "V1": -943.7034,
+        "V2": -344.3174,
+        "name": "jp_morning_chronicle_dr_ellis_1846"
       },
       {
-        "V1": -0.637,
-        "V2": -0.3059,
-        "name": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-        "_row": "jp_morning_chronicle_mary_ann_parsons_2_1850"
+        "V1": -518.6929,
+        "V2": 825.8644,
+        "name": "jp_morning_chronicle_mary_ann_parsons_2_1850"
       },
       {
-        "V1": -1.0571,
-        "V2": -0.4765,
-        "name": "jp_morning_chronicle_sarah_brown_1846",
-        "_row": "jp_morning_chronicle_sarah_brown_1846"
+        "V1": 1003.7649,
+        "V2": 132.7682,
+        "name": "jp_morning_chronicle_sarah_brown_1846"
       },
       {
-        "V1": -1.565,
-        "V2": 0.8124,
-        "name": "jp_morning_chronicle_susan_moir_1850",
-        "_row": "jp_morning_chronicle_susan_moir_1850"
+        "V1": -325.5098,
+        "V2": 350.0566,
+        "name": "jp_morning_chronicle_susan_moir_1850"
       },
       {
-        "V1": -0.9496,
-        "V2": -0.7295,
-        "name": "jp_morning_chronicle_wife_murder_1851",
-        "_row": "jp_morning_chronicle_wife_murder_1851"
+        "V1": 856.2178,
+        "V2": -490.8337,
+        "name": "jp_morning_chronicle_wife_murder_1851"
       },
       {
-        "V1": 2.539,
-        "V2": 3.0247,
-        "name": "jp_sunday_times_questionable_charity_1850",
-        "_row": "jp_sunday_times_questionable_charity_1850"
+        "V1": 161.3397,
+        "V2": 449.5791,
+        "name": "jp_sunday_times_questionable_charity_1850"
       },
       {
-        "V1": 1.6702,
-        "V2": -1.2641,
-        "name": "vl_daily_newsletter_corporal_punishment_1849",
-        "_row": "vl_daily_newsletter_corporal_punishment_1849"
+        "V1": 11.3694,
+        "V2": -34.911,
+        "name": "vl_daily_newsletter_corporal_punishment_1849"
       },
       {
-        "V1": 0.6877,
-        "V2": -1.4426,
-        "name": "vl_morning_chronicle_captain_johnstone_1846",
-        "_row": "vl_morning_chronicle_captain_johnstone_1846"
+        "V1": 500.2731,
+        "V2": 68.5629,
+        "name": "vl_morning_chronicle_captain_johnstone_1846"
       },
       {
-        "V1": 1.3305,
-        "V2": 0.8976,
-        "name": "vl_morning_chronicle_law_of_assault_1850",
-        "_row": "vl_morning_chronicle_law_of_assault_1850"
+        "V1": -540.5879,
+        "V2": -831.2298,
+        "name": "vl_morning_chronicle_law_of_assault_1850"
       },
       {
-        "V1": 0.1134,
-        "V2": 0.0278,
-        "name": "vl_morning_chronicle_matthewson_1846",
-        "_row": "vl_morning_chronicle_matthewson_1846"
+        "V1": -878.7538,
+        "V2": 290.8433,
+        "name": "vl_morning_chronicle_matthewson_1846"
       },
       {
-        "V1": -1.4485,
-        "V2": 1.8353,
-        "name": "vl_morning_chronicle_north_family_1846",
-        "_row": "vl_morning_chronicle_north_family_1846"
+        "V1": 209.8708,
+        "V2": -953.9156,
+        "name": "vl_morning_chronicle_north_family_1846"
       },
       {
-        "V1": -1.3285,
-        "V2": 0.2114,
-        "name": "vl_morning_chronicle_william_burn_1846",
-        "_row": "vl_morning_chronicle_william_burn_1846"
+        "V1": -479.6044,
+        "V2": -136.0269,
+        "name": "vl_morning_chronicle_william_burn_1846"
       },
       {
-        "V1": 1.389,
-        "V2": -1.6909,
-        "name": "vl_remarks_on_mr_fitzroys_bill_1853",
-        "_row": "vl_remarks_on_mr_fitzroys_bill_1853"
+        "V1": 353.1348,
+        "V2": -424.3469,
+        "name": "vl_remarks_on_mr_fitzroys_bill_1853"
       },
       {
-        "V1": 0.224,
-        "V2": 1.0152,
-        "name": "vl_sunday_times_punishment_of_children_1850",
-        "_row": "vl_sunday_times_punishment_of_children_1850"
+        "V1": 658.2936,
+        "V2": 659.8781,
+        "name": "vl_sunday_times_punishment_of_children_1850"
       }
     ],
     "_row": "i"
@@ -107,100 +91,84 @@
     "culling": 10,
     "data": [
       {
-        "V1": -2.5615,
-        "V2": -0.3995,
-        "name": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-        "_row": "jp_daily_newsletter_mary_ann_parsons_1_1850"
+        "V1": 269.5033,
+        "V2": -1099.8513,
+        "name": "jp_daily_newsletter_mary_ann_parsons_1_1850"
       },
       {
-        "V1": 1.1172,
-        "V2": -1.77,
-        "name": "jp_morning_chronicle_anne_bird_1850",
-        "_row": "jp_morning_chronicle_anne_bird_1850"
+        "V1": 1099.809,
+        "V2": 682.1422,
+        "name": "jp_morning_chronicle_anne_bird_1850"
       },
       {
-        "V1": 0.4763,
-        "V2": 0.2545,
-        "name": "jp_morning_chronicle_dr_ellis_1846",
-        "_row": "jp_morning_chronicle_dr_ellis_1846"
+        "V1": -232.5156,
+        "V2": -568.9123,
+        "name": "jp_morning_chronicle_dr_ellis_1846"
       },
       {
-        "V1": -0.637,
-        "V2": -0.3059,
-        "name": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-        "_row": "jp_morning_chronicle_mary_ann_parsons_2_1850"
+        "V1": -863.2578,
+        "V2": 732.1359,
+        "name": "jp_morning_chronicle_mary_ann_parsons_2_1850"
       },
       {
-        "V1": -1.0571,
-        "V2": -0.4765,
-        "name": "jp_morning_chronicle_sarah_brown_1846",
-        "_row": "jp_morning_chronicle_sarah_brown_1846"
+        "V1": -490.8782,
+        "V2": -1198.5001,
+        "name": "jp_morning_chronicle_sarah_brown_1846"
       },
       {
-        "V1": -1.565,
-        "V2": 0.8124,
-        "name": "jp_morning_chronicle_susan_moir_1850",
-        "_row": "jp_morning_chronicle_susan_moir_1850"
+        "V1": -0.1761,
+        "V2": -1.2009,
+        "name": "jp_morning_chronicle_susan_moir_1850"
       },
       {
-        "V1": -0.9496,
-        "V2": -0.7295,
-        "name": "jp_morning_chronicle_wife_murder_1851",
-        "_row": "jp_morning_chronicle_wife_murder_1851"
+        "V1": -612.138,
+        "V2": 45.2531,
+        "name": "jp_morning_chronicle_wife_murder_1851"
       },
       {
-        "V1": 2.539,
-        "V2": 3.0247,
-        "name": "jp_sunday_times_questionable_charity_1850",
-        "_row": "jp_sunday_times_questionable_charity_1850"
+        "V1": 428.1131,
+        "V2": 1046.9713,
+        "name": "jp_sunday_times_questionable_charity_1850"
       },
       {
-        "V1": 1.6702,
-        "V2": -1.2641,
-        "name": "vl_daily_newsletter_corporal_punishment_1849",
-        "_row": "vl_daily_newsletter_corporal_punishment_1849"
+        "V1": -306.712,
+        "V2": 1257.2977,
+        "name": "vl_daily_newsletter_corporal_punishment_1849"
       },
       {
-        "V1": 0.6877,
-        "V2": -1.4426,
-        "name": "vl_morning_chronicle_captain_johnstone_1846",
-        "_row": "vl_morning_chronicle_captain_johnstone_1846"
+        "V1": 989.1938,
+        "V2": -835.6322,
+        "name": "vl_morning_chronicle_captain_johnstone_1846"
       },
       {
-        "V1": 1.3305,
-        "V2": 0.8976,
-        "name": "vl_morning_chronicle_law_of_assault_1850",
-        "_row": "vl_morning_chronicle_law_of_assault_1850"
+        "V1": -146.0282,
+        "V2": 595.0876,
+        "name": "vl_morning_chronicle_law_of_assault_1850"
       },
       {
-        "V1": 0.1134,
-        "V2": 0.0278,
-        "name": "vl_morning_chronicle_matthewson_1846",
-        "_row": "vl_morning_chronicle_matthewson_1846"
+        "V1": 468.7742,
+        "V2": -396.9729,
+        "name": "vl_morning_chronicle_matthewson_1846"
       },
       {
-        "V1": -1.4485,
-        "V2": 1.8353,
-        "name": "vl_morning_chronicle_north_family_1846",
-        "_row": "vl_morning_chronicle_north_family_1846"
+        "V1": -1290.9897,
+        "V2": 97.4824,
+        "name": "vl_morning_chronicle_north_family_1846"
       },
       {
-        "V1": -1.3285,
-        "V2": 0.2114,
-        "name": "vl_morning_chronicle_william_burn_1846",
-        "_row": "vl_morning_chronicle_william_burn_1846"
+        "V1": 521.3794,
+        "V2": 322.3359,
+        "name": "vl_morning_chronicle_william_burn_1846"
       },
       {
-        "V1": 1.389,
-        "V2": -1.6909,
-        "name": "vl_remarks_on_mr_fitzroys_bill_1853",
-        "_row": "vl_remarks_on_mr_fitzroys_bill_1853"
+        "V1": 1129.0101,
+        "V2": -82.6585,
+        "name": "vl_remarks_on_mr_fitzroys_bill_1853"
       },
       {
-        "V1": 0.224,
-        "V2": 1.0152,
-        "name": "vl_sunday_times_punishment_of_children_1850",
-        "_row": "vl_sunday_times_punishment_of_children_1850"
+        "V1": -963.0872,
+        "V2": -594.9779,
+        "name": "vl_sunday_times_punishment_of_children_1850"
       }
     ],
     "_row": "i.1"
@@ -210,100 +178,84 @@
     "culling": 20,
     "data": [
       {
-        "V1": -2.5615,
-        "V2": -0.3995,
-        "name": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-        "_row": "jp_daily_newsletter_mary_ann_parsons_1_1850"
+        "V1": -254.4629,
+        "V2": -262.4291,
+        "name": "jp_daily_newsletter_mary_ann_parsons_1_1850"
       },
       {
-        "V1": 1.1172,
-        "V2": -1.77,
-        "name": "jp_morning_chronicle_anne_bird_1850",
-        "_row": "jp_morning_chronicle_anne_bird_1850"
+        "V1": -0.0003,
+        "V2": 0.0001,
+        "name": "jp_morning_chronicle_anne_bird_1850"
       },
       {
-        "V1": 0.4763,
-        "V2": 0.2545,
-        "name": "jp_morning_chronicle_dr_ellis_1846",
-        "_row": "jp_morning_chronicle_dr_ellis_1846"
+        "V1": 51.6128,
+        "V2": 361.879,
+        "name": "jp_morning_chronicle_dr_ellis_1846"
       },
       {
-        "V1": -0.637,
-        "V2": -0.3059,
-        "name": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-        "_row": "jp_morning_chronicle_mary_ann_parsons_2_1850"
+        "V1": 469.3593,
+        "V2": 484.0524,
+        "name": "jp_morning_chronicle_mary_ann_parsons_2_1850"
       },
       {
-        "V1": -1.0571,
-        "V2": -0.4765,
-        "name": "jp_morning_chronicle_sarah_brown_1846",
-        "_row": "jp_morning_chronicle_sarah_brown_1846"
+        "V1": 360.1163,
+        "V2": 62.74,
+        "name": "jp_morning_chronicle_sarah_brown_1846"
       },
       {
-        "V1": -1.565,
-        "V2": 0.8124,
-        "name": "jp_morning_chronicle_susan_moir_1850",
-        "_row": "jp_morning_chronicle_susan_moir_1850"
+        "V1": 108.8819,
+        "V2": 763.4116,
+        "name": "jp_morning_chronicle_susan_moir_1850"
       },
       {
-        "V1": -0.9496,
-        "V2": -0.7295,
-        "name": "jp_morning_chronicle_wife_murder_1851",
-        "_row": "jp_morning_chronicle_wife_murder_1851"
+        "V1": -315.3214,
+        "V2": 595.9679,
+        "name": "jp_morning_chronicle_wife_murder_1851"
       },
       {
-        "V1": 2.539,
-        "V2": 3.0247,
-        "name": "jp_sunday_times_questionable_charity_1850",
-        "_row": "jp_sunday_times_questionable_charity_1850"
+        "V1": -95.2001,
+        "V2": -667.4895,
+        "name": "jp_sunday_times_questionable_charity_1850"
       },
       {
-        "V1": 1.6702,
-        "V2": -1.2641,
-        "name": "vl_daily_newsletter_corporal_punishment_1849",
-        "_row": "vl_daily_newsletter_corporal_punishment_1849"
+        "V1": -328.2184,
+        "V2": 160.9137,
+        "name": "vl_daily_newsletter_corporal_punishment_1849"
       },
       {
-        "V1": 0.6877,
-        "V2": -1.4426,
-        "name": "vl_morning_chronicle_captain_johnstone_1846",
-        "_row": "vl_morning_chronicle_captain_johnstone_1846"
+        "V1": -664.2386,
+        "V2": -115.7246,
+        "name": "vl_morning_chronicle_captain_johnstone_1846"
       },
       {
-        "V1": 1.3305,
-        "V2": 0.8976,
-        "name": "vl_morning_chronicle_law_of_assault_1850",
-        "_row": "vl_morning_chronicle_law_of_assault_1850"
+        "V1": -536.8087,
+        "V2": -553.6145,
+        "name": "vl_morning_chronicle_law_of_assault_1850"
       },
       {
-        "V1": 0.1134,
-        "V2": 0.0278,
-        "name": "vl_morning_chronicle_matthewson_1846",
-        "_row": "vl_morning_chronicle_matthewson_1846"
+        "V1": 170.9511,
+        "V2": -323.1035,
+        "name": "vl_morning_chronicle_matthewson_1846"
       },
       {
-        "V1": -1.4485,
-        "V2": 1.8353,
-        "name": "vl_morning_chronicle_north_family_1846",
-        "_row": "vl_morning_chronicle_north_family_1846"
+        "V1": -692.4016,
+        "V2": 339.4597,
+        "name": "vl_morning_chronicle_north_family_1846"
       },
       {
-        "V1": -1.3285,
-        "V2": 0.2114,
-        "name": "vl_morning_chronicle_william_burn_1846",
-        "_row": "vl_morning_chronicle_william_burn_1846"
+        "V1": 605.4012,
+        "V2": -296.8063,
+        "name": "vl_morning_chronicle_william_burn_1846"
       },
       {
-        "V1": 1.389,
-        "V2": -1.6909,
-        "name": "vl_remarks_on_mr_fitzroys_bill_1853",
-        "_row": "vl_remarks_on_mr_fitzroys_bill_1853"
+        "V1": 360.6356,
+        "V2": -681.6115,
+        "name": "vl_remarks_on_mr_fitzroys_bill_1853"
       },
       {
-        "V1": 0.224,
-        "V2": 1.0152,
-        "name": "vl_sunday_times_punishment_of_children_1850",
-        "_row": "vl_sunday_times_punishment_of_children_1850"
+        "V1": 759.6938,
+        "V2": 132.3546,
+        "name": "vl_sunday_times_punishment_of_children_1850"
       }
     ],
     "_row": "i.2"
@@ -313,100 +265,84 @@
     "culling": 0,
     "data": [
       {
-        "V1": -2.4067,
-        "V2": -0.6665,
-        "name": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-        "_row": "jp_daily_newsletter_mary_ann_parsons_1_1850"
+        "V1": 348.9265,
+        "V2": -931.1208,
+        "name": "jp_daily_newsletter_mary_ann_parsons_1_1850"
       },
       {
-        "V1": 0.3966,
-        "V2": 1.9954,
-        "name": "jp_morning_chronicle_anne_bird_1850",
-        "_row": "jp_morning_chronicle_anne_bird_1850"
+        "V1": 993.3728,
+        "V2": 44.1162,
+        "name": "jp_morning_chronicle_anne_bird_1850"
       },
       {
-        "V1": 0.3484,
-        "V2": 0.1763,
-        "name": "jp_morning_chronicle_dr_ellis_1846",
-        "_row": "jp_morning_chronicle_dr_ellis_1846"
+        "V1": 725.3489,
+        "V2": -479.3177,
+        "name": "jp_morning_chronicle_dr_ellis_1846"
       },
       {
-        "V1": -0.6178,
-        "V2": -0.2301,
-        "name": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-        "_row": "jp_morning_chronicle_mary_ann_parsons_2_1850"
+        "V1": -777.7239,
+        "V2": -619.5817,
+        "name": "jp_morning_chronicle_mary_ann_parsons_2_1850"
       },
       {
-        "V1": -1.1257,
-        "V2": -0.0908,
-        "name": "jp_morning_chronicle_sarah_brown_1846",
-        "_row": "jp_morning_chronicle_sarah_brown_1846"
+        "V1": 165.4011,
+        "V2": -441.3776,
+        "name": "jp_morning_chronicle_sarah_brown_1846"
       },
       {
-        "V1": -1.3308,
-        "V2": -1.2154,
-        "name": "jp_morning_chronicle_susan_moir_1850",
-        "_row": "jp_morning_chronicle_susan_moir_1850"
+        "V1": 265.0121,
+        "V2": 958.3863,
+        "name": "jp_morning_chronicle_susan_moir_1850"
       },
       {
-        "V1": -1.0306,
-        "V2": 0.0812,
-        "name": "jp_morning_chronicle_wife_murder_1851",
-        "_row": "jp_morning_chronicle_wife_murder_1851"
+        "V1": 125.6231,
+        "V2": 454.3028,
+        "name": "jp_morning_chronicle_wife_murder_1851"
       },
       {
-        "V1": 4.2275,
-        "V2": -2.2559,
-        "name": "jp_sunday_times_questionable_charity_1850",
-        "_row": "jp_sunday_times_questionable_charity_1850"
+        "V1": 680.0038,
+        "V2": 541.7305,
+        "name": "jp_sunday_times_questionable_charity_1850"
       },
       {
-        "V1": 1.0765,
-        "V2": 1.9514,
-        "name": "vl_daily_newsletter_corporal_punishment_1849",
-        "_row": "vl_daily_newsletter_corporal_punishment_1849"
+        "V1": 470.8871,
+        "V2": 20.9127,
+        "name": "vl_daily_newsletter_corporal_punishment_1849"
       },
       {
-        "V1": -0.1218,
-        "V2": 1.8621,
-        "name": "vl_morning_chronicle_captain_johnstone_1846",
-        "_row": "vl_morning_chronicle_captain_johnstone_1846"
+        "V1": -231.7126,
+        "V2": -837.9649,
+        "name": "vl_morning_chronicle_captain_johnstone_1846"
       },
       {
-        "V1": 1.3563,
-        "V2": -0.138,
-        "name": "vl_morning_chronicle_law_of_assault_1850",
-        "_row": "vl_morning_chronicle_law_of_assault_1850"
+        "V1": -0.0002,
+        "V2": 0.0003,
+        "name": "vl_morning_chronicle_law_of_assault_1850"
       },
       {
-        "V1": -0.1051,
-        "V2": 0.3185,
-        "name": "vl_morning_chronicle_matthewson_1846",
-        "_row": "vl_morning_chronicle_matthewson_1846"
+        "V1": -305.084,
+        "V2": 814.1259,
+        "name": "vl_morning_chronicle_matthewson_1846"
       },
       {
-        "V1": -0.6343,
-        "V2": -2.5553,
-        "name": "vl_morning_chronicle_north_family_1846",
-        "_row": "vl_morning_chronicle_north_family_1846"
+        "V1": -868.556,
+        "V2": -38.5738,
+        "name": "vl_morning_chronicle_north_family_1846"
       },
       {
-        "V1": -1.1883,
-        "V2": -0.6258,
-        "name": "vl_morning_chronicle_william_burn_1846",
-        "_row": "vl_morning_chronicle_william_burn_1846"
+        "V1": -829.587,
+        "V2": 548.1985,
+        "name": "vl_morning_chronicle_william_burn_1846"
       },
       {
-        "V1": 0.7728,
-        "V2": 1.9257,
-        "name": "vl_remarks_on_mr_fitzroys_bill_1853",
-        "_row": "vl_remarks_on_mr_fitzroys_bill_1853"
+        "V1": -368.6638,
+        "V2": -293.6988,
+        "name": "vl_remarks_on_mr_fitzroys_bill_1853"
       },
       {
-        "V1": 0.3831,
-        "V2": -0.5329,
-        "name": "vl_sunday_times_punishment_of_children_1850",
-        "_row": "vl_sunday_times_punishment_of_children_1850"
+        "V1": -393.248,
+        "V2": 259.8621,
+        "name": "vl_sunday_times_punishment_of_children_1850"
       }
     ],
     "_row": "i.3"
@@ -416,100 +352,84 @@
     "culling": 10,
     "data": [
       {
-        "V1": -2.4067,
-        "V2": -0.6665,
-        "name": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-        "_row": "jp_daily_newsletter_mary_ann_parsons_1_1850"
+        "V1": -248.6539,
+        "V2": -639.1837,
+        "name": "jp_daily_newsletter_mary_ann_parsons_1_1850"
       },
       {
-        "V1": 0.3966,
-        "V2": 1.9954,
-        "name": "jp_morning_chronicle_anne_bird_1850",
-        "_row": "jp_morning_chronicle_anne_bird_1850"
+        "V1": 576.8664,
+        "V2": 370.9149,
+        "name": "jp_morning_chronicle_anne_bird_1850"
       },
       {
-        "V1": 0.3484,
-        "V2": 0.1763,
-        "name": "jp_morning_chronicle_dr_ellis_1846",
-        "_row": "jp_morning_chronicle_dr_ellis_1846"
+        "V1": -684.77,
+        "V2": 39.013,
+        "name": "jp_morning_chronicle_dr_ellis_1846"
       },
       {
-        "V1": -0.6178,
-        "V2": -0.2301,
-        "name": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-        "_row": "jp_morning_chronicle_mary_ann_parsons_2_1850"
+        "V1": -607.3279,
+        "V2": 496.4408,
+        "name": "jp_morning_chronicle_mary_ann_parsons_2_1850"
       },
       {
-        "V1": -1.1257,
-        "V2": -0.0908,
-        "name": "jp_morning_chronicle_sarah_brown_1846",
-        "_row": "jp_morning_chronicle_sarah_brown_1846"
+        "V1": 94.602,
+        "V2": -359.5985,
+        "name": "jp_morning_chronicle_sarah_brown_1846"
       },
       {
-        "V1": -1.3308,
-        "V2": -1.2154,
-        "name": "jp_morning_chronicle_susan_moir_1850",
-        "_row": "jp_morning_chronicle_susan_moir_1850"
+        "V1": 531.0614,
+        "V2": -433.9953,
+        "name": "jp_morning_chronicle_susan_moir_1850"
       },
       {
-        "V1": -1.0306,
-        "V2": 0.0812,
-        "name": "jp_morning_chronicle_wife_murder_1851",
-        "_row": "jp_morning_chronicle_wife_murder_1851"
+        "V1": -659.784,
+        "V2": -424.2563,
+        "name": "jp_morning_chronicle_wife_murder_1851"
       },
       {
-        "V1": 4.2275,
-        "V2": -2.2559,
-        "name": "jp_sunday_times_questionable_charity_1850",
-        "_row": "jp_sunday_times_questionable_charity_1850"
+        "V1": 199.6417,
+        "V2": -758.5761,
+        "name": "jp_sunday_times_questionable_charity_1850"
       },
       {
-        "V1": 1.0765,
-        "V2": 1.9514,
-        "name": "vl_daily_newsletter_corporal_punishment_1849",
-        "_row": "vl_daily_newsletter_corporal_punishment_1849"
+        "V1": -174.4753,
+        "V2": 663.2731,
+        "name": "vl_daily_newsletter_corporal_punishment_1849"
       },
       {
-        "V1": -0.1218,
-        "V2": 1.8621,
-        "name": "vl_morning_chronicle_captain_johnstone_1846",
-        "_row": "vl_morning_chronicle_captain_johnstone_1846"
+        "V1": -0.0293,
+        "V2": -0.0161,
+        "name": "vl_morning_chronicle_captain_johnstone_1846"
       },
       {
-        "V1": 1.3563,
-        "V2": -0.138,
-        "name": "vl_morning_chronicle_law_of_assault_1850",
-        "_row": "vl_morning_chronicle_law_of_assault_1850"
+        "V1": 134.8024,
+        "V2": 346.5065,
+        "name": "vl_morning_chronicle_law_of_assault_1850"
       },
       {
-        "V1": -0.1051,
-        "V2": 0.3185,
-        "name": "vl_morning_chronicle_matthewson_1846",
-        "_row": "vl_morning_chronicle_matthewson_1846"
+        "V1": -287.9271,
+        "V2": 235.3011,
+        "name": "vl_morning_chronicle_matthewson_1846"
       },
       {
-        "V1": -0.6343,
-        "V2": -2.5553,
-        "name": "vl_morning_chronicle_north_family_1846",
-        "_row": "vl_morning_chronicle_north_family_1846"
+        "V1": -312.7887,
+        "V2": -201.1039,
+        "name": "vl_morning_chronicle_north_family_1846"
       },
       {
-        "V1": -1.1883,
-        "V2": -0.6258,
-        "name": "vl_morning_chronicle_william_burn_1846",
-        "_row": "vl_morning_chronicle_william_burn_1846"
+        "V1": 371.2061,
+        "V2": -21.1458,
+        "name": "vl_morning_chronicle_william_burn_1846"
       },
       {
-        "V1": 0.7728,
-        "V2": 1.9257,
-        "name": "vl_remarks_on_mr_fitzroys_bill_1853",
-        "_row": "vl_remarks_on_mr_fitzroys_bill_1853"
+        "V1": 783.1299,
+        "V2": -44.5698,
+        "name": "vl_remarks_on_mr_fitzroys_bill_1853"
       },
       {
-        "V1": 0.3831,
-        "V2": -0.5329,
-        "name": "vl_sunday_times_punishment_of_children_1850",
-        "_row": "vl_sunday_times_punishment_of_children_1850"
+        "V1": 284.4462,
+        "V2": 730.9962,
+        "name": "vl_sunday_times_punishment_of_children_1850"
       }
     ],
     "_row": "i.4"
@@ -519,100 +439,84 @@
     "culling": 20,
     "data": [
       {
-        "V1": -2.5717,
-        "V2": -0.061,
-        "name": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-        "_row": "jp_daily_newsletter_mary_ann_parsons_1_1850"
+        "V1": 855.9062,
+        "V2": -122.7417,
+        "name": "jp_daily_newsletter_mary_ann_parsons_1_1850"
       },
       {
-        "V1": 0.8586,
-        "V2": 1.9021,
-        "name": "jp_morning_chronicle_anne_bird_1850",
-        "_row": "jp_morning_chronicle_anne_bird_1850"
+        "V1": 1806.6328,
+        "V2": -256.596,
+        "name": "jp_morning_chronicle_anne_bird_1850"
       },
       {
-        "V1": 0.4032,
-        "V2": -0.1226,
-        "name": "jp_morning_chronicle_dr_ellis_1846",
-        "_row": "jp_morning_chronicle_dr_ellis_1846"
+        "V1": 1146.0343,
+        "V2": -1110.3035,
+        "name": "jp_morning_chronicle_dr_ellis_1846"
       },
       {
-        "V1": -0.6464,
-        "V2": 0.0252,
-        "name": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-        "_row": "jp_morning_chronicle_mary_ann_parsons_2_1850"
+        "V1": -272.4496,
+        "V2": 1571.6009,
+        "name": "jp_morning_chronicle_mary_ann_parsons_2_1850"
       },
       {
-        "V1": -1.1053,
-        "V2": 0.2585,
-        "name": "jp_morning_chronicle_sarah_brown_1846",
-        "_row": "jp_morning_chronicle_sarah_brown_1846"
+        "V1": -0.6129,
+        "V2": -1.0639,
+        "name": "jp_morning_chronicle_sarah_brown_1846"
       },
       {
-        "V1": -1.576,
-        "V2": -1.0576,
-        "name": "jp_morning_chronicle_susan_moir_1850",
-        "_row": "jp_morning_chronicle_susan_moir_1850"
+        "V1": -620.8163,
+        "V2": 601.9897,
+        "name": "jp_morning_chronicle_susan_moir_1850"
       },
       {
-        "V1": -1.0061,
-        "V2": 0.4584,
-        "name": "jp_morning_chronicle_wife_murder_1851",
-        "_row": "jp_morning_chronicle_wife_murder_1851"
+        "V1": -1308.41,
+        "V2": 1271.9219,
+        "name": "jp_morning_chronicle_wife_murder_1851"
       },
       {
-        "V1": 3.2849,
-        "V2": -2.9102,
-        "name": "jp_sunday_times_questionable_charity_1850",
-        "_row": "jp_sunday_times_questionable_charity_1850"
+        "V1": -703.2699,
+        "V2": -1433.1198,
+        "name": "jp_sunday_times_questionable_charity_1850"
       },
       {
-        "V1": 1.5415,
-        "V2": 1.6041,
-        "name": "vl_daily_newsletter_corporal_punishment_1849",
-        "_row": "vl_daily_newsletter_corporal_punishment_1849"
+        "V1": 803.8358,
+        "V2": 1637.8455,
+        "name": "vl_daily_newsletter_corporal_punishment_1849"
       },
       {
-        "V1": 0.3318,
-        "V2": 1.7429,
-        "name": "vl_morning_chronicle_captain_johnstone_1846",
-        "_row": "vl_morning_chronicle_captain_johnstone_1846"
+        "V1": 1409.9674,
+        "V2": 746.0469,
+        "name": "vl_morning_chronicle_captain_johnstone_1846"
       },
       {
-        "V1": 1.3644,
-        "V2": -0.5981,
-        "name": "vl_morning_chronicle_law_of_assault_1850",
-        "_row": "vl_morning_chronicle_law_of_assault_1850"
+        "V1": 313.8227,
+        "V2": -1798.0422,
+        "name": "vl_morning_chronicle_law_of_assault_1850"
       },
       {
-        "V1": -0.0074,
-        "V2": 0.1699,
-        "name": "vl_morning_chronicle_matthewson_1846",
-        "_row": "vl_morning_chronicle_matthewson_1846"
+        "V1": 147.9855,
+        "V2": -853.1139,
+        "name": "vl_morning_chronicle_matthewson_1846"
       },
       {
-        "V1": -1.1003,
-        "V2": -2.0821,
-        "name": "vl_morning_chronicle_north_family_1846",
-        "_row": "vl_morning_chronicle_north_family_1846"
+        "V1": -1579.5147,
+        "V2": 226.9861,
+        "name": "vl_morning_chronicle_north_family_1846"
       },
       {
-        "V1": -1.3312,
-        "V2": -0.3245,
-        "name": "vl_morning_chronicle_william_burn_1846",
-        "_row": "vl_morning_chronicle_william_burn_1846"
+        "V1": -765.4872,
+        "V2": -404.9479,
+        "name": "vl_morning_chronicle_william_burn_1846"
       },
       {
-        "V1": 1.2315,
-        "V2": 1.8074,
-        "name": "vl_remarks_on_mr_fitzroys_bill_1853",
-        "_row": "vl_remarks_on_mr_fitzroys_bill_1853"
+        "V1": 380.7626,
+        "V2": 775.6638,
+        "name": "vl_remarks_on_mr_fitzroys_bill_1853"
       },
       {
-        "V1": 0.3284,
-        "V2": -0.8123,
-        "name": "vl_sunday_times_punishment_of_children_1850",
-        "_row": "vl_sunday_times_punishment_of_children_1850"
+        "V1": -1614.3867,
+        "V2": -852.126,
+        "name": "vl_sunday_times_punishment_of_children_1850"
       }
     ],
     "_row": "i.5"
@@ -622,100 +526,84 @@
     "culling": 0,
     "data": [
       {
-        "V1": -2.3313,
-        "V2": -1.002,
-        "name": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-        "_row": "jp_daily_newsletter_mary_ann_parsons_1_1850"
+        "V1": 410.9256,
+        "V2": 490.5085,
+        "name": "jp_daily_newsletter_mary_ann_parsons_1_1850"
       },
       {
-        "V1": 0.1606,
-        "V2": 2.0128,
-        "name": "jp_morning_chronicle_anne_bird_1850",
-        "_row": "jp_morning_chronicle_anne_bird_1850"
+        "V1": 388.3096,
+        "V2": -620.3341,
+        "name": "jp_morning_chronicle_anne_bird_1850"
       },
       {
-        "V1": 0.2915,
-        "V2": 0.2932,
-        "name": "jp_morning_chronicle_dr_ellis_1846",
-        "_row": "jp_morning_chronicle_dr_ellis_1846"
+        "V1": -469.9801,
+        "V2": -560.9966,
+        "name": "jp_morning_chronicle_dr_ellis_1846"
       },
       {
-        "V1": -0.5861,
-        "V2": -0.3703,
-        "name": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-        "_row": "jp_morning_chronicle_mary_ann_parsons_2_1850"
+        "V1": 23.9267,
+        "V2": 346.0889,
+        "name": "jp_morning_chronicle_mary_ann_parsons_2_1850"
       },
       {
-        "V1": -1.0655,
-        "V2": -0.2774,
-        "name": "jp_morning_chronicle_sarah_brown_1846",
-        "_row": "jp_morning_chronicle_sarah_brown_1846"
+        "V1": 709.9664,
+        "V2": 177.611,
+        "name": "jp_morning_chronicle_sarah_brown_1846"
       },
       {
-        "V1": -1.2167,
-        "V2": -1.343,
-        "name": "jp_morning_chronicle_susan_moir_1850",
-        "_row": "jp_morning_chronicle_susan_moir_1850"
+        "V1": -339.517,
+        "V2": 542.389,
+        "name": "jp_morning_chronicle_susan_moir_1850"
       },
       {
-        "V1": -1.0156,
-        "V2": -0.0823,
-        "name": "jp_morning_chronicle_wife_murder_1851",
-        "_row": "jp_morning_chronicle_wife_murder_1851"
+        "V1": -620.7606,
+        "V2": -155.2921,
+        "name": "jp_morning_chronicle_wife_murder_1851"
       },
       {
-        "V1": 4.6905,
-        "V2": -1.8621,
-        "name": "jp_sunday_times_questionable_charity_1850",
-        "_row": "jp_sunday_times_questionable_charity_1850"
+        "V1": -321.7569,
+        "V2": 129.7026,
+        "name": "jp_sunday_times_questionable_charity_1850"
       },
       {
-        "V1": 0.8161,
-        "V2": 2.1063,
-        "name": "vl_daily_newsletter_corporal_punishment_1849",
-        "_row": "vl_daily_newsletter_corporal_punishment_1849"
+        "V1": -222.7838,
+        "V2": -265.9293,
+        "name": "vl_daily_newsletter_corporal_punishment_1849"
       },
       {
-        "V1": -0.3512,
-        "V2": 1.8847,
-        "name": "vl_morning_chronicle_captain_johnstone_1846",
-        "_row": "vl_morning_chronicle_captain_johnstone_1846"
+        "V1": 50.4748,
+        "V2": 730.1026,
+        "name": "vl_morning_chronicle_captain_johnstone_1846"
       },
       {
-        "V1": 1.2842,
-        "V2": 0.0914,
-        "name": "vl_morning_chronicle_law_of_assault_1850",
-        "_row": "vl_morning_chronicle_law_of_assault_1850"
+        "V1": 184.0696,
+        "V2": -294.0569,
+        "name": "vl_morning_chronicle_law_of_assault_1850"
       },
       {
-        "V1": -0.1784,
-        "V2": 0.3787,
-        "name": "vl_morning_chronicle_matthewson_1846",
-        "_row": "vl_morning_chronicle_matthewson_1846"
+        "V1": -44.1331,
+        "V2": -638.3664,
+        "name": "vl_morning_chronicle_matthewson_1846"
       },
       {
-        "V1": -0.3268,
-        "V2": -2.6743,
-        "name": "vl_morning_chronicle_north_family_1846",
-        "_row": "vl_morning_chronicle_north_family_1846"
+        "V1": 593.4848,
+        "V2": -239.2381,
+        "name": "vl_morning_chronicle_north_family_1846"
       },
       {
-        "V1": -1.1107,
-        "V2": -0.7386,
-        "name": "vl_morning_chronicle_william_burn_1846",
-        "_row": "vl_morning_chronicle_william_burn_1846"
+        "V1": 336.5446,
+        "V2": 84.1917,
+        "name": "vl_morning_chronicle_william_burn_1846"
       },
       {
-        "V1": 0.5602,
-        "V2": 1.9783,
-        "name": "vl_remarks_on_mr_fitzroys_bill_1853",
-        "_row": "vl_remarks_on_mr_fitzroys_bill_1853"
+        "V1": -678.7708,
+        "V2": 273.6202,
+        "name": "vl_remarks_on_mr_fitzroys_bill_1853"
       },
       {
-        "V1": 0.3792,
-        "V2": -0.3954,
-        "name": "vl_sunday_times_punishment_of_children_1850",
-        "_row": "vl_sunday_times_punishment_of_children_1850"
+        "V1": 0.0001,
+        "V2": -0.0009,
+        "name": "vl_sunday_times_punishment_of_children_1850"
       }
     ],
     "_row": "i.6"
@@ -725,100 +613,84 @@
     "culling": 10,
     "data": [
       {
-        "V1": -2.3295,
-        "V2": -1.0063,
-        "name": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-        "_row": "jp_daily_newsletter_mary_ann_parsons_1_1850"
+        "V1": 714.337,
+        "V2": 540.7937,
+        "name": "jp_daily_newsletter_mary_ann_parsons_1_1850"
       },
       {
-        "V1": 0.1614,
-        "V2": 2.0185,
-        "name": "jp_morning_chronicle_anne_bird_1850",
-        "_row": "jp_morning_chronicle_anne_bird_1850"
+        "V1": -619.4081,
+        "V2": 1785.6284,
+        "name": "jp_morning_chronicle_anne_bird_1850"
       },
       {
-        "V1": 0.2657,
-        "V2": 0.2584,
-        "name": "jp_morning_chronicle_dr_ellis_1846",
-        "_row": "jp_morning_chronicle_dr_ellis_1846"
+        "V1": 735.0731,
+        "V2": -512.284,
+        "name": "jp_morning_chronicle_dr_ellis_1846"
       },
       {
-        "V1": -0.5796,
-        "V2": -0.3593,
-        "name": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-        "_row": "jp_morning_chronicle_mary_ann_parsons_2_1850"
+        "V1": -260.0582,
+        "V2": -857.4001,
+        "name": "jp_morning_chronicle_mary_ann_parsons_2_1850"
       },
       {
-        "V1": -1.0625,
-        "V2": -0.2733,
-        "name": "jp_morning_chronicle_sarah_brown_1846",
-        "_row": "jp_morning_chronicle_sarah_brown_1846"
+        "V1": 1652.2307,
+        "V2": 32.5497,
+        "name": "jp_morning_chronicle_sarah_brown_1846"
       },
       {
-        "V1": -1.2186,
-        "V2": -1.3525,
-        "name": "jp_morning_chronicle_susan_moir_1850",
-        "_row": "jp_morning_chronicle_susan_moir_1850"
+        "V1": 479.6085,
+        "V2": 1581.5382,
+        "name": "jp_morning_chronicle_susan_moir_1850"
       },
       {
-        "V1": -1.0098,
-        "V2": -0.0726,
-        "name": "jp_morning_chronicle_wife_murder_1851",
-        "_row": "jp_morning_chronicle_wife_murder_1851"
+        "V1": -1355.6944,
+        "V2": 944.7739,
+        "name": "jp_morning_chronicle_wife_murder_1851"
       },
       {
-        "V1": 4.6947,
-        "V2": -1.8547,
-        "name": "jp_sunday_times_questionable_charity_1850",
-        "_row": "jp_sunday_times_questionable_charity_1850"
+        "V1": 1506.8721,
+        "V2": 1140.8726,
+        "name": "jp_sunday_times_questionable_charity_1850"
       },
       {
-        "V1": 0.8156,
-        "V2": 2.1092,
-        "name": "vl_daily_newsletter_corporal_punishment_1849",
-        "_row": "vl_daily_newsletter_corporal_punishment_1849"
+        "V1": -1317.6268,
+        "V2": -997.4244,
+        "name": "vl_daily_newsletter_corporal_punishment_1849"
       },
       {
-        "V1": -0.3551,
-        "V2": 1.8804,
-        "name": "vl_morning_chronicle_captain_johnstone_1846",
-        "_row": "vl_morning_chronicle_captain_johnstone_1846"
+        "V1": -895.7102,
+        "V2": -17.6453,
+        "name": "vl_morning_chronicle_captain_johnstone_1846"
       },
       {
-        "V1": 1.2847,
-        "V2": 0.0952,
-        "name": "vl_morning_chronicle_law_of_assault_1850",
-        "_row": "vl_morning_chronicle_law_of_assault_1850"
+        "V1": 1550.6462,
+        "V2": -1080.6448,
+        "name": "vl_morning_chronicle_law_of_assault_1850"
       },
       {
-        "V1": -0.1814,
-        "V2": 0.3702,
-        "name": "vl_morning_chronicle_matthewson_1846",
-        "_row": "vl_morning_chronicle_matthewson_1846"
+        "V1": -1889.6617,
+        "V2": -37.131,
+        "name": "vl_morning_chronicle_matthewson_1846"
       },
       {
-        "V1": -0.3181,
-        "V2": -2.6654,
-        "name": "vl_morning_chronicle_north_family_1846",
-        "_row": "vl_morning_chronicle_north_family_1846"
+        "V1": -293.4467,
+        "V2": 846.456,
+        "name": "vl_morning_chronicle_north_family_1846"
       },
       {
-        "V1": -1.1094,
-        "V2": -0.739,
-        "name": "vl_morning_chronicle_william_burn_1846",
-        "_row": "vl_morning_chronicle_william_burn_1846"
+        "V1": 0.0432,
+        "V2": -0.0552,
+        "name": "vl_morning_chronicle_william_burn_1846"
       },
       {
-        "V1": 0.5645,
-        "V2": 1.9923,
-        "name": "vl_remarks_on_mr_fitzroys_bill_1853",
-        "_row": "vl_remarks_on_mr_fitzroys_bill_1853"
+        "V1": 541.4585,
+        "V2": -1561.3495,
+        "name": "vl_remarks_on_mr_fitzroys_bill_1853"
       },
       {
-        "V1": 0.3775,
-        "V2": -0.4011,
-        "name": "vl_sunday_times_punishment_of_children_1850",
-        "_row": "vl_sunday_times_punishment_of_children_1850"
+        "V1": -548.663,
+        "V2": -1808.6783,
+        "name": "vl_sunday_times_punishment_of_children_1850"
       }
     ],
     "_row": "i.7"
@@ -828,100 +700,84 @@
     "culling": 20,
     "data": [
       {
-        "V1": -2.6104,
-        "V2": -0.1135,
-        "name": "jp_daily_newsletter_mary_ann_parsons_1_1850",
-        "_row": "jp_daily_newsletter_mary_ann_parsons_1_1850"
+        "V1": 33.08,
+        "V2": -624.2151,
+        "name": "jp_daily_newsletter_mary_ann_parsons_1_1850"
       },
       {
-        "V1": 0.8393,
-        "V2": 1.914,
-        "name": "jp_morning_chronicle_anne_bird_1850",
-        "_row": "jp_morning_chronicle_anne_bird_1850"
+        "V1": -61.0165,
+        "V2": 1151.3693,
+        "name": "jp_morning_chronicle_anne_bird_1850"
       },
       {
-        "V1": 0.3707,
-        "V2": -0.1169,
-        "name": "jp_morning_chronicle_dr_ellis_1846",
-        "_row": "jp_morning_chronicle_dr_ellis_1846"
+        "V1": -393.6664,
+        "V2": 485.5562,
+        "name": "jp_morning_chronicle_dr_ellis_1846"
       },
       {
-        "V1": -0.6582,
-        "V2": -0.0213,
-        "name": "jp_morning_chronicle_mary_ann_parsons_2_1850",
-        "_row": "jp_morning_chronicle_mary_ann_parsons_2_1850"
+        "V1": 603.8861,
+        "V2": -161.4323,
+        "name": "jp_morning_chronicle_mary_ann_parsons_2_1850"
       },
       {
-        "V1": -1.0742,
-        "V2": 0.197,
-        "name": "jp_morning_chronicle_sarah_brown_1846",
-        "_row": "jp_morning_chronicle_sarah_brown_1846"
+        "V1": 726.1217,
+        "V2": -895.6135,
+        "name": "jp_morning_chronicle_sarah_brown_1846"
       },
       {
-        "V1": -1.6236,
-        "V2": -1.0761,
-        "name": "jp_morning_chronicle_susan_moir_1850",
-        "_row": "jp_morning_chronicle_susan_moir_1850"
+        "V1": -583.4412,
+        "V2": -224.3541,
+        "name": "jp_morning_chronicle_susan_moir_1850"
       },
       {
-        "V1": -1.0042,
-        "V2": 0.4348,
-        "name": "jp_morning_chronicle_wife_murder_1851",
-        "_row": "jp_morning_chronicle_wife_murder_1851"
+        "V1": 0.0002,
+        "V2": -0.0003,
+        "name": "jp_morning_chronicle_wife_murder_1851"
       },
       {
-        "V1": 3.3788,
-        "V2": -2.9483,
-        "name": "jp_sunday_times_questionable_charity_1850",
-        "_row": "jp_sunday_times_questionable_charity_1850"
+        "V1": -627.3954,
+        "V2": -967.3422,
+        "name": "jp_sunday_times_questionable_charity_1850"
       },
       {
-        "V1": 1.5333,
-        "V2": 1.6565,
-        "name": "vl_daily_newsletter_corporal_punishment_1849",
-        "_row": "vl_daily_newsletter_corporal_punishment_1849"
+        "V1": 1076.1624,
+        "V2": 413.8233,
+        "name": "vl_daily_newsletter_corporal_punishment_1849"
       },
       {
-        "V1": 0.3152,
-        "V2": 1.7915,
-        "name": "vl_morning_chronicle_captain_johnstone_1846",
-        "_row": "vl_morning_chronicle_captain_johnstone_1846"
+        "V1": -1113.8725,
+        "V2": 297.7631,
+        "name": "vl_morning_chronicle_captain_johnstone_1846"
       },
       {
-        "V1": 1.3533,
-        "V2": -0.5465,
-        "name": "vl_morning_chronicle_law_of_assault_1850",
-        "_row": "vl_morning_chronicle_law_of_assault_1850"
+        "V1": -830.4697,
+        "V2": 1024.3189,
+        "name": "vl_morning_chronicle_law_of_assault_1850"
       },
       {
-        "V1": -0.0161,
-        "V2": 0.2148,
-        "name": "vl_morning_chronicle_matthewson_1846",
-        "_row": "vl_morning_chronicle_matthewson_1846"
+        "V1": 69.7845,
+        "V2": -1316.8295,
+        "name": "vl_morning_chronicle_matthewson_1846"
       },
       {
-        "V1": -1.0504,
-        "V2": -2.1096,
-        "name": "vl_morning_chronicle_north_family_1846",
-        "_row": "vl_morning_chronicle_north_family_1846"
+        "V1": 1273.9442,
+        "V2": -340.5529,
+        "name": "vl_morning_chronicle_north_family_1846"
       },
       {
-        "V1": -1.3368,
-        "V2": -0.3126,
-        "name": "vl_morning_chronicle_william_burn_1846",
-        "_row": "vl_morning_chronicle_william_burn_1846"
+        "V1": 717.5552,
+        "V2": 1106.3564,
+        "name": "vl_morning_chronicle_william_burn_1846"
       },
       {
-        "V1": 1.2445,
-        "V2": 1.8138,
-        "name": "vl_remarks_on_mr_fitzroys_bill_1853",
-        "_row": "vl_remarks_on_mr_fitzroys_bill_1853"
+        "V1": 340.1421,
+        "V2": 524.4441,
+        "name": "vl_remarks_on_mr_fitzroys_bill_1853"
       },
       {
-        "V1": 0.3388,
-        "V2": -0.7775,
-        "name": "vl_sunday_times_punishment_of_children_1850",
-        "_row": "vl_sunday_times_punishment_of_children_1850"
+        "V1": -1230.8148,
+        "V2": -473.2913,
+        "name": "vl_sunday_times_punishment_of_children_1850"
       }
     ],
     "_row": "i.8"

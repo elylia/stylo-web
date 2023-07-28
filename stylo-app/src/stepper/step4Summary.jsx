@@ -65,7 +65,7 @@ function Step4({ settings, handleNext, handleBack }) {
           <TableHead>
             <TableRow>
               <TableCell>
-                <h1>Overview</h1>
+                <h1>Parameter</h1>
               </TableCell>
               <TableCell align="left">
                 <h1>Value</h1>
@@ -89,16 +89,18 @@ function Step4({ settings, handleNext, handleBack }) {
           </TableBody>
         </Table>
       </TableContainer>
-      <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
-        <Button onClick={handleBack} variant="contained" color="primary">
-          Back
-        </Button>
-        <Box sx={{ flex: "1 1 auto" }} />
+      <div className="buttonsBoth">
+        <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
+          <Button onClick={handleBack} variant="contained" color="primary">
+            Back
+          </Button>
+          <Box sx={{ flex: "1 1 auto" }} />
 
-        <Button onClick={handleNext} variant="contained" color="primary">
-          Next
-        </Button>
-      </Box>
+          <Button onClick={handleNext} variant="contained" color="primary">
+            Next
+          </Button>
+        </Box>
+      </div>
     </React.Fragment>
   );
 }

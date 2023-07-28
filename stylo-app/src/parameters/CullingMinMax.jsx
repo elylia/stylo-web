@@ -13,13 +13,12 @@ function CullingMinMax({ settings, setSettings }) {
   };
   return (
     <>
-      <div>
+      <div className="parameter">
         {/*Culling Input*/}
         <TextField
           id="outlined-basic"
           label="Culling Minimum"
           variant="outlined"
-          required
           size="small"
           style={{ maxWidth: "200px" }}
           type="number"
@@ -30,7 +29,6 @@ function CullingMinMax({ settings, setSettings }) {
           id="outlined-basic"
           label="Culling Maximum"
           variant="outlined"
-          required
           size="small"
           style={{ maxWidth: "200px" }}
           type="number"

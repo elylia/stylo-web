@@ -17,7 +17,7 @@ function InfoDialog(title, content) {
       <Tooltip title="Click for more information on the different options">
         <InfoIcon
           color="action"
-          sx={{ fontSize: 17 }}
+          sx={{ fontSize: 17, cursor: "pointer" }}
           onClick={() => setOpen(true)}
         />
       </Tooltip>
@@ -35,6 +35,7 @@ function InfoDialog(title, content) {
                 bgcolor: "#9e9e9e",
                 color: "white",
               },
+              cursor: "pointer",
             }}
           />
         </DialogActions>

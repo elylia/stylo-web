@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-
+import React from "react";
 import Features from "../parameters/Features";
 import NGramSize from "../parameters/NGramSize";
 import MfwMinMax from "../parameters/MfwMinMax";
@@ -21,41 +20,42 @@ function Step2({ settings, setSettings, handleNext, handleBack }) {
       <h1>Choose Features</h1>
       <InfoFeatures />
 
-      <div className="Parameter">
+      <div className="parameter">
         <Features setSettings={setSettings} settings={settings} />
-
         <NGramSize setSettings={setSettings} settings={settings} />
       </div>
       <h1>MFW Settings</h1>
       <InfoMFW />
-      <div className="Parameter">
+      <div className="parameter">
         <MfwMinMax setSettings={setSettings} settings={settings} />
         <MfwIncr setSettings={setSettings} settings={settings} />
         <StartAt setSettings={setSettings} settings={settings} />
       </div>
       <h1>Culling Settings</h1>
       <InfoCulling />
-      <div className="Parameter">
+      <div className="parameter">
         <CullingMinMax setSettings={setSettings} settings={settings} />
         <CullingIncr setSettings={setSettings} settings={settings} />
       </div>
       <h1>Miscellaneous</h1>
       <InfoMisc />
 
-      <div className="Parameter">
+      <div className="parameter">
         <DeletePronouns setSettings={setSettings} settings={settings} />
         <PreserveCase setSettings={setSettings} settings={settings} />
       </div>
-      <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
-        <Button onClick={handleBack} variant="contained" color="primary">
-          Back
-        </Button>
-        <Box sx={{ flex: "1 1 auto" }} />
+      <div className="buttonsBoth">
+        <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
+          <Button onClick={handleBack} variant="contained" color="primary">
+            Back
+          </Button>
+          <Box sx={{ flex: "1 1 auto" }} />
 
-        <Button onClick={handleNext} variant="contained" color="primary">
-          Next
-        </Button>
-      </Box>
+          <Button onClick={handleNext} variant="contained" color="primary">
+            Next
+          </Button>
+        </Box>
+      </div>
     </React.Fragment>
   );
 }

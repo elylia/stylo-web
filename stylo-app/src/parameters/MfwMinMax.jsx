@@ -15,13 +15,12 @@ function MfwMinMax({ settings, setSettings }) {
   };
   return (
     <>
-      <div>
+      <div className="parameter">
         {/*MFW Input*/}
         <TextField
           id="outlined-basic"
           label="MFW Minimum"
           variant="outlined"
-          required
           size="small"
           style={{ maxWidth: "200px" }}
           type="number"
@@ -32,7 +31,6 @@ function MfwMinMax({ settings, setSettings }) {
           id="outlined-basic"
           label="MFW Maximum"
           variant="outlined"
-          required
           size="small"
           style={{ maxWidth: "200px" }}
           type="number"
