@@ -1,14 +1,25 @@
-import { useState } from "react";
-
 import "../App.css";
 import * as React from "react";
 import { FormControlLabel, FormGroup, Switch } from "@mui/material";
 
-function SaveFeatureList() {
+function SaveFeatureList(settings, setSettings) {
+  const handleChangeCase = (event) => {
+    const newValue = event.target.checked;
+    setSettings({ ...settings, featureList: newValue });
+  };
+
   return (
     <>
       <FormGroup>
-        <FormControlLabel control={<Switch />} label="Save Feature List" />
+        <FormControlLabel
+          control={
+            <Switch
+              checked={settings.featureList}
+              onChange={handleChangeCase}
+            />
+          }
+          label="Save Feature List(s)"
+        />
       </FormGroup>
     </>
   );

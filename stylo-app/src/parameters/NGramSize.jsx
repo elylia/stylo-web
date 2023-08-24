@@ -6,7 +6,8 @@ import TextField from "@mui/material/TextField";
 
 function NGramSize({ settings, setSettings }) {
   const handleChangeNGram = (event) => {
-    const newValue = event.target.value;
+    let newValue = event.target.value;
+    newValue = newValue.replace(/\D/g, "");
     setSettings({ ...settings, nGram: Number(newValue) });
   };
   return (
@@ -18,7 +19,6 @@ function NGramSize({ settings, setSettings }) {
           label="nGram Size"
           variant="outlined"
           size="small"
-          type="number"
           value={settings.nGram}
           onChange={handleChangeNGram}
         />

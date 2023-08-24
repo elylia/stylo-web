@@ -3,7 +3,8 @@ import * as d3 from "d3";
 import getColor from "./getColor";
 import computePosition from "./computePosition";
 import InfoPlots from "../../infoText/infoPlots";
-//To-Do: Auf neue Daten anpassen.
+import SavePng from "../../download/savePng";
+
 const BctPlot = ({ url }) => {
   let width = 1000;
   let height = 1000;
@@ -102,9 +103,14 @@ const BctPlot = ({ url }) => {
   return (
     <div className="bctPlot">
       <h1>
-        {settings.analysisTypeLabel} <InfoPlots settings={settings} />
+        {settings.analysisTypeLabel}{" "}
+        <div className="settingsDownload">
+          <InfoPlots settings={settings} />
+          <SavePng settings={settings} />
+          <InfoNavigation />
+        </div>
       </h1>
-      <svg width={width} height={height} ref={ref}>
+      <svg width={width} height={height} ref={ref} id={"svg-chart"}>
         <g transform="translate(100,0)"></g>
         <g className="zoom_group" transform={currentZoom?.transform}>
           {links.map((d, i) => (
@@ -156,7 +162,7 @@ const BctPlot = ({ url }) => {
                     currentZoom
                       ? `scale(${Math.max(
                           0.7,
-                          Math.min(2, 1 / currentZoom.transform.k)
+                          Math.min(1, 0.5 / currentZoom.transform.k)
                         )})` +
                         `
                     rotate(${textrotation})`

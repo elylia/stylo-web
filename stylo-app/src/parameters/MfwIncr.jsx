@@ -6,7 +6,8 @@ import TextField from "@mui/material/TextField";
 
 function MfwIncr({ settings, setSettings }) {
   const handleChangeMfwIncr = (event) => {
-    const newValue = event.target.value;
+    let newValue = event.target.value;
+    newValue = newValue.replace(/\D/g, "");
     setSettings({ ...settings, mfwIncr: Number(newValue) });
   };
   return (
@@ -18,7 +19,6 @@ function MfwIncr({ settings, setSettings }) {
           label="MFW Increment"
           variant="outlined"
           size="small"
-          type="number"
           value={settings.mfwIncr}
           onChange={handleChangeMfwIncr}
         />

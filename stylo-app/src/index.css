@@ -3,7 +3,6 @@
   line-height: 1.5;
   font-weight: 400;
   color: #4d4d4d;
-
   color-scheme: normal;
   color: rgba(255, 255, 255, 0.87);
   background-image: url("../src/assets/Background_3.svg");
@@ -25,7 +24,7 @@
 
 a {
   font-weight: 500;
-  color: #8da2af;
+  color: #697882;
   text-decoration: inherit;
 }
 a:hover {
@@ -245,6 +244,7 @@ body {
 .icon-container {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
 .content-box {
@@ -255,7 +255,13 @@ body {
   box-sizing: border-box;
   min-height: 400px;
   overflow: auto;
+  display: flex;
+  flex-direction: column;
   -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+}
+
+.content {
+  flex: 1;
 }
 
 .content-box h1 {
@@ -263,11 +269,12 @@ body {
 }
 .result-box {
   width: 100%;
+  height: 600px;
   padding: 20px;
   background-color: #ffffff;
   border-radius: 10px;
   box-sizing: border-box;
-  min-height: 600px;
+  overflow: auto;
 }
 
 .title {
@@ -293,8 +300,12 @@ body {
   margin-left: auto;
 }
 
-.caSlider {
+.plotSlider {
   overflow: hidden;
+  display: block;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
 }
 
 .bctPlot {
@@ -311,4 +322,26 @@ body {
 }
 
 .buttonsBoth {
+}
+
+button:focus {
+  outline: none;
+}
+
+.settingsDownload {
+  display: flex;
+  gap: 10px;
+  align-self: center;
+}
+
+.scatterChart {
+  flex: 1;
+  aspect-ratio: 1.6 / 1;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.caChart {
+  flex: 1;
+  width: 100%;
 }

@@ -9,21 +9,23 @@ import { Box, Button } from "@mui/material";
 function Step3({ settings, setSettings, handleNext, handleBack }) {
   return (
     <React.Fragment>
-      <h1>Choose Sampling</h1>
-      <InfoSample />
-      <div className="sampling">
-        <Sampling setSettings={setSettings} settings={settings} />
+      <div className="content">
+        <h1>Choose Sampling</h1>
+        <InfoSample />
+        <div className="sampling">
+          <Sampling setSettings={setSettings} settings={settings} />
+        </div>
+        {settings.sampling === "normal.sampling" && (
+          <div className="sampling">
+            <SampleSize setSettings={setSettings} settings={settings} />
+          </div>
+        )}
+        {settings.sampling === "random.sampling" && (
+          <div className="sampling">
+            <RandomSample setSettings={setSettings} settings={settings} />
+          </div>
+        )}
       </div>
-      {settings.sampling === "normal.sampling" && (
-        <div className="sampling">
-          <SampleSize setSettings={setSettings} settings={settings} />
-        </div>
-      )}
-      {settings.sampling === "random.sampling" && (
-        <div className="sampling">
-          <RandomSample setSettings={setSettings} settings={settings} />
-        </div>
-      )}
       <div className="buttonsBoth">
         <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
           <Button onClick={handleBack} variant="contained" color="primary">

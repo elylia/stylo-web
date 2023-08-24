@@ -1,14 +1,25 @@
-import { useState } from "react";
-
 import "../App.css";
 import * as React from "react";
 import { FormControlLabel, FormGroup, Switch } from "@mui/material";
 
-function SaveFrequencyTable() {
+function SaveFrequencyTable(settings, setSettings) {
+  const handleChangeCase = (event) => {
+    const newValue = event.target.checked;
+    setSettings({ ...settings, frequencyTable: newValue });
+  };
+
   return (
     <>
       <FormGroup>
-        <FormControlLabel control={<Switch />} label="Save Frequency Table" />
+        <FormControlLabel
+          control={
+            <Switch
+              checked={settings.frequencyTable}
+              onChange={handleChangeCase}
+            />
+          }
+          label="Save Feature List(s)"
+        />
       </FormGroup>
     </>
   );

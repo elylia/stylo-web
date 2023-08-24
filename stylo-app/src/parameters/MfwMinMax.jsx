@@ -6,11 +6,13 @@ import TextField from "@mui/material/TextField";
 
 function MfwMinMax({ settings, setSettings }) {
   const handleChangeMfwMin = (event) => {
-    const newValue = event.target.value;
+    let newValue = event.target.value;
+    newValue = newValue.replace(/\D/g, "");
     setSettings({ ...settings, mfwMin: Number(newValue) });
   };
   const handleChangeMfwMax = (event) => {
-    const newValue = event.target.value;
+    let newValue = event.target.value;
+    newValue = newValue.replace(/\D/g, "");
     setSettings({ ...settings, mfwMax: Number(newValue) });
   };
   return (
@@ -23,7 +25,6 @@ function MfwMinMax({ settings, setSettings }) {
           variant="outlined"
           size="small"
           style={{ maxWidth: "200px" }}
-          type="number"
           value={settings.mfwMin}
           onChange={handleChangeMfwMin}
         />
@@ -33,7 +34,6 @@ function MfwMinMax({ settings, setSettings }) {
           variant="outlined"
           size="small"
           style={{ maxWidth: "200px" }}
-          type="number"
           value={settings.mfwMax}
           onChange={handleChangeMfwMax}
         />

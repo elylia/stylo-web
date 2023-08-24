@@ -8,15 +8,15 @@ function InfoOutput() {
       Please select additional output options if desired.
       <br />
       <li>
-        <b>Save Distance Table:</b> Save final distance table(s) in separate
+        <b>Save Distance Table(s):</b> Save final distance table(s) in separate
         text file(s).
       </li>
       <li>
-        <b>Save Frequency Table:</b> Save frequency table(s) in separate text
+        <b>Save Frequency Table(s):</b> Save frequency table(s) in separate text
         file(s).
       </li>
       <li>
-        <b>Save Feature List:</b> Save final feature (word, n-gram) list(s),
+        <b>Save Feature List(s):</b> Save final feature (word, n-gram) list(s),
         e.g. the words actually used in the analysis.
       </li>
       <ErrorIcon

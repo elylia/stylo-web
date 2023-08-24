@@ -13,10 +13,11 @@ const executeR = async (settings) => {
       const result = await response.json();
       return result;
     } else {
-      console.error("Error executing R code:", response.statusText);
+      const originalErrorMessage = await response.json();
+      throw new Error(originalErrorMessage.error.message);
     }
   } catch (error) {
-    console.error("Error executing R code:", error);
+    throw error;
   }
 };
 

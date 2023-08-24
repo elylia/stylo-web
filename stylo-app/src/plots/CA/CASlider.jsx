@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Box, Slider } from "@mui/material";
 import CaPlot from "./CAPlot";
 import InfoPlots from "../../infoText/infoPlots";
+import SavePng from "../../download/savePng";
+import InfoNavigation from "../../infoText/infoNavigation";
+import Search from "../../search/search";
 
 const CaSlider = ({ url, settings }) => {
   const [data, setData] = useState([
@@ -13,6 +16,12 @@ const CaSlider = ({ url, settings }) => {
   ]);
   const [currentMfwSliderIndex, setCurrentMfwSliderIndex] = useState(0);
   const [currentCullSliderIndex, setCurrentCullSliderIndex] = useState(0);
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const handleSearchQuery = (event) => {
+    const newValue = event.target.value;
+    setSearchQuery(newValue);
+  };
 
   const fetchJson = () => {
     fetch("http://localhost:5000/" + url)
@@ -52,10 +61,29 @@ const CaSlider = ({ url, settings }) => {
   }));
 
   return (
-    <div className="caSlider">
+    <div className="plotSlider">
       <h1>
-        {settings.analysisTypeLabel} <InfoPlots settings={settings} />
+        {settings.analysisTypeLabel} <br />{" "}
       </h1>
+      <div className="settingsDownload">
+        <InfoPlots settings={settings} />
+        <SavePng
+          settings={settings}
+          mfw={mfwData[currentMfwSliderIndex]}
+          cull={cullData[currentCullSliderIndex]}
+        />
+        <InfoNavigation />
+        <Search
+          onChange={handleSearchQuery}
+          labels={
+            data.find(
+              (element) =>
+                element.mfw == mfwData[currentMfwSliderIndex] &&
+                element.culling == cullData[currentCullSliderIndex]
+            ).data.name
+          }
+        />
+      </div>
       <CaPlot
         data={
           data.find(
@@ -64,6 +92,7 @@ const CaSlider = ({ url, settings }) => {
               element.culling == cullData[currentCullSliderIndex]
           ).data
         }
+        searchQuery={searchQuery}
       />
       {mfwData.length > 1 && (
         <React.Fragment>

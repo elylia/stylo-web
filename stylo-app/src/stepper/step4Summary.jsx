@@ -53,42 +53,44 @@ function Step4({ settings, handleNext, handleBack }) {
 
   return (
     <React.Fragment>
-      <h1>Parameters</h1>
-      <TableContainer component={Paper}>
-        <Table
-          sx={{
-            height: "max-content",
-          }}
-          size="small"
-          stickyHeader
-        >
-          <TableHead>
-            <TableRow>
-              <TableCell>
-                <h1>Parameter</h1>
-              </TableCell>
-              <TableCell align="left">
-                <h1>Value</h1>
-              </TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {rows.map((row) => (
-              <TableRow
-                key={row.name}
-                sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-                hover
-              >
-                <TableCell component="th" scope="row">
-                  {row.parameter}
+      <div className="content">
+        <h1>Summary</h1>
+        <TableContainer component={Paper}>
+          <Table
+            sx={{
+              height: "max-content",
+            }}
+            size="small"
+            stickyHeader
+          >
+            <TableHead>
+              <TableRow>
+                <TableCell>
+                  <h1>Parameter</h1>
                 </TableCell>
-
-                <TableCell align="left">{row.value}</TableCell>
+                <TableCell align="left">
+                  <h1>Value</h1>
+                </TableCell>
               </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
+            </TableHead>
+            <TableBody>
+              {rows.map((row) => (
+                <TableRow
+                  key={row.name}
+                  sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+                  hover
+                >
+                  <TableCell component="th" scope="row">
+                    {row.parameter}
+                  </TableCell>
+
+                  <TableCell align="left">{row.value}</TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </TableContainer>
+      </div>
       <div className="buttonsBoth">
         <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
           <Button onClick={handleBack} variant="contained" color="primary">

@@ -19,18 +19,15 @@ function InfoDialogButton(title, content) {
       <Tooltip title="Click to see the applied settings">
         <Button
           onClick={() => setOpen(true)}
-          variant="text"
-          color="secondary"
+          variant="contained"
           size="small"
+          sx={{ gap: "4px" }}
         >
-          <b>
-            (Settings
-            <InfoIcon
-              sx={{ fontSize: 15, verticalAlign: "sub" }}
-              color="action"
-            />
-            )
-          </b>
+          <InfoIcon
+            sx={{ fontSize: 15, verticalAlign: "sub" }}
+            color="#ffffff"
+          />
+          Settings
         </Button>
       </Tooltip>
       <Dialog

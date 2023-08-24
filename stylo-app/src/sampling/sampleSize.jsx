@@ -20,7 +20,6 @@ function SampleSize({ settings, setSettings }) {
           variant="outlined"
           required
           size="small"
-          type="number"
           value={settings.sampleSize}
           onChange={handleChangeSampleSize}
         />

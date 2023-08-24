@@ -3,7 +3,8 @@ import TextField from "@mui/material/TextField";
 
 function CullingIncr({ settings, setSettings }) {
   const handleChangeCullIncr = (event) => {
-    const newValue = event.target.value;
+    let newValue = event.target.value;
+    newValue = newValue.replace(/\D/g, "");
     setSettings({ ...settings, cullIncr: Number(newValue) });
   };
 
@@ -14,8 +15,6 @@ function CullingIncr({ settings, setSettings }) {
         label="Culling Increment"
         variant="outlined"
         size="small"
-        type="number"
-        inputProps={{ step: "10" }}
         value={settings.cullIncr}
         onChange={handleChangeCullIncr}
       />

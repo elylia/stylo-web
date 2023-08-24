@@ -15,6 +15,10 @@ const CACode = (settings) => {
     cullIncr: settings.cullIncr,
     deletePronouns: settings.pronouns == false ? "FALSE" : "TRUE",
     preserveCase: settings.case == false ? "FALSE" : "TRUE",
+    frequencyTable: settings.frequencyTable == false ? "FALSE" : "TRUE",
+    distanceTable: settings.distanceTable == false ? "FALSE" : "TRUE",
+    featureList: settings.featureList == false ? "FALSE" : "TRUE",
+
     sampling: settings.sampling,
     sampleSize: settings.sampleSize,
     randomSample: settings.randomSample,
@@ -97,7 +101,10 @@ const CACode = (settings) => {
                       sample.size = {{sampleSize}},
                       number.of.samples = {{randomSample}},
                       corpus.dir = "corpus",
-                      write.pdf.file = "false")
+                      write.pdf.file = "false",   
+                      save.distance.tables = {{distanceTable}},
+                      save.analyzed.freqs = {{frequencyTable}},
+                      save.analyzed.features = {{featureList}})
         table <- as.table(data$distance.table)
         
         edges_JSON <- toJSON(data$list.of.edges, pretty = TRUE)

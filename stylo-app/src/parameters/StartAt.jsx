@@ -6,7 +6,8 @@ import TextField from "@mui/material/TextField";
 
 function StartAt({ settings, setSettings }) {
   const handleChangeStartAt = (event) => {
-    const newValue = event.target.value;
+    let newValue = event.target.value;
+    newValue = newValue.replace(/\D/g, "");
     setSettings({ ...settings, startAt: Number(newValue) });
   };
   return (
@@ -18,7 +19,6 @@ function StartAt({ settings, setSettings }) {
           label="Start at freq. rank"
           variant="outlined"
           size="small"
-          type="number"
           value={settings.startAt}
           onChange={handleChangeStartAt}
         />

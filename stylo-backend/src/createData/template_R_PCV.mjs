@@ -14,6 +14,10 @@ const PcvCode = (settings) => {
     cullIncr: settings.cullIncr,
     deletePronouns: settings.pronouns == false ? "FALSE" : "TRUE",
     preserveCase: settings.case == false ? "FALSE" : "TRUE",
+    frequencyTable: settings.frequencyTable == false ? "FALSE" : "TRUE",
+    distanceTable: settings.distanceTable == false ? "FALSE" : "TRUE",
+    featureList: settings.featureList == false ? "FALSE" : "TRUE",
+
     sampling: settings.sampling,
     sampleSize: settings.sampleSize,
     randomSample: settings.randomSample,
@@ -27,6 +31,8 @@ library(stringr)
 mfw <- c()
 culling <- c()
 dataset <- list()
+pcLabel1 <- list()
+pcLabel2 <- list()
 for (i in seq({{mfwMin}}, {{mfwMax}}, by={{mfwIncr}})){
   for(j in seq({{cullMin}}, {{cullMax}}, by={{cullIncr}})){
 data <- stylo(gui = FALSE, 
@@ -46,7 +52,10 @@ data <- stylo(gui = FALSE,
               sample.size = {{sampleSize}},
               number.of.samples = {{randomSample}},
               corpus.dir = "corpus",
-              write.pdf.file = "false")
+              write.pdf.file = "false",
+              save.distance.tables = {{distanceTable}},
+              save.analyzed.freqs = {{frequencyTable}},
+              save.analyzed.features = {{featureList}})
 pca.results = prcomp(data$table.with.all.freqs[,1:i])
 expl.var = round(((pca.results$sdev^2) / sum(pca.results$sdev^2) * 100), 1)
 PC1_lab = paste("PC1 (", expl.var[1], "%)", sep="")
@@ -63,13 +72,17 @@ xy.coord <- data.frame(xy.coord)
 mfw <- rbind(mfw, i)
 culling <- rbind(culling, j)
 dataset <- rbind(dataset, list(xy.coord))
+pcLabel1 <- rbind(pcLabel1, list(PC1_lab))
+pcLabel2 <- rbind(pcLabel2, list(PC2_lab))
 
-  } }
+}}
 jsonData <- data.frame(mfw = mfw, culling = culling, data= dataset)
+jsonAxisLabel <- data.frame(mfw = mfw, culling = culling, label1=pcLabel1, label2=pcLabel2 )
 
-jsonTree <- toJSON(jsonData, pretty = TRUE, auto_unbox = TRUE)
-
-write(jsonTree, file="result.json")`;
+  jsonLabel <- toJSON(jsonAxisLabel, pretty = TRUE)
+  jsonTree <- toJSON(jsonData, pretty = TRUE)
+  write(jsonTree, file="result.json")
+  write(jsonLabel, file="label.json")`;
 
   const output = Mustache.render(template, values);
 

@@ -9,17 +9,21 @@ import { Box, Button } from "@mui/material";
 function Step1({ settings, setSettings, handleNext, handleBack }) {
   return (
     <React.Fragment>
-      <h1>Upload Data</h1>
-      <InfoUpload />
-      <div className="upload">
-        <Format setSettings={setSettings} settings={settings} />
-        <Language setSettings={setSettings} settings={settings} />
+      <div>
+        <h1>Upload Data</h1>
+        <InfoUpload />
       </div>
-      <div className="upload">
-        <NativeEncoding setSettings={setSettings} settings={settings} />
-      </div>
-      <div className="upload">
-        <UploadButton />
+      <div className="content">
+        <div className="upload">
+          <Format setSettings={setSettings} settings={settings} />
+          <Language setSettings={setSettings} settings={settings} />
+        </div>
+        <div className="upload">
+          <NativeEncoding setSettings={setSettings} settings={settings} />
+        </div>
+        <div className="upload">
+          <UploadButton />
+        </div>
       </div>
       <div className="buttonsBoth">
         <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>

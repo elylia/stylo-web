@@ -17,7 +17,6 @@ function RandomSample({ settings, setSettings }) {
           label="Random Sample"
           variant="outlined"
           size="small"
-          type="number"
           value={settings.randomSample}
           onChange={handleChangeRandomSample}
         />

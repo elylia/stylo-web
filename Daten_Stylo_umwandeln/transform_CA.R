@@ -54,7 +54,7 @@ hclustToTree <- function(hclust) {
 }
 mfw <- c()
 culling <- c()
-dataset <- list()
+dataset <- c()
 
 for (i in seq({{mfwMin}}, {{mfwMax}}, by={{mfwIncr}})){
   for(j in seq({{cullMin}}, {{cullMax}}, by={{cullIncr}})){
@@ -89,9 +89,9 @@ for (i in seq({{mfwMin}}, {{mfwMax}}, by={{mfwIncr}})){
       clustered.data = hclust(as.dist(data$distance.table), method = "ward.D")
       plot(clustered.data)
       data <- hclustToTree(clustered.data)
-      mfw <- append(mfw, i)
-      culling <- append(culling, j)
-      dataset <- append(dataset, data)
+      mfw <- rbind(mfw, i)
+      culling <- rbind(culling, j)
+      dataset <- rbind(dataset, data)
 
   } }
 jsonData <- data.frame(mfw = mfw, culling = culling, data= dataset)

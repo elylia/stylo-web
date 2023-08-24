@@ -2,21 +2,20 @@ import React, { useEffect, useRef, useState } from "react";
 import * as d3 from "d3";
 import getColor from "./getColor";
 import getXYfromJSONTree from "./getXY";
+import HighlightableText from "./highlightableText";
 
-const CaPlot = ({ data }) => {
+const CaPlot = ({ data, searchQuery }) => {
   let width = 1000;
-  let height = 500;
-
+  const [height, setHeight] = useState(500);
   const [currentZoom, setCurrentZoom] = useState();
-  const ref = useRef();
+  const svgRef = useRef();
 
-  //set zoom function
   function handleZoom(e) {
     setCurrentZoom(e);
   }
   let zoom = d3.zoom().on("zoom", handleZoom);
   useEffect(() => {
-    d3.select(ref.current).call(zoom);
+    d3.select(svgRef.current).call(zoom);
   });
 
   //set up links between nodes
@@ -41,28 +40,39 @@ const CaPlot = ({ data }) => {
   const treeRoot = d3.hierarchy(data);
   //define nodes (descendants of root node)
   const nodes = treeRoot.descendants();
+
   //define links between nodes
+  const calculateHeight = () => {
+    const leafNodes = nodes.filter((node) => !node.children);
+    const labelHeight = 25;
+    return leafNodes.length * labelHeight;
+  };
+
+  const updateHeight = () => {
+    const requiredHeight = calculateHeight();
+    if (requiredHeight > height) {
+      setHeight(requiredHeight);
+    }
+  };
+
+  useEffect(() => {
+    updateHeight();
+  }, [nodes]);
+
   const links = treeRoot.links();
   //reverse the dendrogram  (so it goes from left to right)
   nodes.forEach(function (d, i) {
-    /*debugger;
-         if (typeof xs[i] != "undefined") {
-           d.x = xs[i];
-         }
-         if (typeof ys[i] != "undefined") {
-           d.y = ys[i];
-         }*/
     d.y = d.data.height;
   });
   //get list of prefixes from text names for color coding
-  let list_prefix = [];
+  let listPrefix = [];
   let i = 0;
   treeRoot.descendants().forEach(function (d) {
     let prefix = d.data.name?.match(/.*?(?=[\_][A-Za-z0-9])/);
     if (prefix === undefined) {
-    } else if (list_prefix.includes(prefix[0])) {
+    } else if (listPrefix.includes(prefix[0])) {
     } else {
-      list_prefix.push(prefix[0]);
+      listPrefix.push(prefix[0]);
     }
   });
 
@@ -76,10 +86,10 @@ const CaPlot = ({ data }) => {
   });
 
   nodes.forEach(function (d) {
-    if (d.y > ymax) ymax = d.y;
-    if (d.y < ymin) ymin = d.y;
-    if (d.x > xmax) xmax = d.x;
-    if (d.x < xmin) xmin = d.x;
+    if (d.y > ymax) ymax = d.y * 1.01;
+    if (d.y < ymin) ymin = d.y * 1.01;
+    if (d.x > xmax) xmax = d.x * 1.01;
+    if (d.x < xmin) xmin = d.x * 1.01;
   });
   ymin = ymin - 0.2;
   const x = d3
@@ -94,8 +104,9 @@ const CaPlot = ({ data }) => {
     .scaleLinear()
     .domain([xmin, xmax])
     .range([100, height - 20]);
+
   return (
-    <svg width={width} height={height} ref={ref}>
+    <svg width={width} ref={svgRef} id={"svg-chart"} className={"caChart"}>
       <g transform="translate(100,0)"></g>
       <g className="zoom_group" transform={currentZoom?.transform}>
         {links.map((d, i) => (
@@ -130,23 +141,23 @@ const CaPlot = ({ data }) => {
             className="node"
             transform={"translate(" + x(d.y) + "," + y(d.x) + ")"}
           >
-            <circle r="4.5" />
-            <text
+            <circle
+              r="4.5"
               transform={
                 currentZoom
                   ? `scale(${Math.max(
-                      0.7,
-                      Math.min(2, 1 / currentZoom.transform.k)
+                      0.4,
+                      Math.min(1, 1 / currentZoom.transform.k)
                     )})`
                   : ""
               }
-              dx={d.children ? -8 : 8}
-              dy={3}
-              textAnchor={d.children ? "end" : "start"}
-              fill={getColor(d, list_prefix)}
-            >
-              {d.data.name}
-            </text>
+            />
+            <HighlightableText
+              d={d}
+              searchQuery={searchQuery}
+              currentZoom={currentZoom}
+              listPrefix={listPrefix}
+            ></HighlightableText>
           </g>
         ))}
       </g>
@@ -158,7 +169,6 @@ const CaPlot = ({ data }) => {
             : "translate(100,40)"
         }
       >
-        {" "}
         <rect
           className="axis_rect"
           x={10}
@@ -167,7 +177,7 @@ const CaPlot = ({ data }) => {
           height={65}
           stroke="white"
           fill="white"
-        />{" "}
+        />
         <line x1={x(ymin)} y1={0} x2={x(ymax)} y2={0} />
         {x.ticks(10).map((d) => (
           <line key={d} className="ticks" x1={x(d)} y1={-3} x2={x(d)} y2={5} />

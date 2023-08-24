@@ -14,6 +14,9 @@ const TsneCode = (settings) => {
     cullIncr: settings.cullIncr,
     deletePronouns: settings.pronouns == false ? "FALSE" : "TRUE",
     preserveCase: settings.case == false ? "FALSE" : "TRUE",
+    frequencyTable: settings.frequencyTable == false ? "FALSE" : "TRUE",
+    distanceTable: settings.distanceTable == false ? "FALSE" : "TRUE",
+    featureList: settings.featureList == false ? "FALSE" : "TRUE",
     sampling: settings.sampling,
     sampleSize: settings.sampleSize,
     randomSample: settings.randomSample,
@@ -47,7 +50,11 @@ for (i in seq({{mfwMin}}, {{mfwMax}}, by={{mfwIncr}})){
     sample.size = {{sampleSize}},
     number.of.samples = {{randomSample}},
     corpus.dir = "corpus",
-    write.pdf.file = "false")
+    write.pdf.file = "false",
+    save.distance.tables = {{distanceTable}},
+    save.analyzed.freqs = {{frequencyTable}},
+    save.analyzed.features = {{featureList}})
+    
     ecb = function(x,y){
       text(x, rownames(data$table.with.all.freqs[,1:i]), cex = 0.3)
       
@@ -64,7 +71,7 @@ for (i in seq({{mfwMin}}, {{mfwMax}}, by={{mfwIncr}})){
   } }
 jsonData <- data.frame(mfw = mfw, culling = culling, data= dataset)
 
-jsonTree <- toJSON(jsonData, pretty = TRUE)
+jsonTree <- toJSON(jsonData, pretty = TRUE, auto_unbox = TRUE)
 write(jsonTree, file="result.json")`;
 
   const output = Mustache.render(template, values);

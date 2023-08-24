@@ -16,7 +16,11 @@ function CitationDialog() {
   const [open, setOpen] = useState(false);
   return (
     <React.Fragment>
-      <SvgIcon onClick={() => setOpen(true)} sx={{ cursor: "pointer" }}>
+      <SvgIcon
+        onClick={() => setOpen(true)}
+        sx={{ cursor: "pointer" }}
+        fontSize="x-small"
+      >
         <svg
           width="16"
           zoomAndPan="magnify"
@@ -51,9 +55,23 @@ function CitationDialog() {
           />
         </DialogActions>
         <DialogContent>
-          <DialogTitle>References & Citation</DialogTitle>
+          <DialogTitle>Information & References</DialogTitle>
           <DialogContentText sx={{ fontSize: 12, color: "black" }}>
-            Test
+            Developed and maintained by Lilly Osburg (
+            <a href="mailto:lilly.osburg@live.de" target="_blank">
+              lilly.osburg@live.de
+            </a>
+            ) <br />
+            Based on the stylo R package (Eder, M., Rybicki, J. and Kestemont,
+            M. (2016). Stylometry with R: a package for computational text
+            analysis. R Journal, 8(1): 107-21.
+            <a
+              href="https://journal.r-project.org/archive/2016/RJ-2016-007/index.html"
+              target="_blank"
+            >
+              https://journal.r-project.org/archive/2016/RJ-2016-007/index.html
+            </a>
+            )
           </DialogContentText>
         </DialogContent>
       </Dialog>

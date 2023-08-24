@@ -9,6 +9,7 @@ import {
   Tooltip,
   Icon,
   SvgIcon,
+  Divider,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
@@ -16,12 +17,16 @@ function AboutDialog() {
   const [open, setOpen] = useState(false);
   return (
     <React.Fragment>
-      <SvgIcon onClick={() => setOpen(true)} sx={{ cursor: "pointer" }}>
+      <SvgIcon
+        onClick={() => setOpen(true)}
+        sx={{ cursor: "pointer" }}
+        fontSize="x-small"
+      >
         <svg
-          width="16"
+          width="12"
           zoomAndPan="magnify"
           viewBox="0 0 900 899.99999"
-          height="16"
+          height="12"
           preserveAspectRatio="xMidYMid meet"
           version="1.0"
         >
@@ -54,7 +59,24 @@ function AboutDialog() {
         <DialogContent>
           <DialogTitle>About Stylo Web</DialogTitle>
           <DialogContentText sx={{ fontSize: 12, color: "black" }}>
-            Test
+            <p>
+              <b>Stylo Web</b> is a React and D3 based web application developed
+              in JavaScript. It allows the use of the analyses implemented in
+              the stylo() function of the stylo R package via a user-friendly
+              web interface. It offers improved visualisation for easier
+              evaluation and interpretation of the results. The results can be
+              downloaded and easily integrated into your own website.
+              Downloading as an image file is available as well.
+            </p>
+            <Divider textAlign="left">
+              <b>Four steps to your stylometric analysis:</b>
+            </Divider>
+            <ol type="1">
+              <li>Choose the analysis type</li>
+              <li>Upload your corpus</li>
+              <li>Define your parameters</li>
+              <li>Analyse your plots (and optionally your raw data)</li>
+            </ol>
           </DialogContentText>
         </DialogContent>
       </Dialog>

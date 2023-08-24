@@ -63,7 +63,7 @@ function InfoPlots({ settings }) {
         <TableHead>
           <TableRow>
             <TableCell>
-              <h1>Overview</h1>
+              <h1>Settings</h1>
             </TableCell>
             <TableCell align="left">
               <h1>Value</h1>

@@ -1,10 +1,10 @@
 import React from "react";
 import BctPlot from "../plots/BCT/bct_plot";
-import TsnePlot from "../plots/tsne/tsne_plot";
+import TsneSlider from "../plots/tsne/tsneSlider";
 import CaSlider from "../plots/CA/CASlider";
 import ScatterSlider from "../plots/scatter/scatterSlider";
 
-function Results({ settings, url }) {
+function Results({ settings, url, labelUrl }) {
   console.log("settings:", settings);
   console.log("analysisType:", settings && settings.analysisType);
 
@@ -23,25 +23,25 @@ function Results({ settings, url }) {
   } else if (settings.analysisType === "MDS") {
     return (
       <React.Fragment>
-        <ScatterSlider url={url} settings={settings} />
+        <ScatterSlider url={url} settings={settings} labelUrl={labelUrl} />
       </React.Fragment>
     );
   } else if (settings.analysisType === "PCR") {
     return (
       <React.Fragment>
-        <ScatterSlider url={url} settings={settings} />
+        <ScatterSlider url={url} settings={settings} labelUrl={labelUrl} />
       </React.Fragment>
     );
   } else if (settings.analysisType === "PCV") {
     return (
       <React.Fragment>
-        <ScatterSlider url={url} settings={settings} />
+        <ScatterSlider url={url} settings={settings} labelUrl={labelUrl} />
       </React.Fragment>
     );
   } else if (settings.analysisType === "tSNE") {
     return (
       <React.Fragment>
-        <TsnePlot url={url} settings={settings} />
+        <TsneSlider url={url} settings={settings} />
       </React.Fragment>
     );
   }

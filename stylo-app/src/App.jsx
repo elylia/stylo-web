@@ -10,7 +10,7 @@ import Step5 from "../src/stepper/step5OutputOptions.jsx";
 import Results from "../src/stepper/results.jsx";
 import executeR from "./executeR/execute_R";
 import theme from "./Theme.jsx";
-import { Box, Button, ThemeProvider } from "@mui/material";
+import { Alert, Box, Button, ThemeProvider } from "@mui/material";
 import "../src/assets/fonts/index.css";
 import CitationDialog from "./dialog/citationDialog";
 import AboutDialog from "./dialog/aboutDialog";
@@ -19,7 +19,9 @@ import GithubLink from "./dialog/githubLink";
 function App() {
   const [activeStep, setActiveStep] = useState(0);
   const [results, setResults] = useState("");
+  const [labelUrl, setLabel] = useState("");
   const [isDataReady, setIsDataReady] = useState(false);
+  const [error, setError] = useState(null);
 
   const handleStepChange = (newStep) => {
     setActiveStep(newStep);
@@ -35,22 +37,34 @@ function App() {
   const handleBack = () => {
     setActiveStep((prevActiveStep) => prevActiveStep - 1);
   };
-
+  const mapErrorMessage = (error) => {
+    if (error.includes("This text is too short!")) {
+      return "At least one of your texts is too short for the chosen sampling method and the associated settings. Please change your settings and try again.";
+    } else if (error.includes("seq -> seq.default")) {
+      return "Either the Culling Minimum or the MFW Minimum is greater than the Maximum. Please change your settings and try again.";
+    }
+    return "An unknown error occurred. Please check your corpus or change your settings and try again.";
+  };
   const handleGetResults = async () => {
     try {
       const response = await executeR(settings);
       if (response.result) {
         const result = response.result;
+        const labelUrl = response.labelUrl;
         setIsDataReady(true);
         setResults(result);
         setActiveStep((prevActiveStep) => prevActiveStep + 1);
+        setLabel(labelUrl);
       } else {
-        console.error("Invalid response format:", response);
+        setError(mapErrorMessage("An unknown error occurred"));
       }
     } catch (error) {
       console.error("Error executing R code:", error);
+
+      setError(mapErrorMessage(error.message));
     }
   };
+
   const [settings, setSettings] = useState({
     analysisType: "CA",
     analysisTypeLabel: "Cluster Analysis",
@@ -90,7 +104,6 @@ function App() {
               <h2 className="title">STYLOMETRIC ANALYSIS ONLINE</h2>
               <div className="icon-container">
                 <AboutDialog />
-
                 <CitationDialog />
                 <GithubLink />
               </div>
@@ -140,8 +153,8 @@ function App() {
             <Step2
               setSettings={setSettings}
               settings={settings}
-              handleNext={handleNext}
               handleBack={handleBack}
+              setActiveStep={setActiveStep}
             />
           </div>
         )}
@@ -172,7 +185,23 @@ function App() {
               settings={settings}
               handleGetResults={handleGetResults}
               handleBack={handleBack}
+              error={error}
             />
+            {error && (
+              <Alert
+                severity="error"
+                onClose={() => setError(null)}
+                sx={{
+                  position: "absolute",
+                  top: "50%",
+                  left: "50%",
+                  transform: "translate(-50%, -50%)",
+                  textAlign: "left",
+                }}
+              >
+                {error}
+              </Alert>
+            )}
           </div>
         )}
         {activeStep === 6 && (
@@ -182,6 +211,7 @@ function App() {
               settings={settings}
               handleReset={handleReset}
               url={results}
+              labelUrl={labelUrl}
             />
           </div>
         )}

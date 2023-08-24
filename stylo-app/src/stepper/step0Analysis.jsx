@@ -8,16 +8,20 @@ import { Button } from "@mui/material";
 function Step0({ settings, setSettings, handleNext }) {
   return (
     <React.Fragment>
-      <h1>Choose Analysis</h1>
-      <InfoAnalysis />
-      <div className="chooseAnalysis">
-        <AnalysisType setSettings={setSettings} settings={settings} />
-        <DistanceMeasure setSettings={setSettings} settings={settings} />
+      <div>
+        <h1>Choose Analysis</h1>
+        <InfoAnalysis />
       </div>
-      <div className="chooseAnalysis">
-        {settings.analysisType === "BCT" && (
-          <ConsensusStrength setSettings={setSettings} settings={settings} />
-        )}
+      <div className="content">
+        <div className="chooseAnalysis">
+          <AnalysisType setSettings={setSettings} settings={settings} />
+          <DistanceMeasure setSettings={setSettings} settings={settings} />
+        </div>
+        <div className="chooseAnalysis">
+          {settings.analysisType === "BCT" && (
+            <ConsensusStrength setSettings={setSettings} settings={settings} />
+          )}
+        </div>
       </div>
       <div className="buttonRight">
         <Button onClick={handleNext} variant="contained" color="primary">

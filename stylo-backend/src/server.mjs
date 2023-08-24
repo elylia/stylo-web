@@ -35,15 +35,15 @@ app.post("/execute-r", async (req, res) => {
         return PcrCode(settings);
       } else if (settings.analysisType === "PCV") {
         return PcvCode(settings);
-      } else {
-        TsneCode(settings);
+      } else if (settings.analysisType === "tSNE") {
+        return TsneCode(settings);
       }
     } catch (error) {
       console.error("Error executing R code:", error);
     }
   };
-
   const code = getCode();
+
   try {
     const __filename = fileURLToPath(import.meta.url);
     const __dirname = dirname(__filename);
@@ -53,31 +53,105 @@ app.post("/execute-r", async (req, res) => {
     const dataTarget = join(folder, "corpus");
     await cp(dataSource, dataTarget, { recursive: true });
 
-    exec(`cd ${folder} && RScript getData.R`, async (error) => {
-      try {
-        if (error) {
-          console.error("Error executing R code:", error);
-          res.status(500).json({ error: "Failed to execute R code." });
-          return;
-        }
-        if (settings.analysisType === "BCT") {
-          const fileName = nanoid();
-          await cp(folder + "/Newick.txt", "results/" + fileName + ".txt");
-          console.log(folder);
-          await ParseNewick(fileName);
-          res.json({ result: "results/" + fileName + ".json", folder });
-        } else {
-          const fileName = nanoid();
-          await cp(folder + "/result.json", "results/" + fileName + ".json");
-          console.log(folder);
+    exec(
+      `cd ${folder} && RScript getData.R`,
+      { maxBuffer: 1024 * 1024 * 10 },
+      async (error) => {
+        try {
+          if (error) {
+            console.error("Error executing R code:", error);
 
-          res.json({ result: "results/" + fileName + ".json", folder });
+            const originalErrorMessage =
+              error.message || "Failed to execute R code.";
+
+            res.status(500).json({ error: { message: originalErrorMessage } });
+            return;
+          }
+          if (settings.analysisType === "BCT") {
+            const fileName = nanoid();
+            await cp(folder + "/Newick.txt", "results/" + fileName + ".txt");
+            await ParseNewick(fileName);
+            res.json({ result: "results/" + fileName + ".json", folder });
+            if (
+              settings.distanceTable ||
+              settings.frequencyTable ||
+              settings.featureList
+            ) {
+              //HIER EXPORT
+            }
+          } else if (settings.analysisType === "PCR") {
+            const fileName = nanoid();
+            await cp(folder + "/result.json", "results/" + fileName + ".json");
+            await cp(
+              folder + "/label.json",
+              "results/" + fileName + "_label" + ".json"
+            );
+            console.log(folder);
+            res.json({
+              result: "results/" + fileName + ".json",
+              folder,
+              labelUrl: "results/" + fileName + "_label" + ".json",
+            });
+            if (
+              settings.distanceTable ||
+              settings.frequencyTable ||
+              settings.featureList
+            ) {
+              //HIER EXPORT
+            }
+          } else if (settings.analysisType === "PCV") {
+            const fileName = nanoid();
+            await cp(folder + "/result.json", "results/" + fileName + ".json");
+            await cp(
+              folder + "/label.json",
+              "results/" + fileName + "_label" + ".json"
+            );
+            console.log(folder);
+            res.json({
+              result: "results/" + fileName + ".json",
+              folder,
+              labelUrl: "results/" + fileName + "_label" + ".json",
+            });
+            if (
+              settings.distanceTable ||
+              settings.frequencyTable ||
+              settings.featureList
+            ) {
+              //HIER EXPORT
+            }
+          } else if (settings.analysisType === "MDS") {
+            const fileName = nanoid();
+            await cp(folder + "/result.json", "results/" + fileName + ".json");
+            await cp(
+              folder + "/label.json",
+              "results/" + fileName + "_label" + ".json"
+            );
+            console.log(folder);
+            res.json({
+              result: "results/" + fileName + ".json",
+              folder,
+              labelUrl: "results/" + fileName + "_label" + ".json",
+            });
+            if (
+              settings.distanceTable ||
+              settings.frequencyTable ||
+              settings.featureList
+            ) {
+              //HIER EXPORT
+            }
+          } else {
+            const fileName = nanoid();
+            await cp(folder + "/result.json", "results/" + fileName + ".json");
+            console.log(folder);
+
+            res.json({ result: "results/" + fileName + ".json", folder });
+          }
+        } catch (error) {
+          console.error("Error processing response:", error);
+          res.status(500).json({ error: "An error occurred." });
         }
-      } catch (error) {
-        console.error("Error processing response:", error);
-        res.status(500).json({ error: "An error occurred." });
       }
-    });
+    );
   } catch (err) {
     console.error(err);
   }

@@ -5,7 +5,8 @@ library(stringr)
 
 data <- stylo(gui = FALSE, frequencies = NULL, parsed.corpus = NULL,
               features = NULL, path = NULL, metadata = NULL,
-              corpus.dir = "corpus", analysis.type = "PCV")
+              corpus.dir = "corpus", analysis.type = "MDS", distance.measure = "cosine")
+
 for(i in seq(100,100,round(100)) ) {
   mfw = i
   
@@ -24,6 +25,8 @@ colnames(xy.coord) <- c("V1","V2","name")
 
 xy.coord <- transform(xy.coord, V1 = as.numeric(V1))
 xy.coord <- transform(xy.coord, V2 = as.numeric(V2))
-
+pc.label <- data.frame(PC1_lab,PC2_lab)
+pcJson <- toJSON(pc.label)
 jsonTree <- toJSON(xy.coord, pretty = TRUE)
 write(jsonTree, file="pcv_JSON.json")
+write(pcJson, file="pc_label.json")

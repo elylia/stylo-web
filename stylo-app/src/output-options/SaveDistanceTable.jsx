@@ -1,14 +1,25 @@
-import { useState } from "react";
-
 import "../App.css";
 import * as React from "react";
 import { FormControlLabel, FormGroup, Switch } from "@mui/material";
 
-function SaveDistanceTable() {
+function SaveDistanceTable(settings, setSettings) {
+  const handleChangeCase = (event) => {
+    const newValue = event.target.checked;
+    setSettings({ ...settings, distanceTable: newValue });
+  };
+
   return (
     <>
       <FormGroup>
-        <FormControlLabel control={<Switch />} label="Save Distance Table" />
+        <FormControlLabel
+          control={
+            <Switch
+              checked={settings.distanceTable}
+              onChange={handleChangeCase}
+            />
+          }
+          label="Save Distance Table(s)"
+        />
       </FormGroup>
     </>
   );
