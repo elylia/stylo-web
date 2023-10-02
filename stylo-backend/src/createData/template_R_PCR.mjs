@@ -17,10 +17,11 @@ const PcrCode = (settings) => {
     frequencyTable: settings.frequencyTable == false ? "FALSE" : "TRUE",
     distanceTable: settings.distanceTable == false ? "FALSE" : "TRUE",
     featureList: settings.featureList == false ? "FALSE" : "TRUE",
-
+    encoding: settings.encoding == false ? "UTF-8" : "native.enc",
     sampling: settings.sampling,
     sampleSize: settings.sampleSize,
     randomSample: settings.randomSample,
+    language: settings.language,
   };
 
   const template = `library(stylo)
@@ -54,7 +55,9 @@ const PcrCode = (settings) => {
                 write.pdf.file = "false",
                 save.distance.tables = {{distanceTable}},
                 save.analyzed.freqs = {{frequencyTable}},
-                save.analyzed.features = {{featureList}})
+                save.analyzed.features = {{featureList}},
+                corpus.lang = "{{language}}",
+                encoding = "{{encoding}}")
   
   pca.results = prcomp(data$table.with.all.freqs[,1:i], scale=TRUE)
   expl.var = round(((pca.results$sdev^2) / sum(pca.results$sdev^2) * 100), 1)

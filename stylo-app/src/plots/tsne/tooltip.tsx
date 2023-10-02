@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./tooltip.module.css";
 
-// Information needed to build the tooltip
 export type InteractionData = {
   xPos: number;
   yPos: number;

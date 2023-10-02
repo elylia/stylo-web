@@ -1,8 +1,8 @@
 import { useLayoutEffect, useRef, useState } from "react";
 import useResizeObserver from "@react-hook/resize-observer";
 
-export default function useElementSize() {
-  const target = useRef(null);
+export default function useElementSize(ref) {
+  const target = ref ?? useRef(null);
   const [size, setSize] = useState({
     width: 0,
     height: 0,

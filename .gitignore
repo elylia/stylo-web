@@ -1,3 +1,4 @@
 node_modules
 .DS_Store
 stylo-backend/results
+corpus

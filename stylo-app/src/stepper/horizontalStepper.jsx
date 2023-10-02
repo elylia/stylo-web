@@ -13,16 +13,20 @@ const steps = [
   "Output Options",
 ];
 
-export default function HorizontalLinearStepper({ activeStep }) {
+export default function HorizontalLinearStepper({ activeStep, onStepClick }) {
   return (
     <Box>
       <Stepper activeStep={activeStep}>
         {steps.map((label, index) => {
           const stepProps = {};
           const labelProps = {};
+          const isClickable = index < activeStep;
 
+          if (isClickable) {
+            stepProps.className = "step-clickable";
+          }
           return (
-            <Step key={label} {...stepProps}>
+            <Step key={label} {...stepProps} onClick={() => onStepClick(index)}>
               <StepLabel {...labelProps}>{label}</StepLabel>
             </Step>
           );

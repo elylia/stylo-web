@@ -1,8 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import * as d3 from "d3";
-import getColor from "./getColor";
 import getXYfromJSONTree from "./getXY";
-import HighlightableText from "./highlightableText";
+import CAHighlightableText from "./CAHighlightableText";
 
 const CaPlot = ({ data, searchQuery }) => {
   let width = 1000;
@@ -18,7 +17,6 @@ const CaPlot = ({ data, searchQuery }) => {
     d3.select(svgRef.current).call(zoom);
   });
 
-  //set up links between nodes
   const link = d3
     .linkVertical()
     .x(function (d) {
@@ -33,15 +31,10 @@ const CaPlot = ({ data, searchQuery }) => {
   let xmax = -Number.MAX_VALUE;
   let xmin = Number.MAX_VALUE;
 
-  //get x & y values from JSON file
-
   getXYfromJSONTree(data);
-  //get hierarchy from JSON file
   const treeRoot = d3.hierarchy(data);
-  //define nodes (descendants of root node)
   const nodes = treeRoot.descendants();
 
-  //define links between nodes
   const calculateHeight = () => {
     const leafNodes = nodes.filter((node) => !node.children);
     const labelHeight = 25;
@@ -60,11 +53,9 @@ const CaPlot = ({ data, searchQuery }) => {
   }, [nodes]);
 
   const links = treeRoot.links();
-  //reverse the dendrogram  (so it goes from left to right)
   nodes.forEach(function (d, i) {
     d.y = d.data.height;
   });
-  //get list of prefixes from text names for color coding
   let listPrefix = [];
   let i = 0;
   treeRoot.descendants().forEach(function (d) {
@@ -107,7 +98,6 @@ const CaPlot = ({ data, searchQuery }) => {
 
   return (
     <svg width={width} ref={svgRef} id={"svg-chart"} className={"caChart"}>
-      <g transform="translate(100,0)"></g>
       <g className="zoom_group" transform={currentZoom?.transform}>
         {links.map((d, i) => (
           <path
@@ -152,12 +142,12 @@ const CaPlot = ({ data, searchQuery }) => {
                   : ""
               }
             />
-            <HighlightableText
+            <CAHighlightableText
               d={d}
               searchQuery={searchQuery}
               currentZoom={currentZoom}
               listPrefix={listPrefix}
-            ></HighlightableText>
+            />
           </g>
         ))}
       </g>

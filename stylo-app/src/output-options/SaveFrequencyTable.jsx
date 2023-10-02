@@ -2,7 +2,7 @@ import "../App.css";
 import * as React from "react";
 import { FormControlLabel, FormGroup, Switch } from "@mui/material";
 
-function SaveFrequencyTable(settings, setSettings) {
+function SaveFrequencyTable({ settings, setSettings }) {
   const handleChangeCase = (event) => {
     const newValue = event.target.checked;
     setSettings({ ...settings, frequencyTable: newValue });
@@ -18,7 +18,7 @@ function SaveFrequencyTable(settings, setSettings) {
               onChange={handleChangeCase}
             />
           }
-          label="Save Feature List(s)"
+          label="Save Frequency Table(s)"
         />
       </FormGroup>
     </>

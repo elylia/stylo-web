@@ -15,14 +15,16 @@ import { fileURLToPath } from "url";
 import { dirname } from "path";
 import { nanoid } from "nanoid";
 import ParseNewick from "./createData/Parse_newick_json.mjs";
-
+import uploadRouter from "./upload/upload.mjs";
+import { download } from "./download/download.mjs";
 const app = express();
 app.use(bodyParser.json());
 const port = 5000;
 app.use(cors());
 
 app.post("/execute-r", async (req, res) => {
-  const settings = req.body;
+  const settings = req.body.settings;
+  const suffix = req.body.suffix;
   const getCode = () => {
     try {
       if (settings.analysisType === "CA") {
@@ -49,9 +51,8 @@ app.post("/execute-r", async (req, res) => {
     const __dirname = dirname(__filename);
     const folder = await mkdtemp(join(tmpdir(), "stylo-web-app-"));
     await writeFile(folder + "/getData.R", code);
-    const dataSource = join(__dirname, "../data/corpus");
     const dataTarget = join(folder, "corpus");
-    await cp(dataSource, dataTarget, { recursive: true });
+    await cp(suffix, dataTarget, { recursive: true });
 
     exec(
       `cd ${folder} && RScript getData.R`,
@@ -71,14 +72,14 @@ app.post("/execute-r", async (req, res) => {
             const fileName = nanoid();
             await cp(folder + "/Newick.txt", "results/" + fileName + ".txt");
             await ParseNewick(fileName);
-            res.json({ result: "results/" + fileName + ".json", folder });
-            if (
-              settings.distanceTable ||
-              settings.frequencyTable ||
-              settings.featureList
-            ) {
-              //HIER EXPORT
-            }
+            await download(folder, fileName, settings);
+
+            res.json({
+              result: "results/" + fileName + ".json",
+              rawData: "results/" + fileName + ".zip",
+              folder,
+            });
+            await download(folder, fileName, settings);
           } else if (settings.analysisType === "PCR") {
             const fileName = nanoid();
             await cp(folder + "/result.json", "results/" + fileName + ".json");
@@ -86,19 +87,13 @@ app.post("/execute-r", async (req, res) => {
               folder + "/label.json",
               "results/" + fileName + "_label" + ".json"
             );
-            console.log(folder);
+            await download(folder, fileName, settings);
             res.json({
               result: "results/" + fileName + ".json",
+              rawData: "results/" + fileName + ".zip",
               folder,
               labelUrl: "results/" + fileName + "_label" + ".json",
             });
-            if (
-              settings.distanceTable ||
-              settings.frequencyTable ||
-              settings.featureList
-            ) {
-              //HIER EXPORT
-            }
           } else if (settings.analysisType === "PCV") {
             const fileName = nanoid();
             await cp(folder + "/result.json", "results/" + fileName + ".json");
@@ -106,19 +101,13 @@ app.post("/execute-r", async (req, res) => {
               folder + "/label.json",
               "results/" + fileName + "_label" + ".json"
             );
-            console.log(folder);
+            await download(folder, fileName, settings);
             res.json({
               result: "results/" + fileName + ".json",
+              rawData: "results/" + fileName + ".zip",
               folder,
               labelUrl: "results/" + fileName + "_label" + ".json",
             });
-            if (
-              settings.distanceTable ||
-              settings.frequencyTable ||
-              settings.featureList
-            ) {
-              //HIER EXPORT
-            }
           } else if (settings.analysisType === "MDS") {
             const fileName = nanoid();
             await cp(folder + "/result.json", "results/" + fileName + ".json");
@@ -126,25 +115,23 @@ app.post("/execute-r", async (req, res) => {
               folder + "/label.json",
               "results/" + fileName + "_label" + ".json"
             );
-            console.log(folder);
+            await download(folder, fileName, settings);
+
             res.json({
               result: "results/" + fileName + ".json",
+              rawData: "results/" + fileName + ".zip",
               folder,
               labelUrl: "results/" + fileName + "_label" + ".json",
             });
-            if (
-              settings.distanceTable ||
-              settings.frequencyTable ||
-              settings.featureList
-            ) {
-              //HIER EXPORT
-            }
           } else {
             const fileName = nanoid();
             await cp(folder + "/result.json", "results/" + fileName + ".json");
-            console.log(folder);
-
-            res.json({ result: "results/" + fileName + ".json", folder });
+            await download(folder, fileName, settings);
+            res.json({
+              result: "results/" + fileName + ".json",
+              rawData: "results/" + fileName + ".zip",
+              folder,
+            });
           }
         } catch (error) {
           console.error("Error processing response:", error);
@@ -159,7 +146,8 @@ app.post("/execute-r", async (req, res) => {
 
 app.use("/results", express.static("results"));
 
-// Start the server
+app.use("/upload", uploadRouter);
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });

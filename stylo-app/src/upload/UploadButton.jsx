@@ -1,37 +1,35 @@
-import { useState } from "react";
-import "../App.css";
 import * as React from "react";
-import TextField from "@mui/material/TextField";
-import {
-  Autocomplete,
-  Button,
-  Fab,
-  FormControl,
-  MenuItem,
-} from "@mui/material";
+import { Button } from "@mui/material";
 
-export default function UploadButton() {
+export default function UploadButton({ setUploadedSuffix }) {
   const handleFileUpload = async (event) => {
-    const file = event.target.files[0];
+    const file = event.target.files;
     const formData = new FormData();
-    formData.append("file", file);
+    for (const f of file) {
+      formData.append("file", f);
+    }
 
     try {
-      const response = await fetch("/upload", {
+      const response = await fetch("http://localhost:5000/upload", {
         method: "POST",
         body: formData,
       });
 
-      // Handle the response from the server here
+      if (response.ok) {
+        const newSuffix = (await response.json()).suffix;
+        setUploadedSuffix(newSuffix);
+      }
     } catch (error) {
       console.error("Error uploading file:", error);
     }
   };
 
   return (
-    <Button variant="contained" component="label">
-      Upload Corpus
-      <input type="file" hidden onChange={handleFileUpload} />
-    </Button>
+    <div>
+      <Button variant="contained" component="label">
+        Upload Corpus
+        <input type="file" multiple hidden onChange={handleFileUpload} />
+      </Button>
+    </div>
   );
 }

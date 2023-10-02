@@ -1,16 +1,8 @@
-const colors = [
-  "#CC6677",
-  "#332288",
-  "#DDCC77",
-  "#117733",
-  "#88CCEE",
-  "#882255",
-  "#44AA99",
-  "#999933",
-  "#AA4499",
-];
+import generateColorPalette from "../color-palette/colorPalette";
 
 export default function getFillColor(d, listPrefix) {
+  const colors = generateColorPalette(listPrefix.length);
+
   for (var i = 0; i < listPrefix.length; i++) {
     let name = d.name?.match(/.*?(?=[\_][A-Za-z0-9]+)/);
     if (name === undefined) {

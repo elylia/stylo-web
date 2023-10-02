@@ -20,6 +20,8 @@ const TsneCode = (settings) => {
     sampling: settings.sampling,
     sampleSize: settings.sampleSize,
     randomSample: settings.randomSample,
+    language: settings.language,
+    encoding: settings.encoding == false ? "UTF-8" : "native.enc",
   };
 
   const template = `library(stylo)
@@ -53,7 +55,9 @@ for (i in seq({{mfwMin}}, {{mfwMax}}, by={{mfwIncr}})){
     write.pdf.file = "false",
     save.distance.tables = {{distanceTable}},
     save.analyzed.freqs = {{frequencyTable}},
-    save.analyzed.features = {{featureList}})
+    save.analyzed.features = {{featureList}},
+    corpus.lang = "{{language}}",
+    encoding = "{{encoding}}")
     
     ecb = function(x,y){
       text(x, rownames(data$table.with.all.freqs[,1:i]), cex = 0.3)

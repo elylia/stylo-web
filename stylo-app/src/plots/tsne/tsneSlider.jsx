@@ -3,6 +3,8 @@ import { Box, Slider } from "@mui/material";
 import InfoPlots from "../../infoText/infoPlots";
 import SavePng from "../../download/savePng";
 import TsnePlot from "./tsnePlot";
+import InfoNavigation from "../../infoText/infoNavigation";
+import Search from "../../search/search";
 
 const TsneSlider = ({ url, settings }) => {
   const [data, setData] = useState([
@@ -14,6 +16,12 @@ const TsneSlider = ({ url, settings }) => {
   ]);
   const [currentMfwSliderIndex, setCurrentMfwSliderIndex] = useState(0);
   const [currentCullSliderIndex, setCurrentCullSliderIndex] = useState(0);
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const handleSearchQuery = (event) => {
+    const newValue = event.target.value;
+    setSearchQuery(newValue);
+  };
 
   const fetchJson = () => {
     fetch("http://localhost:5000/" + url)
@@ -53,7 +61,7 @@ const TsneSlider = ({ url, settings }) => {
   }));
 
   return (
-    <div className="plotSlider">
+    <div className="plotSliderTsne">
       <h1>
         {settings.analysisTypeLabel}
         <div className="settingsDownload">
@@ -62,6 +70,18 @@ const TsneSlider = ({ url, settings }) => {
             settings={settings}
             mfw={mfwData[currentMfwSliderIndex]}
             cull={cullData[currentCullSliderIndex]}
+          />
+          <InfoNavigation />
+
+          <Search
+            onChange={handleSearchQuery}
+            labels={
+              data.find(
+                (element) =>
+                  element.mfw == mfwData[currentMfwSliderIndex] &&
+                  element.culling == cullData[currentCullSliderIndex]
+              ).data.name
+            }
           />
         </div>
       </h1>
@@ -73,6 +93,7 @@ const TsneSlider = ({ url, settings }) => {
               element.culling == cullData[currentCullSliderIndex]
           ).data
         }
+        searchQuery={searchQuery}
       />
       {mfwData.length > 1 && (
         <React.Fragment>

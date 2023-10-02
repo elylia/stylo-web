@@ -20,6 +20,8 @@ const MdsCode = (settings) => {
     sampling: settings.sampling,
     sampleSize: settings.sampleSize,
     randomSample: settings.randomSample,
+    language: settings.language,
+    encoding: settings.encoding == false ? "UTF-8" : "native.enc",
   };
 
   const template = `library(stylo)
@@ -55,7 +57,9 @@ pcLabel2 <- list()
                 write.pdf.file = "false",
                 save.distance.tables = {{distanceTable}},
                 save.analyzed.freqs = {{frequencyTable}},
-                save.analyzed.features = {{featureList}})
+                save.analyzed.features = {{featureList}},
+                corpus.lang = "{{language}}",
+                encoding = "{{encoding}}")
   mds.results = cmdscale(data$distance.table, eig = TRUE)
   xy.coord = mds.results$points[,1:2]
   PC1_lab = paste("", sep="")

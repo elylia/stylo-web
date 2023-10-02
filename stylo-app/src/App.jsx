@@ -22,9 +22,12 @@ function App() {
   const [labelUrl, setLabel] = useState("");
   const [isDataReady, setIsDataReady] = useState(false);
   const [error, setError] = useState(null);
+  const [uploadedSuffix, setUploadedSuffix] = useState();
 
-  const handleStepChange = (newStep) => {
-    setActiveStep(newStep);
+  const handleStepClick = (step) => {
+    if (step < activeStep) {
+      setActiveStep(step);
+    }
   };
 
   const handleReset = () => {
@@ -36,18 +39,19 @@ function App() {
 
   const handleBack = () => {
     setActiveStep((prevActiveStep) => prevActiveStep - 1);
+    if (error) {
+      setError(null);
+    }
   };
   const mapErrorMessage = (error) => {
     if (error.includes("This text is too short!")) {
       return "At least one of your texts is too short for the chosen sampling method and the associated settings. Please change your settings and try again.";
-    } else if (error.includes("seq -> seq.default")) {
-      return "Either the Culling Minimum or the MFW Minimum is greater than the Maximum. Please change your settings and try again.";
     }
     return "An unknown error occurred. Please check your corpus or change your settings and try again.";
   };
   const handleGetResults = async () => {
     try {
-      const response = await executeR(settings);
+      const response = await executeR(settings, uploadedSuffix);
       if (response.result) {
         const result = response.result;
         const labelUrl = response.labelUrl;
@@ -80,9 +84,9 @@ function App() {
     nGram: 1,
     startAt: 1,
     mfwMin: 100,
-    mfwMax: 300,
+    mfwMax: 100,
     cullMin: 0,
-    cullMax: 20,
+    cullMax: 0,
     cullIncr: 10,
     mfwIncr: 100,
     pronouns: false,
@@ -91,6 +95,7 @@ function App() {
     sampling: "no.sampling",
     randomSample: 1,
     sampleSize: 10000,
+    encoding: false,
   });
 
   return (
@@ -125,7 +130,7 @@ function App() {
           <div className="stepper-box">
             <HorizontalLinearStepper
               activeStep={activeStep}
-              handleStepChange={handleStepChange}
+              onStepClick={handleStepClick}
             ></HorizontalLinearStepper>{" "}
           </div>
         )}
@@ -143,8 +148,9 @@ function App() {
             <Step1
               setSettings={setSettings}
               settings={settings}
-              handleNext={handleNext}
-              handleBack={handleBack}
+              setUploadedSuffix={setUploadedSuffix}
+              uploadedSuffix={uploadedSuffix}
+              setActiveStep={setActiveStep}
             />
           </div>
         )}

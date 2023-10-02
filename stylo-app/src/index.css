@@ -20,6 +20,7 @@
   margin: 0 auto;
   text-align: center;
   position: relative;
+  height: 100dvh;
 }
 
 a {
@@ -77,6 +78,10 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+}
+
+.step-clickable {
+  cursor: pointer;
 }
 button:hover {
   border-color: #8da2af;
@@ -188,6 +193,8 @@ body {
   margin: auto;
   max-width: 85%;
   margin-top: 10px;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 .header {
@@ -269,14 +276,18 @@ body {
 }
 .result-box {
   width: 100%;
-  height: 600px;
   padding: 20px;
   background-color: #ffffff;
   border-radius: 10px;
   box-sizing: border-box;
   overflow: auto;
+  flex: 1;
 }
 
+#svg-chart {
+  width: 100%;
+  height: 100%;
+}
 .title {
   display: flex;
   flex-direction: column;
@@ -302,14 +313,21 @@ body {
 
 .plotSlider {
   overflow: hidden;
-  display: block;
   display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.plotSliderTsne {
+  overflow: hidden;
+  display: block;
   height: 100%;
   flex-direction: column;
 }
 
 .bctPlot {
   overflow: hidden;
+  height: 100%;
 }
 
 .settings {
@@ -319,9 +337,6 @@ body {
 
 .buttonRight {
   margin-left: auto;
-}
-
-.buttonsBoth {
 }
 
 button:focus {

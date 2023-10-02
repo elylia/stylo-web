@@ -2,7 +2,7 @@ import "../App.css";
 import * as React from "react";
 import { FormControlLabel, FormGroup, Switch } from "@mui/material";
 
-function SaveFeatureList(settings, setSettings) {
+function SaveFeatureList({ settings, setSettings }) {
   const handleChangeCase = (event) => {
     const newValue = event.target.checked;
     setSettings({ ...settings, featureList: newValue });

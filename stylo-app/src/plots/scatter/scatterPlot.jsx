@@ -14,7 +14,6 @@ function ScatterPlot({ data, label1, label2 }) {
   const [opacity, setOpacity] = useState(1);
   const [svgRef, svgSize] = useElementSize();
 
-  // Read JSON Data
   let listPrefix = [];
   data.forEach(function (d) {
     let prefix = d.name?.match(/.*?(?=[\_][A-Za-z0-9]+)/);
@@ -58,8 +57,8 @@ function ScatterPlot({ data, label1, label2 }) {
       <circle
         key={i}
         r={7} // radius
-        cx={xScale(d.V1 || d.PC1 || d.X1)} // position on the X axis
-        cy={yScale(d.V2 || d.PC2 || d.X2)} // on the Y axis
+        cx={xScale(d.V1 || d.PC1 || d.X1)}
+        cy={yScale(d.V2 || d.PC2 || d.X2)}
         names={d.name || d._row}
         opacity={
           d.name?.match(/.*?(?=[\_][A-Za-z0-9]+)/)[0] === hoveredGroup ||

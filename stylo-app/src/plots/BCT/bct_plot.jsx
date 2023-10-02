@@ -3,19 +3,29 @@ import * as d3 from "d3";
 import getColor from "./getColor";
 import computePosition from "./computePosition";
 import InfoPlots from "../../infoText/infoPlots";
+import InfoNavigation from "../../infoText/infoNavigation";
 import SavePng from "../../download/savePng";
+import Search from "../../search/search";
+import BCTHighlightableText from "./BCTHighlightableText";
+import useElementSize from "../scatter/svgSizer";
 
 const BctPlot = ({ url }) => {
-  let width = 1000;
-  let height = 1000;
   const ref = useRef();
   const [currentZoom, setCurrentZoom] = useState();
-
+  const [searchQuery, setSearchQuery] = useState("");
+  const [svgRef, svgSize] = useElementSize(ref);
+  const width = svgSize.width;
+  const height = svgSize.height;
   const [data, setData] = useState({
     name: "dummy_dummy",
     branch_length: 0,
   });
+  const [factorApplied, setFactorApplied] = useState(false);
 
+  const handleSearchQuery = (event) => {
+    const newValue = event.target.value;
+    setSearchQuery(newValue);
+  };
   const fetchJson = () => {
     fetch("http://localhost:5000/" + url)
       .then((response) => {
@@ -30,15 +40,15 @@ const BctPlot = ({ url }) => {
     fetchJson();
   }, []);
 
-  //set zoom function
   function handleZoom(e) {
     setCurrentZoom(e);
   }
-  let zoom = d3.zoom().on("zoom", handleZoom);
+  let zoom = d3.zoom();
+  zoom.on("zoom", handleZoom);
   useEffect(() => {
     d3.select(ref.current).call(zoom);
   });
-  //set up links between nodes
+
   const link = d3
     .linkVertical()
     .x(function (d) {
@@ -49,33 +59,28 @@ const BctPlot = ({ url }) => {
     });
 
   const treeRoot = d3.hierarchy(computePosition(data));
-  //define nodes (descendants of root node)
   const nodes = treeRoot.descendants();
-  //define links between nodes
   const links = treeRoot.links();
-  //Function: Color text according to prefix
 
   let ymax = -Number.MAX_VALUE;
   let ymin = Number.MAX_VALUE;
   let xmax = -Number.MAX_VALUE;
   let xmin = Number.MAX_VALUE;
-  //get list of prefixes from text names for color coding
-  let list_prefix = [];
-  let i = 0;
+
+  let listPrefix = [];
   treeRoot.descendants().forEach(function (d) {
     if (d.data.name) {
       let prefix = d.data.name?.match(/.*?(?=[\_][A-Za-z0-9])/);
       if (prefix === undefined) {
-      } else if (list_prefix.includes(prefix[0])) {
+      } else if (listPrefix.includes(prefix[0])) {
       } else if (prefix === "") {
       } else {
-        list_prefix.push(prefix[0]);
+        listPrefix.push(prefix[0]);
       }
     } else {
     }
   });
 
-  let counter = 0;
   treeRoot.eachAfter(function (d) {
     d.x = d.data.x;
     d.y = d.data.y;
@@ -100,17 +105,38 @@ const BctPlot = ({ url }) => {
     .scaleLinear()
     .domain([xmin, xmax])
     .range([100, height - 20]);
+  let zoomWidth = Math.abs(y(xmax) - y(xmin)) + 1500;
+  let zoomHeight = Math.abs(x(ymax) - x(ymin)) + 1500;
+  let factorWidth = svgSize.width / zoomWidth;
+  let factorHeight = svgSize.height / zoomHeight;
+  let factor = 0;
+  if (xmin && xmax && ymin && ymax) {
+    factor = factorWidth < factorHeight ? factorWidth : factorHeight;
+  }
+
+  useEffect(() => {
+    if (!factorApplied && factor > 0) {
+      d3.select(ref.current).call(
+        zoom.transform,
+        d3.zoomIdentity
+          .scale(factor)
+          .translate(zoomWidth * factor, zoomHeight * factor)
+      );
+      setFactorApplied(true);
+    }
+  }, [factor]);
   return (
     <div className="bctPlot">
       <h1>
-        {settings.analysisTypeLabel}{" "}
+        {settings.analysisTypeLabel}
         <div className="settingsDownload">
           <InfoPlots settings={settings} />
           <SavePng settings={settings} />
           <InfoNavigation />
+          <Search onChange={handleSearchQuery} labels={data.name} />
         </div>
       </h1>
-      <svg width={width} height={height} ref={ref} id={"svg-chart"}>
+      <svg ref={ref} id={"svg-chart"}>
         <g transform="translate(100,0)"></g>
         <g className="zoom_group" transform={currentZoom?.transform}>
           {links.map((d, i) => (
@@ -151,32 +177,46 @@ const BctPlot = ({ url }) => {
             }
 
             return (
-              <g
-                key={d.data.name || i}
-                className="node"
-                transform={"translate(" + x(d.y) + "," + y(d.x) + ")"}
-              >
-                <circle r="4.5" />
-                <text
-                  transform={
-                    currentZoom
-                      ? `scale(${Math.max(
-                          0.7,
-                          Math.min(1, 0.5 / currentZoom.transform.k)
-                        )})` +
-                        `
-                    rotate(${textrotation})`
-                      : "" + `rotate(${textrotation})`
-                  }
-                  dx={xvalue}
-                  dy={15}
-                  textAnchor={anchor}
-                  fill={getColor(d, list_prefix)}
-                  fontSize="3em"
+              <React.Fragment>
+                <g
+                  key={d.data.name || i}
+                  className="node"
+                  transform={"translate(" + x(d.y) + "," + y(d.x) + ")"}
                 >
-                  {d.data.name}
-                </text>
-              </g>
+                  <circle r="4.5" />
+                </g>
+              </React.Fragment>
+            );
+          })}
+
+          {nodes.map((d, i) => {
+            let textrotation = 180 - d.data.angle * 180;
+            let anchor = "start";
+            let xvalue = 8;
+            if (Math.abs(textrotation) > 90) {
+              textrotation = -d.data.angle * 180;
+              anchor = "end";
+              xvalue = -8;
+            }
+
+            return (
+              <React.Fragment>
+                <g
+                  key={d.data.name || i}
+                  className="node"
+                  transform={"translate(" + x(d.y) + "," + y(d.x) + ")"}
+                >
+                  <BCTHighlightableText
+                    d={d}
+                    searchQuery={searchQuery}
+                    currentZoom={currentZoom}
+                    listPrefix={listPrefix}
+                    anchor={anchor}
+                    xvalue={xvalue}
+                    textrotation={textrotation}
+                  />
+                </g>
+              </React.Fragment>
             );
           })}
         </g>

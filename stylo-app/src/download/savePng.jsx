@@ -84,7 +84,7 @@ function SavePng({ settings, mfw, cull }) {
   };
   return (
     <React.Fragment>
-      <Tooltip title="Click to download Plot and Settings">
+      <Tooltip title="Click to download the current plot view window and settings">
         <Button
           onClick={function (event) {
             handleClick();

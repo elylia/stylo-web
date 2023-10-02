@@ -3,19 +3,40 @@ import SaveDistanceTable from "../output-options/SaveDistanceTable";
 import SaveFrequencyTable from "../output-options/SaveFrequencyTable";
 import SaveFeatureList from "../output-options/SaveFeatureList";
 import InfoOutput from "../infoText/infoOutput";
-import { Box, Button, CircularProgress } from "@mui/material";
+import { Alert, Box, Button, CircularProgress } from "@mui/material";
 import { LoadingButton } from "@mui/lab";
 
-function Step5({ settings, setSettings, handleGetResults, handleBack, error }) {
+function Step5({ settings, setSettings, handleGetResults, handleBack }) {
   const [loading, setLoading] = React.useState(false);
+  const [message, setMessage] = React.useState(false);
   const handleClick = async () => {
     setLoading(true);
+    setMessage(true);
     await handleGetResults();
     setLoading(false);
+    setMessage(false);
   };
 
   return (
     <React.Fragment>
+      {message && (
+        <Alert
+          severity="info"
+          onClose={() => setError(null)}
+          sx={{
+            position: "absolute",
+            top: "400px",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            zIndex: 10,
+            whiteSpace: "preserve",
+            textAlign: "left",
+          }}
+        >
+          Starting your analysis. Depending on your corpus and settings, this
+          may take a few moments.
+        </Alert>
+      )}
       <div className="content">
         <h1>Choose Output Options</h1>
         <InfoOutput></InfoOutput>

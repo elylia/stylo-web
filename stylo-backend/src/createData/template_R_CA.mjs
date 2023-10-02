@@ -18,10 +18,11 @@ const CACode = (settings) => {
     frequencyTable: settings.frequencyTable == false ? "FALSE" : "TRUE",
     distanceTable: settings.distanceTable == false ? "FALSE" : "TRUE",
     featureList: settings.featureList == false ? "FALSE" : "TRUE",
-
+    encoding: settings.encoding == false ? "UTF-8" : "native.enc",
     sampling: settings.sampling,
     sampleSize: settings.sampleSize,
     randomSample: settings.randomSample,
+    language: settings.language,
   };
 
   const template = `library(stylo)
@@ -59,12 +60,6 @@ const CACode = (settings) => {
       }else
         right <- merges[[right]]
       
-      #if (left$order < right$order) {
-      # tmp <- left
-      #left <- right
-      #right <- tmp
-      #}
-      
       
       merges[[index]] <- list(
         children = list(
@@ -87,7 +82,7 @@ const CACode = (settings) => {
         data <- stylo(gui = FALSE, 
                       distance.measure = "{{distanceMeasure}}",
                       analysis.type  = "{{analysisType}}", 
-                      analyzed.features = "w",
+                      analyzed.features = "{{analyzedFeatures}}",
                       ngram.size = "{{nGramSize}}",
                       mfw.min= i, 
                       mfw.max = i, 
@@ -104,7 +99,9 @@ const CACode = (settings) => {
                       write.pdf.file = "false",   
                       save.distance.tables = {{distanceTable}},
                       save.analyzed.freqs = {{frequencyTable}},
-                      save.analyzed.features = {{featureList}})
+                      save.analyzed.features = {{featureList}},
+                      corpus.lang = "{{language}}",
+                      encoding = "{{encoding}}")
         table <- as.table(data$distance.table)
         
         edges_JSON <- toJSON(data$list.of.edges, pretty = TRUE)
