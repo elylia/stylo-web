@@ -22,7 +22,7 @@ function Step5({ settings, setSettings, handleGetResults, handleBack }) {
       {message && (
         <Alert
           severity="info"
-          onClose={() => setError(null)}
+          onClose={() => setMessage(null)}
           sx={{
             position: "absolute",
             top: "400px",
