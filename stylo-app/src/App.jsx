@@ -15,6 +15,7 @@ import "../src/assets/fonts/index.css";
 import CitationDialog from "./dialog/citationDialog";
 import AboutDialog from "./dialog/aboutDialog";
 import GithubLink from "./dialog/githubLink";
+import Logo from "./assets/Logo_5.svg";
 
 function App() {
   const [activeStep, setActiveStep] = useState(0);
@@ -102,7 +103,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <div id="rootDiv" className="app-container">
         <header className="header">
-          <img src="../src/assets/Logo_5.svg" alt="Logo" />
+          <img src={Logo} alt="Logo" />
           <div className="title">
             <h1 className="title">STYLO WEB</h1>
             <div className="right-section">

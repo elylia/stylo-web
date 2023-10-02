@@ -320,9 +320,8 @@ body {
 
 .plotSliderTsne {
   overflow: hidden;
-  display: block;
+  display: flex;
   height: 100%;
-  flex-direction: column;
 }
 
 .bctPlot {

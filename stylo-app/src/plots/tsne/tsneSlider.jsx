@@ -62,74 +62,76 @@ const TsneSlider = ({ url, settings }) => {
 
   return (
     <div className="plotSliderTsne">
-      <h1>
-        {settings.analysisTypeLabel}
-        <div className="settingsDownload">
-          <InfoPlots settings={settings} />
-          <SavePng
-            settings={settings}
-            mfw={mfwData[currentMfwSliderIndex]}
-            cull={cullData[currentCullSliderIndex]}
-          />
-          <InfoNavigation />
+      <div>
+        <h1>
+          {settings.analysisTypeLabel}
+          <div className="settingsDownload">
+            <InfoPlots settings={settings} />
+            <SavePng
+              settings={settings}
+              mfw={mfwData[currentMfwSliderIndex]}
+              cull={cullData[currentCullSliderIndex]}
+            />
+            <InfoNavigation />
 
-          <Search
-            onChange={handleSearchQuery}
-            labels={
-              data.find(
-                (element) =>
-                  element.mfw == mfwData[currentMfwSliderIndex] &&
-                  element.culling == cullData[currentCullSliderIndex]
-              ).data.name
-            }
-          />
-        </div>
-      </h1>
-      <TsnePlot
-        data={
-          data.find(
-            (element) =>
-              element.mfw == mfwData[currentMfwSliderIndex] &&
-              element.culling == cullData[currentCullSliderIndex]
-          ).data
-        }
-        searchQuery={searchQuery}
-      />
-      {mfwData.length > 1 && (
-        <React.Fragment>
-          <div className="slider">
-            <h2>MFW</h2>
-            <Slider
-              min={0}
-              max={mfwData.length - 1}
-              value={currentMfwSliderIndex}
-              onChange={handleMfwSliderChange}
-              valueLabelDisplay="auto"
-              valueLabelFormat={(value) => mfwMarks[value].label}
-              size="small"
-              marks
+            <Search
+              onChange={handleSearchQuery}
+              labels={
+                data.find(
+                  (element) =>
+                    element.mfw == mfwData[currentMfwSliderIndex] &&
+                    element.culling == cullData[currentCullSliderIndex]
+                ).data.name
+              }
             />
           </div>
-        </React.Fragment>
-      )}
-      {cullData.length > 1 && (
-        <React.Fragment>
-          <div className="slider">
-            <h2>Culling</h2>
+        </h1>
+        <TsnePlot
+          data={
+            data.find(
+              (element) =>
+                element.mfw == mfwData[currentMfwSliderIndex] &&
+                element.culling == cullData[currentCullSliderIndex]
+            ).data
+          }
+          searchQuery={searchQuery}
+        />
+        {mfwData.length > 1 && (
+          <React.Fragment>
+            <div className="slider">
+              <h2>MFW</h2>
+              <Slider
+                min={0}
+                max={mfwData.length - 1}
+                value={currentMfwSliderIndex}
+                onChange={handleMfwSliderChange}
+                valueLabelDisplay="auto"
+                valueLabelFormat={(value) => mfwMarks[value].label}
+                size="small"
+                marks
+              />
+            </div>
+          </React.Fragment>
+        )}
+        {cullData.length > 1 && (
+          <React.Fragment>
+            <div className="slider">
+              <h2>Culling</h2>
 
-            <Slider
-              min={0}
-              max={cullData.length - 1}
-              value={currentCullSliderIndex}
-              onChange={handleCullSliderChange}
-              valueLabelDisplay="auto"
-              valueLabelFormat={(value) => cullMarks[value].label}
-              size="small"
-              marks
-            />
-          </div>
-        </React.Fragment>
-      )}
+              <Slider
+                min={0}
+                max={cullData.length - 1}
+                value={currentCullSliderIndex}
+                onChange={handleCullSliderChange}
+                valueLabelDisplay="auto"
+                valueLabelFormat={(value) => cullMarks[value].label}
+                size="small"
+                marks
+              />
+            </div>
+          </React.Fragment>
+        )}
+      </div>
     </div>
   );
 };
