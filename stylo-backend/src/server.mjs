@@ -22,6 +22,8 @@ app.use(bodyParser.json());
 const port = 5000;
 app.use(cors());
 
+app.use(express.static('frontend'));
+
 app.post("/execute-r", async (req, res) => {
   const settings = req.body.settings;
   const suffix = req.body.suffix;
