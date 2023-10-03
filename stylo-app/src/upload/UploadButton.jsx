@@ -1,12 +1,15 @@
 import * as React from "react";
-import { Button } from "@mui/material";
+import { LoadingButton } from "@mui/lab";
 
 export default function UploadButton({ setUploadedSuffix }) {
+  const [loading, setLoading] = React.useState(false);
+
   const handleFileUpload = async (event) => {
-    const file = event.target.files;
+    const files = event.target.files;
     const formData = new FormData();
-    for (const f of file) {
-      formData.append("file", f);
+
+    for (const file of files) {
+      formData.append("file", file);
     }
 
     try {
@@ -21,15 +24,33 @@ export default function UploadButton({ setUploadedSuffix }) {
       }
     } catch (error) {
       console.error("Error uploading file:", error);
+    } finally {
+      setLoading(false);
     }
+  };
+
+  const handleButtonClick = () => {
+    setLoading(true);
+    document.getElementById("fileInput").click();
   };
 
   return (
     <div>
-      <Button variant="contained" component="label">
+      <LoadingButton
+        variant="contained"
+        color="primary"
+        onClick={handleButtonClick}
+        loading={loading}
+      >
         Upload Corpus
-        <input type="file" multiple hidden onChange={handleFileUpload} />
-      </Button>
+      </LoadingButton>
+      <input
+        id="fileInput"
+        type="file"
+        multiple
+        hidden
+        onChange={handleFileUpload}
+      />
     </div>
   );
 }
