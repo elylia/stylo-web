@@ -57,7 +57,7 @@ app.post("/api/execute-r", async (req, res) => {
     await cp(suffix, dataTarget, { recursive: true });
 
     exec(
-      `cd ${folder} && RScript getData.R`,
+      `cd ${folder} && Rscript getData.R`,
       { maxBuffer: 1024 * 1024 * 100 },
       async (error) => {
         try {
