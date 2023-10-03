@@ -24,7 +24,7 @@ const ScatterSlider = ({ url, settings, labelUrl }) => {
   const [currentCullSliderIndex, setCurrentCullSliderIndex] = useState(0);
 
   const fetchJson = () => {
-    fetch("http://localhost:5000/" + url)
+    fetch("api/" + url)
       .then((response) => {
         return response.json();
       })
@@ -34,7 +34,7 @@ const ScatterSlider = ({ url, settings, labelUrl }) => {
   };
 
   const fetchLabel = () => {
-    fetch("http://localhost:5000/" + labelUrl)
+    fetch("api/" + labelUrl)
       .then((response) => {
         return response.json();
       })

@@ -17,7 +17,7 @@ export default function computePosition(
     node.y = 0;
   }
 
-  var child,
+  let child,
     arc,
     lastStart = node.start;
   if (node.children) {
@@ -40,7 +40,7 @@ export default function computePosition(
         child.y = y + defaultBranchLength * Math.cos(child.angle * Math.PI);
       }
 
-      computePosition(child, child.x, child.y, child.angle, false);
+      computePosition(child, child.x, child.y, false);
     }
   }
   return node;

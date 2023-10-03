@@ -22,9 +22,9 @@ app.use(bodyParser.json());
 const port = 5000;
 app.use(cors());
 
-app.use(express.static('frontend'));
+app.use(express.static("frontend"));
 
-app.post("/execute-r", async (req, res) => {
+app.post("/api/execute-r", async (req, res) => {
   const settings = req.body.settings;
   const suffix = req.body.suffix;
   const getCode = () => {
@@ -58,7 +58,7 @@ app.post("/execute-r", async (req, res) => {
 
     exec(
       `cd ${folder} && RScript getData.R`,
-      { maxBuffer: 1024 * 1024 * 10 },
+      { maxBuffer: 1024 * 1024 * 100 },
       async (error) => {
         try {
           if (error) {
@@ -146,9 +146,9 @@ app.post("/execute-r", async (req, res) => {
   }
 });
 
-app.use("/results", express.static("results"));
+app.use("/api/results", express.static("results"));
 
-app.use("/upload", uploadRouter);
+app.use("/api/upload", uploadRouter);
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);

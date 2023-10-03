@@ -4,7 +4,7 @@ import { Button } from "@mui/material";
 export default function DeleteButton({ setUploadedSuffix, uploadedSuffix }) {
   const handleDelete = async (suffix) => {
     try {
-      const response = await fetch(`http://localhost:5000/upload/${suffix}`, {
+      const response = await fetch(`api/upload/${suffix}`, {
         method: "DELETE",
       });
 

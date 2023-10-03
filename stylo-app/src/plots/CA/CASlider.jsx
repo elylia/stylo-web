@@ -24,7 +24,7 @@ const CaSlider = ({ url, settings }) => {
   };
 
   const fetchJson = () => {
-    fetch("http://localhost:5000/" + url)
+    fetch("api/" + url)
       .then((response) => {
         return response.json();
       })
