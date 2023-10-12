@@ -325,7 +325,7 @@ body {
 
 .plotSliderTsne {
   overflow: hidden;
-  display: flex;
+  display: block;
   height: 100%;
 }
 
