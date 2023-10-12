@@ -287,6 +287,12 @@ body {
   width: 100%;
   height: 100%;
 }
+
+#svg-chart-tsne {
+  width: 100%;
+  height: 90%;
+}
+
 .title {
   display: flex;
   flex-direction: column;

@@ -58,7 +58,7 @@ function TsnePlot({ data, searchQuery }) {
   });
   return (
     <React.Fragment>
-      <svg ref={svgRef} id={"svg-chart"}>
+      <svg ref={svgRef} id={"svg-chart-tsne"}>
         <g className="zoom_group" transform={currentZoom?.transform}>
           {dataPoints}
         </g>
