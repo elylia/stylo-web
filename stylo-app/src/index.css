@@ -318,7 +318,7 @@ body {
 
 .plotSlider {
   overflow: hidden;
-  display: flex;
+  display: hidden;
   height: 100%;
   flex-direction: column;
 }
