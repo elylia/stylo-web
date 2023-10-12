@@ -5,10 +5,10 @@ import { Divider } from "@mui/material";
 function InfoUpload() {
   const info = (
     <p>
-      Please select the folder where your corpus (collection of texts) is
-      located by clicking on "Upload Data". Also in the dropdown select the file
-      format and the language of the texts. If you are using an encoding other
-      than UTF-8 please activate the Native Encoding toggle switch.
+      Please select the files for your corpus and upload them by clicking on
+      "Upload Data". Also in the dropdown select the file format and the
+      language of the texts. If you are using an encoding other than UTF-8
+      please activate the Native Encoding toggle switch.
       <br />
       Your texts are colored according to the characters before the first
       underscore (e.g. the texts author1_aStory & author1_aDrama are going to be

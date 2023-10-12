@@ -16,7 +16,7 @@ function GithubLink() {
   return (
     <React.Fragment>
       <a
-        href="https://github.com/user/repo2"
+        href="https://github.com/elylia/stylo-web/tree/main"
         target="_blank"
         style={{ display: "inline-flex" }}
       >
