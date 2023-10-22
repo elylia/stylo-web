@@ -5,9 +5,6 @@ import CaSlider from "../plots/CA/CASlider";
 import ScatterSlider from "../plots/scatter/scatterSlider";
 
 function Results({ settings, url, labelUrl }) {
-  console.log("settings:", settings);
-  console.log("analysisType:", settings && settings.analysisType);
-
   if (settings.analysisType === "CA") {
     return (
       <React.Fragment>
