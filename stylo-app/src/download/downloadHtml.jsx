@@ -1,8 +1,7 @@
 import { Button, Tooltip } from "@mui/material";
-import saveSvgAsPng from "save-svg-as-png";
-import ImageIcon from "@mui/icons-material/Image";
 import React from "react";
 import CodeIcon from "@mui/icons-material/Code";
+
 function SaveHTML({ settings, result }) {
   function createData(parameter, value) {
     return { parameter, value };

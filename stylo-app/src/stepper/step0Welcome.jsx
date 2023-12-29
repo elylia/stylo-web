@@ -10,12 +10,12 @@ function Step0({ handleNext }) {
   return (
     <React.Fragment>
       <div>
-        <h1>Welcome!</h1>
+        <h1>Welcome to stylo web!</h1>
         <br />
         <p>
-          This is <b>stylo web</b>. A web application where you can perform
-          stylometric analysis online, get interactive results and save them for
-          later use. <AboutDialogGetStarted /> if you want to know more.
+          A web application where you can perform stylometric analysis online,
+          get interactive results and save them for later use.{" "}
+          <AboutDialogGetStarted /> if you want to know more.
         </p>
         <b>Get started by clicking on NEXT.</b>
       </div>
