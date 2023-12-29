@@ -19,7 +19,7 @@ import Logo from "./assets/Logo_5.svg";
 import Step0 from "./stepper/step0Welcome";
 
 function App() {
-  const [activeStep, setActiveStep] = useState(0);
+  const [activeStep, setActiveStep] = useState(-1);
   const [url, setUrl] = useState("");
   const [result, setResult] = useState("");
   const [labelUrl, setLabel] = useState("");
@@ -34,7 +34,7 @@ function App() {
   };
 
   const handleReset = () => {
-    setActiveStep(1);
+    setActiveStep(0);
   };
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
@@ -130,7 +130,7 @@ function App() {
 
           <br />
         </header>
-        {activeStep <= 6 && (
+        {activeStep <= 5 && (
           <div className="stepper-box">
             <HorizontalLinearStepper
               activeStep={activeStep}
@@ -138,12 +138,12 @@ function App() {
             ></HorizontalLinearStepper>{" "}
           </div>
         )}
-        {activeStep === 0 && (
+        {activeStep === -1 && (
           <div className="content-box">
             <Step0 handleNext={handleNext} />
           </div>
         )}
-        {activeStep === 1 && (
+        {activeStep === 0 && (
           <div className="content-box">
             <Step1
               setSettings={setSettings}
@@ -153,7 +153,7 @@ function App() {
             />
           </div>
         )}
-        {activeStep === 2 && (
+        {activeStep === 1 && (
           <div className="content-box">
             <Step2
               setSettings={setSettings}
@@ -164,7 +164,7 @@ function App() {
             />
           </div>
         )}
-        {activeStep === 3 && (
+        {activeStep === 2 && (
           <div className="content-box">
             <Step3
               setSettings={setSettings}
@@ -174,7 +174,7 @@ function App() {
             />
           </div>
         )}
-        {activeStep === 4 && (
+        {activeStep === 3 && (
           <div className="content-box">
             <Step4
               setSettings={setSettings}
@@ -184,7 +184,7 @@ function App() {
             />
           </div>
         )}
-        {activeStep === 5 && (
+        {activeStep === 4 && (
           <div className="content-box">
             <Step5
               setSettings={setSettings}
@@ -194,7 +194,7 @@ function App() {
             />
           </div>
         )}
-        {activeStep === 6 && (
+        {activeStep === 5 && (
           <div className="content-box">
             <Step6
               setSettings={setSettings}
@@ -220,7 +220,7 @@ function App() {
             )}
           </div>
         )}
-        {activeStep === 7 && (
+        {activeStep === 6 && (
           <div className="result-box">
             <Results
               setSettings={setSettings}
