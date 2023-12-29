@@ -98,7 +98,7 @@ function SavePng({ settings, mfw, cull }) {
             sx={{ fontSize: 15, verticalAlign: "sub" }}
             color="#ffffff"
           />
-          SAVE
+          SAVE PNG
         </Button>
       </Tooltip>
     </React.Fragment>

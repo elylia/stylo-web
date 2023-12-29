@@ -8,7 +8,7 @@ import { Alert, Box, Button } from "@mui/material";
 import DeleteButton from "../upload/DeleteButton";
 import { useState } from "react";
 
-function Step1({
+function Step2({
   settings,
   setSettings,
   setActiveStep,
@@ -26,12 +26,12 @@ function Step1({
     }
 
     if (errorMessages.length === 0) {
-      setActiveStep(2);
+      setActiveStep(3);
     }
   };
 
   const handleBackUpload = () => {
-    setActiveStep(0);
+    setActiveStep(1);
     errorMessages = [];
     if (error) {
       setError(null);
@@ -102,4 +102,4 @@ function Step1({
   );
 }
 
-export default Step1;
+export default Step2;

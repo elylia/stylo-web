@@ -6,7 +6,7 @@ import RandomSample from "../sampling/randomSample";
 import InfoSample from "../infoText/infoSample";
 import { Box, Button } from "@mui/material";
 
-function Step3({ settings, setSettings, handleNext, handleBack }) {
+function Step4({ settings, setSettings, handleNext, handleBack }) {
   return (
     <React.Fragment>
       <div className="content">
@@ -42,4 +42,4 @@ function Step3({ settings, setSettings, handleNext, handleBack }) {
   );
 }
 
-export default Step3;
+export default Step4;

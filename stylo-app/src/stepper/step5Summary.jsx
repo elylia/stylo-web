@@ -8,7 +8,7 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import { Box, Button } from "@mui/material";
 
-function Step4({ settings, handleNext, handleBack }) {
+function Step5({ settings, handleNext, handleBack }) {
   function createData(parameter, value) {
     return { parameter, value };
   }
@@ -107,4 +107,4 @@ function Step4({ settings, handleNext, handleBack }) {
   );
 }
 
-export default Step4;
+export default Step5;

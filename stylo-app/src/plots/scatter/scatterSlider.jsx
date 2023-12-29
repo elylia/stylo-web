@@ -3,8 +3,9 @@ import { Box, Slider } from "@mui/material";
 import ScatterPlot from "./scatterPlot";
 import InfoPlots from "../../infoText/infoPlots";
 import SavePng from "../../download/savePng";
+import SaveHTML from "../../download/downloadHtml";
 
-const ScatterSlider = ({ url, settings, labelUrl }) => {
+const ScatterSlider = ({ url, settings, labelUrl, result }) => {
   const [data, setData] = useState([
     {
       mfw: 100,
@@ -81,6 +82,7 @@ const ScatterSlider = ({ url, settings, labelUrl }) => {
           mfw={mfwData[currentMfwSliderIndex]}
           cull={cullData[currentCullSliderIndex]}
         />
+        <SaveHTML settings={settings} result={result} />
       </div>
 
       <ScatterPlot

@@ -6,7 +6,7 @@ import InfoOutput from "../infoText/infoOutput";
 import { Alert, Box, Button, CircularProgress } from "@mui/material";
 import { LoadingButton } from "@mui/lab";
 
-function Step5({ settings, setSettings, handleGetResults, handleBack }) {
+function Step6({ settings, setSettings, handleGetResults, handleBack }) {
   const [loading, setLoading] = React.useState(false);
   const [message, setMessage] = React.useState(false);
   const handleClick = async () => {
@@ -71,4 +71,4 @@ function Step5({ settings, setSettings, handleGetResults, handleBack }) {
   );
 }
 
-export default Step5;
+export default Step6;

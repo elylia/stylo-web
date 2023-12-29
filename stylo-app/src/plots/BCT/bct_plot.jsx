@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import * as d3 from "d3";
-import getColor from "./getColor";
 import computePosition from "./computePosition";
 import InfoPlots from "../../infoText/infoPlots";
 import InfoNavigation from "../../infoText/infoNavigation";
@@ -8,8 +7,9 @@ import SavePng from "../../download/savePng";
 import Search from "../../search/search";
 import BCTHighlightableText from "./BCTHighlightableText";
 import useElementSize from "../scatter/svgSizer";
+import SaveHTML from "../../download/downloadHtml";
 
-const BctPlot = ({ url }) => {
+const BctPlot = ({ url, result, settings }) => {
   const ref = useRef();
   const [currentZoom, setCurrentZoom] = useState();
   const [searchQuery, setSearchQuery] = useState("");
@@ -133,6 +133,7 @@ const BctPlot = ({ url }) => {
         <div className="settingsDownload">
           <InfoPlots settings={settings} />
           <SavePng settings={settings} />
+          <SaveHTML settings={settings} result={result} />
           <InfoNavigation />
           <Search onChange={handleSearchQuery} labels={data.name} />
         </div>

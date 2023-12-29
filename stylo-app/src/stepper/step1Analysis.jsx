@@ -3,9 +3,9 @@ import AnalysisType from "../analysis-type/AnalysisType";
 import DistanceMeasure from "../analysis-type/DistanceMeasure";
 import InfoAnalysis from "../infoText/infoAnalysis";
 import ConsensusStrength from "../analysis-type/ConsensusStrength";
-import { Button } from "@mui/material";
+import { Box, Button } from "@mui/material";
 
-function Step0({ settings, setSettings, handleNext }) {
+function Step1({ settings, setSettings, handleNext, handleBack }) {
   return (
     <React.Fragment>
       <div>
@@ -23,13 +23,20 @@ function Step0({ settings, setSettings, handleNext }) {
           )}
         </div>
       </div>
-      <div className="buttonRight">
-        <Button onClick={handleNext} variant="contained" color="primary">
-          Next
-        </Button>
+      <div className="buttonsBoth">
+        <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
+          <Button onClick={handleBack} variant="contained" color="primary">
+            Back
+          </Button>
+          <Box sx={{ flex: "1 1 auto" }} />
+
+          <Button onClick={handleNext} variant="contained" color="primary">
+            Next
+          </Button>
+        </Box>
       </div>
     </React.Fragment>
   );
 }
 
-export default Step0;
+export default Step1;

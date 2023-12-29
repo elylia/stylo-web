@@ -1,4 +1,4 @@
-import express from "express";
+import express, { application } from "express";
 import { exec } from "child_process";
 import bodyParser from "body-parser";
 import cors from "cors";
@@ -8,7 +8,7 @@ import MdsCode from "./createData/template_R_MDS.mjs";
 import PcrCode from "./createData/template_R_PCR.mjs";
 import PcvCode from "./createData/template_R_PCV.mjs";
 import TsneCode from "./createData/template_R_TSNE.mjs";
-import { cp, mkdtemp, writeFile } from "fs/promises";
+import { cp, mkdtemp, readFile, writeFile } from "fs/promises";
 import { join } from "path";
 import { tmpdir } from "os";
 import { fileURLToPath } from "url";
@@ -16,7 +16,8 @@ import { dirname } from "path";
 import { nanoid } from "nanoid";
 import ParseNewick from "./createData/Parse_newick_json.mjs";
 import uploadRouter from "./upload/upload.mjs";
-import { download } from "./download/download.mjs";
+import { downloadOutputOptions } from "./download/download-output-options.mjs";
+import { downloadHtml } from "./download/download-html.mjs";
 const app = express();
 app.use(bodyParser.json());
 const port = 5000;
@@ -74,14 +75,20 @@ app.post("/api/execute-r", async (req, res) => {
             const fileName = nanoid();
             await cp(folder + "/Newick.txt", "results/" + fileName + ".txt");
             await ParseNewick(fileName);
-            await download(folder, fileName, settings);
+            await cp("results/" + fileName + ".json", folder + "/result.json");
+
+            await downloadOutputOptions(folder, fileName, settings);
+            await downloadHtml(folder, fileName, settings);
 
             res.json({
               result: "results/" + fileName + ".json",
               rawData: "results/" + fileName + ".zip",
+              htmlExport: "results/" + fileName + "_html.zip",
+              htmlExport: "results/" + fileName + "_html.zip",
               folder,
             });
-            await download(folder, fileName, settings);
+            await downloadOutputOptions(folder, fileName, settings);
+            await downloadHtml(folder, fileName, settings);
           } else if (settings.analysisType === "PCR") {
             const fileName = nanoid();
             await cp(folder + "/result.json", "results/" + fileName + ".json");
@@ -89,10 +96,13 @@ app.post("/api/execute-r", async (req, res) => {
               folder + "/label.json",
               "results/" + fileName + "_label" + ".json"
             );
-            await download(folder, fileName, settings);
+            await downloadOutputOptions(folder, fileName, settings);
+            await downloadHtml(folder, fileName, settings);
+
             res.json({
               result: "results/" + fileName + ".json",
               rawData: "results/" + fileName + ".zip",
+              htmlExport: "results/" + fileName + "_html.zip",
               folder,
               labelUrl: "results/" + fileName + "_label" + ".json",
             });
@@ -103,10 +113,13 @@ app.post("/api/execute-r", async (req, res) => {
               folder + "/label.json",
               "results/" + fileName + "_label" + ".json"
             );
-            await download(folder, fileName, settings);
+            await downloadOutputOptions(folder, fileName, settings);
+            await downloadHtml(folder, fileName, settings);
+
             res.json({
               result: "results/" + fileName + ".json",
               rawData: "results/" + fileName + ".zip",
+              htmlExport: "results/" + fileName + "_html.zip",
               folder,
               labelUrl: "results/" + fileName + "_label" + ".json",
             });
@@ -117,21 +130,26 @@ app.post("/api/execute-r", async (req, res) => {
               folder + "/label.json",
               "results/" + fileName + "_label" + ".json"
             );
-            await download(folder, fileName, settings);
+            await downloadOutputOptions(folder, fileName, settings);
+            await downloadHtml(folder, fileName, settings);
 
             res.json({
               result: "results/" + fileName + ".json",
               rawData: "results/" + fileName + ".zip",
+              htmlExport: "results/" + fileName + "_html.zip",
               folder,
               labelUrl: "results/" + fileName + "_label" + ".json",
             });
           } else {
             const fileName = nanoid();
             await cp(folder + "/result.json", "results/" + fileName + ".json");
-            await download(folder, fileName, settings);
+            await downloadOutputOptions(folder, fileName, settings);
+            await downloadHtml(folder, fileName, settings);
+
             res.json({
               result: "results/" + fileName + ".json",
               rawData: "results/" + fileName + ".zip",
+              htmlExport: "results/" + fileName + "_html.zip",
               folder,
             });
           }
@@ -145,6 +163,27 @@ app.post("/api/execute-r", async (req, res) => {
     console.error(err);
   }
 });
+
+async function HtmlExportJsonZip(req, res) {
+  const settings = req.body.settings;
+  const fileName = req.body.fileName;
+
+  const typeJson = JSON.stringify(settings.analysisType);
+  const dataJson = await readFile("results/" + fileName + ".json");
+  const labelJson = await readFile("results/" + fileName + "_label.json");
+  let zip = new JSZip();
+  zip.file(`type.json`, typeJson);
+  zip.file(`data.json`, dataJson);
+  zip.file(`label.json`, labelJson);
+  const content = await zip.generateAsync({ type: "blob" });
+  res.writeHead(200, {
+    "Content-Disposition": `attachment; filename="${settings.analysisType}_${settings.distanceMeasure}.zip"`,
+    "Content-Type": "application/zip",
+  });
+  res.end(content);
+}
+
+app.get("/api/exportHtml", HtmlExportJsonZip);
 
 app.use("/api/results", express.static("results"));
 

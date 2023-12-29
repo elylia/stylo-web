@@ -2,50 +2,12 @@ import React, { useEffect, useState } from "react";
 import { Slider } from "@mui/material";
 import ScatterPlot from "../plots/scatter/scatterPlot";
 
-const exportScatter = ({ url, settings, labelUrl }) => {
-  const [data, setData] = useState([
-    {
-      mfw: 100,
-      culling: 0,
-      data: [{ name: "dummy_dummy", X1: 0, X2: 0 }],
-    },
-  ]);
-  const [label, setLabel] = useState([
-    {
-      mfw: 100,
-      culling: 0,
-      label1: [""],
-      label2: [""],
-    },
-  ]);
+const ExportScatter = ({}) => {
+  const data = window.data;
+  const label = window.label;
   const [currentMfwSliderIndex, setCurrentMfwSliderIndex] = useState(0);
   const [currentCullSliderIndex, setCurrentCullSliderIndex] = useState(0);
 
-  const fetchJson = () => {
-    fetch("api/" + url)
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        setData(data);
-      });
-  };
-
-  const fetchLabel = () => {
-    fetch("api/" + labelUrl)
-      .then((response) => {
-        return response.json();
-      })
-      .then((label) => {
-        setLabel(label);
-      });
-  };
-  useEffect(() => {
-    fetchJson();
-  }, [url]);
-  useEffect(() => {
-    fetchLabel();
-  }, [labelUrl]);
   const cullData = [...new Set(data.map((item) => item.culling))];
   const mfwData = [...new Set(data.map((item) => item.mfw))];
 
@@ -71,8 +33,6 @@ const exportScatter = ({ url, settings, labelUrl }) => {
 
   return (
     <div className="plotSlider">
-      <h1>{settings.analysisTypeLabel} </h1>
-
       <ScatterPlot
         data={
           data.find(
@@ -135,4 +95,4 @@ const exportScatter = ({ url, settings, labelUrl }) => {
   );
 };
 
-export default exportScatter;
+export default ExportScatter;

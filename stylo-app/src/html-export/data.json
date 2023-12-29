@@ -1,0 +1,1523 @@
+[
+  {
+    "mfw": 100,
+    "culling": 0,
+    "data": [
+      {
+        "V1": -1.9836,
+        "V2": 0.9293,
+        "name": "ABronte_Agnes",
+        "_row": "ABronte_Agnes"
+      },
+      {
+        "V1": -2.9551,
+        "V2": 1.6638,
+        "name": "ABronte_Tenant",
+        "_row": "ABronte_Tenant"
+      },
+      {
+        "V1": -8.2575,
+        "V2": -2.9463,
+        "name": "Austen_Emma",
+        "_row": "Austen_Emma"
+      },
+      {
+        "V1": -5.8352,
+        "V2": -1.5627,
+        "name": "Austen_Pride",
+        "_row": "Austen_Pride"
+      },
+      {
+        "V1": -6.5015,
+        "V2": 0.0153,
+        "name": "Austen_Sense",
+        "_row": "Austen_Sense"
+      },
+      {
+        "V1": 1.7852,
+        "V2": 1.1598,
+        "name": "CBronte_Jane",
+        "_row": "CBronte_Jane"
+      },
+      {
+        "V1": 4.4048,
+        "V2": 1.2766,
+        "name": "CBronte_Professor",
+        "_row": "CBronte_Professor"
+      },
+      {
+        "V1": 3.9633,
+        "V2": 0.2843,
+        "name": "CBronte_Villette",
+        "_row": "CBronte_Villette"
+      },
+      {
+        "V1": 1.9751,
+        "V2": 0.3607,
+        "name": "Dickens_Bleak",
+        "_row": "Dickens_Bleak"
+      },
+      {
+        "V1": 3.1363,
+        "V2": -0.8648,
+        "name": "Dickens_David",
+        "_row": "Dickens_David"
+      },
+      {
+        "V1": 1.2333,
+        "V2": -0.738,
+        "name": "Dickens_Hard",
+        "_row": "Dickens_Hard"
+      },
+      {
+        "V1": 3.5778,
+        "V2": -0.9717,
+        "name": "EBronte_Wuthering",
+        "_row": "EBronte_Wuthering"
+      },
+      {
+        "V1": 1.9233,
+        "V2": -2.3514,
+        "name": "Eliot_Adam",
+        "_row": "Eliot_Adam"
+      },
+      {
+        "V1": 0.4064,
+        "V2": -3.2302,
+        "name": "Eliot_Middlemarch",
+        "_row": "Eliot_Middlemarch"
+      },
+      {
+        "V1": 2.1629,
+        "V2": -3.1782,
+        "name": "Eliot_Mill",
+        "_row": "Eliot_Mill"
+      },
+      {
+        "V1": 0.1954,
+        "V2": 1.8153,
+        "name": "Fielding_Joseph",
+        "_row": "Fielding_Joseph"
+      },
+      {
+        "V1": -2.8119,
+        "V2": 3.0611,
+        "name": "Fielding_Tom",
+        "_row": "Fielding_Tom"
+      },
+      {
+        "V1": -7.564,
+        "V2": 6.6757,
+        "name": "Richardson_Clarissa",
+        "_row": "Richardson_Clarissa"
+      },
+      {
+        "V1": -8.0522,
+        "V2": 7.6803,
+        "name": "Richardson_Pamela",
+        "_row": "Richardson_Pamela"
+      },
+      {
+        "V1": 5.8131,
+        "V2": 5.2555,
+        "name": "Sterne_Sentimental",
+        "_row": "Sterne_Sentimental"
+      },
+      {
+        "V1": 3.7264,
+        "V2": 7.0106,
+        "name": "Sterne_Tristram",
+        "_row": "Sterne_Tristram"
+      },
+      {
+        "V1": 6.5151,
+        "V2": 0.2064,
+        "name": "Thackeray_Barry",
+        "_row": "Thackeray_Barry"
+      },
+      {
+        "V1": 6.5981,
+        "V2": -1.5135,
+        "name": "Thackeray_Pendennis",
+        "_row": "Thackeray_Pendennis"
+      },
+      {
+        "V1": 7.4896,
+        "V2": -1.7753,
+        "name": "Thackeray_Vanity",
+        "_row": "Thackeray_Vanity"
+      },
+      {
+        "V1": -1.7279,
+        "V2": -5.0967,
+        "name": "Trollope_Barchester",
+        "_row": "Trollope_Barchester"
+      },
+      {
+        "V1": -4.3466,
+        "V2": -6.4777,
+        "name": "Trollope_Phineas",
+        "_row": "Trollope_Phineas"
+      },
+      {
+        "V1": -4.8708,
+        "V2": -6.6883,
+        "name": "Trollope_Prime",
+        "_row": "Trollope_Prime"
+      }
+    ],
+    "_row": "i"
+  },
+  {
+    "mfw": 100,
+    "culling": 10,
+    "data": [
+      {
+        "V1": -1.9836,
+        "V2": 0.9293,
+        "name": "ABronte_Agnes",
+        "_row": "ABronte_Agnes"
+      },
+      {
+        "V1": -2.9551,
+        "V2": 1.6638,
+        "name": "ABronte_Tenant",
+        "_row": "ABronte_Tenant"
+      },
+      {
+        "V1": -8.2575,
+        "V2": -2.9463,
+        "name": "Austen_Emma",
+        "_row": "Austen_Emma"
+      },
+      {
+        "V1": -5.8352,
+        "V2": -1.5627,
+        "name": "Austen_Pride",
+        "_row": "Austen_Pride"
+      },
+      {
+        "V1": -6.5015,
+        "V2": 0.0153,
+        "name": "Austen_Sense",
+        "_row": "Austen_Sense"
+      },
+      {
+        "V1": 1.7852,
+        "V2": 1.1598,
+        "name": "CBronte_Jane",
+        "_row": "CBronte_Jane"
+      },
+      {
+        "V1": 4.4048,
+        "V2": 1.2766,
+        "name": "CBronte_Professor",
+        "_row": "CBronte_Professor"
+      },
+      {
+        "V1": 3.9633,
+        "V2": 0.2843,
+        "name": "CBronte_Villette",
+        "_row": "CBronte_Villette"
+      },
+      {
+        "V1": 1.9751,
+        "V2": 0.3607,
+        "name": "Dickens_Bleak",
+        "_row": "Dickens_Bleak"
+      },
+      {
+        "V1": 3.1363,
+        "V2": -0.8648,
+        "name": "Dickens_David",
+        "_row": "Dickens_David"
+      },
+      {
+        "V1": 1.2333,
+        "V2": -0.738,
+        "name": "Dickens_Hard",
+        "_row": "Dickens_Hard"
+      },
+      {
+        "V1": 3.5778,
+        "V2": -0.9717,
+        "name": "EBronte_Wuthering",
+        "_row": "EBronte_Wuthering"
+      },
+      {
+        "V1": 1.9233,
+        "V2": -2.3514,
+        "name": "Eliot_Adam",
+        "_row": "Eliot_Adam"
+      },
+      {
+        "V1": 0.4064,
+        "V2": -3.2302,
+        "name": "Eliot_Middlemarch",
+        "_row": "Eliot_Middlemarch"
+      },
+      {
+        "V1": 2.1629,
+        "V2": -3.1782,
+        "name": "Eliot_Mill",
+        "_row": "Eliot_Mill"
+      },
+      {
+        "V1": 0.1954,
+        "V2": 1.8153,
+        "name": "Fielding_Joseph",
+        "_row": "Fielding_Joseph"
+      },
+      {
+        "V1": -2.8119,
+        "V2": 3.0611,
+        "name": "Fielding_Tom",
+        "_row": "Fielding_Tom"
+      },
+      {
+        "V1": -7.564,
+        "V2": 6.6757,
+        "name": "Richardson_Clarissa",
+        "_row": "Richardson_Clarissa"
+      },
+      {
+        "V1": -8.0522,
+        "V2": 7.6803,
+        "name": "Richardson_Pamela",
+        "_row": "Richardson_Pamela"
+      },
+      {
+        "V1": 5.8131,
+        "V2": 5.2555,
+        "name": "Sterne_Sentimental",
+        "_row": "Sterne_Sentimental"
+      },
+      {
+        "V1": 3.7264,
+        "V2": 7.0106,
+        "name": "Sterne_Tristram",
+        "_row": "Sterne_Tristram"
+      },
+      {
+        "V1": 6.5151,
+        "V2": 0.2064,
+        "name": "Thackeray_Barry",
+        "_row": "Thackeray_Barry"
+      },
+      {
+        "V1": 6.5981,
+        "V2": -1.5135,
+        "name": "Thackeray_Pendennis",
+        "_row": "Thackeray_Pendennis"
+      },
+      {
+        "V1": 7.4896,
+        "V2": -1.7753,
+        "name": "Thackeray_Vanity",
+        "_row": "Thackeray_Vanity"
+      },
+      {
+        "V1": -1.7279,
+        "V2": -5.0967,
+        "name": "Trollope_Barchester",
+        "_row": "Trollope_Barchester"
+      },
+      {
+        "V1": -4.3466,
+        "V2": -6.4777,
+        "name": "Trollope_Phineas",
+        "_row": "Trollope_Phineas"
+      },
+      {
+        "V1": -4.8708,
+        "V2": -6.6883,
+        "name": "Trollope_Prime",
+        "_row": "Trollope_Prime"
+      }
+    ],
+    "_row": "i.1"
+  },
+  {
+    "mfw": 100,
+    "culling": 20,
+    "data": [
+      {
+        "V1": -1.9836,
+        "V2": 0.9293,
+        "name": "ABronte_Agnes",
+        "_row": "ABronte_Agnes"
+      },
+      {
+        "V1": -2.9551,
+        "V2": 1.6638,
+        "name": "ABronte_Tenant",
+        "_row": "ABronte_Tenant"
+      },
+      {
+        "V1": -8.2575,
+        "V2": -2.9463,
+        "name": "Austen_Emma",
+        "_row": "Austen_Emma"
+      },
+      {
+        "V1": -5.8352,
+        "V2": -1.5627,
+        "name": "Austen_Pride",
+        "_row": "Austen_Pride"
+      },
+      {
+        "V1": -6.5015,
+        "V2": 0.0153,
+        "name": "Austen_Sense",
+        "_row": "Austen_Sense"
+      },
+      {
+        "V1": 1.7852,
+        "V2": 1.1598,
+        "name": "CBronte_Jane",
+        "_row": "CBronte_Jane"
+      },
+      {
+        "V1": 4.4048,
+        "V2": 1.2766,
+        "name": "CBronte_Professor",
+        "_row": "CBronte_Professor"
+      },
+      {
+        "V1": 3.9633,
+        "V2": 0.2843,
+        "name": "CBronte_Villette",
+        "_row": "CBronte_Villette"
+      },
+      {
+        "V1": 1.9751,
+        "V2": 0.3607,
+        "name": "Dickens_Bleak",
+        "_row": "Dickens_Bleak"
+      },
+      {
+        "V1": 3.1363,
+        "V2": -0.8648,
+        "name": "Dickens_David",
+        "_row": "Dickens_David"
+      },
+      {
+        "V1": 1.2333,
+        "V2": -0.738,
+        "name": "Dickens_Hard",
+        "_row": "Dickens_Hard"
+      },
+      {
+        "V1": 3.5778,
+        "V2": -0.9717,
+        "name": "EBronte_Wuthering",
+        "_row": "EBronte_Wuthering"
+      },
+      {
+        "V1": 1.9233,
+        "V2": -2.3514,
+        "name": "Eliot_Adam",
+        "_row": "Eliot_Adam"
+      },
+      {
+        "V1": 0.4064,
+        "V2": -3.2302,
+        "name": "Eliot_Middlemarch",
+        "_row": "Eliot_Middlemarch"
+      },
+      {
+        "V1": 2.1629,
+        "V2": -3.1782,
+        "name": "Eliot_Mill",
+        "_row": "Eliot_Mill"
+      },
+      {
+        "V1": 0.1954,
+        "V2": 1.8153,
+        "name": "Fielding_Joseph",
+        "_row": "Fielding_Joseph"
+      },
+      {
+        "V1": -2.8119,
+        "V2": 3.0611,
+        "name": "Fielding_Tom",
+        "_row": "Fielding_Tom"
+      },
+      {
+        "V1": -7.564,
+        "V2": 6.6757,
+        "name": "Richardson_Clarissa",
+        "_row": "Richardson_Clarissa"
+      },
+      {
+        "V1": -8.0522,
+        "V2": 7.6803,
+        "name": "Richardson_Pamela",
+        "_row": "Richardson_Pamela"
+      },
+      {
+        "V1": 5.8131,
+        "V2": 5.2555,
+        "name": "Sterne_Sentimental",
+        "_row": "Sterne_Sentimental"
+      },
+      {
+        "V1": 3.7264,
+        "V2": 7.0106,
+        "name": "Sterne_Tristram",
+        "_row": "Sterne_Tristram"
+      },
+      {
+        "V1": 6.5151,
+        "V2": 0.2064,
+        "name": "Thackeray_Barry",
+        "_row": "Thackeray_Barry"
+      },
+      {
+        "V1": 6.5981,
+        "V2": -1.5135,
+        "name": "Thackeray_Pendennis",
+        "_row": "Thackeray_Pendennis"
+      },
+      {
+        "V1": 7.4896,
+        "V2": -1.7753,
+        "name": "Thackeray_Vanity",
+        "_row": "Thackeray_Vanity"
+      },
+      {
+        "V1": -1.7279,
+        "V2": -5.0967,
+        "name": "Trollope_Barchester",
+        "_row": "Trollope_Barchester"
+      },
+      {
+        "V1": -4.3466,
+        "V2": -6.4777,
+        "name": "Trollope_Phineas",
+        "_row": "Trollope_Phineas"
+      },
+      {
+        "V1": -4.8708,
+        "V2": -6.6883,
+        "name": "Trollope_Prime",
+        "_row": "Trollope_Prime"
+      }
+    ],
+    "_row": "i.2"
+  },
+  {
+    "mfw": 200,
+    "culling": 0,
+    "data": [
+      {
+        "V1": -2.6435,
+        "V2": 2.8062,
+        "name": "ABronte_Agnes",
+        "_row": "ABronte_Agnes"
+      },
+      {
+        "V1": -1.9864,
+        "V2": 5.2516,
+        "name": "ABronte_Tenant",
+        "_row": "ABronte_Tenant"
+      },
+      {
+        "V1": -11.1074,
+        "V2": 1.5989,
+        "name": "Austen_Emma",
+        "_row": "Austen_Emma"
+      },
+      {
+        "V1": -8.6458,
+        "V2": -1.233,
+        "name": "Austen_Pride",
+        "_row": "Austen_Pride"
+      },
+      {
+        "V1": -9.692,
+        "V2": -2.2369,
+        "name": "Austen_Sense",
+        "_row": "Austen_Sense"
+      },
+      {
+        "V1": 3.9851,
+        "V2": 2.989,
+        "name": "CBronte_Jane",
+        "_row": "CBronte_Jane"
+      },
+      {
+        "V1": 5.0162,
+        "V2": -0.657,
+        "name": "CBronte_Professor",
+        "_row": "CBronte_Professor"
+      },
+      {
+        "V1": 4.7828,
+        "V2": 0.7284,
+        "name": "CBronte_Villette",
+        "_row": "CBronte_Villette"
+      },
+      {
+        "V1": 4.6181,
+        "V2": 2.6303,
+        "name": "Dickens_Bleak",
+        "_row": "Dickens_Bleak"
+      },
+      {
+        "V1": 6.1214,
+        "V2": 3.4463,
+        "name": "Dickens_David",
+        "_row": "Dickens_David"
+      },
+      {
+        "V1": 4.3846,
+        "V2": 3.6694,
+        "name": "Dickens_Hard",
+        "_row": "Dickens_Hard"
+      },
+      {
+        "V1": 5.8397,
+        "V2": 4.0153,
+        "name": "EBronte_Wuthering",
+        "_row": "EBronte_Wuthering"
+      },
+      {
+        "V1": 4.2023,
+        "V2": 7.1895,
+        "name": "Eliot_Adam",
+        "_row": "Eliot_Adam"
+      },
+      {
+        "V1": -0.0772,
+        "V2": 2.8401,
+        "name": "Eliot_Middlemarch",
+        "_row": "Eliot_Middlemarch"
+      },
+      {
+        "V1": 3.39,
+        "V2": 6.0032,
+        "name": "Eliot_Mill",
+        "_row": "Eliot_Mill"
+      },
+      {
+        "V1": -2.5506,
+        "V2": -10.02,
+        "name": "Fielding_Joseph",
+        "_row": "Fielding_Joseph"
+      },
+      {
+        "V1": -6.4613,
+        "V2": -9.4117,
+        "name": "Fielding_Tom",
+        "_row": "Fielding_Tom"
+      },
+      {
+        "V1": -9.2656,
+        "V2": -2.7167,
+        "name": "Richardson_Clarissa",
+        "_row": "Richardson_Clarissa"
+      },
+      {
+        "V1": -8.6938,
+        "V2": -0.1398,
+        "name": "Richardson_Pamela",
+        "_row": "Richardson_Pamela"
+      },
+      {
+        "V1": 6.3806,
+        "V2": -8.42,
+        "name": "Sterne_Sentimental",
+        "_row": "Sterne_Sentimental"
+      },
+      {
+        "V1": 2.7614,
+        "V2": -9.7383,
+        "name": "Sterne_Tristram",
+        "_row": "Sterne_Tristram"
+      },
+      {
+        "V1": 6.3116,
+        "V2": -6.7505,
+        "name": "Thackeray_Barry",
+        "_row": "Thackeray_Barry"
+      },
+      {
+        "V1": 7.6573,
+        "V2": -2.9364,
+        "name": "Thackeray_Pendennis",
+        "_row": "Thackeray_Pendennis"
+      },
+      {
+        "V1": 8.5209,
+        "V2": -3.3776,
+        "name": "Thackeray_Vanity",
+        "_row": "Thackeray_Vanity"
+      },
+      {
+        "V1": -2.6607,
+        "V2": 1.6111,
+        "name": "Trollope_Barchester",
+        "_row": "Trollope_Barchester"
+      },
+      {
+        "V1": -4.6319,
+        "V2": 5.9586,
+        "name": "Trollope_Phineas",
+        "_row": "Trollope_Phineas"
+      },
+      {
+        "V1": -5.5559,
+        "V2": 6.9,
+        "name": "Trollope_Prime",
+        "_row": "Trollope_Prime"
+      }
+    ],
+    "_row": "i.3"
+  },
+  {
+    "mfw": 200,
+    "culling": 10,
+    "data": [
+      {
+        "V1": -2.6435,
+        "V2": 2.8062,
+        "name": "ABronte_Agnes",
+        "_row": "ABronte_Agnes"
+      },
+      {
+        "V1": -1.9864,
+        "V2": 5.2516,
+        "name": "ABronte_Tenant",
+        "_row": "ABronte_Tenant"
+      },
+      {
+        "V1": -11.1074,
+        "V2": 1.5989,
+        "name": "Austen_Emma",
+        "_row": "Austen_Emma"
+      },
+      {
+        "V1": -8.6458,
+        "V2": -1.233,
+        "name": "Austen_Pride",
+        "_row": "Austen_Pride"
+      },
+      {
+        "V1": -9.692,
+        "V2": -2.2369,
+        "name": "Austen_Sense",
+        "_row": "Austen_Sense"
+      },
+      {
+        "V1": 3.9851,
+        "V2": 2.989,
+        "name": "CBronte_Jane",
+        "_row": "CBronte_Jane"
+      },
+      {
+        "V1": 5.0162,
+        "V2": -0.657,
+        "name": "CBronte_Professor",
+        "_row": "CBronte_Professor"
+      },
+      {
+        "V1": 4.7828,
+        "V2": 0.7284,
+        "name": "CBronte_Villette",
+        "_row": "CBronte_Villette"
+      },
+      {
+        "V1": 4.6181,
+        "V2": 2.6303,
+        "name": "Dickens_Bleak",
+        "_row": "Dickens_Bleak"
+      },
+      {
+        "V1": 6.1214,
+        "V2": 3.4463,
+        "name": "Dickens_David",
+        "_row": "Dickens_David"
+      },
+      {
+        "V1": 4.3846,
+        "V2": 3.6694,
+        "name": "Dickens_Hard",
+        "_row": "Dickens_Hard"
+      },
+      {
+        "V1": 5.8397,
+        "V2": 4.0153,
+        "name": "EBronte_Wuthering",
+        "_row": "EBronte_Wuthering"
+      },
+      {
+        "V1": 4.2023,
+        "V2": 7.1895,
+        "name": "Eliot_Adam",
+        "_row": "Eliot_Adam"
+      },
+      {
+        "V1": -0.0772,
+        "V2": 2.8401,
+        "name": "Eliot_Middlemarch",
+        "_row": "Eliot_Middlemarch"
+      },
+      {
+        "V1": 3.39,
+        "V2": 6.0032,
+        "name": "Eliot_Mill",
+        "_row": "Eliot_Mill"
+      },
+      {
+        "V1": -2.5506,
+        "V2": -10.02,
+        "name": "Fielding_Joseph",
+        "_row": "Fielding_Joseph"
+      },
+      {
+        "V1": -6.4613,
+        "V2": -9.4117,
+        "name": "Fielding_Tom",
+        "_row": "Fielding_Tom"
+      },
+      {
+        "V1": -9.2656,
+        "V2": -2.7167,
+        "name": "Richardson_Clarissa",
+        "_row": "Richardson_Clarissa"
+      },
+      {
+        "V1": -8.6938,
+        "V2": -0.1398,
+        "name": "Richardson_Pamela",
+        "_row": "Richardson_Pamela"
+      },
+      {
+        "V1": 6.3806,
+        "V2": -8.42,
+        "name": "Sterne_Sentimental",
+        "_row": "Sterne_Sentimental"
+      },
+      {
+        "V1": 2.7614,
+        "V2": -9.7383,
+        "name": "Sterne_Tristram",
+        "_row": "Sterne_Tristram"
+      },
+      {
+        "V1": 6.3116,
+        "V2": -6.7505,
+        "name": "Thackeray_Barry",
+        "_row": "Thackeray_Barry"
+      },
+      {
+        "V1": 7.6573,
+        "V2": -2.9364,
+        "name": "Thackeray_Pendennis",
+        "_row": "Thackeray_Pendennis"
+      },
+      {
+        "V1": 8.5209,
+        "V2": -3.3776,
+        "name": "Thackeray_Vanity",
+        "_row": "Thackeray_Vanity"
+      },
+      {
+        "V1": -2.6607,
+        "V2": 1.6111,
+        "name": "Trollope_Barchester",
+        "_row": "Trollope_Barchester"
+      },
+      {
+        "V1": -4.6319,
+        "V2": 5.9586,
+        "name": "Trollope_Phineas",
+        "_row": "Trollope_Phineas"
+      },
+      {
+        "V1": -5.5559,
+        "V2": 6.9,
+        "name": "Trollope_Prime",
+        "_row": "Trollope_Prime"
+      }
+    ],
+    "_row": "i.4"
+  },
+  {
+    "mfw": 200,
+    "culling": 20,
+    "data": [
+      {
+        "V1": -2.6435,
+        "V2": 2.8062,
+        "name": "ABronte_Agnes",
+        "_row": "ABronte_Agnes"
+      },
+      {
+        "V1": -1.9864,
+        "V2": 5.2516,
+        "name": "ABronte_Tenant",
+        "_row": "ABronte_Tenant"
+      },
+      {
+        "V1": -11.1074,
+        "V2": 1.5989,
+        "name": "Austen_Emma",
+        "_row": "Austen_Emma"
+      },
+      {
+        "V1": -8.6458,
+        "V2": -1.233,
+        "name": "Austen_Pride",
+        "_row": "Austen_Pride"
+      },
+      {
+        "V1": -9.692,
+        "V2": -2.2369,
+        "name": "Austen_Sense",
+        "_row": "Austen_Sense"
+      },
+      {
+        "V1": 3.9851,
+        "V2": 2.989,
+        "name": "CBronte_Jane",
+        "_row": "CBronte_Jane"
+      },
+      {
+        "V1": 5.0162,
+        "V2": -0.657,
+        "name": "CBronte_Professor",
+        "_row": "CBronte_Professor"
+      },
+      {
+        "V1": 4.7828,
+        "V2": 0.7284,
+        "name": "CBronte_Villette",
+        "_row": "CBronte_Villette"
+      },
+      {
+        "V1": 4.6181,
+        "V2": 2.6303,
+        "name": "Dickens_Bleak",
+        "_row": "Dickens_Bleak"
+      },
+      {
+        "V1": 6.1214,
+        "V2": 3.4463,
+        "name": "Dickens_David",
+        "_row": "Dickens_David"
+      },
+      {
+        "V1": 4.3846,
+        "V2": 3.6694,
+        "name": "Dickens_Hard",
+        "_row": "Dickens_Hard"
+      },
+      {
+        "V1": 5.8397,
+        "V2": 4.0153,
+        "name": "EBronte_Wuthering",
+        "_row": "EBronte_Wuthering"
+      },
+      {
+        "V1": 4.2023,
+        "V2": 7.1895,
+        "name": "Eliot_Adam",
+        "_row": "Eliot_Adam"
+      },
+      {
+        "V1": -0.0772,
+        "V2": 2.8401,
+        "name": "Eliot_Middlemarch",
+        "_row": "Eliot_Middlemarch"
+      },
+      {
+        "V1": 3.39,
+        "V2": 6.0032,
+        "name": "Eliot_Mill",
+        "_row": "Eliot_Mill"
+      },
+      {
+        "V1": -2.5506,
+        "V2": -10.02,
+        "name": "Fielding_Joseph",
+        "_row": "Fielding_Joseph"
+      },
+      {
+        "V1": -6.4613,
+        "V2": -9.4117,
+        "name": "Fielding_Tom",
+        "_row": "Fielding_Tom"
+      },
+      {
+        "V1": -9.2656,
+        "V2": -2.7167,
+        "name": "Richardson_Clarissa",
+        "_row": "Richardson_Clarissa"
+      },
+      {
+        "V1": -8.6938,
+        "V2": -0.1398,
+        "name": "Richardson_Pamela",
+        "_row": "Richardson_Pamela"
+      },
+      {
+        "V1": 6.3806,
+        "V2": -8.42,
+        "name": "Sterne_Sentimental",
+        "_row": "Sterne_Sentimental"
+      },
+      {
+        "V1": 2.7614,
+        "V2": -9.7383,
+        "name": "Sterne_Tristram",
+        "_row": "Sterne_Tristram"
+      },
+      {
+        "V1": 6.3116,
+        "V2": -6.7505,
+        "name": "Thackeray_Barry",
+        "_row": "Thackeray_Barry"
+      },
+      {
+        "V1": 7.6573,
+        "V2": -2.9364,
+        "name": "Thackeray_Pendennis",
+        "_row": "Thackeray_Pendennis"
+      },
+      {
+        "V1": 8.5209,
+        "V2": -3.3776,
+        "name": "Thackeray_Vanity",
+        "_row": "Thackeray_Vanity"
+      },
+      {
+        "V1": -2.6607,
+        "V2": 1.6111,
+        "name": "Trollope_Barchester",
+        "_row": "Trollope_Barchester"
+      },
+      {
+        "V1": -4.6319,
+        "V2": 5.9586,
+        "name": "Trollope_Phineas",
+        "_row": "Trollope_Phineas"
+      },
+      {
+        "V1": -5.5559,
+        "V2": 6.9,
+        "name": "Trollope_Prime",
+        "_row": "Trollope_Prime"
+      }
+    ],
+    "_row": "i.5"
+  },
+  {
+    "mfw": 300,
+    "culling": 0,
+    "data": [
+      {
+        "V1": 3.3241,
+        "V2": -4.3623,
+        "name": "ABronte_Agnes",
+        "_row": "ABronte_Agnes"
+      },
+      {
+        "V1": 3.144,
+        "V2": -5.4904,
+        "name": "ABronte_Tenant",
+        "_row": "ABronte_Tenant"
+      },
+      {
+        "V1": 12.0436,
+        "V2": -4.3821,
+        "name": "Austen_Emma",
+        "_row": "Austen_Emma"
+      },
+      {
+        "V1": 11.366,
+        "V2": -0.6954,
+        "name": "Austen_Pride",
+        "_row": "Austen_Pride"
+      },
+      {
+        "V1": 11.9919,
+        "V2": 0.2519,
+        "name": "Austen_Sense",
+        "_row": "Austen_Sense"
+      },
+      {
+        "V1": -4.0857,
+        "V2": -4.5483,
+        "name": "CBronte_Jane",
+        "_row": "CBronte_Jane"
+      },
+      {
+        "V1": -5.1522,
+        "V2": -0.8895,
+        "name": "CBronte_Professor",
+        "_row": "CBronte_Professor"
+      },
+      {
+        "V1": -5.2257,
+        "V2": -1.8506,
+        "name": "CBronte_Villette",
+        "_row": "CBronte_Villette"
+      },
+      {
+        "V1": -5.6082,
+        "V2": -1.9287,
+        "name": "Dickens_Bleak",
+        "_row": "Dickens_Bleak"
+      },
+      {
+        "V1": -7.1678,
+        "V2": -3.4275,
+        "name": "Dickens_David",
+        "_row": "Dickens_David"
+      },
+      {
+        "V1": -5.6267,
+        "V2": -3.5403,
+        "name": "Dickens_Hard",
+        "_row": "Dickens_Hard"
+      },
+      {
+        "V1": -6.362,
+        "V2": -3.9255,
+        "name": "EBronte_Wuthering",
+        "_row": "EBronte_Wuthering"
+      },
+      {
+        "V1": -6.7774,
+        "V2": -8.4672,
+        "name": "Eliot_Adam",
+        "_row": "Eliot_Adam"
+      },
+      {
+        "V1": -0.7246,
+        "V2": -5.0685,
+        "name": "Eliot_Middlemarch",
+        "_row": "Eliot_Middlemarch"
+      },
+      {
+        "V1": -5.2977,
+        "V2": -7.5211,
+        "name": "Eliot_Mill",
+        "_row": "Eliot_Mill"
+      },
+      {
+        "V1": 3.9123,
+        "V2": 10.7501,
+        "name": "Fielding_Joseph",
+        "_row": "Fielding_Joseph"
+      },
+      {
+        "V1": 8.4028,
+        "V2": 10.7743,
+        "name": "Fielding_Tom",
+        "_row": "Fielding_Tom"
+      },
+      {
+        "V1": 10.9749,
+        "V2": 5.8675,
+        "name": "Richardson_Clarissa",
+        "_row": "Richardson_Clarissa"
+      },
+      {
+        "V1": 9.3932,
+        "V2": 4.3366,
+        "name": "Richardson_Pamela",
+        "_row": "Richardson_Pamela"
+      },
+      {
+        "V1": -8.443,
+        "V2": 10.5044,
+        "name": "Sterne_Sentimental",
+        "_row": "Sterne_Sentimental"
+      },
+      {
+        "V1": -3.631,
+        "V2": 13.0443,
+        "name": "Sterne_Tristram",
+        "_row": "Sterne_Tristram"
+      },
+      {
+        "V1": -6.6363,
+        "V2": 9.4608,
+        "name": "Thackeray_Barry",
+        "_row": "Thackeray_Barry"
+      },
+      {
+        "V1": -8.429,
+        "V2": 4.0966,
+        "name": "Thackeray_Pendennis",
+        "_row": "Thackeray_Pendennis"
+      },
+      {
+        "V1": -8.6327,
+        "V2": 4.7091,
+        "name": "Thackeray_Vanity",
+        "_row": "Thackeray_Vanity"
+      },
+      {
+        "V1": 2.7567,
+        "V2": -2.0668,
+        "name": "Trollope_Barchester",
+        "_row": "Trollope_Barchester"
+      },
+      {
+        "V1": 4.754,
+        "V2": -7.1966,
+        "name": "Trollope_Phineas",
+        "_row": "Trollope_Phineas"
+      },
+      {
+        "V1": 5.7364,
+        "V2": -8.435,
+        "name": "Trollope_Prime",
+        "_row": "Trollope_Prime"
+      }
+    ],
+    "_row": "i.6"
+  },
+  {
+    "mfw": 300,
+    "culling": 10,
+    "data": [
+      {
+        "V1": 3.3241,
+        "V2": -4.3623,
+        "name": "ABronte_Agnes",
+        "_row": "ABronte_Agnes"
+      },
+      {
+        "V1": 3.144,
+        "V2": -5.4904,
+        "name": "ABronte_Tenant",
+        "_row": "ABronte_Tenant"
+      },
+      {
+        "V1": 12.0436,
+        "V2": -4.3821,
+        "name": "Austen_Emma",
+        "_row": "Austen_Emma"
+      },
+      {
+        "V1": 11.366,
+        "V2": -0.6954,
+        "name": "Austen_Pride",
+        "_row": "Austen_Pride"
+      },
+      {
+        "V1": 11.9919,
+        "V2": 0.2519,
+        "name": "Austen_Sense",
+        "_row": "Austen_Sense"
+      },
+      {
+        "V1": -4.0857,
+        "V2": -4.5483,
+        "name": "CBronte_Jane",
+        "_row": "CBronte_Jane"
+      },
+      {
+        "V1": -5.1522,
+        "V2": -0.8895,
+        "name": "CBronte_Professor",
+        "_row": "CBronte_Professor"
+      },
+      {
+        "V1": -5.2257,
+        "V2": -1.8506,
+        "name": "CBronte_Villette",
+        "_row": "CBronte_Villette"
+      },
+      {
+        "V1": -5.6082,
+        "V2": -1.9287,
+        "name": "Dickens_Bleak",
+        "_row": "Dickens_Bleak"
+      },
+      {
+        "V1": -7.1678,
+        "V2": -3.4275,
+        "name": "Dickens_David",
+        "_row": "Dickens_David"
+      },
+      {
+        "V1": -5.6267,
+        "V2": -3.5403,
+        "name": "Dickens_Hard",
+        "_row": "Dickens_Hard"
+      },
+      {
+        "V1": -6.362,
+        "V2": -3.9255,
+        "name": "EBronte_Wuthering",
+        "_row": "EBronte_Wuthering"
+      },
+      {
+        "V1": -6.7774,
+        "V2": -8.4672,
+        "name": "Eliot_Adam",
+        "_row": "Eliot_Adam"
+      },
+      {
+        "V1": -0.7246,
+        "V2": -5.0685,
+        "name": "Eliot_Middlemarch",
+        "_row": "Eliot_Middlemarch"
+      },
+      {
+        "V1": -5.2977,
+        "V2": -7.5211,
+        "name": "Eliot_Mill",
+        "_row": "Eliot_Mill"
+      },
+      {
+        "V1": 3.9123,
+        "V2": 10.7501,
+        "name": "Fielding_Joseph",
+        "_row": "Fielding_Joseph"
+      },
+      {
+        "V1": 8.4028,
+        "V2": 10.7743,
+        "name": "Fielding_Tom",
+        "_row": "Fielding_Tom"
+      },
+      {
+        "V1": 10.9749,
+        "V2": 5.8675,
+        "name": "Richardson_Clarissa",
+        "_row": "Richardson_Clarissa"
+      },
+      {
+        "V1": 9.3932,
+        "V2": 4.3366,
+        "name": "Richardson_Pamela",
+        "_row": "Richardson_Pamela"
+      },
+      {
+        "V1": -8.443,
+        "V2": 10.5044,
+        "name": "Sterne_Sentimental",
+        "_row": "Sterne_Sentimental"
+      },
+      {
+        "V1": -3.631,
+        "V2": 13.0443,
+        "name": "Sterne_Tristram",
+        "_row": "Sterne_Tristram"
+      },
+      {
+        "V1": -6.6363,
+        "V2": 9.4608,
+        "name": "Thackeray_Barry",
+        "_row": "Thackeray_Barry"
+      },
+      {
+        "V1": -8.429,
+        "V2": 4.0966,
+        "name": "Thackeray_Pendennis",
+        "_row": "Thackeray_Pendennis"
+      },
+      {
+        "V1": -8.6327,
+        "V2": 4.7091,
+        "name": "Thackeray_Vanity",
+        "_row": "Thackeray_Vanity"
+      },
+      {
+        "V1": 2.7567,
+        "V2": -2.0668,
+        "name": "Trollope_Barchester",
+        "_row": "Trollope_Barchester"
+      },
+      {
+        "V1": 4.754,
+        "V2": -7.1966,
+        "name": "Trollope_Phineas",
+        "_row": "Trollope_Phineas"
+      },
+      {
+        "V1": 5.7364,
+        "V2": -8.435,
+        "name": "Trollope_Prime",
+        "_row": "Trollope_Prime"
+      }
+    ],
+    "_row": "i.7"
+  },
+  {
+    "mfw": 300,
+    "culling": 20,
+    "data": [
+      {
+        "V1": 3.3241,
+        "V2": -4.3623,
+        "name": "ABronte_Agnes",
+        "_row": "ABronte_Agnes"
+      },
+      {
+        "V1": 3.144,
+        "V2": -5.4904,
+        "name": "ABronte_Tenant",
+        "_row": "ABronte_Tenant"
+      },
+      {
+        "V1": 12.0436,
+        "V2": -4.3821,
+        "name": "Austen_Emma",
+        "_row": "Austen_Emma"
+      },
+      {
+        "V1": 11.366,
+        "V2": -0.6954,
+        "name": "Austen_Pride",
+        "_row": "Austen_Pride"
+      },
+      {
+        "V1": 11.9919,
+        "V2": 0.2519,
+        "name": "Austen_Sense",
+        "_row": "Austen_Sense"
+      },
+      {
+        "V1": -4.0857,
+        "V2": -4.5483,
+        "name": "CBronte_Jane",
+        "_row": "CBronte_Jane"
+      },
+      {
+        "V1": -5.1522,
+        "V2": -0.8895,
+        "name": "CBronte_Professor",
+        "_row": "CBronte_Professor"
+      },
+      {
+        "V1": -5.2257,
+        "V2": -1.8506,
+        "name": "CBronte_Villette",
+        "_row": "CBronte_Villette"
+      },
+      {
+        "V1": -5.6082,
+        "V2": -1.9287,
+        "name": "Dickens_Bleak",
+        "_row": "Dickens_Bleak"
+      },
+      {
+        "V1": -7.1678,
+        "V2": -3.4275,
+        "name": "Dickens_David",
+        "_row": "Dickens_David"
+      },
+      {
+        "V1": -5.6267,
+        "V2": -3.5403,
+        "name": "Dickens_Hard",
+        "_row": "Dickens_Hard"
+      },
+      {
+        "V1": -6.362,
+        "V2": -3.9255,
+        "name": "EBronte_Wuthering",
+        "_row": "EBronte_Wuthering"
+      },
+      {
+        "V1": -6.7774,
+        "V2": -8.4672,
+        "name": "Eliot_Adam",
+        "_row": "Eliot_Adam"
+      },
+      {
+        "V1": -0.7246,
+        "V2": -5.0685,
+        "name": "Eliot_Middlemarch",
+        "_row": "Eliot_Middlemarch"
+      },
+      {
+        "V1": -5.2977,
+        "V2": -7.5211,
+        "name": "Eliot_Mill",
+        "_row": "Eliot_Mill"
+      },
+      {
+        "V1": 3.9123,
+        "V2": 10.7501,
+        "name": "Fielding_Joseph",
+        "_row": "Fielding_Joseph"
+      },
+      {
+        "V1": 8.4028,
+        "V2": 10.7743,
+        "name": "Fielding_Tom",
+        "_row": "Fielding_Tom"
+      },
+      {
+        "V1": 10.9749,
+        "V2": 5.8675,
+        "name": "Richardson_Clarissa",
+        "_row": "Richardson_Clarissa"
+      },
+      {
+        "V1": 9.3932,
+        "V2": 4.3366,
+        "name": "Richardson_Pamela",
+        "_row": "Richardson_Pamela"
+      },
+      {
+        "V1": -8.443,
+        "V2": 10.5044,
+        "name": "Sterne_Sentimental",
+        "_row": "Sterne_Sentimental"
+      },
+      {
+        "V1": -3.631,
+        "V2": 13.0443,
+        "name": "Sterne_Tristram",
+        "_row": "Sterne_Tristram"
+      },
+      {
+        "V1": -6.6363,
+        "V2": 9.4608,
+        "name": "Thackeray_Barry",
+        "_row": "Thackeray_Barry"
+      },
+      {
+        "V1": -8.429,
+        "V2": 4.0966,
+        "name": "Thackeray_Pendennis",
+        "_row": "Thackeray_Pendennis"
+      },
+      {
+        "V1": -8.6327,
+        "V2": 4.7091,
+        "name": "Thackeray_Vanity",
+        "_row": "Thackeray_Vanity"
+      },
+      {
+        "V1": 2.7567,
+        "V2": -2.0668,
+        "name": "Trollope_Barchester",
+        "_row": "Trollope_Barchester"
+      },
+      {
+        "V1": 4.754,
+        "V2": -7.1966,
+        "name": "Trollope_Phineas",
+        "_row": "Trollope_Phineas"
+      },
+      {
+        "V1": 5.7364,
+        "V2": -8.435,
+        "name": "Trollope_Prime",
+        "_row": "Trollope_Prime"
+      }
+    ],
+    "_row": "i.8"
+  }
+]

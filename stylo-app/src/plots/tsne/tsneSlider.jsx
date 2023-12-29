@@ -5,8 +5,9 @@ import SavePng from "../../download/savePng";
 import TsnePlot from "./tsnePlot";
 import InfoNavigation from "../../infoText/infoNavigation";
 import Search from "../../search/search";
+import SaveHTML from "../../download/downloadHtml";
 
-const TsneSlider = ({ url, settings }) => {
+const TsneSlider = ({ url, settings, result }) => {
   const [data, setData] = useState([
     {
       mfw: 100,
@@ -71,6 +72,7 @@ const TsneSlider = ({ url, settings }) => {
             mfw={mfwData[currentMfwSliderIndex]}
             cull={cullData[currentCullSliderIndex]}
           />
+          <SaveHTML settings={settings} result={result} />
           <InfoNavigation />
 
           <Search

@@ -5,6 +5,7 @@ import StepLabel from "@mui/material/StepLabel";
 import Box from "@mui/material/Box";
 
 const steps = [
+  "Get Started",
   "Select Analysis Type",
   "Upload Data",
   "Set Parameters",

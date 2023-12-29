@@ -5,7 +5,6 @@
   color: #4d4d4d;
   color-scheme: normal;
   color: rgba(255, 255, 255, 0.87);
-  background-image: url("../src/assets/Background_3.svg");
   background-size: cover;
   background-attachment: fixed;
   font-synthesis: none;
@@ -343,7 +342,6 @@ body {
 
 .buttonRight {
   margin-left: auto;
-  margin-top: 140pt;
 }
 
 button:focus {

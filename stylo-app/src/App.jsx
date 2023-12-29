@@ -1,12 +1,12 @@
 import "./App.css";
 import React, { useState } from "react";
 import HorizontalLinearStepper from "./stepper/horizontalStepper";
-import Step0 from "../src/stepper/step0Analysis.jsx";
-import Step1 from "../src/stepper/step1Upload.jsx";
-import Step2 from "../src/stepper/step2Settings.jsx";
-import Step3 from "../src/stepper/step3Sample.jsx";
-import Step4 from "../src/stepper/step4Summary.jsx";
-import Step5 from "../src/stepper/step5OutputOptions.jsx";
+import Step1 from "./stepper/step1Analysis.jsx";
+import Step2 from "./stepper/step2Upload.jsx";
+import Step3 from "./stepper/step3Settings.jsx";
+import Step4 from "./stepper/step4Sample.jsx";
+import Step5 from "./stepper/step5Summary.jsx";
+import Step6 from "./stepper/step6OutputOptions.jsx";
 import Results from "../src/stepper/results.jsx";
 import executeR from "./executeR/execute_R";
 import theme from "./Theme.jsx";
@@ -16,10 +16,12 @@ import CitationDialog from "./dialog/citationDialog";
 import AboutDialog from "./dialog/aboutDialog";
 import GithubLink from "./dialog/githubLink";
 import Logo from "./assets/Logo_5.svg";
+import Step0 from "./stepper/step0Welcome";
 
 function App() {
   const [activeStep, setActiveStep] = useState(0);
-  const [results, setResults] = useState("");
+  const [url, setUrl] = useState("");
+  const [result, setResult] = useState("");
   const [labelUrl, setLabel] = useState("");
   const [isDataReady, setIsDataReady] = useState(false);
   const [error, setError] = useState(null);
@@ -32,7 +34,7 @@ function App() {
   };
 
   const handleReset = () => {
-    setActiveStep(0);
+    setActiveStep(1);
   };
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
@@ -54,10 +56,11 @@ function App() {
     try {
       const response = await executeR(settings, uploadedSuffix);
       if (response.result) {
-        const result = response.result;
+        const url = response.result;
         const labelUrl = response.labelUrl;
         setIsDataReady(true);
-        setResults(result);
+        setUrl(url);
+        setResult(response);
         setActiveStep((prevActiveStep) => prevActiveStep + 1);
         setLabel(labelUrl);
       } else {
@@ -127,7 +130,7 @@ function App() {
 
           <br />
         </header>
-        {activeStep <= 5 && (
+        {activeStep <= 6 && (
           <div className="stepper-box">
             <HorizontalLinearStepper
               activeStep={activeStep}
@@ -137,11 +140,7 @@ function App() {
         )}
         {activeStep === 0 && (
           <div className="content-box">
-            <Step0
-              setSettings={setSettings}
-              settings={settings}
-              handleNext={handleNext}
-            />
+            <Step0 handleNext={handleNext} />
           </div>
         )}
         {activeStep === 1 && (
@@ -149,9 +148,8 @@ function App() {
             <Step1
               setSettings={setSettings}
               settings={settings}
-              setUploadedSuffix={setUploadedSuffix}
-              uploadedSuffix={uploadedSuffix}
-              setActiveStep={setActiveStep}
+              handleNext={handleNext}
+              handleBack={handleBack}
             />
           </div>
         )}
@@ -160,7 +158,8 @@ function App() {
             <Step2
               setSettings={setSettings}
               settings={settings}
-              handleBack={handleBack}
+              setUploadedSuffix={setUploadedSuffix}
+              uploadedSuffix={uploadedSuffix}
               setActiveStep={setActiveStep}
             />
           </div>
@@ -170,8 +169,8 @@ function App() {
             <Step3
               setSettings={setSettings}
               settings={settings}
-              handleNext={handleNext}
               handleBack={handleBack}
+              setActiveStep={setActiveStep}
             />
           </div>
         )}
@@ -188,6 +187,16 @@ function App() {
         {activeStep === 5 && (
           <div className="content-box">
             <Step5
+              setSettings={setSettings}
+              settings={settings}
+              handleNext={handleNext}
+              handleBack={handleBack}
+            />
+          </div>
+        )}
+        {activeStep === 6 && (
+          <div className="content-box">
+            <Step6
               setSettings={setSettings}
               settings={settings}
               handleGetResults={handleGetResults}
@@ -211,13 +220,14 @@ function App() {
             )}
           </div>
         )}
-        {activeStep === 6 && (
+        {activeStep === 7 && (
           <div className="result-box">
             <Results
               setSettings={setSettings}
               settings={settings}
               handleReset={handleReset}
-              url={results}
+              url={url}
+              result={result}
               labelUrl={labelUrl}
             />
           </div>

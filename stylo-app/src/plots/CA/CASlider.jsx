@@ -5,8 +5,9 @@ import InfoPlots from "../../infoText/infoPlots";
 import SavePng from "../../download/savePng";
 import InfoNavigation from "../../infoText/infoNavigation";
 import Search from "../../search/search";
+import SaveHTML from "../../download/downloadHtml";
 
-const CaSlider = ({ url, settings }) => {
+const CaSlider = ({ url, settings, result }) => {
   const [data, setData] = useState([
     {
       mfw: 100,
@@ -72,6 +73,7 @@ const CaSlider = ({ url, settings }) => {
           mfw={mfwData[currentMfwSliderIndex]}
           cull={cullData[currentCullSliderIndex]}
         />
+        <SaveHTML settings={settings} result={result} />
         <InfoNavigation />
         <Search
           onChange={handleSearchQuery}

@@ -10,6 +10,7 @@ import {
   Icon,
   SvgIcon,
   Divider,
+  Link,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
@@ -77,6 +78,28 @@ function AboutDialog() {
               <li>Define your parameters</li>
               <li>Analyse your plots (and optionally your raw data)</li>
             </ol>
+            <Divider textAlign="left">
+              <b>Need a corpus to play around with?</b>
+            </Divider>
+            <p>
+              Check out this corpus by the Computational Stylistics Group:{" "}
+              <Link
+                href="https://github.com/computationalstylistics/A_Small_Collection_of_British_Fiction"
+                sx={{ cursor: "pointer" }}
+              >
+                A Short Collection of British Fiction
+              </Link>
+              .{" "}
+            </p>
+            <p>
+              Or download it right away{" "}
+              <Link
+                href="https://codeload.github.com/computationalstylistics/A_Small_Collection_of_British_Fiction/zip/refs/heads/master"
+                sx={{ cursor: "pointer" }}
+              >
+                by clicking here.
+              </Link>
+            </p>
           </DialogContentText>
         </DialogContent>
       </Dialog>

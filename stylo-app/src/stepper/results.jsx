@@ -4,41 +4,56 @@ import TsneSlider from "../plots/tsne/tsneSlider";
 import CaSlider from "../plots/CA/CASlider";
 import ScatterSlider from "../plots/scatter/scatterSlider";
 
-function Results({ settings, url, labelUrl }) {
+function Results({ settings, url, labelUrl, result }) {
   if (settings.analysisType === "CA") {
     return (
       <React.Fragment>
-        <CaSlider url={url} settings={settings} />
+        <CaSlider url={url} settings={settings} result={result} />
       </React.Fragment>
     );
   } else if (settings.analysisType === "BCT") {
     return (
       <React.Fragment>
-        <BctPlot url={url} settings={settings} />
+        <BctPlot url={url} settings={settings} result={result} />
       </React.Fragment>
     );
   } else if (settings.analysisType === "MDS") {
     return (
       <React.Fragment>
-        <ScatterSlider url={url} settings={settings} labelUrl={labelUrl} />
+        <ScatterSlider
+          url={url}
+          settings={settings}
+          labelUrl={labelUrl}
+          result={result}
+        />
       </React.Fragment>
     );
   } else if (settings.analysisType === "PCR") {
     return (
       <React.Fragment>
-        <ScatterSlider url={url} settings={settings} labelUrl={labelUrl} />
+        <ScatterSlider
+          url={url}
+          settings={settings}
+          labelUrl={labelUrl}
+          result={result}
+        />
       </React.Fragment>
     );
   } else if (settings.analysisType === "PCV") {
     return (
       <React.Fragment>
-        <ScatterSlider url={url} settings={settings} labelUrl={labelUrl} />
+        <ScatterSlider
+          url={url}
+          settings={settings}
+          labelUrl={labelUrl}
+          result={result}
+        />
       </React.Fragment>
     );
   } else if (settings.analysisType === "tSNE") {
     return (
       <React.Fragment>
-        <TsneSlider url={url} settings={settings} />
+        <TsneSlider url={url} settings={settings} result={result} />
       </React.Fragment>
     );
   }

@@ -5,36 +5,21 @@ import BCTHighlightableText from "../plots/BCT/BCTHighlightableText";
 import useElementSize from "../plots/scatter/svgSizer";
 import computePosition from "../plots/BCT/computePosition";
 
-const exportBCT = ({ url }) => {
+const ExportBCT = () => {
   const ref = useRef();
   const [currentZoom, setCurrentZoom] = useState();
   const [searchQuery, setSearchQuery] = useState("");
   const [svgRef, svgSize] = useElementSize(ref);
   const width = svgSize.width;
   const height = svgSize.height;
-  const [data, setData] = useState({
-    name: "dummy_dummy",
-    branch_length: 0,
-  });
+  const data = window.data;
+
   const [factorApplied, setFactorApplied] = useState(false);
 
   const handleSearchQuery = (event) => {
     const newValue = event.target.value;
     setSearchQuery(newValue);
   };
-  const fetchJson = () => {
-    fetch("api/" + url)
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        console.log(data);
-        setData(data);
-      });
-  };
-  useEffect(() => {
-    fetchJson();
-  }, []);
 
   function handleZoom(e) {
     setCurrentZoom(e);
@@ -123,13 +108,13 @@ const exportBCT = ({ url }) => {
   }, [factor]);
 
   return (
-    <div className="bctPlot">
-      <h1>
-        {settings.analysisTypeLabel}
-        <div className="settingsDownload">
-          <Search onChange={handleSearchQuery} labels={data.name} />
-        </div>
-      </h1>
+    <div
+      className="bctPlot"
+      style={{ display: "flex", flexDirection: "column" }}
+    >
+      <div className="settingsDownload" style={{ marginTop: "10px" }}>
+        <Search onChange={handleSearchQuery} labels={data.name} />
+      </div>
       <svg ref={ref} id={"svg-chart"}>
         <g transform="translate(100,0)"></g>
         <g className="zoom_group" transform={currentZoom?.transform}>
@@ -219,4 +204,4 @@ const exportBCT = ({ url }) => {
   );
 };
 
-export default exportBCT;
+export default ExportBCT;

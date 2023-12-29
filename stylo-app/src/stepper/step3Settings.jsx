@@ -14,7 +14,7 @@ import InfoCulling from "../infoText/infoCulling";
 import InfoMisc from "../infoText/infoMisc";
 import { Alert, Box, Button } from "@mui/material";
 
-function Step2({ settings, setSettings, handleBack, setActiveStep }) {
+function Step3({ settings, setSettings, handleBack, setActiveStep }) {
   const [error, setError] = useState(null);
   let errorMessages = [];
   const handleNextSettings = () => {
@@ -137,4 +137,4 @@ function Step2({ settings, setSettings, handleBack, setActiveStep }) {
   );
 }
 
-export default Step2;
+export default Step3;
