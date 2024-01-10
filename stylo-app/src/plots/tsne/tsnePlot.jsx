@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { scaleLinear } from "d3-scale";
 import { extent } from "d3-array";
-import { Tooltip } from "./tooltip";
 import useElementSize from "../scatter/svgSizer";
 import * as d3 from "d3";
 import TsneHighlightableText from "./TsneHighlightableText";

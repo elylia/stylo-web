@@ -1,7 +1,6 @@
 import generateColorPalette from "../color-palette/colorPalette";
 
 export default function getColor(d, listPrefix) {
-  console.log(listPrefix);
   const colors = generateColorPalette(listPrefix.length);
   for (var i = 0; i < listPrefix.length; i++) {
     let name = d.name?.match(/.*?(?=[\_][A-Za-z0-9]+)/);

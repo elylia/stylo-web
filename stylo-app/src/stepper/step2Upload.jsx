@@ -31,12 +31,13 @@ function Step2({
   };
 
   const handleBackUpload = () => {
-    setActiveStep(1);
+    setActiveStep(0);
     errorMessages = [];
     if (error) {
       setError(null);
     }
   };
+
   return (
     <React.Fragment>
       {error && (

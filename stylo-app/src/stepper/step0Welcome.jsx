@@ -9,13 +9,15 @@ import AboutDialogGetStarted from "../dialog/aboutDialogGetStarted";
 function Step0({ handleNext }) {
   return (
     <React.Fragment>
-      <div>
+      <div className="welcomeDiv">
         <h1>Welcome to stylo web!</h1>
         <br />
         <p>
-          A web application where you can perform stylometric analysis online,
-          get interactive results and save them for later use.{" "}
-          <AboutDialogGetStarted /> if you want to know more.
+          ➤ Perform stylometric analysis online
+          <br /> ➤ Get interactive results <br />
+          ➤ Save them for later use.
+          <br />
+          ➤ <AboutDialogGetStarted /> if you want to know more.
         </p>
         <b>Get started by clicking on NEXT.</b>
       </div>
