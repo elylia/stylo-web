@@ -13,8 +13,8 @@ function Step0({ handleNext }) {
         <h1>Welcome to stylo web!</h1>
         <br />
         <p>
-          ➤ Perform stylometric analysis online
-          <br /> ➤ Get interactive results <br />
+          ➤ Perform stylometric analysis online.
+          <br /> ➤ Get interactive results. <br />
           ➤ Save them for later use.
           <br />
           ➤ <AboutDialogGetStarted /> if you want to know more.

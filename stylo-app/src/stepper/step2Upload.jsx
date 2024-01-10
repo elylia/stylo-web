@@ -26,7 +26,7 @@ function Step2({
     }
 
     if (errorMessages.length === 0) {
-      setActiveStep(3);
+      setActiveStep(2);
     }
   };
 
