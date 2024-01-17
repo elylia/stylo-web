@@ -43,7 +43,7 @@ function Step3({ settings, setSettings, handleBack, setActiveStep }) {
       settings.mfwMax - settings.mfwMin !== 0
     ) {
       errorMessages.push(
-        "The MFW increment is greater than the difference of MFW maximum and MFW minimum \n"
+        "The MFW increment is greater than the difference of MFW maximum and MFW minimum. \n"
       );
       setError(errorMessages);
     }
@@ -53,7 +53,7 @@ function Step3({ settings, setSettings, handleBack, setActiveStep }) {
       settings.cullMax - settings.cullMin !== 0
     ) {
       errorMessages.push(
-        "The Culling increment is greater than the difference of Culling maximum and Culling minimum \n"
+        "The Culling increment is greater than the difference of Culling maximum and Culling minimum. \n"
       );
       setError(errorMessages);
     }

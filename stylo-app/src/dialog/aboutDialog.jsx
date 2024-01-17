@@ -86,6 +86,7 @@ function AboutDialog() {
               <Link
                 href="https://github.com/computationalstylistics/A_Small_Collection_of_British_Fiction"
                 sx={{ cursor: "pointer" }}
+                target="_blank"
               >
                 A Short Collection of British Fiction
               </Link>
