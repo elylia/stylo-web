@@ -23,7 +23,7 @@ export default function DeleteButton({ setUploadedSuffix, uploadedSuffix }) {
         component="label"
         onClick={() => handleDelete(uploadedSuffix)}
       >
-        Delete Corpus
+        <b>Delete Corpus</b>
       </Button>
     );
   }

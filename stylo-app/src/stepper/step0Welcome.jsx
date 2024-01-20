@@ -23,7 +23,7 @@ function Step0({ handleNext }) {
       </div>
       <div className="buttonRight">
         <Button onClick={handleNext} variant="contained" color="primary">
-          Next
+          <b>Next</b>
         </Button>
       </div>
     </React.Fragment>

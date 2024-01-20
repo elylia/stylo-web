@@ -51,7 +51,7 @@ function Step6({ settings, setSettings, handleGetResults, handleBack }) {
       <div className="buttonsBoth">
         <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
           <Button onClick={handleBack} variant="contained" color="primary">
-            Back
+            <b>Back</b>
           </Button>
           <Box sx={{ flex: "1 1 auto" }} />
 
@@ -63,7 +63,9 @@ function Step6({ settings, setSettings, handleGetResults, handleBack }) {
             variant="contained"
             color="primary"
           >
-            <span>Get Results</span>
+            <span>
+              <b>Get Results</b>
+            </span>
           </LoadingButton>
         </Box>
       </div>

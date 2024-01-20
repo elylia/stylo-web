@@ -42,7 +42,7 @@ export default function UploadButton({ setUploadedSuffix }) {
         onClick={handleButtonClick}
         loading={loading}
       >
-        Upload Corpus
+        <b>Upload Corpus</b>
       </LoadingButton>
       <input
         id="fileInput"

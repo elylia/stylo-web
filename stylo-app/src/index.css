@@ -2,7 +2,7 @@
   font-family: Nunito, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color: #4d4d4d;
+  color: #383838;
   color-scheme: normal;
   color: rgba(255, 255, 255, 0.87);
   background-image: url("../src/assets/Background_3.svg");
@@ -61,12 +61,12 @@ h2.title {
   margin: 0;
   padding-left: 80px;
   letter-spacing: 0.3em;
-  color: #4d4d4d;
+  color: #383838;
 }
 
 h2 {
   font-size: 14px;
-  color: #4d4d4d;
+  color: #383838;
 }
 button {
   border-radius: 8px;
@@ -92,11 +92,11 @@ button:focus-visible {
 }
 
 :root {
-  color: #213547;
+  color: #383838;
   background-color: #ffffff;
 }
 a:hover {
-  color: #8da2af;
+  color: #4b5862;
 }
 button {
   background-color: #f9f9f9;
@@ -210,7 +210,7 @@ body {
 
 .header h1 {
   font-size: 20px;
-  color: #4d4d4d;
+  color: #383838;
   margin-left: 10px;
 }
 
@@ -238,7 +238,7 @@ body {
   padding: 20px;
   width: 100%;
   background-color: #ffffff;
-  color: #4d4d4d;
+  color: #383838;
 
   border-radius: 10px;
   margin-bottom: 20px;

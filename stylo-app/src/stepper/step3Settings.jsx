@@ -120,7 +120,7 @@ function Step3({ settings, setSettings, handleBack, setActiveStep }) {
       <div className="buttonsBoth">
         <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
           <Button onClick={handleBack} variant="contained" color="primary">
-            Back
+            <b>Back</b>
           </Button>
           <Box sx={{ flex: "1 1 auto" }} />
 
@@ -129,7 +129,7 @@ function Step3({ settings, setSettings, handleBack, setActiveStep }) {
             variant="contained"
             color="primary"
           >
-            Next
+            <b>Next</b>
           </Button>
         </Box>
       </div>

@@ -2,16 +2,17 @@ import { createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
   palette: {
+    contrastThreshold: 4.5,
     primary: {
       light: "#ACC4D4",
-      main: "#7a8d99",
-      dark: "#697882",
+      main: "#4D5A64",
+      dark: "#39434A",
       contrastText: "#fff",
     },
     secondary: {
-      light: "#697882",
-      main: "#697882",
-      dark: "#697882",
+      light: "#39434A",
+      main: "#39434A",
+      dark: "#39434A",
       contrastText: "#fff",
     },
   },
@@ -20,26 +21,52 @@ const theme = createTheme({
     fontFamily: `"Nunito", "system-ui", "Avenir", "Helvetica", "Arial", "sans-serif"`,
   },
   components: {
+    MuiStepIcon: {
+      styleOverrides: {
+        root: {
+          "&.active": { color: "#767676" },
+        },
+        active: {
+          color: "#E7865F",
+        },
+      },
+    },
+    MuiInputLabel: {
+      defaultProps: {
+        sx: {
+          fontSize: "19px",
+          color: "#565656",
+        },
+      },
+    },
+    MuiOutlinedInput: {
+      defaultProps: {
+        sx: {
+          ".MuiOutlinedInput-notchedOutline": { fontSize: "19px" },
+        },
+      },
+    },
+
     MuiSwitch: {
       styleOverrides: {
         switchBase: {
           //thumb - unchecked
-          color: "#7a8d99",
+          color: "#4D5A64",
         },
         colorPrimary: {
           "&.Mui-checked": {
             // thumb - checked
-            color: "#eda488",
+            color: "#E7865F",
           },
         },
         track: {
           // track - unchecked
           opacity: 0.4,
-          backgroundColor: "#7a8d99",
+          backgroundColor: "#4D5A64",
           ".Mui-checked.Mui-checked + &": {
             // track - checked
             opacity: 0.4,
-            backgroundColor: "#eda488",
+            backgroundColor: "#E7865F",
           },
         },
       },

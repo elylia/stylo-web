@@ -14,6 +14,12 @@ import InfoIcon from "@mui/icons-material/Info";
 
 function InfoDialogButton(title, content) {
   const [open, setOpen] = useState(false);
+  const handleKeyDownOpen = (event) => {
+    if (event.key === "Enter") {
+      setOpen(true);
+    }
+  };
+
   return (
     <React.Fragment>
       <Tooltip title="Click to see the applied settings">

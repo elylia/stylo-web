@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import HorizontalLinearStepper from "./stepper/horizontalStepper";
 import Step1 from "./stepper/step1Analysis.jsx";
 import Step2 from "./stepper/step2Upload.jsx";
@@ -15,7 +15,7 @@ import "../src/assets/fonts/index.css";
 import CitationDialog from "./dialog/citationDialog";
 import AboutDialog from "./dialog/aboutDialog";
 import GithubLink from "./dialog/githubLink";
-import Logo from "./assets/Logo_5.svg";
+import Logo from "./assets/Logo.svg";
 import Step0 from "./stepper/step0Welcome";
 
 function App() {
@@ -26,6 +26,7 @@ function App() {
   const [isDataReady, setIsDataReady] = useState(false);
   const [error, setError] = useState(null);
   const [uploadedSuffix, setUploadedSuffix] = useState();
+  const abortControllerRef = useRef(new AbortController());
 
   const handleStepClick = (step) => {
     if (step < activeStep) {
@@ -34,6 +35,8 @@ function App() {
   };
 
   const handleReset = () => {
+    abortControllerRef.current.abort();
+
     setActiveStep(0);
   };
   const handleNext = () => {
@@ -53,20 +56,30 @@ function App() {
     return "An unknown error occurred. Please check your corpus or change your settings and try again.";
   };
   const handleGetResults = async () => {
+    abortControllerRef.current = new AbortController();
     try {
-      const response = await executeR(settings, uploadedSuffix);
-      if (response.result) {
-        const url = response.result;
-        const labelUrl = response.labelUrl;
-        setIsDataReady(true);
-        setUrl(url);
-        setResult(response);
-        setActiveStep((prevActiveStep) => prevActiveStep + 1);
-        setLabel(labelUrl);
-      } else {
-        setError(mapErrorMessage("An unknown error occurred"));
+      const response = await executeR(
+        settings,
+        uploadedSuffix,
+        abortControllerRef.current
+      );
+      if (!abortControllerRef.current.signal.aborted) {
+        if (response.result) {
+          const url = response.result;
+          const labelUrl = response.labelUrl;
+          setIsDataReady(true);
+          setUrl(url);
+          setResult(response);
+          setActiveStep((prevActiveStep) => prevActiveStep + 1);
+          setLabel(labelUrl);
+        } else {
+          setError(mapErrorMessage("An unknown error occurred"));
+        }
       }
     } catch (error) {
+      if (error.message === "Request aborted") {
+        console.log("Process aborted by user.");
+      }
       console.error("Error executing R code:", error);
 
       setError(mapErrorMessage(error.message));

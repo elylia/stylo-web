@@ -58,7 +58,7 @@ function Step2({
         </Alert>
       )}
       <div>
-        <h1>Upload Data</h1>
+        <h1>Upload Corpus</h1>
         <InfoUpload />
       </div>
       <div className="content">
@@ -86,7 +86,7 @@ function Step2({
             variant="contained"
             color="primary"
           >
-            Back
+            <b>Back</b>
           </Button>
           <Box sx={{ flex: "1 1 auto" }} />
 
@@ -95,7 +95,7 @@ function Step2({
             variant="contained"
             color="primary"
           >
-            Next
+            <b>Next</b>
           </Button>
         </Box>
       </div>

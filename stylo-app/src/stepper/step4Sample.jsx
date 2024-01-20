@@ -29,12 +29,12 @@ function Step4({ settings, setSettings, handleNext, handleBack }) {
       <div className="buttonsBoth">
         <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
           <Button onClick={handleBack} variant="contained" color="primary">
-            Back
+            <b>Back</b>
           </Button>
           <Box sx={{ flex: "1 1 auto" }} />
 
           <Button onClick={handleNext} variant="contained" color="primary">
-            Next
+            <b>Next</b>
           </Button>
         </Box>
       </div>
