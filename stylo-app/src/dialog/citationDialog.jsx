@@ -70,7 +70,7 @@ function CitationDialog() {
           />
         </DialogActions>
         <DialogContent>
-          <DialogTitle>Information & References</DialogTitle>
+          <DialogTitle>Credits & References</DialogTitle>
           <DialogContentText sx={{ fontSize: 12, color: "black" }}>
             Developed and maintained by Lilly Osburg (
             <a href="mailto:lilly.osburg@live.de" target="_blank">
