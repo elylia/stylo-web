@@ -1,4 +1,3 @@
-import * as React from "react";
 import { LoadingButton } from "@mui/lab";
 
 export default function UploadButton({ setUploadedSuffix }) {
@@ -6,13 +5,6 @@ export default function UploadButton({ setUploadedSuffix }) {
 
   const handleFileUpload = async (event) => {
     const files = event.target.files;
-
-    // Check if any files were selected
-    if (files.length === 0) {
-      setLoading(false);
-      return;
-    }
-
     const formData = new FormData();
 
     for (const file of files) {
@@ -37,10 +29,7 @@ export default function UploadButton({ setUploadedSuffix }) {
   };
 
   const handleButtonClick = () => {
-    // Reset loading state
-    setLoading(false);
-
-    // Trigger click on the file input
+    setLoading(true);
     document.getElementById("fileInput").click();
   };
 
@@ -59,7 +48,7 @@ export default function UploadButton({ setUploadedSuffix }) {
         type="file"
         multiple
         hidden
-        onInput={handleFileUpload}
+        onChange={handleFileUpload}
       />
     </div>
   );
