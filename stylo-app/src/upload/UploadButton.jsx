@@ -12,7 +12,6 @@ export default function UploadButton({ setUploadedSuffix }) {
       setLoading(false);
       return;
     }
-
     const formData = new FormData();
 
     for (const file of files) {
