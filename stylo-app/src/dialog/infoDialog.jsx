@@ -11,8 +11,16 @@ import {
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
+
 function InfoDialog(title, content) {
+  const contentRef = React.useRef(null);
+
   const [open, setOpen] = useState(false);
+  React.useEffect(() => {
+    if (contentRef.current) {
+      contentRef.current.focus();
+    }
+  }, [open]);
 
   const handleKeyDownOpen = (event) => {
     if (event.key === "Enter") {
@@ -25,32 +33,17 @@ function InfoDialog(title, content) {
       setOpen(false);
     }
   };
+
   return (
     <React.Fragment>
       <Tooltip title="Click for more information on the different options">
-        <SvgIcon
+        <InfoIcon
           onClick={() => setOpen(true)}
           sx={{ cursor: "pointer" }}
           fontSize="x-small"
           tabIndex="0"
           onKeyDown={handleKeyDownOpen}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="12px"
-            viewBox="0 0 900 899.99999"
-            width="12px"
-            fill="#383838"
-          >
-            <path d="M0 0h24v24H0V0z" fill="none" />
-            <path
-              fill="#383838"
-              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 15c-.55 0-1-.45-1-1v-4c0-.55.45-1 1-1s1 .45 1 1v4c0 .55-.45 1-1 1zm1-8h-2V7h2v2z"
-              fill-opacity="1"
-              fill-rule="nonzero"
-            />
-          </svg>
-        </SvgIcon>
+        />
       </Tooltip>
       <Dialog
         open={open}
@@ -72,7 +65,7 @@ function InfoDialog(title, content) {
             onKeyDown={handleKeyDownClose}
           />
         </DialogActions>
-        <DialogContent>
+        <DialogContent tabIndex={0} ref={contentRef}>
           <DialogTitle>{title}</DialogTitle>
           <DialogContentText sx={{ fontSize: 12, color: "black" }}>
             {content}

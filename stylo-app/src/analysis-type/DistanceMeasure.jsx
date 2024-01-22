@@ -33,7 +33,12 @@ export default function DistanceMeasure({ settings, setSettings }) {
       sx={{ width: 300 }}
       size="small"
       ListboxProps={{
-        style: { maxHeight: 200, maxWidth: 300, overflow: "scroll" },
+        style: {
+          maxHeight: 200,
+          maxWidth: 300,
+          overflow: "scroll",
+          tabindex: "0",
+        },
       }}
       renderInput={(params) => (
         <TextField {...params} label="Distance Measure" />

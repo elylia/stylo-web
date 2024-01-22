@@ -21,13 +21,12 @@ const theme = createTheme({
     fontFamily: `"Nunito", "system-ui", "Avenir", "Helvetica", "Arial", "sans-serif"`,
   },
   components: {
-    MuiStepIcon: {
-      styleOverrides: {
-        root: {
-          "&.active": { color: "#767676" },
-        },
-        active: {
-          color: "#E7865F",
+    MuiStepLabel: {
+      defaultProps: {
+        sx: {
+          ".Mui-disabled .MuiSvgIcon-root": { color: "#757777" },
+          ".Mui-active .MuiSvgIcon-root": { color: "#697883" },
+          ".Mui-completed .MuiSvgIcon-root": { color: "#697883" },
         },
       },
     },

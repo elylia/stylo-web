@@ -6,6 +6,11 @@ export default function UploadButton({ setUploadedSuffix }) {
 
   const handleFileUpload = async (event) => {
     const files = event.target.files;
+
+    if (files.length === 0) {
+      setLoading(false);
+      return;
+    }
     const formData = new FormData();
 
     for (const file of files) {
@@ -21,6 +26,9 @@ export default function UploadButton({ setUploadedSuffix }) {
       if (response.ok) {
         const newSuffix = (await response.json()).suffix;
         setUploadedSuffix(newSuffix);
+      } else if (files.length === 0) {
+        setLoading(false);
+        return;
       }
     } catch (error) {
       console.error("Error uploading file:", error);
@@ -30,7 +38,7 @@ export default function UploadButton({ setUploadedSuffix }) {
   };
 
   const handleButtonClick = () => {
-    setLoading(true);
+    setLoading(false);
     document.getElementById("fileInput").click();
   };
 

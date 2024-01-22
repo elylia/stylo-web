@@ -14,9 +14,10 @@ import InfoIcon from "@mui/icons-material/Info";
 
 function InfoDialogButton(title, content) {
   const [open, setOpen] = useState(false);
-  const handleKeyDownOpen = (event) => {
+
+  const handleKeyDownClose = (event) => {
     if (event.key === "Enter") {
-      setOpen(true);
+      setOpen(false);
     }
   };
 
@@ -51,6 +52,8 @@ function InfoDialogButton(title, content) {
                 color: "white",
               },
             }}
+            tabIndex="0"
+            onKeyDown={handleKeyDownClose}
           />
         </DialogActions>
         <DialogContent>

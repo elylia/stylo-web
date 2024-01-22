@@ -15,7 +15,11 @@ import {
 
 function InfoNavigation() {
   const [open, setOpen] = useState(false);
-
+  const handleKeyDownClose = (event) => {
+    if (event.key === "Enter") {
+      setOpen(false);
+    }
+  };
   const title = "How to navigate";
   const info = (
     <p>
@@ -63,6 +67,8 @@ function InfoNavigation() {
                 color: "white",
               },
             }}
+            tabIndex="0"
+            onKeyDown={handleKeyDownClose}
           />
         </DialogActions>
         <DialogContent>

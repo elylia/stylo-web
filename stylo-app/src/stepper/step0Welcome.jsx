@@ -19,11 +19,11 @@ function Step0({ handleNext }) {
           <br />
           ➤ <AboutDialogGetStarted /> if you want to know more.
         </p>
-        <b>Get started by clicking on NEXT.</b>
+        <b>Let's go! Just click on Get started</b>
       </div>
       <div className="buttonRight">
         <Button onClick={handleNext} variant="contained" color="primary">
-          <b>Next</b>
+          <b>Get Started</b>
         </Button>
       </div>
     </React.Fragment>

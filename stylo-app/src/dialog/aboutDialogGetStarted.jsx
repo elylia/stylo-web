@@ -11,11 +11,29 @@ import {
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
+
 function AboutDialogGetStarted() {
   const [open, setOpen] = useState(false);
+  const contentRef = React.useRef(null);
+
+  React.useEffect(() => {
+    if (contentRef.current) {
+      contentRef.current.focus();
+    }
+  }, [open]);
+
   return (
     <React.Fragment>
-      <Link onClick={() => setOpen(true)} sx={{ cursor: "pointer" }}>
+      <Link
+        onClick={() => setOpen(true)}
+        sx={{ cursor: "pointer" }}
+        tabIndex={0}
+        onKeyDown={(event) => {
+          if (event.key === "Enter") {
+            setOpen(true);
+          }
+        }}
+      >
         Click here
       </Link>
       <Dialog
@@ -34,9 +52,15 @@ function AboutDialogGetStarted() {
               },
               cursor: "pointer",
             }}
+            tabIndex="0"
+            onKeyDown={(event) => {
+              if (event.key === "Enter") {
+                setOpen(false);
+              }
+            }}
           />
         </DialogActions>
-        <DialogContent>
+        <DialogContent tabIndex={0} ref={contentRef}>
           <DialogTitle>About Stylo Web</DialogTitle>
           <DialogContentText sx={{ fontSize: 12, color: "black" }}>
             <p>

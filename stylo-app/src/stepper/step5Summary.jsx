@@ -12,6 +12,7 @@ function Step5({ settings, handleNext, handleBack }) {
   function createData(parameter, value) {
     return { parameter, value };
   }
+  const contentRef = React.useRef(null);
 
   const rows = [
     createData("Analysis Type", settings.analysisTypeLabel),
@@ -62,6 +63,8 @@ function Step5({ settings, handleNext, handleBack }) {
             }}
             size="small"
             stickyHeader
+            tabIndex={0}
+            ref={contentRef}
           >
             <TableHead>
               <TableRow>

@@ -38,7 +38,12 @@ export default function Language({ settings, setSettings }) {
       onChange={handleChangeLanguage}
       sx={{ width: 300 }}
       ListboxProps={{
-        style: { maxHeight: 200, maxWidth: 300, overflow: "scroll" },
+        style: {
+          maxHeight: 200,
+          maxWidth: 300,
+          overflow: "scroll",
+          tabindex: "0",
+        },
       }}
       renderInput={(params) => <TextField {...params} label="Language" />}
     />

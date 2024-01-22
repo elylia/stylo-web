@@ -5,12 +5,12 @@ import StepLabel from "@mui/material/StepLabel";
 import Box from "@mui/material/Box";
 
 const steps = [
-  "Select Analysis Type",
-  "Upload Data",
-  "Set Parameters",
-  "Sampling",
-  "Summary",
-  "Output Options",
+  <b>Select Analysis Type</b>,
+  <b>Upload Data</b>,
+  <b>Set Parameters</b>,
+  <b>Sampling</b>,
+  <b>Summary</b>,
+  <b>Output Options</b>,
 ];
 
 export default function HorizontalLinearStepper({ activeStep, onStepClick }) {

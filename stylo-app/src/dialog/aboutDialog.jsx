@@ -14,8 +14,11 @@ import {
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
+
 function AboutDialog() {
   const [open, setOpen] = useState(false);
+  const contentRef = React.useRef(null);
+
   const handleKeyDownOpen = (event) => {
     if (event.key === "Enter") {
       setOpen(true);
@@ -73,7 +76,7 @@ function AboutDialog() {
             onKeyDown={handleKeyDownClose}
           />
         </DialogActions>
-        <DialogContent>
+        <DialogContent tabIndex={0} ref={contentRef}>
           <DialogTitle>About Stylo Web</DialogTitle>
           <DialogContentText sx={{ fontSize: 12, color: "black" }}>
             <p>

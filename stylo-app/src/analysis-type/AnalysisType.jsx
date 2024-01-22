@@ -42,7 +42,12 @@ export default function AnalysisType({ settings, setSettings }) {
       value={type.find((option) => option.value === settings.analysisType)}
       onChange={handleChangeAnalysisType}
       ListboxProps={{
-        style: { maxHeight: 300, maxWidth: 300, overflow: "scroll" },
+        style: {
+          maxHeight: 300,
+          maxWidth: 300,
+          overflow: "scroll",
+          tabindex: "0",
+        },
       }}
       renderInput={(params) => <TextField {...params} label="Analysis Type" />}
     />

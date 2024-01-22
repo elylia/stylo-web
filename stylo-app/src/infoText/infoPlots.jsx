@@ -9,6 +9,8 @@ import Paper from "@mui/material/Paper";
 import InfoDialogButton from "../dialog/infoDialogButton";
 
 function InfoPlots({ settings }) {
+  const contentRef = React.useRef(null);
+
   function createData(parameter, value) {
     return { parameter, value };
   }
@@ -59,6 +61,8 @@ function InfoPlots({ settings }) {
         }}
         size="small"
         stickyHeader
+        tabIndex={0}
+        ref={contentRef}
       >
         <TableHead>
           <TableRow>
