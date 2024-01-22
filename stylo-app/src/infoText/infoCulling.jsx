@@ -29,7 +29,10 @@ function InfoCulling() {
       />
       If Culling Minimum and Culling Maximum isn't equal this will result in
       several analysis being performed.{" "}
-      <b>You can then easily switch between the different settings!</b>
+      <b>
+        You can then easily switch between the different settings and compare
+        them!
+      </b>
       <br />
     </p>
   );

@@ -32,7 +32,10 @@ function InfoMFW() {
       If MFW Minimum and MFW Maximum isn't equal and you chose an Analysis Type
       other than the Bootstrap Consensus Tree this will result in several
       analysis being performed.{" "}
-      <b>You can then easily switch between the different settings!</b>
+      <b>
+        You can then easily switch between the different settings and compare
+        them!
+      </b>
       <br />
       <ErrorIcon
         sx={{ fontSize: 14, marginRight: 1, marginTop: 1 }}
