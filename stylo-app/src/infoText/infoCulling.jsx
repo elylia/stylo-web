@@ -28,7 +28,8 @@ function InfoCulling() {
         color="primary"
       />
       If Culling Minimum and Culling Maximum isn't equal this will result in
-      several analysis being performed.
+      several analysis being performed.{" "}
+      <b>You can then easily switch between the different settings!</b>
       <br />
     </p>
   );
