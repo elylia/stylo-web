@@ -37,7 +37,7 @@ export default function UploadButton({ setUploadedSuffix }) {
 
   const handleButtonClick = () => {
     // Reset loading state
-    setLoading(false);
+    setLoading(true);
 
     // Trigger click on the file input
     document.getElementById("fileInput").click();
