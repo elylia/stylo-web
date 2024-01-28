@@ -1,6 +1,3 @@
-import { useState } from "react";
-
-import "../App.css";
 import * as React from "react";
 import TextField from "@mui/material/TextField";
 
@@ -13,7 +10,6 @@ function MfwIncr({ settings, setSettings }) {
   return (
     <>
       <div>
-        {/*MFW Increment*/}
         <TextField
           id="outlined-basic"
           label="MFW Increment"

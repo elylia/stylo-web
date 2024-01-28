@@ -49,21 +49,17 @@ const theme = createTheme({
     MuiSwitch: {
       styleOverrides: {
         switchBase: {
-          //thumb - unchecked
           color: "#4D5A64",
         },
         colorPrimary: {
           "&.Mui-checked": {
-            // thumb - checked
             color: "#E7865F",
           },
         },
         track: {
-          // track - unchecked
           opacity: 0.4,
           backgroundColor: "#4D5A64",
           ".Mui-checked.Mui-checked + &": {
-            // track - checked
             opacity: 0.4,
             backgroundColor: "#E7865F",
           },

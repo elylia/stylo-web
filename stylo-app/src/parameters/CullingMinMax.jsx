@@ -1,4 +1,3 @@
-import "../App.css";
 import * as React from "react";
 import TextField from "@mui/material/TextField";
 
@@ -16,7 +15,6 @@ function CullingMinMax({ settings, setSettings }) {
   return (
     <>
       <div className="parameter">
-        {/*Culling Input*/}
         <TextField
           id="outlined-basic"
           label="Culling Minimum"

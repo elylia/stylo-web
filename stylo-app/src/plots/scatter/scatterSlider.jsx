@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Box, Slider } from "@mui/material";
+import { FormControlLabel, FormGroup, Slider, Switch } from "@mui/material";
 import ScatterPlot from "./scatterPlot";
 import InfoPlots from "../../infoText/infoPlots";
 import SavePng from "../../download/savePng";
 import SaveHTML from "../../download/downloadHtml";
+import Search from "../../search/search";
 
 const ScatterSlider = ({ url, settings, labelUrl, result }) => {
   const [data, setData] = useState([
@@ -23,6 +24,13 @@ const ScatterSlider = ({ url, settings, labelUrl, result }) => {
   ]);
   const [currentMfwSliderIndex, setCurrentMfwSliderIndex] = useState(0);
   const [currentCullSliderIndex, setCurrentCullSliderIndex] = useState(0);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [labelOnOff, setLabelOnOff] = useState(false);
+
+  const handleSearchQuery = (event) => {
+    const newValue = event.target.value;
+    setSearchQuery(newValue);
+  };
 
   const fetchJson = () => {
     fetch("api/" + url)
@@ -83,6 +91,28 @@ const ScatterSlider = ({ url, settings, labelUrl, result }) => {
           cull={cullData[currentCullSliderIndex]}
         />
         <SaveHTML settings={settings} result={result} />
+        <Search
+          onChange={handleSearchQuery}
+          labels={
+            data.find(
+              (element) =>
+                element.mfw == mfwData[currentMfwSliderIndex] &&
+                element.culling == cullData[currentCullSliderIndex]
+            ).data.name
+          }
+        />
+      </div>
+      <div className="labels">
+        <FormGroup>
+          <FormControlLabel
+            control={
+              <Switch
+                onChange={(event) => setLabelOnOff(event.target.checked)}
+              />
+            }
+            label="Show Labels"
+          />
+        </FormGroup>
       </div>
 
       <ScatterPlot
@@ -107,11 +137,13 @@ const ScatterSlider = ({ url, settings, labelUrl, result }) => {
               element.culling == cullData[currentCullSliderIndex]
           ).label2
         }
+        searchQuery={searchQuery}
+        labelOnOff={labelOnOff}
       />
       {mfwData.length > 1 && (
         <React.Fragment>
           <div className="slider">
-            <h2>MFW</h2>
+            <h2>MFW selection</h2>
             <Slider
               min={0}
               max={mfwData.length - 1}
@@ -128,7 +160,7 @@ const ScatterSlider = ({ url, settings, labelUrl, result }) => {
       {cullData.length > 1 && (
         <React.Fragment>
           <div className="slider">
-            <h2>Culling</h2>
+            <h2>Culling selection</h2>
 
             <Slider
               min={0}

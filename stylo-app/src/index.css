@@ -5,7 +5,7 @@
   color: #383838;
   color-scheme: normal;
   color: rgba(255, 255, 255, 0.87);
-  background-image: url("../src/assets/Background_3.svg");
+  background-image: url("../src/assets/Background.svg");
   background-size: cover;
   background-attachment: fixed;
   font-synthesis: none;
@@ -366,4 +366,10 @@ button:focus {
 .caChart {
   flex: 1;
   width: 100%;
+}
+
+.labels {
+  display: flex;
+  align-self: center;
+  margin-top: 10px;
 }

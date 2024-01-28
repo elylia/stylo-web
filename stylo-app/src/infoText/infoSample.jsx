@@ -18,7 +18,7 @@ function InfoSample() {
         unequal in length.
       </li>
       <li>
-        <b>Sample Size:</b>Specify the size for the samples (expressed in
+        <b>Sample Size:</b> Specify the size for the samples (expressed in
         words). Will only show and is only applicable if Normal Sampling has
         been chosen!
       </li>

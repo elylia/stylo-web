@@ -1,5 +1,4 @@
 import * as React from "react";
-import InfoIcon from "@mui/icons-material/Info";
 import {
   Dialog,
   DialogTitle,

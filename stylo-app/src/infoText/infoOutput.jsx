@@ -23,8 +23,7 @@ function InfoOutput() {
         sx={{ fontSize: 14, marginRight: 1, marginTop: 1 }}
         color="primary"
       />
-      The files will download automatically as soon as the analysis are
-      finished.
+      The files will download automatically as soon as the analyses finished.
     </p>
   );
   return (

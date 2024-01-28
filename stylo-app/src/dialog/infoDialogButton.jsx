@@ -34,7 +34,7 @@ function InfoDialogButton(title, content) {
             sx={{ fontSize: 15, verticalAlign: "sub" }}
             color="#ffffff"
           />
-          Settings
+          Applied Settings
         </Button>
       </Tooltip>
       <Dialog

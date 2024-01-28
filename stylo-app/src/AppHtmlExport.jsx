@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import ExportBCT from "./html-export/exportBCT";
 import ExportCA from "./html-export/exportCA";
 import ExportScatter from "./html-export/exportScatter";

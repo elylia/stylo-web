@@ -1,6 +1,3 @@
-import { useState } from "react";
-
-import "../App.css";
 import * as React from "react";
 import TextField from "@mui/material/TextField";
 
@@ -13,7 +10,6 @@ function SampleSize({ settings, setSettings }) {
   return (
     <>
       <div>
-        {/*Choose Sample Size*/}
         <TextField
           id="outlined-basic"
           label="Sample Size"

@@ -1,8 +1,6 @@
-import { useState } from "react";
-import "../App.css";
 import * as React from "react";
 import TextField from "@mui/material/TextField";
-import { Autocomplete, Fab, FormControl, MenuItem } from "@mui/material";
+import { Autocomplete } from "@mui/material";
 import { useEffect } from "react";
 
 const type = [

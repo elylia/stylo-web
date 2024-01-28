@@ -1,4 +1,3 @@
-import "./App.css";
 import React, { useRef, useState } from "react";
 import HorizontalLinearStepper from "./stepper/horizontalStepper";
 import Step1 from "./stepper/step1Analysis.jsx";

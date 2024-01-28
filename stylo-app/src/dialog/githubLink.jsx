@@ -1,18 +1,6 @@
 import * as React from "react";
-import InfoIcon from "@mui/icons-material/Info";
-import {
-  Dialog,
-  DialogTitle,
-  DialogContent,
-  DialogContentText,
-  DialogActions,
-  Tooltip,
-  Icon,
-  SvgIcon,
-} from "@mui/material";
-import { useState } from "react";
+import { Tooltip, SvgIcon } from "@mui/material";
 function GithubLink() {
-  const [open, setOpen] = useState(false);
   return (
     <React.Fragment>
       <a

@@ -57,14 +57,15 @@ function InfoAnalysis() {
       </li>
       <li>
         <b>Eder's Simple:</b> Select Eder's Simple measure (the frequencies are
-        transformed via square root)
+        transformed via square root).
       </li>
       <li>
         <b>Entropy:</b> Select Entropy Delta, or Manhattan applied to
         entropy-transformed dataset.
       </li>
       <li>
-        <b>Euclidean:</b> Select Euclidean Distance (basic and the most natural)
+        <b>Euclidean:</b> Select Euclidean Distance (basic and the most
+        natural).
       </li>
       <li>
         <b>Manhattan:</b> Select Manhattan Distance (obvious and well

@@ -1,4 +1,3 @@
-import "../App.css";
 import * as React from "react";
 import TextField from "@mui/material/TextField";
 
@@ -11,7 +10,6 @@ function RandomSample({ settings, setSettings }) {
   return (
     <>
       <div>
-        {/*Choose Sample Size*/}
         <TextField
           id="outlined-basic"
           label="Random Sample"

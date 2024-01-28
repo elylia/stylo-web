@@ -131,10 +131,11 @@ const BctPlot = ({ url, result, settings }) => {
       <h1>
         {settings.analysisTypeLabel}
         <div className="settingsDownload">
+          <InfoNavigation />
+
           <InfoPlots settings={settings} />
           <SavePng settings={settings} />
           <SaveHTML settings={settings} result={result} />
-          <InfoNavigation />
           <Search onChange={handleSearchQuery} labels={data.name} />
         </div>
       </h1>
@@ -165,7 +166,7 @@ const BctPlot = ({ url, result, settings }) => {
                 y(d.target.x)
               }
               className="lines"
-              strokeWidth="8"
+              strokeWidth="4"
             />
           ))}
           {nodes.map((d, i) => {
@@ -185,7 +186,7 @@ const BctPlot = ({ url, result, settings }) => {
                   className="node"
                   transform={"translate(" + x(d.y) + "," + y(d.x) + ")"}
                 >
-                  <circle r="4.5" />
+                  <circle r="2.5" />
                 </g>
               </React.Fragment>
             );

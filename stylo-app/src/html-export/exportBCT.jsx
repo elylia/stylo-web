@@ -147,8 +147,6 @@ const ExportBCT = () => {
           ))}
           {nodes.map((d, i) => {
             let textrotation = 180 - d.data.angle * 180;
-            let anchor = "start";
-            let xvalue = 8;
             if (Math.abs(textrotation) > 90) {
               textrotation = -d.data.angle * 180;
               anchor = "end";

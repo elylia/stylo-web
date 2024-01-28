@@ -1,6 +1,3 @@
-import { useState } from "react";
-
-import "../App.css";
 import * as React from "react";
 import TextField from "@mui/material/TextField";
 
@@ -13,7 +10,6 @@ function NGramSize({ settings, setSettings }) {
   return (
     <>
       <div>
-        {/*nGram Size*/}
         <TextField
           id="outlined-basic"
           label="nGram Size"

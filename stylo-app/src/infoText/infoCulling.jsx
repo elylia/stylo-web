@@ -11,13 +11,13 @@ function InfoCulling() {
         <b>Culling Minimum:</b> State the minimum culling setting. 0 means no
         words are omitted from the analysis. 50 means a word needs to appear in
         at least 50% of the texts to be included in the analysis. 100 means that
-        only words appearing in all the texts will be included in the analysis
+        only words appearing in all the texts will be included in the analysis.
       </li>
       <li>
         <b>Culling Maximum:</b> State the maximum culling setting. 0 means no
         words are omitted from the analysis. 50 means a word needs to appear in
         at least 50% of the texts to be included in the analysis. 100 means that
-        only words appearing in all the texts will be included in the analysis
+        only words appearing in all the texts will be included in the analysis.
       </li>
       <li>
         <b>Culling Increment:</b> State the increment added to the minimum

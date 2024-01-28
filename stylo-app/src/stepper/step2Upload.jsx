@@ -70,9 +70,10 @@ function Step2({
           <NativeEncoding setSettings={setSettings} settings={settings} />
         </div>
         <div className="upload">
-          <UploadButton setUploadedSuffix={setUploadedSuffix} />
-        </div>
-        <div className="upload">
+          <UploadButton
+            setUploadedSuffix={setUploadedSuffix}
+            uploadedSuffix={uploadedSuffix}
+          />
           <DeleteButton
             setUploadedSuffix={setUploadedSuffix}
             uploadedSuffix={uploadedSuffix}

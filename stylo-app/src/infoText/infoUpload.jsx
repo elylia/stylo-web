@@ -33,7 +33,7 @@ function InfoUpload() {
       <li>
         <b>XML (Drama):</b> XML files (for plays; all tags, TEI headers, and
         speakers' names between &lt;speaker&gt;...&lt;/speaker&gt; tags are
-        removed.)
+        removed).
       </li>
       <li>
         <b>XML (no titles):</b> XML files (contents only; all tags, TEI headers,

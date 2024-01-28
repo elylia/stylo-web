@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Slider } from "@mui/material";
 import Search from "../search/search";
 import CaPlot from "../plots/CA/CAPlot";
@@ -65,7 +65,7 @@ const ExportCA = () => {
       {mfwData.length > 1 && (
         <React.Fragment>
           <div className="slider">
-            <h2>MFW</h2>
+            <h2>MFW Selection</h2>
             <Slider
               min={0}
               max={mfwData.length - 1}
@@ -82,7 +82,7 @@ const ExportCA = () => {
       {cullData.length > 1 && (
         <React.Fragment>
           <div className="slider">
-            <h2>Culling</h2>
+            <h2>Culling Selection</h2>
 
             <Slider
               min={0}

@@ -34,11 +34,11 @@ function Step6({ settings, setSettings, handleGetResults, handleBack }) {
           }}
         >
           Starting your analysis. Depending on your corpus and settings, this
-          may take a few moments.
+          may take a while. Please be patient.
         </Alert>
       )}
       <div className="content">
-        <h1>Choose Output Options</h1>
+        <h1>Choose additional Output Options</h1>
         <InfoOutput></InfoOutput>
         <div className="outputOptions">
           <SaveDistanceTable setSettings={setSettings} settings={settings} />

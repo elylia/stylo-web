@@ -1,5 +1,4 @@
-import { access, constants, readdir, stat, writeFile } from "fs/promises";
-import fs, { read } from "fs";
+import { writeFile } from "fs/promises";
 import JSZip from "jszip";
 import { readFile } from "fs/promises";
 

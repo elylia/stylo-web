@@ -1,6 +1,3 @@
-import { useState } from "react";
-
-import "../App.css";
 import * as React from "react";
 import {
   FormControl,
@@ -8,9 +5,7 @@ import {
   Radio,
   RadioGroup,
 } from "@mui/material";
-{
-  /*To-DO: Wert übergeben*/
-}
+
 function Features({ settings, setSettings }) {
   const handleChangeFeatures = (event) => {
     const newValue = event.target.value;
@@ -22,7 +17,6 @@ function Features({ settings, setSettings }) {
   };
   return (
     <>
-      {/*Choose MFW or nGram*/}
       <FormControl>
         <RadioGroup
           row

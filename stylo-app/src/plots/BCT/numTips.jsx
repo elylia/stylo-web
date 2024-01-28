@@ -1,10 +1,4 @@
-/**
- * Recursive function for breadth-first search of a tree
- * the root node is visited first.
- */
-
 function levelorder(root) {
-  // aka breadth-first search
   var queue = [root],
     result = [],
     curnode;
@@ -20,10 +14,6 @@ function levelorder(root) {
   }
   return result;
 }
-
-/**
- * Count the number of tips that descend from this node
- */
 
 export default function (thisnode) {
   var result = 0;

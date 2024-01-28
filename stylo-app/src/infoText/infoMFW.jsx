@@ -10,12 +10,12 @@ function InfoMFW() {
       <li>
         <b>MFW Minimum:</b> Set the minimum number of most frequent words. The
         script will conduct its first analysis for the number of words specified
-        here
+        here.
       </li>
       <li>
         <b>MFW Maximum:</b> Set the maximum number of most frequent words. The
         script will conduct its final analysis for the number of words specified
-        here
+        here.
       </li>
       <li>
         <b>MFW Increment:</b> Set the increment added to the minimum number of
@@ -43,7 +43,7 @@ function InfoMFW() {
       />
       If you chose the Bootstrap Consensus Tree as your analysis type there need
       to be at least three iterations (e.g. MFW Minimum: 100, MFW Maximum: 300,
-      MFW Increment: 100)
+      MFW Increment: 100).
     </p>
   );
   return (

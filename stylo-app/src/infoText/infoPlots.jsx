@@ -94,7 +94,9 @@ function InfoPlots({ settings }) {
   );
   return (
     <React.Fragment>
-      <React.Fragment>{InfoDialogButton("Settings", table)}</React.Fragment>
+      <React.Fragment>
+        {InfoDialogButton("Applied Settings", table)}
+      </React.Fragment>
     </React.Fragment>
   );
 }

@@ -1,6 +1,3 @@
-import { useState } from "react";
-
-import "../App.css";
 import * as React from "react";
 import TextField from "@mui/material/TextField";
 
@@ -13,7 +10,6 @@ function StartAt({ settings, setSettings }) {
   return (
     <>
       <div>
-        {/*Start at freq. rank*/}
         <TextField
           id="outlined-basic"
           label="Start at freq. rank"

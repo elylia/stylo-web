@@ -1,15 +1,22 @@
-import React, { useEffect, useState } from "react";
-import { Slider } from "@mui/material";
+import React, { useState } from "react";
+import { Slider, Switch } from "@mui/material";
 import ScatterPlot from "../plots/scatter/scatterPlot";
+import Search from "../search/search";
 
 const ExportScatter = ({}) => {
   const data = window.data;
   const label = window.label;
   const [currentMfwSliderIndex, setCurrentMfwSliderIndex] = useState(0);
   const [currentCullSliderIndex, setCurrentCullSliderIndex] = useState(0);
-
+  const [searchQuery, setSearchQuery] = useState("");
+  const [labelOnOff, setLabelOnOff] = useState(false);
   const cullData = [...new Set(data.map((item) => item.culling))];
   const mfwData = [...new Set(data.map((item) => item.mfw))];
+
+  const handleSearchQuery = (event) => {
+    const newValue = event.target.value;
+    setSearchQuery(newValue);
+  };
 
   const handleMfwSliderChange = (event) => {
     const index = parseInt(event.target.value, 10);
@@ -33,6 +40,28 @@ const ExportScatter = ({}) => {
 
   return (
     <div className="plotSlider">
+      <div className="settingsDownload" style={{ marginTop: "10px" }}>
+        <Search
+          onChange={handleSearchQuery}
+          labels={
+            data.find(
+              (element) =>
+                element.mfw == mfwData[currentMfwSliderIndex] &&
+                element.culling == cullData[currentCullSliderIndex]
+            ).data.name
+          }
+        />
+        <FormGroup>
+          <FormControlLabel
+            control={
+              <Switch
+                onChange={(event) => setLabelOnOff(event.target.checked)}
+              />
+            }
+            label="Show Labels"
+          />
+        </FormGroup>
+      </div>
       <ScatterPlot
         data={
           data.find(
@@ -55,11 +84,13 @@ const ExportScatter = ({}) => {
               element.culling == cullData[currentCullSliderIndex]
           ).label2
         }
+        searchQuery={searchQuery}
+        labelOnOff={labelOnOff}
       />
       {mfwData.length > 1 && (
         <React.Fragment>
           <div className="slider">
-            <h2>MFW</h2>
+            <h2>MFW Selection</h2>
             <Slider
               min={0}
               max={mfwData.length - 1}
@@ -76,7 +107,7 @@ const ExportScatter = ({}) => {
       {cullData.length > 1 && (
         <React.Fragment>
           <div className="slider">
-            <h2>Culling</h2>
+            <h2>Culling Selection</h2>
 
             <Slider
               min={0}

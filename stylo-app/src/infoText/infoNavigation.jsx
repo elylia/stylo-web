@@ -23,17 +23,26 @@ function InfoNavigation() {
   const title = "How to navigate";
   const info = (
     <p>
-      Zoom in: Scroll in
+      <b>Zoom in:</b> Scroll in
       <br />
-      Zoom out: Scroll out
+      <b>Zoom out:</b> Scroll out
       <br />
-      Pan: Click, hold and move <br />
-      Search: Use the search bar. Your entries will be highlighted. <br />
+      <b>Pan:</b> Click, hold and move <br />
+      <b>Search:</b> Use the search bar. Your entries will be highlighted.{" "}
+      <br />
+      <b>Change MFW / Culling:</b> Use the slider below the plot to change MFW
+      values / Culling values <br />
       <InfoIcon
         sx={{ fontSize: 14, marginRight: 1, marginTop: 0 }}
         color="primary"
       />
-      Zoom out to see all your search entries.
+      Zoom out to see all your search entries. <br />
+      <InfoIcon
+        sx={{ fontSize: 14, marginRight: 1, marginTop: 0 }}
+        color="primary"
+      />
+      If you want to save the whole Plot as PNG you have to zoom out until you
+      see the whole plot.
     </p>
   );
   return (

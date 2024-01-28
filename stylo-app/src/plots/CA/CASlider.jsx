@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Box, Slider } from "@mui/material";
+import { Slider } from "@mui/material";
 import CaPlot from "./CAPlot";
 import InfoPlots from "../../infoText/infoPlots";
 import SavePng from "../../download/savePng";
@@ -67,6 +67,8 @@ const CaSlider = ({ url, settings, result }) => {
         {settings.analysisTypeLabel} <br />{" "}
       </h1>
       <div className="settingsDownload">
+        <InfoNavigation />
+
         <InfoPlots settings={settings} />
         <SavePng
           settings={settings}
@@ -74,7 +76,6 @@ const CaSlider = ({ url, settings, result }) => {
           cull={cullData[currentCullSliderIndex]}
         />
         <SaveHTML settings={settings} result={result} />
-        <InfoNavigation />
         <Search
           onChange={handleSearchQuery}
           labels={
@@ -99,7 +100,7 @@ const CaSlider = ({ url, settings, result }) => {
       {mfwData.length > 1 && (
         <React.Fragment>
           <div className="slider">
-            <h2>MFW</h2>
+            <h2>MFW selection</h2>
             <Slider
               min={0}
               max={mfwData.length - 1}
@@ -116,7 +117,7 @@ const CaSlider = ({ url, settings, result }) => {
       {cullData.length > 1 && (
         <React.Fragment>
           <div className="slider">
-            <h2>Culling</h2>
+            <h2>Culling selection</h2>
 
             <Slider
               min={0}

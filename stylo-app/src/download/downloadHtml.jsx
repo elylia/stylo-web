@@ -3,10 +3,6 @@ import React from "react";
 import CodeIcon from "@mui/icons-material/Code";
 
 function SaveHTML({ settings, result }) {
-  function createData(parameter, value) {
-    return { parameter, value };
-  }
-
   const handleClick = async () => {
     saveAs(
       await (await fetch("api/" + result.htmlExport)).blob(),

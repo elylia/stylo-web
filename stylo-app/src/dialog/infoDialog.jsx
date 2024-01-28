@@ -7,7 +7,6 @@ import {
   DialogContentText,
   DialogActions,
   Tooltip,
-  SvgIcon,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";

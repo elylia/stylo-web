@@ -1,4 +1,3 @@
-import "../App.css";
 import * as React from "react";
 import {
   FormControl,
@@ -26,7 +25,6 @@ function Sampling({ settings, setSettings }) {
   };
   return (
     <>
-      {/*Choose Sampling Method*/}
       <FormControl>
         <RadioGroup
           row

@@ -8,16 +8,10 @@ import TsneHighlightableText from "./TsneHighlightableText";
 function TsnePlot({ data, searchQuery }) {
   const [svgRef, svgSize] = useElementSize();
   const [currentZoom, setCurrentZoom] = useState();
-  const [interactionData, setInteractionData] = useState(null);
 
   let width = svgSize.width;
   let height = svgSize.height;
-  let margin = {
-    top: 40,
-    bottom: 40,
-    left: 40,
-    right: 40,
-  };
+
   function handleZoom(e) {
     setCurrentZoom(e);
   }

@@ -1,6 +1,3 @@
-import { useState } from "react";
-
-import "../App.css";
 import * as React from "react";
 import TextField from "@mui/material/TextField";
 
@@ -18,7 +15,6 @@ function MfwMinMax({ settings, setSettings }) {
   return (
     <>
       <div className="parameter">
-        {/*MFW Input*/}
         <TextField
           id="outlined-basic"
           label="MFW Minimum"
