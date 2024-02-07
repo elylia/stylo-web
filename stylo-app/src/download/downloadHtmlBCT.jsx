@@ -2,11 +2,11 @@ import { Button, Tooltip } from "@mui/material";
 import React from "react";
 import CodeIcon from "@mui/icons-material/Code";
 
-function SaveHTML({ settings, result, mfw, cull }) {
+function SaveHTMLBCT({ settings, result }) {
   const handleClick = async () => {
     saveAs(
       await (await fetch("api/" + result.htmlExport)).blob(),
-      `${settings.analysisType}_${settings.distanceMeasure}_mfw${mfw}_cull${cull}_html.zip`
+      `${settings.analysisType}_${settings.distanceMeasure}_html.zip`
     );
   };
   return (
@@ -32,4 +32,4 @@ function SaveHTML({ settings, result, mfw, cull }) {
   );
 }
 
-export default SaveHTML;
+export default SaveHTMLBCT;

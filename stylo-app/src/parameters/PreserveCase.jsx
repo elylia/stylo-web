@@ -11,7 +11,11 @@ function PreserveCase({ settings, setSettings }) {
       <FormGroup>
         <FormControlLabel
           control={
-            <Switch checked={settings.case} onChange={handleChangeCase} />
+            <Switch
+              role="toggle switch"
+              checked={settings.case}
+              onChange={handleChangeCase}
+            />
           }
           label="Preserve Case"
         />

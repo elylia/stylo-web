@@ -39,7 +39,7 @@ export default function DistanceMeasure({ settings, setSettings }) {
         },
       }}
       renderInput={(params) => (
-        <TextField {...params} label="Distance Measure" />
+        <TextField role="dropdown" {...params} label="Distance Measure" />
       )}
       value={settings.distanceMeasureLabel}
       onChange={handleChangeDistanceMeasure}

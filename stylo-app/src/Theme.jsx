@@ -25,8 +25,8 @@ const theme = createTheme({
       defaultProps: {
         sx: {
           ".Mui-disabled .MuiSvgIcon-root": { color: "#757777" },
-          ".Mui-active .MuiSvgIcon-root": { color: "#697883" },
-          ".Mui-completed .MuiSvgIcon-root": { color: "#697883" },
+          ".Mui-active .MuiSvgIcon-root": { color: "#4D5A64" },
+          ".Mui-completed .MuiSvgIcon-root": { color: "#4D5A64" },
         },
       },
     },
@@ -53,7 +53,7 @@ const theme = createTheme({
         },
         colorPrimary: {
           "&.Mui-checked": {
-            color: "#E7865F",
+            color: "#BB5933",
           },
         },
         track: {
@@ -61,7 +61,7 @@ const theme = createTheme({
           backgroundColor: "#4D5A64",
           ".Mui-checked.Mui-checked + &": {
             opacity: 0.4,
-            backgroundColor: "#E7865F",
+            backgroundColor: "#BB5933",
           },
         },
       },

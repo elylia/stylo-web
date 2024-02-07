@@ -11,6 +11,7 @@ function MfwIncr({ settings, setSettings }) {
     <>
       <div>
         <TextField
+          role="input field"
           id="outlined-basic"
           label="MFW Increment"
           variant="outlined"

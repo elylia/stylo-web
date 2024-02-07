@@ -65,7 +65,7 @@ const ExportCA = () => {
       {mfwData.length > 1 && (
         <React.Fragment>
           <div className="slider">
-            <h2>MFW Selection</h2>
+            <h2>Select MFW</h2>
             <Slider
               min={0}
               max={mfwData.length - 1}
@@ -82,7 +82,7 @@ const ExportCA = () => {
       {cullData.length > 1 && (
         <React.Fragment>
           <div className="slider">
-            <h2>Culling Selection</h2>
+            <h2>Select Culling</h2>
 
             <Slider
               min={0}

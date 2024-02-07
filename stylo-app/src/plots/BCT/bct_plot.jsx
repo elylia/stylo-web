@@ -3,11 +3,11 @@ import * as d3 from "d3";
 import computePosition from "./computePosition";
 import InfoPlots from "../../infoText/infoPlots";
 import InfoNavigation from "../../infoText/infoNavigation";
-import SavePng from "../../download/savePng";
+import SavePngBCT from "../../download/savePngBCT";
 import Search from "../../search/search";
 import BCTHighlightableText from "./BCTHighlightableText";
 import useElementSize from "../scatter/svgSizer";
-import SaveHTML from "../../download/downloadHtml";
+import SaveHTMLBCT from "../../download/downloadHtmlBCT";
 
 const BctPlot = ({ url, result, settings }) => {
   const ref = useRef();
@@ -134,8 +134,8 @@ const BctPlot = ({ url, result, settings }) => {
           <InfoNavigation />
 
           <InfoPlots settings={settings} />
-          <SavePng settings={settings} />
-          <SaveHTML settings={settings} result={result} />
+          <SavePngBCT settings={settings} />
+          <SaveHTMLBCT settings={settings} result={result} />
           <Search onChange={handleSearchQuery} labels={data.name} />
         </div>
       </h1>

@@ -49,6 +49,7 @@ function InfoNavigation() {
     <React.Fragment>
       <Tooltip title="Click to learn how to navigate in the plot">
         <Button
+          role="button"
           onClick={() => setOpen(true)}
           variant="contained"
           size="small"

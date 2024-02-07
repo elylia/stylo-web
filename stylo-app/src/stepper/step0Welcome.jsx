@@ -18,7 +18,12 @@ function Step0({ handleNext }) {
         <b>Let's go! Just click on Get started.</b>
       </div>
       <div className="buttonRight">
-        <Button onClick={handleNext} variant="contained" color="primary">
+        <Button
+          role="button"
+          onClick={handleNext}
+          variant="contained"
+          color="primary"
+        >
           <b>Get Started</b>
         </Button>
       </div>

@@ -13,6 +13,7 @@ function SaveDistanceTable({ settings, setSettings }) {
         <FormControlLabel
           control={
             <Switch
+              role="toggle switch"
               checked={settings.distanceTable}
               onChange={handleChangeCase}
             />

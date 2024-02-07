@@ -74,7 +74,12 @@ const TsneSlider = ({ url, settings, result }) => {
             mfw={mfwData[currentMfwSliderIndex]}
             cull={cullData[currentCullSliderIndex]}
           />
-          <SaveHTML settings={settings} result={result} />
+          <SaveHTML
+            settings={settings}
+            result={result}
+            mfw={mfwData[currentMfwSliderIndex]}
+            cull={cullData[currentCullSliderIndex]}
+          />
 
           <Search
             onChange={handleSearchQuery}
@@ -101,7 +106,7 @@ const TsneSlider = ({ url, settings, result }) => {
       {mfwData.length > 1 && (
         <React.Fragment>
           <div className="slider">
-            <h2>MFW selection</h2>
+            <h2>Select MFW</h2>
             <Slider
               min={0}
               max={mfwData.length - 1}
@@ -118,7 +123,7 @@ const TsneSlider = ({ url, settings, result }) => {
       {cullData.length > 1 && (
         <React.Fragment>
           <div className="slider">
-            <h2>Culling selection</h2>
+            <h2>Select Culling</h2>
 
             <Slider
               min={0}

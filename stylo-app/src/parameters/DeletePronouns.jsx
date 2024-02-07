@@ -12,6 +12,7 @@ function DeletePronouns({ settings, setSettings }) {
         <FormControlLabel
           control={
             <Switch
+              role="toggle switch"
               checked={settings.pronouns}
               onChange={handleChangePronouns}
             />

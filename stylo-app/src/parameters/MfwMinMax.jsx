@@ -16,6 +16,7 @@ function MfwMinMax({ settings, setSettings }) {
     <>
       <div className="parameter">
         <TextField
+          role="input field"
           id="outlined-basic"
           label="MFW Minimum"
           variant="outlined"
@@ -25,6 +26,7 @@ function MfwMinMax({ settings, setSettings }) {
           onChange={handleChangeMfwMin}
         />
         <TextField
+          role="input field"
           id="outlined-basic"
           label="MFW Maximum"
           variant="outlined"

@@ -11,6 +11,7 @@ function ConsensusStrength({ settings, setSettings }) {
     <>
       <div>
         <TextField
+          role="input field"
           id="outlined-basic"
           label="Consensus Strength"
           variant="outlined"

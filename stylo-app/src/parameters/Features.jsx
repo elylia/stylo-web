@@ -19,6 +19,7 @@ function Features({ settings, setSettings }) {
     <>
       <FormControl>
         <RadioGroup
+          role="radio buttons"
           row
           defaultValue="w"
           value={settings.features}

@@ -11,6 +11,7 @@ function StartAt({ settings, setSettings }) {
     <>
       <div>
         <TextField
+          role="input field"
           id="outlined-basic"
           label="Start at freq. rank"
           variant="outlined"

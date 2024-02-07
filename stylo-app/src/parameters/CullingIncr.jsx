@@ -11,6 +11,7 @@ function CullingIncr({ settings, setSettings }) {
   return (
     <div>
       <TextField
+        role="input field"
         id="outlined-basic"
         label="Culling Increment"
         variant="outlined"

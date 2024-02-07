@@ -5,6 +5,7 @@ const Search = ({ onChange }) => {
   return (
     <div>
       <TextField
+        role="input field"
         label="Search"
         onChange={onChange}
         variant="outlined"

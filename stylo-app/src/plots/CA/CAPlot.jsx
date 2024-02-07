@@ -57,7 +57,6 @@ const CaPlot = ({ data, searchQuery }) => {
     d.y = d.data.height;
   });
   let listPrefix = [];
-  let i = 0;
   treeRoot.descendants().forEach(function (d) {
     let prefix = d.data.name?.match(/.*?(?=[\_][A-Za-z0-9])/);
     if (prefix === undefined) {

@@ -11,6 +11,7 @@ function SampleSize({ settings, setSettings }) {
     <>
       <div>
         <TextField
+          role="input field"
           id="outlined-basic"
           label="Sample Size"
           variant="outlined"

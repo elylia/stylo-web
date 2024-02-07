@@ -47,7 +47,9 @@ export default function AnalysisType({ settings, setSettings }) {
           tabindex: "0",
         },
       }}
-      renderInput={(params) => <TextField {...params} label="Analysis Type" />}
+      renderInput={(params) => (
+        <TextField role="dropdown" {...params} label="Analysis Type" />
+      )}
     />
   );
 }

@@ -13,6 +13,7 @@ function SaveFrequencyTable({ settings, setSettings }) {
         <FormControlLabel
           control={
             <Switch
+              role="toggle switch"
               checked={settings.frequencyTable}
               onChange={handleChangeCase}
             />

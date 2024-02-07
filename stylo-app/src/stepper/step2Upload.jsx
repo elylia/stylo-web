@@ -83,6 +83,7 @@ function Step2({
       <div className="buttonsBoth">
         <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
           <Button
+            role="button"
             onClick={handleBackUpload}
             variant="contained"
             color="primary"
@@ -92,6 +93,7 @@ function Step2({
           <Box sx={{ flex: "1 1 auto" }} />
 
           <Button
+            role="button"
             onClick={handleNextUpload}
             variant="contained"
             color="primary"

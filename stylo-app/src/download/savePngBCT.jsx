@@ -5,7 +5,7 @@ import React from "react";
 import { saveAs } from "file-saver";
 import JSZip from "jszip";
 
-function SavePng({ settings, mfw, cull }) {
+function SavePngBCT({ settings }) {
   function createData(parameter, value) {
     return { parameter, value };
   }
@@ -60,8 +60,7 @@ function SavePng({ settings, mfw, cull }) {
   };
   const handleClick = async () => {
     const uri = await saveSvgAsPng.svgAsPngUri(
-      document.getElementById("svg-chart") ||
-        document.getElementById("svg-chart-tsne"),
+      document.getElementById("svg-chart"),
       imageOptions
     );
 
@@ -70,18 +69,18 @@ function SavePng({ settings, mfw, cull }) {
 
     let zip = new JSZip();
     zip.file(
-      `${settings.analysisType}_${settings.distanceMeasure}_mfw${mfw}_cull${cull}.csv`,
+      `${settings.analysisType}_${settings.distanceMeasure}.csv`,
       csvString
     );
     zip.file(
-      `${settings.analysisType}_${settings.distanceMeasure}_mfw${mfw}_cull${cull}.png`,
+      `${settings.analysisType}_${settings.distanceMeasure}.png`,
       image,
       { base64: true }
     );
     const content = await zip.generateAsync({ type: "blob" });
     saveAs(
       content,
-      `${settings.analysisType}_${settings.distanceMeasure}_mfw${mfw}_cull${cull}_PNG.zip`
+      `${settings.analysisType}_${settings.distanceMeasure}_PNG.zip`
     );
   };
   return (
@@ -107,4 +106,4 @@ function SavePng({ settings, mfw, cull }) {
   );
 }
 
-export default SavePng;
+export default SavePngBCT;

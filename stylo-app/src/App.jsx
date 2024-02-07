@@ -134,7 +134,12 @@ function App() {
           <div className="reset">
             <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
               <Box sx={{ flex: "1 1 auto" }} />
-              <Button onClick={handleReset} variant="contained" color="primary">
+              <Button
+                role="button"
+                onClick={handleReset}
+                variant="contained"
+                color="primary"
+              >
                 <b>Reset</b>
               </Button>
             </Box>

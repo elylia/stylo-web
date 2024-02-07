@@ -43,7 +43,9 @@ export default function Language({ settings, setSettings }) {
           tabindex: "0",
         },
       }}
-      renderInput={(params) => <TextField {...params} label="Language" />}
+      renderInput={(params) => (
+        <TextField role="dropdown" {...params} label="Language" />
+      )}
     />
   );
 }

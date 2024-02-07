@@ -16,6 +16,7 @@ function CullingMinMax({ settings, setSettings }) {
     <>
       <div className="parameter">
         <TextField
+          role="input field"
           id="outlined-basic"
           label="Culling Minimum"
           variant="outlined"
@@ -25,6 +26,7 @@ function CullingMinMax({ settings, setSettings }) {
           onChange={handleChangeCullMin}
         />
         <TextField
+          role="input field"
           id="outlined-basic"
           label="Culling Maximum"
           variant="outlined"

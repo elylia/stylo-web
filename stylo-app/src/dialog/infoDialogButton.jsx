@@ -25,6 +25,7 @@ function InfoDialogButton(title, content) {
     <React.Fragment>
       <Tooltip title="Click to see the applied settings">
         <Button
+          role="button"
           onClick={() => setOpen(true)}
           variant="contained"
           size="small"

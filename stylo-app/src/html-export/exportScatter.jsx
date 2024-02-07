@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Slider, Switch } from "@mui/material";
+import { FormControlLabel, FormGroup, Slider, Switch } from "@mui/material";
 import ScatterPlot from "../plots/scatter/scatterPlot";
 import Search from "../search/search";
 
@@ -55,6 +55,7 @@ const ExportScatter = ({}) => {
           <FormControlLabel
             control={
               <Switch
+                role="toggle switch"
                 onChange={(event) => setLabelOnOff(event.target.checked)}
               />
             }
@@ -90,7 +91,7 @@ const ExportScatter = ({}) => {
       {mfwData.length > 1 && (
         <React.Fragment>
           <div className="slider">
-            <h2>MFW Selection</h2>
+            <h2>Select MFW</h2>
             <Slider
               min={0}
               max={mfwData.length - 1}
@@ -107,7 +108,7 @@ const ExportScatter = ({}) => {
       {cullData.length > 1 && (
         <React.Fragment>
           <div className="slider">
-            <h2>Culling Selection</h2>
+            <h2>Select Culling</h2>
 
             <Slider
               min={0}

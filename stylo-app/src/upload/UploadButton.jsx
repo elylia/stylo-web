@@ -75,7 +75,7 @@ export default function UploadButton({ setUploadedSuffix, uploadedSuffix }) {
           textAlign: "left",
         }}
       >
-        Corpus uploaded succesfully
+        Corpus uploaded succesfully.
       </Alert>
     )
   );

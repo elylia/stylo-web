@@ -11,6 +11,7 @@ function NGramSize({ settings, setSettings }) {
     <>
       <div>
         <TextField
+          role="input field"
           id="outlined-basic"
           label="nGram Size"
           variant="outlined"

@@ -96,12 +96,22 @@ function Step5({ settings, handleNext, handleBack }) {
       </div>
       <div className="buttonsBoth">
         <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
-          <Button onClick={handleBack} variant="contained" color="primary">
+          <Button
+            role="button"
+            onClick={handleBack}
+            variant="contained"
+            color="primary"
+          >
             <b>Back</b>
           </Button>
           <Box sx={{ flex: "1 1 auto" }} />
 
-          <Button onClick={handleNext} variant="contained" color="primary">
+          <Button
+            role="button"
+            onClick={handleNext}
+            variant="contained"
+            color="primary"
+          >
             <b>Next</b>
           </Button>
         </Box>

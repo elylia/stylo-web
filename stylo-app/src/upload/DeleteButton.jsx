@@ -23,6 +23,7 @@ export default function DeleteButton({ setUploadedSuffix, uploadedSuffix }) {
     return (
       <React.Fragment>
         <Button
+          role="button"
           variant="contained"
           component="label"
           onClick={() => handleDelete(uploadedSuffix)}

@@ -34,7 +34,9 @@ export default function Format({ settings, setSettings }) {
           tabindex: "0",
         },
       }}
-      renderInput={(params) => <TextField {...params} label="Format" />}
+      renderInput={(params) => (
+        <TextField role="dropdown" {...params} label="Format" />
+      )}
     />
   );
 }

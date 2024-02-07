@@ -35,7 +35,7 @@ function InfoDialog(title, content) {
 
   return (
     <React.Fragment>
-      <Tooltip title="Click for more information on the different options">
+      <Tooltip title="Click for more information on the different options.">
         <InfoIcon
           onClick={() => setOpen(true)}
           sx={{ cursor: "pointer" }}

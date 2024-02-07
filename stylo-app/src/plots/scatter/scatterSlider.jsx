@@ -90,7 +90,12 @@ const ScatterSlider = ({ url, settings, labelUrl, result }) => {
           mfw={mfwData[currentMfwSliderIndex]}
           cull={cullData[currentCullSliderIndex]}
         />
-        <SaveHTML settings={settings} result={result} />
+        <SaveHTML
+          settings={settings}
+          result={result}
+          mfw={mfwData[currentMfwSliderIndex]}
+          cull={cullData[currentCullSliderIndex]}
+        />
         <Search
           onChange={handleSearchQuery}
           labels={
@@ -107,6 +112,7 @@ const ScatterSlider = ({ url, settings, labelUrl, result }) => {
           <FormControlLabel
             control={
               <Switch
+                role="toggle switch"
                 onChange={(event) => setLabelOnOff(event.target.checked)}
               />
             }
@@ -143,7 +149,7 @@ const ScatterSlider = ({ url, settings, labelUrl, result }) => {
       {mfwData.length > 1 && (
         <React.Fragment>
           <div className="slider">
-            <h2>MFW selection</h2>
+            <h2>Select MFW</h2>
             <Slider
               min={0}
               max={mfwData.length - 1}
@@ -160,7 +166,7 @@ const ScatterSlider = ({ url, settings, labelUrl, result }) => {
       {cullData.length > 1 && (
         <React.Fragment>
           <div className="slider">
-            <h2>Culling selection</h2>
+            <h2>Select Culling</h2>
 
             <Slider
               min={0}

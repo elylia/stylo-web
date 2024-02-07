@@ -12,6 +12,7 @@ function NativeEncoding({ settings, setSettings }) {
         <FormControlLabel
           control={
             <Switch
+              role="toggle switch"
               checked={settings.encoding}
               onChange={handleChangeEncoding}
             />

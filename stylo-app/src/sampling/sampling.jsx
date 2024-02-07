@@ -27,6 +27,7 @@ function Sampling({ settings, setSettings }) {
     <>
       <FormControl>
         <RadioGroup
+          role="radio buttons"
           row
           defaultValue="no.sampling"
           value={settings.sampling}

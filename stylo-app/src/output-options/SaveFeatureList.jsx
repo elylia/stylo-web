@@ -13,6 +13,7 @@ function SaveFeatureList({ settings, setSettings }) {
         <FormControlLabel
           control={
             <Switch
+              role="toggle switch"
               checked={settings.featureList}
               onChange={handleChangeCase}
             />

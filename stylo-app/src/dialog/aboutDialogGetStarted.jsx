@@ -27,6 +27,7 @@ function AboutDialogGetStarted() {
         onClick={() => setOpen(true)}
         sx={{ cursor: "pointer" }}
         tabIndex={0}
+        aria-label="Click here for more information"
         onKeyDown={(event) => {
           if (event.key === "Enter") {
             setOpen(true);
@@ -89,6 +90,8 @@ function AboutDialogGetStarted() {
                 href="https://github.com/computationalstylistics/A_Small_Collection_of_British_Fiction"
                 sx={{ cursor: "pointer" }}
                 target="_blank"
+                aria-label="Link to Test Corpus (Github): A Short Collection of British Fiction
+                "
               >
                 A Short Collection of British Fiction
               </Link>
@@ -99,6 +102,7 @@ function AboutDialogGetStarted() {
               <Link
                 href="https://codeload.github.com/computationalstylistics/A_Small_Collection_of_British_Fiction/zip/refs/heads/master"
                 sx={{ cursor: "pointer" }}
+                aria-label="Download Test Corpus: A Short Collection of British Fiction"
               >
                 by clicking here.
               </Link>
