@@ -25,7 +25,7 @@ function Step6({ settings, setSettings, handleGetResults, handleBack }) {
           onClose={() => setMessage(null)}
           sx={{
             position: "absolute",
-            top: "400px",
+            top: "50%",
             left: "50%",
             transform: "translate(-50%, -50%)",
             zIndex: 10,

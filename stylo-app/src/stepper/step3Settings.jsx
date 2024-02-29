@@ -23,7 +23,7 @@ function Step3({ settings, setSettings, handleBack, setActiveStep }) {
       (settings.mfwMax - settings.mfwMin) / settings.mfwIncr + 1 < 3
     ) {
       errorMessages.push(
-        "You need at least three iterations (defined by the MFW values) to get meaningful results for your Bootstrap Consensus Tree analysis. \n"
+        "There are at least three iterations (defined by the MFW values) needed to get meaningful results for your Bootstrap Consensus Tree analysis. \n"
       );
       setError(errorMessages);
     }

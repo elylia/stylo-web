@@ -24,10 +24,20 @@ export default function UploadButton({ setUploadedSuffix, uploadedSuffix }) {
       if (response.ok) {
         const newSuffix = (await response.json()).suffix;
         setUploadedSuffix(newSuffix);
-        setMessageUpload(true);
+        setMessageUpload({
+          type: "success",
+          text: "Corpus uploaded successfully.",
+        });
+      } else {
+        const errorMessage = `Error uploading file: ${response.status} - ${response.statusText}`;
+        setMessageUpload({ type: "error", text: errorMessage });
       }
     } catch (error) {
       console.error("Error uploading file:", error);
+      setMessageUpload({
+        type: "error",
+        text: `Error uploading file: ${error.message}`,
+      });
     } finally {
       setLoading(false);
     }
@@ -63,11 +73,11 @@ export default function UploadButton({ setUploadedSuffix, uploadedSuffix }) {
   return (
     messageUpload && (
       <Alert
-        severity="info"
+        severity={messageUpload.type}
         onClose={() => setMessageUpload(null)}
         sx={{
           position: "absolute",
-          top: "400px",
+          top: "50%",
           left: "50%",
           transform: "translate(-50%, -50%)",
           zIndex: 10,
@@ -75,7 +85,7 @@ export default function UploadButton({ setUploadedSuffix, uploadedSuffix }) {
           textAlign: "left",
         }}
       >
-        Corpus uploaded succesfully.
+        {messageUpload.text}
       </Alert>
     )
   );

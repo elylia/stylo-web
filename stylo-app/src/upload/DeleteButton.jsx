@@ -12,10 +12,20 @@ export default function DeleteButton({ setUploadedSuffix, uploadedSuffix }) {
 
       if (response.ok) {
         setUploadedSuffix(undefined);
-        setMessageDelete(true);
+        setMessageDelete({
+          type: "success",
+          text: "Corpus deleted successfully. You can now upload a new corpus.",
+        });
+      } else {
+        const errorMessage = `Error deleting file: ${response.status} - ${response.statusText}`;
+        setMessageDelete({ type: "error", text: errorMessage });
       }
     } catch (error) {
       console.error("Error deleting file:", error);
+      setMessageDelete({
+        type: "error",
+        text: `Error deleting file: ${error.message}`,
+      });
     }
   };
 
@@ -36,11 +46,11 @@ export default function DeleteButton({ setUploadedSuffix, uploadedSuffix }) {
   return (
     messageDelete && (
       <Alert
-        severity="info"
+        severity={messageDelete.type}
         onClose={() => setMessageDelete(null)}
         sx={{
           position: "absolute",
-          top: "400px",
+          top: "50%",
           left: "50%",
           transform: "translate(-50%, -50%)",
           zIndex: 10,
@@ -48,7 +58,7 @@ export default function DeleteButton({ setUploadedSuffix, uploadedSuffix }) {
           textAlign: "left",
         }}
       >
-        Corpus deleted succesfully. You can now upload a new corpus.
+        {messageDelete.text}
       </Alert>
     )
   );
