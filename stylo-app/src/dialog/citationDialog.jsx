@@ -76,6 +76,13 @@ function CitationDialog() {
               lilly.osburg@live.de
             </a>
             ) <br />
+            <a href="https://www.buymeacoffee.com/lillyosburg">
+              <img
+                src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=🐱&slug=lillyosburg&button_colour=bc5832&font_colour=ffffff&font_family=Cookie&outline_colour=ffffff&coffee_colour=FFDD00"
+                width={200}
+              />
+            </a>
+            <br />
             Based on the stylo R package (Eder, M., Rybicki, J. and Kestemont,
             M. (2016). Stylometry with R: a package for computational text
             analysis. R Journal, 8(1): 107-21.
